@@ -5,7 +5,7 @@ title: Installation
 
 # Installation de la workspace
 
-- Installez Java 16 Development Kit (JDK) en suivant ce [lien](https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot). Minecraft et MinecraftForge depuis la 1.17 sont compilés sous Java 16.
+- Installez Java 16 Development Kit (JDK) en suivant l'un de ces 3 liens : **[Oracle](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)** OU **[Zulu](https://www.azul.com/downloads/?version=java-16-sts&package=jdk-fx)** OU **[Adoptium](https://adoptium.net/?variant=openjdk16&jvmVariant=hotspot)**. Minecraft et MinecraftForge depuis la 1.17 sont compilés sous Java 16.
 - Installez le Mod Development Kit (MDK) en suivant ce [lien](https://files.minecraftforge.net/).
 - Extrayez tous les fichiers et dossiers contenus dans le dossier compressé dans un nouveau dossier (ceci sera votre dossier de mod).
 - Selon votre IDE:
@@ -14,4 +14,4 @@ title: Installation
 - Une fois le projet importé, générez vos configurations de lancement :
   - Pour Intellij IDEA, exécutez la commande gradle `genIntellijRuns` (`gradlew genIntellijRuns`).
   - Pour Eclipse, exécutez la commande gradle `genEclipseRuns` (`gradlew genEclipseRuns`).
-- Voilà, si tout c'est bien passé, vous devriez être en mesure de lancer votre mod en test.
+- Voilà, si tout s'est bien passé, vous devriez être en mesure de lancer votre mod en test.
