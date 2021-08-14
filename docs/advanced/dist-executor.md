@@ -233,6 +233,4 @@ public class DistExecutorMod {
 ## Conclusion
 Vous savez maintenant vous servir de l'annotation `@OnlyIn` et de la classe `DistExecutor`. Vous êtes au courant des erreurs qui peuvent survenir si vous utilisez de manière incorrecte ces classes et que vous appelez de manière non vérifiée des membres présent sur une seule distribution du client.
 
-Ce n'est pas une notion évidente, c'est pour ça que j'ai essayé d'être le plus clair et concis et de donner quelques exemples et quelques tips. Toutefois il existe évidemment d'autres manières d'utiliser ces outils pratique. Ne vous découragez pas au moindre plantage et faites attention à ce que vous appelez. 
-
-Bon modding !
+Ce n'est pas une notion évidente, c'est pour ça que j'ai essayé d'être le plus clair et concis et de donner quelques exemples et quelques tips. Toutefois il existe évidemment d'autres manières d'utiliser ces outils pratique. Ne vous découragez pas au moindre plantage et faites attention à ce que vous appelez.
