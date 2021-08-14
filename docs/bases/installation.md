@@ -14,4 +14,4 @@ title: Installation
 - Une fois le projet importé, générez vos configurations de lancement :
   - Pour Intellij IDEA, exécutez la commande gradle `genIntellijRuns` (`gradlew genIntellijRuns`).
   - Pour Eclipse, exécutez la commande gradle `genEclipseRuns` (`gradlew genEclipseRuns`).
-- Voilà, si tout c'est bien passé, vous devriez être en mesure de lancer votre mod en test.
+- Voilà, si tout s'est bien passé, vous devriez être en mesure de lancer votre mod en test.
