@@ -42,7 +42,7 @@ Pour obtenir les access transformers, vous pouvez rejoindre le [discord](https:/
 
 ```
 # Définis la visibilité de la méthode en public
-protected net.minecraft.data.loot.BlockLoot m_124254_(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder; # createStemDrops
+public net.minecraft.data.loot.BlockLoot m_124254_(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder; # createStemDrops
 
 # Définis la visibilité de la variable en protected
 protected net.minecraft.client.gui.Gui f_168670_ # LINE_HEIGHT
