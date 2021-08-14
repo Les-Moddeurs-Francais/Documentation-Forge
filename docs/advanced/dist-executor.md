@@ -134,7 +134,7 @@ public class ServerManager implements SidedManager
     }
 }
 ```
-Enfin, il faudra exécuter la bonne méthode `init` au démarrage du mod. La méthode `(un)safeRunForDist` prend 2 paramètres à signature identiques : un [`Supplier`]("https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Supplier.html") d'un `(Safe)Supplier` de votre classe cible (ici `ClientManager` ou `ServerManager`). Un `SafeSupplier` est une interface fournie par **FML** étandant `Supplier` et `SafeReferent`. Un `SafeReferent` est une interface elle aussi fournie par **FML** qui va subir des vérifications et propager une erreur si il n'est pas jugé "safe". Les méthodes `unsafe` ne demandent pas de `SafeSupplier`, remplacé par un `Supplier` classique.
+Enfin, il faudra exécuter la bonne méthode `init` au démarrage du mod. La méthode `(un)safeRunForDist` prend 2 paramètres à signature identiques : un [`Supplier`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/function/Supplier.html) d'un `(Safe)Supplier` de votre classe cible (ici `ClientManager` ou `ServerManager`). Un `SafeSupplier` est une interface fournie par **FML** étandant `Supplier` et `SafeReferent`. Un `SafeReferent` est une interface elle aussi fournie par **FML** qui va subir des vérifications et propager une erreur si il n'est pas jugé "safe". Les méthodes `unsafe` ne demandent pas de `SafeSupplier`, remplacé par un `Supplier` classique.
 
 ```java
 package fr.lmf.distexecutor;
