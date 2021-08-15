@@ -1,9 +1,7 @@
 ---
 sidebar_position: 2
+title: Base du mod
 ---
-
-# Base du mod       
-
 
 ## Prérequis
 - [Installation de la workspace](installation.md)
@@ -174,8 +172,3 @@ y décrire de manière conscise ce qu'ajoute votre mod au jeu.
 > A vous de jouer ! Il ne vous reste plus qu'à lancer la configuration
 *runClient* dans votre IDE et voir dans la liste des mods
 si votre mod est présent !
-
-# Crédits
-
-Rédaction : Zom'  
-Correction : Zom'
