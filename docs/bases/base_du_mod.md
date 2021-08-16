@@ -13,24 +13,20 @@ modifier le mods.toml de quoi pouvoir faire détecter votre mod à Forge.
 
 ### Organisation
 
-Pour commencer, dans le dossier *main/src/java*, vous pouvez supprimer les packages d'exemple. On n'en aura pas besoin, on va tout reprendre de zéro.
+Pour commencer, dans le dossier *src/main/java*, vous pouvez supprimer les packages d'exemple. On n'en aura pas besoin, on va tout reprendre de zéro.
 Il va falloir bien organiser notre mod dès le départ pour éviter que ce soit vite le bazar.  
 Pour cela on va nommer l'arborescence de nos packages de la même sorte qu'un nom de domaine d'un site web, mais dans le sens inverse.
 Par exemple dans mon cas `fr.zom.testmod`. On repère la langue du développeur avec `fr`, le pseudo `zom` ainsi que le nom du mod `testmod`.
 
 :::caution
-
 Il est fortement déconseillé d'utiliser des accents ainsi que des majuscules
-
 :::
 
 Une fois les packages créés, vous pouvez créer une classe à laquelle on donne le nom de notre mod avec une majuscule au début.
 Par exemple : `TestMod`
 
 :::warning
-
-Dans cet article je suivrai la convention camelcase
-
+Dans cet article je suivrai la convention PascalCase.
 :::
 
 ### Code
@@ -75,9 +71,7 @@ Tout d'abord, nous devons ajouter l'annotation *@Mod* avec en paramètre le modi
 soit l'identifiant de notre mod pour signaler à Forge que notre mod est présent.
 
 :::caution
-
 Il est fortement conseillé de mettre votre modid dans une variable final de sorte à ce que vous n'ayez pas à retaper à la main votre modid et ainsi limiter les erreurs (et en plus c'est pas hard-codé et ça c'est bien !). Et veillez également à ne pas mettre de majuscules en écrivant votre modid !
-
 :::
 
 ````java
@@ -92,7 +86,7 @@ Il est fortement conseillé de mettre votre modid dans une variable final de sor
 
 Ici j'ai sauté quelques lignes, on reviendra sur le constructeur plus haut un peu après.
 Les deux méthodes que nous avons créé juste ici serviront à certaines fonctions, notamment
-pour la génération de minerais ou encore le changement de rendu de certains blocs/item
+pour la génération de minerais ou encore le changement de rendu de certains blocs/items
 par exemple. La méthode *setup* servira pour les fonctionnalités côté serveur.
 La méthode *clientSetup* quant à elle, servira pour le côté client, d'où son nom.
 
@@ -106,27 +100,22 @@ La méthode *clientSetup* quant à elle, servira pour le côté client, d'où so
     }
 ````
 
-Enfin, on remonte sur le constructeur dans lequel on fait "écouter" nos méthodes par
-Forge lorsque les events *FMLCommonSetupEvent* et *FMLClientSetupEvent* sont appelés.
-Grossièrement, on exécute les méthodes *setup* et *clientSetup* lorsque Forge mets
-en place le serveur et le client.
+Enfin, dans le constructeur, nous indiquons à Forge que nous "écoutons" les events *FMLCommonSetupEvent* et *FMLClientSetupEvent* quand ils sont appelés.
+Grossièrement, on exécute les méthodes *setup* et *clientSetup* lorsque Forge mets en place le jeu et le client spécifiquement pour l'event *FMLClientSetupEvent*.
 
 :::tip
-
 La variable **bus** nous servira dans les tutoriels suivants pour enregistrer nos items et blocs.
-
 :::
 
 On en a fini avec le code. Il n'y a pas grand chose pour le moment, juste de quoi
-lancer le jeu avec notre mod de détecté par Forge. Il nous reste plus qu'à remplir la
+lancer le jeu avec notre mod pour être détecté par Forge. Il nous reste plus qu'à remplir la
 "carte d'identité" de notre mod.
 
 ## mods.toml
 
-Cette fois-ci, on va se rendre dans le dossier *main/src/resources* et vous devriez
+Cette fois-ci, on va se rendre dans le dossier *src/main/resources* et vous devriez
 trouver le fichier mods.toml dans le dossier *META-INF*.
-Ce dernier contient toutes les informations pour identifier
-votre mod. On va passer en revue ici les informations les plus importantes du fichier.
+Ce dernier contient toutes les informations pour identifier votre mod. On va passer en revue ici les informations les plus importantes du fichier.
 
 ### Modid
 
@@ -175,9 +164,9 @@ du mod.
 ````
 
 Ligne 33 est renseignée la description du mod que vous pourrez retrouver
-dans la liste des mods quand vous sélectionner votre mod. Vous pouvez
+dans la liste des mods quand vous sélectionner le votre. Vous pouvez
 y décrire de manière conscise ce qu'ajoute votre mod au jeu.
 
-> A vous de jouer ! Il ne vous reste plus qu'à lancer la configuration
+> À vous de jouer ! Il ne vous reste plus qu'à lancer la configuration
 *runClient* dans votre IDE et voir dans la liste des mods
 si votre mod est présent !
