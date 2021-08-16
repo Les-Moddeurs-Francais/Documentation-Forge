@@ -3,9 +3,6 @@ sidebar_position: 2
 title: Base du mod
 ---
 
-## Prérequis
-- [Installation de la workspace](installation.md)
-
 ## Introduction
 
 A la création de votre mod, vous aurez besoin de créer sa base.
@@ -21,12 +18,20 @@ Il va falloir bien organiser notre mod dès le départ pour éviter que ce soit 
 Pour cela on va nommer l'arborescence de nos packages de la même sorte qu'un nom de domaine d'un site web, mais dans le sens inverse.
 Par exemple dans mon cas `fr.zom.testmod`. On repère la langue du développeur avec `fr`, le pseudo `zom` ainsi que le nom du mod `testmod`.
 
-> [!] Il est fortement déconseillé d'utiliser des accents ainsi que des majuscules
+:::caution
+
+Il est fortement déconseillé d'utiliser des accents ainsi que des majuscules
+
+:::
 
 Une fois les packages créés, vous pouvez créer une classe à laquelle on donne le nom de notre mod avec une majuscule au début.
 Par exemple : `TestMod`
 
-> [!] Dans cet article je suivrai la convention camelcase
+:::warning
+
+Dans cet article je suivrai la convention camelcase
+
+:::
 
 ### Code
 
@@ -69,10 +74,11 @@ public class TestMod {
 Tout d'abord, nous devons ajouter l'annotation *@Mod* avec en paramètre le modid,
 soit l'identifiant de notre mod pour signaler à Forge que notre mod est présent.
 
-> [!] Il est fortement conseillé de mettre votre modid dans une variable final de
-> sorte à ce que vous n'ayez pas à retaper à la main votre modid et ainsi limiter
-> les erreurs (et en plus c'est pas hard-codé et ça c'est bien !).
-> Et veillez également à ne pas mettre de majuscules en écrivant votre modid !
+:::caution
+
+Il est fortement conseillé de mettre votre modid dans une variable final de sorte à ce que vous n'ayez pas à retaper à la main votre modid et ainsi limiter les erreurs (et en plus c'est pas hard-codé et ça c'est bien !). Et veillez également à ne pas mettre de majuscules en écrivant votre modid !
+
+:::
 
 ````java
     public void setup(FMLCommonSetupEvent e)
@@ -105,14 +111,17 @@ Forge lorsque les events *FMLCommonSetupEvent* et *FMLClientSetupEvent* sont app
 Grossièrement, on exécute les méthodes *setup* et *clientSetup* lorsque Forge mets
 en place le serveur et le client.
 
-> [*] La variable **bus** nous servira dans les tutoriels suivants pour enregistrer nos items
-> et blocs.
+:::tip
+
+La variable **bus** nous servira dans les tutoriels suivants pour enregistrer nos items et blocs.
+
+:::
 
 On en a fini avec le code. Il n'y a pas grand chose pour le moment, juste de quoi
 lancer le jeu avec notre mod de détecté par Forge. Il nous reste plus qu'à remplir la
 "carte d'identité" de notre mod.
 
-## "mods.toml"
+## mods.toml
 
 Cette fois-ci, on va se rendre dans le dossier *main/src/resources* et vous devriez
 trouver le fichier mods.toml dans le dossier *META-INF*.
