@@ -97,13 +97,14 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/main',
+              'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/main',
+          showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: false,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/main',
+              'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
