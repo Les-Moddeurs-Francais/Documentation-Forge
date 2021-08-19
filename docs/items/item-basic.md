@@ -7,26 +7,8 @@ title: Item basique
 Pour que l'item soit reconnu par le jeu, il nous faut l'enregistrer, et pour cela deux choix s'offrent à nous. Soit les events, soit les DeferredRegister. Ici nous nous intéresserons au DeferredRegister.
 
 ### DeferredRegister
-Pour enregistrer un item avec cette technique, il nous faut déjà créer le DeferredRegister (qui est une façon de communiquer directement avec les registres sans passer par les events). Pour cela rendez-vous dans une classe au choix et rajoutez ceci :
-```java 
-public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "modid");
-```
-:::tip
 
-Tous les noms de classes, de variables et de méthodes sont personnalisables comme vous le souhaitez, et cela, tout au long du *tutoriel*.
-
-:::
-
-Maintenant pour faire comprendre au jeu que ce DeferredRegister existe, il faut le déclarer et pour cela rendez-vous dans le constructeur de votre classe principale pour y ajouter ceci :
-```java 
-ClasseItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-```
-
-:::caution 
-
-Le nom **ClasseItems** doit être changé par celui de la classe où se situe la variable énoncée plus tôt
-
-:::
+Veuillez-vous referrer à la [page sur ce sujet](../register/deferred_register).
 
 ## Enregistrer l'item
 
