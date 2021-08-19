@@ -3,14 +3,6 @@ sidebar_position: 1
 title: Introduction
 ---
 
-# Prérequis
-
-- [Installation de la workspace](../bases/installation.md)
-- [Base du mod](../bases/base_du_mod.md)
-- Savoir utiliser un event
-
-## Introduction
-
 Depuis la 1.8, Minecraft voit de plus en plus de ses fonctionnalités mises sous forme de
 json. Par exemple : les modèles de blocs/items, les loot tables, les recipes, etc...
 Et vous devez savoir comme il est pénible d'écrire du json à la main. C'est un problème
