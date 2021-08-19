@@ -4,7 +4,7 @@ title: Item basique
 ---
 
 ## Type d'enregistrement
-Pour que l'item soit reconnu par le jeu, il nous faut l'enregistrer, et pour cela deux choix s'offrent à nous. Soit les events, soit les DeferredRegister. Ici nous nous intéresserons au DeferredRegister.
+Pour que l'item soit reconnu par le jeu, il nous faut l'enregistrer, et pour cela deux choix s'offrent à nous. Soit les events, soit les DeferredRegister.
 
 ### DeferredRegister
 
@@ -12,7 +12,7 @@ Veuillez-vous referrer à la [page sur ce sujet](../register/deferred_register).
 
 ## Enregistrer l'item
 
-Maintenant que l'un des types d'enregistrement a été vu, il ne nous reste plus qu'à enregistrer l'item et ici deux types sont possibles. Enregistrer l'item avec une classe custom ou sans.
+Maintenant que l'un des types d'enregistrement a été vu, il ne nous reste plus qu'à enregistrer l'item et ici deux types sont possibles, enregistrer l'item avec une classe custom ou sans.
 
 ### Sans classe custom
 
@@ -23,7 +23,13 @@ Ainsi pour faire l'enregistrement, ajoutez une variable comme celle-ci dans la c
 public static final RegistryObject<Item> MON_ITEM = ITEMS.register("mon_item", () -> new Item(new Item.Properties().stacksTo(10)));
 ```
 
-Si vous souhaitez en savoir un peu plus sur les différentes propriétés disponibles, voici une [page dédiée à ceci](./properties).
+:::tip
+
+Tous les noms de classes, de variables et de méthodes sont personnalisables comme vous le souhaitez, et cela, tout au long du *tutoriel*.
+
+:::
+
+Si vous souhaitez en savoir un peu plus sur les différentes propriétés disponibles pour les items, voici une [page dédiée à ceci](./properties).
 
 ### Avec classe custom
 Ici cette manière nous permettra plus tard, d'ajouter des comportements à l'item (nous ne verrons cela que dans un prochain chapitre).
