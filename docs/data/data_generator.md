@@ -102,6 +102,9 @@ args '--mod', 'testmod', '--all', '--output', file('src/generated/resources/'), 
 La seule chose à changer est la deuxième paire de guillemets où vous devez insérer
 votre modid. Dans mon cas c'est ``testmod``.
 
+Une fois cela fait, relancez la tâche gradle `genIntellijRuns` si vous êtes sur IntelliJ
+ou bien `genEclipseRuns` si vous êtes sur Eclipse.
+
 :::tip
 Désormais pour vérifier si tout fonctionne bien, vous pouvez insérer un *print* dans la
 méthode ``dataGen`` et exécuter la configuration ``runData`` dans votre IDE pour voir si votre
