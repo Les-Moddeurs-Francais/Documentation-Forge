@@ -227,6 +227,26 @@ plus besoin de les déplacer dans le dossier ``resources`` manuellement.
 
 ### Shapeless recipes
 
+On va voir maintenant les shapeless recipes ou recettes sans forme en français.
+Voici un exemple où à l'aide d'un diamant et d'un colorant vert je craft une émeraude: 
+
+````java
+ShapelessRecipeBuilder.shapeless(Items.EMERALD)
+                .requires(Items.DIAMOND)
+                .requires(Items.GREEN_DYE)
+                .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(Items.EMERALD).of(Items.GREEN_DYE).build()))
+                .save(consumer, new ResourceLocation(Testmod.MODID, "test_emerald"));
+````
+
+On remarque ici beaucoup de similitudes avec les shaped recipes. La seule
+fonction qui change est la fonction ``requires``. Cette fonction remplace
+le combo des fonctions ``define`` et `pattern`. La fonction `requires` ne prend
+qu'un seul paramètre pouvant être un item, un tag, etc...
+Je vous conseille de regarder toutes les définitions de la fonction dans
+votre IDE pour voir tout ce qui vous est proposé.
+Le reste ressemble comme deux gouttes d'eau aux shaped recipes, je ne vais
+donc pas les réexpliquer.
+
 ### Autres
 
 ## Recettes de cuisson
