@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Recipes (Table de craft)
+title: Recettes de craft
 ---
 
 ## Introduction
@@ -216,9 +216,6 @@ Enfin, ``"mon_craft"`` désigne le nom du fichier final.
 Faites attention de ne pas avoir deux crafts différents ayant le même nom !
 :::
 
-Et voilà, il ne vous reste plus qu'à lancer ``runData`` et vous devriez avoir vos fichiers
-de générés dans le dossier ``generated`` de votre workspace.
-
 :::tip
 A partir de la version 36.2.0 de Forge, il possible de laisser les fichiers dans le
 dossier ``generated``. Ils seront tout de même détectés par le jeu. Vous n'avez donc
@@ -244,15 +241,92 @@ le combo des fonctions ``define`` et `pattern`. La fonction `requires` ne prend
 qu'un seul paramètre pouvant être un item, un tag, etc...
 Je vous conseille de regarder toutes les définitions de la fonction dans
 votre IDE pour voir tout ce qui vous est proposé.
-Le reste ressemble comme deux gouttes d'eau aux shaped recipes, je ne vais
-donc pas les réexpliquer.
+Le reste ressemble comme deux gouttes d'eau aux shaped recipes.
 
 ### Autres
 
+Dans la classe ``RecipeProvider`` de Minecraft, vous pouvez trouver différentes fonctions
+vers la fin de celle-ci. Elles permettent aux développeurs de générer certaines
+formes de crafts automatiquement sans avoir à réécrire toujours la même chose.
+Je vous conseille d'aller y jeter un oeil, ça peut être intéressant !
+
 ## Recettes de cuisson
+
+Voyons maintenant les différents types de cuisson. Comme vous le savez, il
+y a désormais plusieurs types de four disponibles dans Minecraft.
+On a toujours le four classique, mais également le blast furnace et le smoker.
+Egalement le feu de camp fait son apparition. On a donc quatre nouveaux
+types de craft potentiels.
+Chaque type de craft a sa propre fonction de dédiée.
+
+Chaque bloc à sa propre fonction dédiée, mais elles ont toutes la même
+définition. La seule chose qui change, c'est le bloc dans lequel
+la recette est valide. Pour l'exemple je montrerai donc qu'une seule fonction,
+en l'occurence la fonction ``smelting`` associée au four. Voici les autres
+fonctions pour les autres blocs :
+
+- Blast furnace -> ``blasting``
+- Smoker -> ``smoking``
+- Campfire -> ``campfireCooking``
+
+Voyons maintenant un exemple concret d'une recette de cuisson où à partir
+d'une planche de bois on récupère un charbon de bois.
+
+````java
+SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemTags.PLANKS), Items.CHARCOAL, 1.0f, 200);
+````
+
+En premier argument, on a besoin d'un ``Ingredient``. Pour cela on a accès à
+``Ingredient.of`` qui peut prendre en paramètre un item, un bloc ou un tag.
+Il y a d'autres définitions, je vous laisse regarder ça de votre côté.
+Pour mon exemple, on va avoir besoin d'utiliser le tag des planches
+``ItemTags.PLANKS`` de sorte à ce que notre recette fonctionne avec
+n'importe quelle planche du jeu.
+
+Ensuite, on renseigne un item ou un bloc en deuxième argument.
+
+Le troisième argument représente la quantité d'xp que vous récupérez
+quand la cuisson est terminée. (Ici la quantité d'xp est la même que
+la cuisson d'un lingot)
+
+Enfin, le dernier paramètre représente le temps en ticks que prend
+la cuisson. Les recettes du jeu prennent en général 200 ticks soit
+10 secondes. A vous de voir si vous voulez jouer avec ça.
 
 ## Recettes dans le stonecutter
 
+Intéressons-nous maintenant au stonecutter. Pour l'exemple je vais créer
+une recette à partir de planche pour obtenir une bûche.
+
+````java
+SingleItemRecipeBuilder.stonecutting(Ingredient.of(ItemTags.PLANKS), Blocks.OAK_LOG, 1);
+````
+
+Comme plus haut, le premier argument est un ``Ingredient`` et le deuxième
+un item ou un bloc.
+
+Quant au troisième, il est optionnel mais vous permet de gérer la quantité
+du résultat obtenu.
+
 ## Recettes dans la smithing table
 
+Attaquons maintenant le dernier bloc, la smithing table. Dans ce cas
+là, je crée une recette permettant d'améliorer une pioche en pierre
+en pioche en fer à l'aide d'un lingot de fer. Ici aussi, c'est
+assez simple : 
 
+````java
+UpgradeRecipeBuilder.smithing(Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), Items.IRON_PICKAXE);
+````
+
+Le premier argument représente l'item que vous améliorez, le deuxième
+représente l'item d'amélioration et le dernier représente le résultat.
+Les deux premiers sont des ``Ingredient`` et le dernier un `ItemLike` soit
+un item ou un bloc.
+
+## Générer les fichiers
+
+:::tip
+Il ne vous reste plus qu'à lancer ``runData`` et vous devriez avoir vos fichiers
+générés dans le dossier ``generated`` de votre workspace !
+:::
