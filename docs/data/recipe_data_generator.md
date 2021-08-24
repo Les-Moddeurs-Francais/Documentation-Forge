@@ -276,7 +276,9 @@ Voyons maintenant un exemple concret d'une recette de cuisson où à partir
 d'une planche de bois on récupère un charbon de bois.
 
 ````java
-SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemTags.PLANKS), Items.CHARCOAL, 1.0f, 200);
+SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemTags.PLANKS), Items.CHARCOAL, 1.0f, 200)
+                .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ItemTags.PLANKS).build()))
+                .save(consumer, new ResourceLocation(Testmod.MODID, "planks_to_charcoal"));
 ````
 
 En premier argument, on a besoin d'un ``Ingredient``. Pour cela on a accès à
@@ -302,7 +304,9 @@ Intéressons-nous maintenant au stonecutter. Pour l'exemple je vais créer
 une recette à partir de planche pour obtenir une bûche.
 
 ````java
-SingleItemRecipeBuilder.stonecutting(Ingredient.of(ItemTags.PLANKS), Blocks.OAK_LOG, 1);
+SingleItemRecipeBuilder.stonecutting(Ingredient.of(ItemTags.PLANKS), Blocks.OAK_LOG, 1)
+                .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ItemTags.PLANKS).build()))
+                .save(consumer, new ResourceLocation(Testmod.MODID, "planks_to_log"));
 ````
 
 Comme plus haut, le premier argument est un ``Ingredient`` et le deuxième
@@ -319,7 +323,9 @@ en pioche en fer à l'aide d'un lingot de fer. Ici aussi, c'est
 assez simple : 
 
 ````java
-UpgradeRecipeBuilder.smithing(Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), Items.IRON_PICKAXE);
+UpgradeRecipeBuilder.smithing(Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), Items.IRON_PICKAXE)
+                .unlocks("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STONE_PICKAXE))
+                .save(consumer, new ResourceLocation(Testmod.MODID, "planks_to_charcoal"));
 ````
 
 Le premier argument représente l'item que vous améliorez, le deuxième
