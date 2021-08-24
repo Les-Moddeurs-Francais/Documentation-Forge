@@ -1,18 +1,18 @@
 ---
 sidebar_position: 2
-title: Recettes de craft
+title: Recettes
 ---
 
 ## Introduction
 
-Dans cet artcile nous allons voir comment générer nos différents crafts à l'aide
+Dans cet article nous allons voir comment générer nos différents crafts à l'aide
 d'un générateur.
 
 ## Code
 
 ### Création du générateur
 
-Créez une nouvelle classe avec comme nom par exemple ``RecipeGenerator`` qui hérite de
+Créez une nouvelle classe avec comme nom, par exemple, ``RecipeGenerator`` qui hérite de
 la classe ``RecipeProvider``.
 
 ````java
@@ -29,10 +29,10 @@ public class RecipeGenerator extends RecipeProvider {
 }
 ````
 
-Ecrivez le constructeur imposé par la classe mère, puis re définissez la méthode
+Ecrivez le constructeur imposé par la classe mère, puis re-définissez la méthode
 `buildCraftingRecipes` en supprimant le `super`.
 
-Rendez vous maintenant dans votre classe avec l'event ``GatherDataEvent`` et
+Rendez-vous maintenant dans votre classe avec l'event ``GatherDataEvent`` et
 ajoutez le générateur comme ceci :
 
 ````java
@@ -58,7 +58,7 @@ Les crafts sont gérés par le serveur, on exécute donc la génération des rec
 seulement si l'event l'inclus.
 :::
 
-De cette façon on ajoute notre générateur de crafts aux générateurs associés à notre
+De cette façon on ajoute notre générateur de crafts aux générateurs associés de notre
 mod.
 
 ## Recettes dans la table de craft
@@ -72,7 +72,7 @@ la table doit respecter un certain schéma.
 
 ``Ex: les épées, les pioches, la table d'enchantement, les coffres, etc...`` 
 
-Les *shapeless* eux n'ont pas de forme prédéfinie.
+Les *shapeless* eux, n'ont pas de forme prédéfinie.
 Seul le contenu même du craft importe.
 
 ``Ex: les feux d'artifices (customisation), les soupes de champignons, etc...``
@@ -125,13 +125,13 @@ define('D', Blocks.DIRT)
 define('A', Items.APPLE)
 ````
 
-La fonction define permet d'associer à un caractère un item, un block, ou encore un tag.
+La fonction ``define`` permet d'associer à un caractère : un item, un block, ou encore un tag.
 De cette manière, lorsqu'on dessinera le schéma de notre craft, le caractère ``D`` sera
 associé au bloc de terre dans ce cas là.
 
 :::tip
-Ici le caractère 'D' n'est pas anodin. Etant donné que j'utliser le bloc de ``Dirt``,
-j'ai pris l'initial du mot comme caractère. Essayer de rendre vos craft le plus lisible
+Ici le caractère 'D' n'est pas anodin. Etant donné que j'utlise le bloc de ``Dirt``,
+j'ai pris l'initial du mot comme caractère. Essayez de rendre vos craft le plus lisible
 possible. Comme votre code d'ailleurs !
 :::
 
@@ -143,13 +143,13 @@ pattern(" D ")
 
 La fonction ``pattern`` sert à donner la forme de notre craft. Souvenez-vous de la forme
 que j'ai donné plus haut. Chaque ``pattern`` représente une ligne de la table de craft.
-Ici on utlise tout l'espace disponible de notre table, donc nous sommes obligés de combler
+Ici, on utlise tout l'espace disponible de notre table, donc nous sommes obligés de combler
 les vides avec des espaces. Un espace représentant un item vide, soit rien.
 La table de craft de Minecraft ayant 3x3 slots, il y a trois lignes composées chacune
 de 3 caractères au maximum.
 
 :::caution
-Verifiez bien que vous ne dépassez pas la limite de caractère ou de lignes. C'est souvent
+Vérifiez bien que vous ne dépassez pas la limite de caractère ou de lignes. C'est souvent
 la cause d'erreurs ou bien de dysfonctionnement de votre craft.
 :::
 
@@ -163,7 +163,7 @@ pattern("A")
 ````
 
 En faisant cela, on a bien la forme de l'épée et on peut crafter l'épée sur n'importe
-quelle colonne de la table. Egalement le craft de la table de craft ressemble à cela :
+quelle colonne de la table. Également le craft de la table de craft ressemble à cela :
 
 ````java
 pattern("DD")
@@ -178,10 +178,10 @@ ou même dans l'inventaire du joueur.
 group("diamond")
 ````
 
-La fonction ``group`` sert quant à elle de rassembler différents crafts pour le même
+La fonction ``group`` sert quant à elle à rassembler différents crafts pour le même
 objet. Ici, j'ai décidé de créer un groupe ``diamond`` étant donné que mon craft
 donne un diamant. C'est à dire que tous les crafts ayant le même group seront rassemblés
-dans le livre de recettes du jeu.
+dans le livre de recettes du jeu sur la même case.
 
 ````java
 unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(Items.APPLE).of(Blocks.DIRT).build()))
@@ -203,21 +203,21 @@ Dans mon cas, les items en question seront : la pomme et le bloc de terre.
 save(consumer, new ResourceLocation(Testmod.MODID, "mon_craft"))
 ````
 
-Enfin, la fonction save sert, comme son nom l'indique, à sauvegarder notre craft. En
+Enfin, la fonction ``save`` sert, comme son nom l'indique, à sauvegarder notre craft. En
 premier paramètre on renseigne ``consumer`` qui est le paramètre de notre fonction
 ``buildCraftingRecipes``. En second paramètre on doit renseigner une `ResourceLocation`
 qui est en fait l'emplacement et le nom du fichier ``.json``.
 
-Comme emplacement, j'ai mis le modid de mon mod, c'est à dire que le fichier sera
+Comme emplacement, j'ai mis le modid de mon mod, c'est-à-dire que le fichier sera
 stocké dans les crafts de mon mod. Vous auriez pu laisser ``minecraft`` mais je le déconseille.
 Enfin, ``"mon_craft"`` désigne le nom du fichier final.
 
 :::caution
-Faites attention de ne pas avoir deux crafts différents ayant le même nom !
+Faites attention à ne pas avoir deux crafts différents ayant le même nom !
 :::
 
 :::tip
-A partir de la version 36.2.0 de Forge, il possible de laisser les fichiers dans le
+À partir de la version 36.2.0 de Forge, il est possible de laisser les fichiers dans le
 dossier ``generated``. Ils seront tout de même détectés par le jeu. Vous n'avez donc
 plus besoin de les déplacer dans le dossier ``resources`` manuellement.
 :::
@@ -241,21 +241,22 @@ le combo des fonctions ``define`` et `pattern`. La fonction `requires` ne prend
 qu'un seul paramètre pouvant être un item, un tag, etc...
 Je vous conseille de regarder toutes les définitions de la fonction dans
 votre IDE pour voir tout ce qui vous est proposé.
-Le reste ressemble comme deux gouttes d'eau aux shaped recipes.
+Le reste ressemble comme deux gouttes d'eau aux shaped recipes, je ne reviendrai
+donc pas dessus.
 
 ### Autres
 
 Dans la classe ``RecipeProvider`` de Minecraft, vous pouvez trouver différentes fonctions
 vers la fin de celle-ci. Elles permettent aux développeurs de générer certaines
 formes de crafts automatiquement sans avoir à réécrire toujours la même chose.
-Je vous conseille d'aller y jeter un oeil, ça peut être intéressant !
+Je vous conseille d'aller y jeter un coup d'œil, ça peut être intéressant !
 
 ## Recettes de cuisson
 
 Voyons maintenant les différents types de cuisson. Comme vous le savez, il
 y a désormais plusieurs types de four disponibles dans Minecraft.
 On a toujours le four classique, mais également le blast furnace et le smoker.
-Egalement le feu de camp fait son apparition. On a donc quatre nouveaux
+Également le feu de camp fait son apparition. On a donc quatre nouveaux
 types de craft potentiels.
 Chaque type de craft a sa propre fonction de dédiée.
 
@@ -265,9 +266,11 @@ la recette est valide. Pour l'exemple je montrerai donc qu'une seule fonction,
 en l'occurence la fonction ``smelting`` associée au four. Voici les autres
 fonctions pour les autres blocs :
 
+:::tip
 - Blast furnace -> ``blasting``
 - Smoker -> ``smoking``
 - Campfire -> ``campfireCooking``
+:::
 
 Voyons maintenant un exemple concret d'une recette de cuisson où à partir
 d'une planche de bois on récupère un charbon de bois.
@@ -280,7 +283,7 @@ En premier argument, on a besoin d'un ``Ingredient``. Pour cela on a accès à
 ``Ingredient.of`` qui peut prendre en paramètre un item, un bloc ou un tag.
 Il y a d'autres définitions, je vous laisse regarder ça de votre côté.
 Pour mon exemple, on va avoir besoin d'utiliser le tag des planches
-``ItemTags.PLANKS`` de sorte à ce que notre recette fonctionne avec
+``ItemTags.PLANKS`` de sorte que notre recette fonctionne avec
 n'importe quelle planche du jeu.
 
 Ensuite, on renseigne un item ou un bloc en deuxième argument.
@@ -291,7 +294,7 @@ la cuisson d'un lingot)
 
 Enfin, le dernier paramètre représente le temps en ticks que prend
 la cuisson. Les recettes du jeu prennent en général 200 ticks soit
-10 secondes. A vous de voir si vous voulez jouer avec ça.
+10 secondes. À vous de voir si vous voulez jouer avec ça.
 
 ## Recettes dans le stonecutter
 
@@ -310,8 +313,8 @@ du résultat obtenu.
 
 ## Recettes dans la smithing table
 
-Attaquons maintenant le dernier bloc, la smithing table. Dans ce cas
-là, je crée une recette permettant d'améliorer une pioche en pierre
+Attaquons maintenant le dernier bloc, la smithing table.
+Dans ce cas-là, je crée une recette permettant d'améliorer une pioche en pierre
 en pioche en fer à l'aide d'un lingot de fer. Ici aussi, c'est
 assez simple : 
 
