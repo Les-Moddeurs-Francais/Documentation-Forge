@@ -325,7 +325,7 @@ assez simple :
 ````java
 UpgradeRecipeBuilder.smithing(Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), Items.IRON_PICKAXE)
                 .unlocks("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STONE_PICKAXE))
-                .save(consumer, new ResourceLocation(Testmod.MODID, "planks_to_charcoal"));
+                .save(consumer, new ResourceLocation(Testmod.MODID, "stone_pickaxe_upgrade"));
 ````
 
 Le premier argument représente l'item que vous améliorez, le deuxième
