@@ -13,6 +13,10 @@
         <link href="https://forge-doc.lesmoddeursfrancais.fr/blog/forge-116-362"/>
         <updated>2021-07-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[La version 1.16.5 36.2 de Forge est sortie et elle apporte quelques nouveautés.]]></summary>
+        <author>
+            <name>Mysterious_Dev</name>
+            <uri>https://github.com/Mysterious-Dev</uri>
+        </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Forge 1.17.1 37.0]]></title>
@@ -20,5 +24,9 @@
         <link href="https://forge-doc.lesmoddeursfrancais.fr/blog/forge-117-370"/>
         <updated>2021-07-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[La version 1.17.1 37.0 de Forge est sortie après des semaines d'attente, et celle-ci change beaucoup de choses.]]></summary>
+        <author>
+            <name>Mysterious_Dev</name>
+            <uri>https://github.com/Mysterious-Dev</uri>
+        </author>
     </entry>
 </feed>
