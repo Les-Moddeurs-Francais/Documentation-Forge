@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Deferred Register
+tags: [enregistrement]
 ---
 
 Pour créer un Deferred Register, il nous faut tout d'abord ajouter une variable dans une classe où nous enregistrerons tous les éléments concernés (comme les items, les blocs, etc...) comme celle-ci :
