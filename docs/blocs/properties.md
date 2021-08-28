@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Properiétés de bloc
+tags: [blocs, propriétés]
 ---
 
 | Méthode | Description |

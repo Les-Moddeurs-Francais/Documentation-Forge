@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: Propriétés d'item
-tags: [items]
+tags: [items, propriétés]
 ---
 
 | Méthode | Description |
