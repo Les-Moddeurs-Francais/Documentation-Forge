@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
+tags: [introduction]
 ---
 
 Ceci est une documentation non officielle sur le projet [MinecraftForge](http://minecraftforge.net/) (une API de modding pour le jeu Minecraft).
