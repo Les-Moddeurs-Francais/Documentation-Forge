@@ -133,3 +133,39 @@ Les fichiers de langue sont situés dans le dossier `lang` des ressources.
   "block.modid.mon_bloc": "My Block"
 }
 ```
+
+## Datas
+
+Les datas dans Minecraft correspondes à des ressources coté serveur comme les recettes, les tags, les structures et mêmes les loot tables nécessaires aux blocs.
+
+### Loot Tables
+
+Ici nous appliquerons une _loot table_ similaire à celle du bloc de diamant.
+
+```json
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "modid:mon_bloc"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}
+```
+
+Quelques explications s'imposent :
+- `type` définit le type de loot table (block, chest, etc...)
+- `pools` définit les listes d'item disponibles avec le nombre d'item à sélectionner ainsi que les items.
+- `conditions` définit les conditions qui doivent être respectées pour que le bloc _drop_ quelque chose.
