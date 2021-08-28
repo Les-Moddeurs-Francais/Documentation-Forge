@@ -122,9 +122,9 @@ Ici le modèle de l'item va aller chercher celui du bloc (celui-ci étant param�
 Comme spécifié dans le modèle, la texture se situera dans le dossier `textures/block` et aura comme nom `mon_bloc.png` (l'extension est importante).
 
 ### Traductions
-Un item à sa création se voie attribuer de manière systématique un nom délocalisé. La raison étant que celui-ci permet de traduire le nom de l'item dans toutes les langues supportées par le jeu.
+Un bloc à sa création se voie attribuer de manière systématique un nom délocalisé. La raison étant que celui-ci permet de traduire le nom du bloc dans toutes les langues supportées par le jeu.
 
-Ici l'item ne comportera qu'un nom traduit en anglais (en_us) qui est la langue de base du jeu (en cas de traduction manquante dans une autre langue, le jeu appliquera cette traduction), mais voici toutes les [langues](https://minecraft.fandom.com/wiki/Language) disponible dans le jeu avec leurs codes respectifs.
+Ici le bloc ne comportera qu'un nom traduit en anglais (en_us) qui est la langue de base du jeu (en cas de traduction manquante dans une autre langue, le jeu appliquera cette traduction), mais voici toutes les [langues](https://minecraft.fandom.com/wiki/Language) disponible dans le jeu avec leurs codes respectifs.
 
 Les fichiers de langue sont situés dans le dossier `lang` des ressources.
 
