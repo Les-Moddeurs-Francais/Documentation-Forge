@@ -51,11 +51,7 @@ public static final RegistryObject<Block> MON_BLOC = BLOCKS.register("mon_bloc",
 
 ## Ressources
 
-Maintenant que notre item est ajouté, il faut lui donner un modèle, une texture ainsi qu'un nom qui dépendra de la langue.
-
-### Modèle et texture
-
-Pour un block, son modèle permet de définir sa forme ainsi que les textures qui lui seront appliquées.
+Maintenant que notre item est ajouté, il faut lui donner une blockstate, un modèle, une texture, un nom qui dépendra de la langue ainsi qu'une loottable qui permettra de définir les loots.
 
 ```sh title='Arborescence basique des ressources pour un mod'
 assets
@@ -70,22 +66,60 @@ assets
           └── item
 ```
 
-Ici nous appliquerons un modèle basique assimilable au diamant.
+### Blockstate
+
+Une blockstate dans Minecraft est un moyen de définir l'appearance d'un bloc selon des paramètres appelés **blockstates**. Ici notre bloc étant basique, celui-ci n'en comporte pas ce qui nous amène à une blockstate du type :
 
 ```json
 {
-  "parent": "minecraft:item/generated",
+  "variants": {
+    "": {
+      "model": "modid:block/mon_bloc"
+    }
+  }
+}
+```
+
+Ici le paramètre `modèle` définit le chemin ers le modèles du bloc contenu dans le dossier models.
+
+### Modèles et texture
+
+Pour un block, son modèle permet de définir sa forme ainsi que les textures qui lui seront appliquées.
+
+#### Modèle du bloc
+
+Ici nous appliquerons un modèle au bloc assimilable au bloc de diamant.
+
+```json
+{
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "layer0": "minecraft:item/mon_item"
+    "all": "modid:block/mon_bloc"
   }
 }
 ```
 
 `parent` correspond au modèle maitre que l'item va utiliser.
 
-`textures` correspond aux textures appliqué à l'item.
+`textures` correspond aux textures appliquées au bloc.
 
-Comme spécifié dans le modèle, la texture se situera dans le dossier `textures/item` et aura comme nom `mon_item.png` (l'extension est importante).
+#### Modèle de l'item
+
+Le bloc dans l'inventaire étant considéré comme un item, il nous faut aussi lui donner un modèle, ici, cela sera encore une fois assimilable au modèle item du bloc de diamant
+
+```json
+{
+  "parent": "modid:block/mon_bloc"
+}
+```
+
+:::tip
+Ici le modèle de l'item va aller chercher celui du bloc (celui-ci étant paramétré pur avoir le rendu qu'on connait dans l'inventaire)
+:::
+
+#### Texture
+
+Comme spécifié dans le modèle, la texture se situera dans le dossier `textures/block` et aura comme nom `mon_bloc.png` (l'extension est importante).
 
 ### Traductions
 Un item à sa création se voie attribuer de manière systématique un nom délocalisé. La raison étant que celui-ci permet de traduire le nom de l'item dans toutes les langues supportées par le jeu.

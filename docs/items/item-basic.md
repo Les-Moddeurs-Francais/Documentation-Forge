@@ -75,14 +75,14 @@ Ici nous appliquerons un modèle basique assimilable au diamant.
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/mon_item"
+    "layer0": "modid:item/mon_item"
   }
 }
 ```
 
 `parent` correspond au modèle maitre que l'item va utiliser.
 
-`textures` correspond aux textures appliqué à l'item.
+`textures` correspond aux textures appliquées à l'item.
 
 Comme spécifié dans le modèle, la texture se situera dans le dossier `textures/item` et aura comme nom `mon_item.png` (l'extension est importante).
 
