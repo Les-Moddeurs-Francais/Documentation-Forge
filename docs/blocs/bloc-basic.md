@@ -51,7 +51,7 @@ public static final RegistryObject<Block> MON_BLOC = BLOCKS.register("mon_bloc",
 
 ## Ressources
 
-Maintenant que notre item est ajouté, il faut lui donner une blockstate, un modèle, une texture, un nom qui dépendra de la langue ainsi qu'une loottable qui permettra de définir les loots.
+Maintenant que notre bloc est ajouté, il faut lui donner une blockstate, un modèle, une texture, un nom qui dépendra de la langue ainsi qu'une loottable qui permettra de définir les loots.
 
 ```sh title='Arborescence basique des ressources pour un mod'
 assets
@@ -99,7 +99,7 @@ Ici nous appliquerons un modèle au bloc assimilable au bloc de diamant.
 }
 ```
 
-`parent` correspond au modèle maitre que l'item va utiliser.
+`parent` correspond au modèle maitre que le bloc va utiliser.
 
 `textures` correspond aux textures appliquées au bloc.
 
