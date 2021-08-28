@@ -52,10 +52,6 @@ public static final RegistryObject<Item> MON_ITEM = ITEMS.register("mon_item", (
 
 Maintenant que notre item est ajouté, il faut lui donner un modèle, une texture ainsi qu'un nom qui dépendra de la langue.
 
-### Modèle et texture
-
-Pour un item, son modèle permet de définir sa forme ainsi que les textures qui lui seront appliquées.
-
 ```sh title='Arborescence basique des ressources pour un mod'
 assets
 └── modid
@@ -68,6 +64,10 @@ assets
           ├── block
           └── item
 ```
+
+### Modèle et texture
+
+Pour un item, son modèle permet de définir sa forme ainsi que les textures qui lui seront appliquées.
 
 Ici nous appliquerons un modèle basique assimilable au diamant.
 
