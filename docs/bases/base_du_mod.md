@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Base du mod
+tags: [bases]
 ---
 
 ## Introduction

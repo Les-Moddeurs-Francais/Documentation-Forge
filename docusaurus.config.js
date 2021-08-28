@@ -25,7 +25,7 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Doumentation',
+          label: 'Documentation',
         },
         {to: '/blog', label: 'News', position: 'left'},
         {

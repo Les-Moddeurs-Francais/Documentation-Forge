@@ -1,10 +1,13 @@
 ---
 sidebar_position: 1
 title: Introduction
+tags: [data generatos, introduction]
 ---
 
+## Introduction
+
 Depuis la 1.8, Minecraft voit de plus en plus de ses fonctionnalités mises sous forme de
-json. Par exemple : les modèles de blocs/items, les loot tables, les recipes, etc...
+json. Par exemple : les modèles de blocs/items, les loot tables, les recettes, etc...
 Et vous devez savoir comme il est pénible d'écrire du json à la main. C'est un problème
 que même Mojang eut et suite à cela, les développeurs du jeu mirent à disposition du
 code permettant de générer (presque) automatiquement tous ces jsons.
