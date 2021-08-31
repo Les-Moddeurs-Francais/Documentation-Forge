@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Item basique
+tags: [items]
 ---
 
 ## Type d'enregistrement

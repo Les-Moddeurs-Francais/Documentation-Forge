@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Recettes
+tags: [data generatos]
 ---
 
 ## Introduction
