@@ -13,7 +13,7 @@ const FeatureList = [
     },
     {
         title: 'Moddeur_Ultime',
-        img: '../../static/img/le_moddeur_ultime.jpg',
+        img: require('../../static/img/le_moddeur_ultime.jpg').default,
     }
 ];
 
