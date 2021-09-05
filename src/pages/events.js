@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import data from "./data/test.json"
+import data from "./data/events.json"
 
 function Table({title, description, side}) {
     return (
