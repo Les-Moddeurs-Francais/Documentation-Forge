@@ -16,23 +16,26 @@ export default function Events() {
     return (
         <Layout title="Liste des events">
             <center>
-                <p></p>
-                <table style={{
-                    paddingTop:'5vh'
+                <div style={{
+                    overflowX: 'auto'
                 }}>
-                    <thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th>Description</th>
-                        <th>Side</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {data.map((props, idx) => (
-                        <Table key={idx} {...props} />
-                    ))}
-                    </tbody>
-                </table>
+                    <table style={{
+                        padding:'5vh',
+                    }}>
+                        <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th>Side</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {data.map((props, idx) => (
+                            <Table key={idx} {...props} />
+                        ))}
+                        </tbody>
+                    </table>
+                </div>
             </center>
         </Layout>
     );
