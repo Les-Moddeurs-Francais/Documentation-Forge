@@ -15,4 +15,5 @@ tags: [bases]
 - Une fois le projet importé, générez vos configurations de lancement :
   - Pour Intellij IDEA, exécutez la commande gradle `genIntellijRuns` (`gradlew genIntellijRuns`).
   - Pour Eclipse, exécutez la commande gradle `genEclipseRuns` (`gradlew genEclipseRuns`).
+  - Pour Visual Studio Code, exécutez la commande gradle `genVSCodeRuns` (`gradlew genVSCodeRuns`).
 - Voilà, si tout s'est bien passé, vous devriez être en mesure de lancer votre mod en test.
