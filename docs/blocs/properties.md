@@ -15,7 +15,7 @@ tags: [blocs, propriétés]
 | jumpFactor | Définit le facteur permettant de sauter une fois sur le bloc (comme le bloc de miel). |
 | sound | Définit le type de son joué par le bloc. |
 | lightLevel | Définit le niveau de lumière émis par le bloc. |
-| strength | Définit la resistance aux explosions ainsi que le temps de destruction. |
+| strength | Définit la résistance aux explosions ainsi que le temps de destruction. |
 | instabreak | Définit le fait que le bloc soit cassable instantanément. |
 | randomTicks | Définit si le bloc doit exécuter des bouts de code définit tout les ticks de manière aléatoire (comme les plantes). |
 | dynamicShape | Définit le fait que le bloc ait une forme dynamique ou non. |
