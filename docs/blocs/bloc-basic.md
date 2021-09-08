@@ -80,11 +80,11 @@ Une blockstate dans Minecraft est un moyen de définir l'appearance d'un bloc se
 }
 ```
 
-Ici le paramètre `modèle` définit le chemin ers le modèles du bloc contenu dans le dossier models.
+Ici le paramètre `modèle` définit le chemin vers le modèle du bloc contenu dans le dossier models.
 
 ### Modèles et texture
 
-Pour un block, son modèle permet de définir sa forme ainsi que les textures qui lui seront appliquées.
+Pour un bloc, son modèle permet de définir sa forme ainsi que les textures qui lui seront appliquées.
 
 #### Modèle du bloc
 
@@ -114,7 +114,7 @@ Le bloc dans l'inventaire étant considéré comme un item, il nous faut aussi l
 ```
 
 :::tip
-Ici le modèle de l'item va aller chercher celui du bloc (celui-ci étant paramétré pur avoir le rendu qu'on connait dans l'inventaire)
+Ici le modèle de l'item va aller chercher celui du bloc (celui-ci étant paramétré pur avoir le rendu qu'on connaît dans l'inventaire).
 :::
 
 #### Texture
@@ -167,5 +167,5 @@ Ici nous appliquerons une _loot table_ similaire à celle du bloc de diamant.
 
 Quelques explications s'imposent :
 - `type` définit le type de loot table (block, chest, etc...)
-- `pools` définit les listes d'item disponibles avec le nombre d'item à sélectionner ainsi que les items.
+- `pools` définit les listes d'item disponibles avec le nombre d'items à sélectionner ainsi que les items.
 - `conditions` définit les conditions qui doivent être respectées pour que le bloc _drop_ quelque chose.
