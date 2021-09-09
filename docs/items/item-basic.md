@@ -5,7 +5,7 @@ tags: [items]
 ---
 
 ## Type d'enregistrement
-Pour que l'item soit reconnu par le jeu, il nous faut l'enregistrer, et pour cela deux choix s'offrent à nous. Soit les events, soit les DeferredRegister. Ici nous nous intéresserons au DeferredRegister.
+Pour que l'item soit reconnu par le jeu, il nous faut l'enregistrer, et pour cela deux choix s'offrent à nous. Soit les events, soit les DeferredRegister.
 
 ### DeferredRegister
 
@@ -13,7 +13,7 @@ Veuillez-vous referrer à la [page sur ce sujet](../register/deferred_register).
 
 ## Enregistrer l'item
 
-Maintenant que l'un des types d'enregistrement a été vu, il ne nous reste plus qu'à enregistrer l'item et ici deux types sont possibles. Enregistrer l'item avec une classe custom ou sans.
+Maintenant que l'un des types d'enregistrement a été vu, il ne nous reste plus qu'à enregistrer l'item et ici deux types sont possibles, enregistrer l'item avec une classe custom ou sans.
 
 ### Sans classe custom
 
@@ -24,7 +24,13 @@ Ainsi pour faire l'enregistrement, ajoutez une variable comme celle-ci dans la c
 public static final RegistryObject<Item> MON_ITEM = ITEMS.register("mon_item", () -> new Item(new Item.Properties().stacksTo(10)));
 ```
 
-Si vous souhaitez en savoir un peu plus sur les différentes propriétés disponibles, voici une [page dédiée à ceci](./properties).
+:::tip
+
+Tous les noms de classes, de variables et de méthodes sont personnalisables comme vous le souhaitez, et cela, tout au long du *tutoriel*.
+
+:::
+
+Si vous souhaitez en savoir un peu plus sur les différentes propriétés disponibles pour les items, voici une [page dédiée à ceci](./properties).
 
 ### Avec classe custom
 Ici cette manière nous permettra plus tard, d'ajouter des comportements à l'item (nous ne verrons cela que dans un prochain chapitre).
@@ -46,10 +52,6 @@ public static final RegistryObject<Item> MON_ITEM = ITEMS.register("mon_item", (
 
 Maintenant que notre item est ajouté, il faut lui donner un modèle, une texture ainsi qu'un nom qui dépendra de la langue.
 
-### Modèle et texture
-
-Pour un item, son modèle permet de définir sa forme ainsi que les textures qui lui seront appliquées.
-
 ```sh title='Arborescence basique des ressources pour un mod'
 assets
 └── modid
@@ -63,20 +65,24 @@ assets
           └── item
 ```
 
+### Modèle et texture
+
+Pour un item, son modèle permet de définir sa forme ainsi que les textures qui lui seront appliquées.
+
 Ici nous appliquerons un modèle basique assimilable au diamant.
 
 ```json
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/mon_item"
+    "layer0": "modid:item/mon_item"
   }
 }
 ```
 
 `parent` correspond au modèle maitre que l'item va utiliser.
 
-`textures` correspond aux textures appliqué à l'item.
+`textures` correspond aux textures appliquées à l'item.
 
 Comme spécifié dans le modèle, la texture se situera dans le dossier `textures/item` et aura comme nom `mon_item.png` (l'extension est importante).
 
