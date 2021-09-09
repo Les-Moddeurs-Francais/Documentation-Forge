@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdoc_forge=self.webpackChunkdoc_forge||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Forge 1.16.5 36.2","permalink":"/blog/forge-116-362"},{"title":"Forge 1.17.1 37.0","permalink":"/blog/forge-117-370"}]}')}}]);
