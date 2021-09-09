@@ -17,7 +17,7 @@ Maintenant que l'un des types d'enregistrement a été vu, il ne nous reste plus
 
 ### Sans classe custom
 
-Cette manière nous permet d'enregistrer un bloc, mais celui-ci sera très basique (c'est-à-dire qu'on ne pourra pas définir une action lors d'un clique sur le bloc, ou même lors de sa destruction).
+Cette manière nous permet d'enregistrer un bloc, mais celui-ci sera très basique (c'est-à-dire qu'on ne pourra pas définir une action lors d'un clic sur le bloc, ou même lors de sa destruction).
 
 Ainsi pour faire l'enregistrement, ajoutez une variable comme celle-ci dans la classe contenant le DeferredRegister :
 
@@ -35,7 +35,7 @@ Si vous souhaitez en savoir un peu plus sur les différentes propriétés dispon
 
 ### Avec classe custom
 Ici cette manière nous permettra plus tard, d'ajouter des comportements au bloc (nous ne verrons cela que dans un prochain chapitre).
-Pour cela, vous devez tout d'abord créer une classe custom étendu de la classe `Block`, ce qui nous donne une classe du type :
+Pour cela, vous devez tout d'abord créer une classe custom étendue de la classe `Block`, ce qui nous donne une classe du type :
 ```java
 public class MonBloc extends Block {
     public MonBloc(Properties properties) {
@@ -68,7 +68,7 @@ assets
 
 ### Blockstate
 
-Une blockstate dans Minecraft est un moyen de définir l'appearance d'un bloc selon des paramètres appelés **blockstates**. Ici notre bloc étant basique, celui-ci n'en comporte pas ce qui nous amène à une blockstate du type :
+Une blockstate dans Minecraft est un moyen de définir l'apparence d'un bloc selon des paramètres appelés **blockstates**. Ici notre bloc étant basique, celui-ci n'en comporte pas ce qui nous amène à une blockstate du type :
 
 ```json
 {
