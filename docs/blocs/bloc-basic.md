@@ -114,7 +114,7 @@ Le bloc dans l'inventaire étant considéré comme un item, il nous faut aussi l
 ```
 
 :::tip
-Ici le modèle de l'item va aller chercher celui du bloc (celui-ci étant paramétré pur avoir le rendu qu'on connaît dans l'inventaire).
+Ici le modèle de l'item va aller chercher celui du bloc (celui-ci étant paramétré pour avoir le rendu qu'on connaît dans l'inventaire).
 :::
 
 #### Texture
