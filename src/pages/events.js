@@ -14,7 +14,7 @@ function Table({title, description, side}) {
 
 export default function Events() {
     return (
-        <Layout title="Liste des events">
+        <Layout title="Events" description="Liste des events disponibles sous Forge 1.17.1">
             <center>
                 <div style={{
                     overflowX: 'auto'
