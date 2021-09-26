@@ -40,11 +40,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'Documentations',
           items: [
             {
-              label: 'Introduction',
+              label: 'Forge',
               to: '/docs/intro',
+            },
+            {
+              label: 'FAQ',
+              to: '/faq/intro',
             },
           ],
         },
