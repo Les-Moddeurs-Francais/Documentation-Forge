@@ -501,7 +501,7 @@
   },
   {
     "title":"ClientPlayerNetworkEvent.RespawnEvent",
-    "description":"",
+    "description":"Déclenché quand un joueur ré-apparaît dans le monde après être mort ou être passé au travers du portail de l'end en direction de l'overworld. ",
     "side":"Client"
   },
   {
@@ -515,8 +515,13 @@
     "side":"Client"
   },
   {
-    "title":"DrawSelectionEvent",
-    "description":"",
+    "title":"DrawSelectionEvent.HighlightBlock",
+    "description":"Déclenché quand un bloc est mis en surbrillance",
+    "side":"Client"
+  },
+  {
+    "title":"DrawSelectionEvent.HighlightEntity",
+    "description":"Déclenché quand une entité est mise en surbrillance",
     "side":"Client"
   },
   {
@@ -571,7 +576,7 @@
   },
   {
     "title":"ModelRegistryEvent",
-    "description":"",
+    "description":"Déclenché quand le ModelLoader est prêt à enregistrer les loaders de modèles",
     "side":"Client"
   },
   {
@@ -581,7 +586,7 @@
   },
   {
     "title":"RecipesUpdatedEvent",
-    "description":"",
+    "description":"Déclenché dès lors que le RecipeManager a toutes ses recettes synchronisées du serveur au client (juste après qu'un client se soit connecté).",
     "side":"Client"
   },
   {
@@ -591,17 +596,17 @@
   },
   {
     "title":"RegisterShadersEvent",
-    "description":"",
+    "description":"Déclenché au moment où les shaders sont enregistrés par le jeu.",
     "side":"Client"
   },
   {
     "title":"RenderBlockOverlayEvent",
-    "description":"",
+    "description":"Déclenché lorsque la texture d'un block va recouvrir l'HUD du joueur (exemple : l'eau, la lave, le feu).",
     "side":"Client"
   },
   {
     "title":"RenderGameOverlayEvent",
-    "description":"",
+    "description":"Déclenché lorsque les éléments du HUD sont dessinés.",
     "side":"Client"
   },
   {
@@ -641,7 +646,7 @@
   },
   {
     "title":"RenderWorldLastEvent",
-    "description":"",
+    "description":"Déclenché une fois le rendu du monde terminé.",
     "side":"Client"
   },
   {
@@ -666,17 +671,22 @@
   },
   {
     "title":"SoundEvent",
-    "description":"",
+    "description":"Déclenché lorsque des actions relatives aux sons sont effectuées en jeu.",
+    "side":"Client"
+  },
+  {
+    "title":"SoundEvent.SoundSourceEvent",
+    "description":"Déclenché lorsque qu'un son est joué par le jeu à une source définie.",
     "side":"Client"
   },
   {
     "title":"SoundLoadEvent",
-    "description":"",
+    "description":"Déclenché lorsque le SoundManager charge les sons.",
     "side":"Client"
   },
   {
     "title":"SoundSetupEvent",
-    "description":"",
+    "description":"Déclenché par le SoundManager lors de l'initialisation des codecs pour les sons.",
     "side":"Client"
   },
   {
