@@ -525,13 +525,43 @@
     "side":"Client"
   },
   {
-    "title":"EntityRenderersEvent",
-    "description":"",
+    "title":"EntityRenderersEvent.RegisterLayerDefinitions",
+    "description":"Déclenché à l'enregistrement des layers sur les modèles d'entité (comme le chapeau de paille des PNJ, la cape du joueur etc...).",
     "side":"Client"
   },
   {
-    "title":"EntityViewRenderEvent",
-    "description":"",
+    "title":"EntityRenderersEvent.RegisterRenderers",
+    "description":"Déclenché à l'enregistrement des rendus d'entité.",
+    "side":"Client"
+  },
+  {
+    "title":"EntityRenderersEvent.AddLayers",
+    "description":"Déclenché pour l'ajout d'un layer à une entité.",
+    "side":"Client"
+  },
+  {
+    "title":"EntityViewRenderEvent.FogDensity",
+    "description":"Déclenché quand la densité du brouillard est définie.",
+    "side":"Client"
+  },
+  {
+    "title":"EntityViewRenderEvent.RenderFogEvent",
+    "description":"Déclenché quand le brouillard est rendu en jeu.",
+    "side":"Client"
+  },
+  {
+    "title":"EntityViewRenderEvent.FogColors",
+    "description":"Déclenché quand la couleur du brouillard est définie.",
+    "side":"Client"
+  },
+  {
+    "title":"EntityViewRenderEvent.CameraSetup",
+    "description":"Déclenché quand la caméra est initialisée.",
+    "side":"Client"
+  },
+  {
+    "title":"EntityViewRenderEvent.FOVModifier",
+    "description":"Déclenché quand le champ de vision du joueur est défini.",
     "side":"Client"
   },
   {
@@ -560,13 +590,33 @@
     "side":"Client"
   },
   {
-    "title":"InputEvent",
-    "description":"",
+    "title":"InputEvent.RawMouseEvent",
+    "description":"Déclenché avant la mise à jour des raccourcis clavier.",
+    "side":"Client"
+  },
+  {
+    "title":"InputEvent.MouseInputEvent",
+    "description":"Déclenché lorsqu'une entrée de souris est détectée.",
+    "side":"Client"
+  },
+  {
+    "title":"InputEvent.MouseScrollEvent",
+    "description":"Déclenché lorsque la molette de la souris est utilisée en dehors d'une interface graphique.",
+    "side":"Client"
+  },
+  {
+    "title":"InputEvent.KeyInputEvent",
+    "description":"Déclenché lorsqu'une entrée clavier est détectée.",
+    "side":"Client"
+  },
+  {
+    "title":"InputEvent.ClickInputEvent",
+    "description":"Déclenché lorsque l'un des raccourcis clavier qui implique par défaut de cliquer sur les boutons de la souris est déclenché.",
     "side":"Client"
   },
   {
     "title":"InputUpdateEvent",
-    "description":"",
+    "description":"Déclenché après la mise à jour des entrées de mouvement du joueur.",
     "side":"Client"
   },
   {
@@ -576,12 +626,12 @@
   },
   {
     "title":"ModelRegistryEvent",
-    "description":"Déclenché quand le ModelLoader est prêt à enregistrer les loaders de modèles",
+    "description":"Déclenché quand le ModelLoader est prêt à enregistrer les loaders de modèles.",
     "side":"Client"
   },
   {
     "title":"ParticleFactoryRegisterEvent",
-    "description":"",
+    "description":"Déclenché à l'enregistrement des particules.",
     "side":"Client"
   },
   {
@@ -591,7 +641,7 @@
   },
   {
     "title":"RegisterClientReloadListenersEvent",
-    "description":"",
+    "description":"Déclenché au rechargement du client.",
     "side":"Client"
   },
   {
@@ -620,8 +670,13 @@
     "side":"Client"
   },
   {
-    "title":"RenderLivingEvent",
-    "description":"",
+    "title":"RenderLivingEvent.Pre",
+    "description":"Déclenché avant le rendu d'une entités vivantes.",
+    "side":"Client"
+  },
+  {
+    "title":"RenderLivingEvent.Post",
+    "description":"Déclenché après le rendu d'une entités vivantes.",
     "side":"Client"
   },
   {
@@ -641,7 +696,7 @@
   },
   {
     "title":"RenderTooltipEvent",
-    "description":"",
+    "description":"Cet event est déclenché (avant ou après) le rendu des tooltips",
     "side":"Client"
   },
   {
@@ -661,12 +716,12 @@
   },
   {
     "title":"PlaySoundSourceEvent",
-    "description":"",
+    "description":"Déclenché quand une source de son est jouée.",
     "side":"Client"
   },
   {
     "title":"PlayStreamingSourceEvent",
-    "description":"",
+    "description":"Déclenché quand une source de son est jouée si celle-ci est en streaming.",
     "side":"Client"
   },
   {
