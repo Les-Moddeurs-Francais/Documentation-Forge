@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Dist Executor
+description: Comment utiliser les dist executors ?
 tags: [avancé]
 ---
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
+description: Comment débuter le modding sur Forge ?
 tags: [introduction]
 ---
 

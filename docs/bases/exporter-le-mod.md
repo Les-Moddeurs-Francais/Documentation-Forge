@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Exporter le mod
+description: Comment exporter le mod ?
 tags: [bases]
 ---
 

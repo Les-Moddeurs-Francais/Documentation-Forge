@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Bloc basique
+description: Comment créer un bloc basique ?
 tags: [blocs]
 ---
 

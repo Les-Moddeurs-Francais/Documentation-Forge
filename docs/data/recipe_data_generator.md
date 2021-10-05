@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Recettes
+description: Comment utiliser les data generators pour les recettes ?
 tags: [data generatos]
 ---
 
@@ -84,7 +85,7 @@ Seul le contenu même du craft importe.
 Pour l'exemple, je vais créer un craft qui me donnera 1 diamant lorsque je disposerai
 une croix de dirt avec une pomme au milieu.
 
-![img.png](imgs/exemple_craft_shaped.png)
+![img.png](/img/docs/exemple_craft_shaped.png)
 
 Allez dans la fonction `buildCraftingRecipes` puis insérez ce code :
 
