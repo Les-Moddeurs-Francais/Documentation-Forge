@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Item basique
+description: Comment créer un item basique ?
 tags: [items]
 ---
 

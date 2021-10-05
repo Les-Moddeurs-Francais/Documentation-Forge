@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Installation
+description: Comment installer la workspace du mod ?
 tags: [bases]
 ---
 

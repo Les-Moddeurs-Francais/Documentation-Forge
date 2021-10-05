@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Propriétés d'item
+description: Quels sont les propriétés d'un item ?
 tags: [items, propriétés]
 ---
 

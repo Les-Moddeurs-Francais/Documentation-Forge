@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Deferred Register
+description: Comment utiliser les Deferred Registers ?
 tags: [enregistrement]
 ---
 
