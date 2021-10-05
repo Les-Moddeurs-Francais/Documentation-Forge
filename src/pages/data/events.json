@@ -585,7 +585,102 @@
     "side":"Client"
   },
   {
-    "title":"GuiScreenEvent",
+    "title":"GuiScreenEvent.InitGuiEvent.Pre",
+    "description":"Déclenché avant l'initialisation d'une interface.",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.InitGuiEvent.Post",
+    "description":"Déclenché après l'initialisation d'une interface.",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.DrawScreenEvent.Pre",
+    "description":"Déclenché avant le rendu d'une interface.",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.DrawScreenEvent.Post",
+    "description":"Déclenché après le rendu d'une interface.",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.BackgroundDrawnEvent",
+    "description":"Déclenché juste après le rendu du fond d'une interface.",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.PotionShiftEvent",
+    "description":"Déclenché lorsque les effets de potions sont en cours et que l'interface actuelle est sur le point de bouger.",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.MouseClickedEvent.Pre",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.MouseClickedEvent.Post",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.MouseReleasedEvent.Pre",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.MouseReleasedEvent.Post",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.MouseDragEvent.Pre",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.MouseDragEvent.Post",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.MouseScrollEvent.Pre",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.MouseScrollEvent.Post",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.KeyboardKeyPressedEvent.Pre",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.KeyboardKeyPressedEvent.Post",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.KeyboardKeyReleasedEvent.Pre",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.KeyboardKeyReleasedEvent.Post",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.KeyboardCharTypedEvent.Pre",
+    "description":"",
+    "side":"Client"
+  },
+  {
+    "title":"GuiScreenEvent.KeyboardCharTypedEvent.Post",
     "description":"",
     "side":"Client"
   },
