@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Introduction
 description: Qu'est ce que les data generators ?
-tags: [data generatos, introduction]
+tags: [data generators, introduction]
 ---
 
 ## Introduction

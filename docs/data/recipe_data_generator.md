@@ -2,7 +2,7 @@
 sidebar_position: 2
 title: Recettes
 description: Comment utiliser les data generators pour les recettes ?
-tags: [data generatos]
+tags: [data generators]
 ---
 
 ## Introduction
