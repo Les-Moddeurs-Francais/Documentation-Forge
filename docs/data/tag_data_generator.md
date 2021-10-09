@@ -55,7 +55,7 @@ Rendez-vous maintenant dans votre classe avec l'event GatherDataEvent et ajoutez
 ````
 
 :::tip
-Les crafts étant gérés par le serveur, on exécute donc la génération des recettes
+Les tags étant gérés par le serveur, on exécute donc la génération des recettes
 seulement si l'event l'inclus.
 :::
 
