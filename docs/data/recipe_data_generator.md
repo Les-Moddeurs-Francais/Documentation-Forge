@@ -31,7 +31,7 @@ public class RecipeGenerator extends RecipeProvider {
 }
 ````
 
-Ecrivez le constructeur imposé par la classe mère, puis re-définissez la méthode
+Écrivez le constructeur imposé par la classe mère, puis re-définissez la méthode
 `buildCraftingRecipes` en supprimant le `super`.
 
 Rendez-vous maintenant dans votre classe avec l'event ``GatherDataEvent`` et
