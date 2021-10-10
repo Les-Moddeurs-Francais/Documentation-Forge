@@ -1,0 +1,37 @@
+{
+  "name": "Les Moddeurs Francais v2",
+  "short_name": "LMF",
+  "theme_color": "#4d5154",
+  "background_color": "#18191a",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./index.html",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://www.forge-doc.lesmoddeursfrancais.fr/manifest.json"
+    }
+  ],
+  "icons": [
+    {
+      "src": "img/icons/icon-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
