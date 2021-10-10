@@ -11,8 +11,8 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   baseUrlIssueBanner : false,
   favicon: 'img/favicon.ico',
-  organizationName: 'Les-Moddeurs-Francais', // Usually your GitHub org/user name.
-  projectName: 'forge-doc', // Usually your repo name.
+  organizationName: 'Les-Moddeurs-Francais',
+  projectName: 'forge-doc',
   themeConfig: {
     navbar: {
       title: 'Les Moddeurs Francais',
@@ -93,21 +93,20 @@ module.exports = {
   },
   i18n: {
     defaultLocale: 'fr',
-    locales: ['fr'],  },
+    locales: ['fr'],
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
               'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/master',
           showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: false,
-          // Please change this to your repo.
           editUrl:
               'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/master',
         },
