@@ -149,7 +149,7 @@ module.exports = {
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
+            content: 'rgb(36, 37, 38)',
           },
           {
             tagName: 'meta',
@@ -170,7 +170,7 @@ module.exports = {
             tagName: 'link',
             rel: 'mask-icon',
             href: 'img/logo',
-            color: 'rgb(62, 204, 94)',
+            color: 'rgb(116, 120, 124)',
           },
           {
             tagName: 'meta',
