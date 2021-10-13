@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-tags: [data generatos, introduction]
+tags: [data generators, introduction]
 ---
 
 ## Introduction
