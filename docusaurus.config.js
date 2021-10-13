@@ -28,7 +28,7 @@ module.exports = {
           label: 'Documentation',
         },
         {to: '/faq/intro', label: 'FAQ', position: 'left'},
-        {to: '/blog', label: 'News', position: 'left'},
+        {to: '/news', label: 'News', position: 'left'},
         {
           href: 'https://github.com/Les-Moddeurs-Francais/Forge-Doc',
           label: 'GitHub',
@@ -74,7 +74,7 @@ module.exports = {
           items: [
             {
               label: 'News',
-              to: '/blog',
+              to: '/news',
             },
             {
               label: 'GitHub',
@@ -106,6 +106,8 @@ module.exports = {
           showLastUpdateAuthor: true,
         },
         blog: {
+          path: 'news',
+          routeBasePath: 'news',
           showReadingTime: false,
           editUrl:
               'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/master',
