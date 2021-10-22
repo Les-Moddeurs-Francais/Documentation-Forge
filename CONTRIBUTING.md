@@ -12,17 +12,17 @@ Cela est nécessaire car tous le monde n'a pas accès au droit. Le fork permet d
 
 ## Clonage
 
-Après avoir effectué un _fork_ du repo principale, c'est le moment de copier celui-ci en locale. Pour cela vous devez le cloner sur votre machine en local.
+Après avoir effectué un _fork_ du repo principale, c'est le moment de copier celui-ci en local. Pour cela vous devez le cloner sur votre machine en local.
 
-Pour cela, ouvrez le terminal **Git bash** dans le dossier où vous souhaiter cloner votre fork, ensuite tapez cette commande `https://github.com/<User>/Forge-Doc` (en remplaçant <User> par votre nom d'utilisateur github).
+Pour cela, ouvrez le terminal **Git bash** dans le dossier où vous souhaitez cloner votre fork, ensuite tapez cette commande `https://github.com/<User>/Forge-Doc` (en remplaçant <User> par votre nom d'utilisateur github).
 
 # Installation
 
-Une fois ceci fais, il faut désormais installer les dépendances. Pour cela ouvrez le dossier où se situe les sources de la documentation avec votre IDE (Php Storm, Webstorm, Visual Studio Code, etc...) et exécutez la commande `npm install` dans le terminal associé.
+Une fois ceci fait, il faut désormais installer les dépendances. Pour cela ouvrez le dossier où se situent les sources de la documentation avec votre IDE (Php Storm, Webstorm, Visual Studio Code, etc...) et exécutez la commande `npm install` dans le terminal associé.
 
 # Tests
 
-Une fois les modifications effectuées, vous pouvez voir ce que cela rend en éxecutant la commande `npm start` dans votre terminal. Une fois le site _build_, une fenêtre sera lancée dans votre navigateur par default.
+Une fois les modifications effectuées, vous pouvez voir ce que cela rend en exécutant la commande `npm start` dans votre terminal. Une fois le site _build_, une fenêtre sera lancée dans votre navigateur par défaut.
 
 # Pull Requests
 
