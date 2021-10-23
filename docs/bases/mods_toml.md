@@ -7,7 +7,7 @@ tags: [bases]
 
 Le fichier mods.toml (contenu dans le dossier **resources**) définit les métadonnées de votre mod. Ses informations peuvent être consultées par les utilisateurs depuis l'écran principal du jeu, via le bouton "Mods". Un seul fichier d'information peut décrire plusieurs mods.
 
-Généralement, il est structure comme ceci :
+Généralement, il est structuré comme ceci :
 
 :::danger
 
