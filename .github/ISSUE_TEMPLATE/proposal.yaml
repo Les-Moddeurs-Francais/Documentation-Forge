@@ -1,0 +1,17 @@
+name: Proposition
+description: Proposer une fonctionnalité ou un sujet pour la documentation
+labels: [proposal]
+body:
+  - type: dropdown
+    attributes:
+      label: Version
+      options:
+        - 1.17
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Destription
+      description: Une description brève et concise
+    validations:
+      required: true
