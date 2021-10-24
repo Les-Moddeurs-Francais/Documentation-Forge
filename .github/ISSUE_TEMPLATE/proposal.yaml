@@ -1,6 +1,6 @@
 name: Proposition
 description: Proposer une fonctionnalité ou un sujet pour la documentation
-labels: [proposal]
+labels: [Proposition]
 body:
   - type: dropdown
     attributes:
