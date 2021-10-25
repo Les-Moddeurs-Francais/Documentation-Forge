@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Properiétés de bloc
+title: Propriétés des blocs
 description: Quelles sont les propriétés d'un bloc ?
 tags: [blocs, propriétés]
 ---
