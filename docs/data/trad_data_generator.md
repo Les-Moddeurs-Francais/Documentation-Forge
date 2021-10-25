@@ -4,8 +4,6 @@ title: Fichiers de traductions
 tags: [data generators]
 ---
 
-## Introduction
-
 Dans cette section, nous allons voir comment générer nos fichiers de traductions
 directement à l'aide des data generators.
 
