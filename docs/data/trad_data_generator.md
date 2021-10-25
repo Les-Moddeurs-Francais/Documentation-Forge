@@ -38,6 +38,10 @@ défaut de Minecraft.
 J'ai marqué ``"en_us"`` pour l'anglais américain qui est la langue de base de
 Minecraft. Pour le français par exemple, il faut noter ``"fr_fr""``.
 
+:::tip
+Vous pouvez retrouver toutes les langues [ici](https://minecraft-archive.fandom.com/wiki/Languages)
+:::
+
 Ensuite, on va devoir utiliser la fonction ``addTranslations`` hérité de la classe
 mère.
 
