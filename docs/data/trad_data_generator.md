@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Fichiers de traductions
+description: Comment utiliser les data generators pour les fichiers de traductions ?
 tags: [data generators]
 ---
 
