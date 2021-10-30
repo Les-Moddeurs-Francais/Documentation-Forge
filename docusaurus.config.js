@@ -27,7 +27,6 @@ module.exports = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/faq/intro', label: 'FAQ', position: 'left'},
         {to: '/news', label: 'News', position: 'left'},
         {
           href: 'https://github.com/Les-Moddeurs-Francais/Forge-Doc',
@@ -45,10 +44,6 @@ module.exports = {
             {
               label: 'Forge',
               to: '/docs/intro',
-            },
-            {
-              label: 'FAQ',
-              to: '/faq/intro',
             },
           ],
         },
@@ -119,15 +114,6 @@ module.exports = {
     ],
   ],
   plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'faq',
-        path: 'faq',
-        routeBasePath: 'faq',
-        sidebarPath: require.resolve('./sidebars.js'),
-      },
-    ],
     [
       '@docusaurus/plugin-pwa',
       {
