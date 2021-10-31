@@ -5,8 +5,6 @@ description: Comment utiliser les data generators pour les recettes ?
 tags: [data generatos]
 ---
 
-## Introduction
-
 Dans cet article nous allons voir comment générer nos différents crafts à l'aide
 d'un générateur.
 
