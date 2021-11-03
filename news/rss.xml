@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Les Moddeurs Francais Blog</title>
-        <link>https://forge-doc.lesmoddeursfrancais.fr/news</link>
+        <link>https://www.forge-doc.lesmoddeursfrancais.fr/news</link>
         <description>Les Moddeurs Francais Blog</description>
         <lastBuildDate>Thu, 22 Jul 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Forge 1.16.5 36.2]]></title>
-            <link>https://forge-doc.lesmoddeursfrancais.fr/news/forge-116-362</link>
+            <link>https://www.forge-doc.lesmoddeursfrancais.fr/news/forge-116-362</link>
             <guid>forge-116-362</guid>
             <pubDate>Thu, 22 Jul 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[La version 1.16.5 36.2 de Forge est sortie et elle apporte quelques nouveautés.]]></description>
@@ -17,7 +17,7 @@
         </item>
         <item>
             <title><![CDATA[Forge 1.17.1 37.0]]></title>
-            <link>https://forge-doc.lesmoddeursfrancais.fr/news/forge-117-370</link>
+            <link>https://www.forge-doc.lesmoddeursfrancais.fr/news/forge-117-370</link>
             <guid>forge-117-370</guid>
             <pubDate>Thu, 22 Jul 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[La version 1.17.1 37.0 de Forge est sortie après des semaines d'attente, et celle-ci change beaucoup de choses.]]></description>
