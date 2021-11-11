@@ -8,6 +8,8 @@ Les onglets créatifs (ou _creatives tabs_) sont des interfaces permettant d'org
 
 # Déclaration
 
+Pour créer votre onglet, vous devrez le déclarer dans une classe comme ceci :
+
 ```java
 
 public static final CreativeModeTab MY_MOD_TAB = new CreativeModeTab("mon_mod") {
@@ -19,7 +21,17 @@ public static final CreativeModeTab MY_MOD_TAB = new CreativeModeTab("mon_mod") 
 
 ```
 
+:::tip
+Vous pouvez aussi créer une classe custom (dépendante de la classe **CreativeModeTab**).
+:::
+
+Et voila, l'onglet est créé, mais celui-ci est vide. Il faut donc ajouter des items à cet onglet grâce à la propriété _tab_ des items.
+
 # Traduction
+
+Comme beaucoup d'éléments, les onglets créatifs possèdent aussi une clé de traduction.
+
+Il est donc possible d'afficher un nom différent pour chaque langue, comme ceci :
 
 ```json
 {
