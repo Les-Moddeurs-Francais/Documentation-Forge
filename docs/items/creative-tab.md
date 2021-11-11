@@ -25,6 +25,10 @@ public static final CreativeModeTab MY_MOD_TAB = new CreativeModeTab("mon_mod") 
 Vous pouvez aussi créer une classe custom (dépendante de la classe **CreativeModeTab**).
 :::
 
+:::danger
+La fonction **makeIcon** permet de définir l'icône de l'onglet créatif. Il est donc impératif que celle-ci renvoie quelque chose de non null (sinon le jeu aura un crash une fois que le menu créatif sera affiché).
+:::
+
 Et voila, l'onglet est créé, mais celui-ci est vide. Il faut donc ajouter des items à cet onglet grâce à la propriété _tab_ des items.
 
 # Traduction
