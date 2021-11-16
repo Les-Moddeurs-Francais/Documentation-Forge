@@ -2,7 +2,7 @@
 sidebar_position: 2
 title: Recettes
 description: Comment utiliser les data generators pour les recettes ?
-tags: [data generatos]
+tags: [data generators]
 ---
 
 Dans cet article nous allons voir comment générer nos différents crafts à l'aide
