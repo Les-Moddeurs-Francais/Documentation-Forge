@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Les Moddeurs Francais',
   tagline: '¯\\_(ツ)_/¯',
-  url: 'https://forge-doc.lesmoddeursfrancais.fr',
+  url: 'https://www.forge-doc.lesmoddeursfrancais.fr',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

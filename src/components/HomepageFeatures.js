@@ -13,7 +13,7 @@ const FeatureList = [
     },
     {
         title: 'Moddeur_Ultime',
-        img: require('../../static/img/le_moddeur_ultime.jpg').default,
+        img: 'https://cdn.lesmoddeursfrancais.fr/le_moddeur_ultime.jpg',
     }
 ];
 
