@@ -1,6 +1,6 @@
 ---
 title: Onglet créatif
-description: Comment créer une "creative tab" pour organiser ses items ?
+description: Comment créer un onglet créatif pour organiser ses items ?
 tags: [items]
 ---
 
