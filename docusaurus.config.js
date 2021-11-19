@@ -86,10 +86,30 @@ module.exports = {
       additionalLanguages: ['java'],
     },
     metadatas : [
-        {
-          name: 'keywords',
-          content: 'Forge, Modding, Minecraft, Développement, Mods, Programmation'
-        }
+      {
+        name: 'keywords',
+        content: 'Forge, Modding, Minecraft, Développement, Mods, Programmation'
+      },
+      {
+        name: 'og:type',
+        content: 'website'
+      },
+      {
+        name: 'og:image',
+        content: 'https://cdn.lesmoddeursfrancais.fr/logo-256x256.png'
+      },
+      {
+        name: 'og:image:url',
+        content: 'https://cdn.lesmoddeursfrancais.fr/logo-256x256.png'
+      },
+      {
+        name: 'og:image:width',
+        content: '512'
+      },
+      {
+        name: 'og:image:height',
+        content: '512'
+      }
     ],
   },
   i18n: {
