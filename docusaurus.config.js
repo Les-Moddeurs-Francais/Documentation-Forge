@@ -87,6 +87,10 @@ module.exports = {
     },
     metadatas : [
       {
+        name: 'og:site_name',
+        content: 'Les Moddeurs Francais'
+      },
+      {
         name: 'keywords',
         content: 'Forge, Modding, Minecraft, Développement, Mods, Programmation'
       },
@@ -104,11 +108,11 @@ module.exports = {
       },
       {
         name: 'og:image:width',
-        content: '512'
+        content: '256'
       },
       {
         name: 'og:image:height',
-        content: '512'
+        content: '256'
       }
     ],
   },
