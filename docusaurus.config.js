@@ -85,6 +85,12 @@ module.exports = {
       darkTheme: darkCodeTheme,
       additionalLanguages: ['java'],
     },
+    metadatas : [
+        {
+          name: 'keywords',
+          content: 'Forge, Modding, Minecraft, Développement, Mods, Programmation'
+        }
+    ],
   },
   i18n: {
     defaultLocale: 'fr',
