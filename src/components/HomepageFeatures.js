@@ -17,7 +17,7 @@ const FeatureList = [
     }
 ];
 
-function Feature({img, title, description}) {
+function Feature({img, title}) {
     return (
         <div className={clsx('col col--4')}>
             <div className="text--center">
