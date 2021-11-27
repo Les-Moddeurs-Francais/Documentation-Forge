@@ -131,6 +131,8 @@ module.exports = {
           showLastUpdateAuthor: true,
         },
         blog: {
+          blogTitle: 'News',
+          blogDescription: 'Les dernières news concernant le projet MinecraftForge',
           path: 'news',
           routeBasePath: 'news',
           showReadingTime: false,
