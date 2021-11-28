@@ -18,7 +18,7 @@ Minecraft.getInstance().getItemColors().register((stack, color) -> {
 }, Items.STICK);
 ```
 
-Ici dans cet exemple, l'item qui sera coloré sera le baton de base du jeu.
+Ici dans cet exemple, l'item qui sera coloré sera le baton de base du jeu (mais il est possible de changer celui-ci par l'item de votre choix).
 
 Dans ce cas, si l'item n'a pas de tag, ou si le tag ne contient pas la clé "color", alors la couleur sera noire. Sinon elle sera de la couleur spécifiée dans le tag _color_.
 
