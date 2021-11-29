@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Les Moddeurs Francais',
+  title: 'Documentation Forge',
   tagline: '¯\\_(ツ)_/¯',
   url: 'https://www.forge-doc.lesmoddeursfrancais.fr',
   baseUrl: '/',
@@ -17,7 +17,7 @@ module.exports = {
     navbar: {
       title: 'Les Moddeurs Francais',
       logo: {
-        alt: 'LMF Logo Logo',
+        alt: 'LMF Logo',
         src: 'img/logo.png',
       },
       items: [
