@@ -22,4 +22,8 @@ Ici dans cet exemple, l'item qui sera coloré sera le bâton de base du jeu (mai
 
 Dans ce cas, si l'item n'a pas de tag, ou si le tag ne contient pas la clé "color", alors la couleur sera noire. Sinon elle sera de la couleur spécifiée dans le tag _color_.
 
+:::tip
+La condition exposée ici n'est qu'à titre indicatif, et n'est donc pas nécessaire. Il est cependant nécessaire de retourner un nombre qui sera la couleur de votre item (ici par défaut la couleur sera celle attribuée au nombre **0x13421772**).
+:::
+
 ![img.png](/img/docs/colored_item.png)
