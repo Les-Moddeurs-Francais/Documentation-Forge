@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.forge-doc.lesmoddeursfrancais.fr/news</id>
-    <title>Les Moddeurs Francais Blog</title>
+    <title>Documentation Forge Blog</title>
     <updated>2021-07-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.forge-doc.lesmoddeursfrancais.fr/news"/>
-    <subtitle>Les Moddeurs Francais Blog</subtitle>
+    <subtitle>Documentation Forge Blog</subtitle>
     <icon>https://www.forge-doc.lesmoddeursfrancais.fr/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Forge 1.16.5 36.2]]></title>
