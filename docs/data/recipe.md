@@ -83,7 +83,7 @@ Seul le contenu même du craft importe.
 Pour l'exemple, je vais créer un craft qui me donnera 1 diamant lorsque je disposerai
 une croix de dirt avec une pomme au milieu.
 
-![img.png](/img/docs/exemple_craft_shaped.png)
+![Exemple de craft](/img/docs/exemple_craft_shaped.png)
 
 Allez dans la fonction `buildCraftingRecipes` puis insérez ce code :
 
