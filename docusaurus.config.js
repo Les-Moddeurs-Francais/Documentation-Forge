@@ -103,10 +103,6 @@ module.exports = {
         content: 'https://cdn.lesmoddeursfrancais.fr/logo-256x256.png'
       },
       {
-        name: 'og:image:url',
-        content: 'https://cdn.lesmoddeursfrancais.fr/logo-256x256.png'
-      },
-      {
         name: 'og:image:width',
         content: '256'
       },
