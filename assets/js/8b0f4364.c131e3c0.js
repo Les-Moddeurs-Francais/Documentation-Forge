@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_forge=self.webpackChunkdoc_forge||[]).push([[2701],{183:function(e){e.exports=JSON.parse('{"allTagsPath":"/news/tags","slug":"/news/tags/update","name":"update","count":4,"permalink":"/news/tags/update"}')}}]);
