@@ -85,7 +85,7 @@ module.exports = {
       darkTheme: darkCodeTheme,
       additionalLanguages: ['java'],
     },
-    metadatas : [
+    metadata : [
       {
         name: 'og:site_name',
         content: 'Les Moddeurs Francais'
