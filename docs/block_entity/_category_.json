@@ -1,4 +1,10 @@
 {
   "label": "Block Entity",
+  "link": {
+    "type": "generated-index",
+    "title": "Block Entity",
+    "description": "Tous ce qu'il y a à savoir sur les Block Entities de Minecraft.",
+    "slug": "/category/advanced"
+  },
   "position": 7
 }
