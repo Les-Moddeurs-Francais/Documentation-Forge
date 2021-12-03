@@ -1,4 +1,10 @@
 {
   "label": "Items",
+  "link": {
+    "type": "generated-index",
+    "title": "Items",
+    "description": "Tous ce qu'il y a à savoir pour ajouter des items à son mod !",
+    "slug": "/category/items"
+  },
   "position": 5
 }

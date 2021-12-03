@@ -1,4 +1,10 @@
 {
   "label": "Gameplay",
+  "link": {
+    "type": "generated-index",
+    "title": "Gameplay",
+    "description": "Tous ce qu'il y a à savoir pour ajouter des éléments de Gameplay à son mod !",
+    "slug": "/category/generation"
+  },
   "position": 9
 }
