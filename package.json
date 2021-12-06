@@ -14,9 +14,9 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "0.0.0-4242",
-    "@docusaurus/plugin-pwa": "^0.0.0-4242",
-    "@docusaurus/preset-classic": "0.0.0-4242",
+    "@docusaurus/core": "0.0.0-4248",
+    "@docusaurus/plugin-pwa": "^0.0.0-4248",
+    "@docusaurus/preset-classic": "0.0.0-4248",
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
