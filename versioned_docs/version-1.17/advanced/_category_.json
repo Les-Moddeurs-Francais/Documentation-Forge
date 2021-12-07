@@ -1,0 +1,10 @@
+{
+  "label": "Avancé",
+  "link": {
+    "type": "generated-index",
+    "title": "Avancé",
+    "description": "Tous ce qu'il y a à savoir sur les sujets avancé de l'API MinecraftrtForge.",
+    "slug": "/category/advanced"
+  },
+  "position": 13
+}
