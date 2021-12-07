@@ -29,6 +29,11 @@ module.exports = {
         },
         {to: '/news', label: 'News', position: 'left'},
         {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
+        },
+        {
           href: 'https://github.com/Les-Moddeurs-Francais/Forge-Doc',
           label: 'GitHub',
           position: 'right',
