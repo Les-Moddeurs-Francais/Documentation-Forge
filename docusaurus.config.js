@@ -12,7 +12,6 @@ function getNextVersionName() {
     );
   }
   const version = parseInt(lastReleasedVersion.replace(expectedPrefix, ''), 10);
-  console.log(version)
   return `${expectedPrefix}${version + 1}`;
 }
 
