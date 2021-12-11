@@ -1,5 +1,19 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const versions = require('./versions.json');
+
+function getNextVersionName() {
+  const expectedPrefix = '1.1';
+
+  const lastReleasedVersion = versions[0];
+  if (!lastReleasedVersion.includes(expectedPrefix)) {
+    throw new Error(
+        'this code is only meant to be used during the 2.0 beta phase.',
+    );
+  }
+  const version = parseInt(lastReleasedVersion.replace(expectedPrefix, ''), 10);
+  return `${expectedPrefix}${version + 1}`;
+}
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -123,13 +137,19 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
               'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/master',
           showLastUpdateAuthor: true,
+          lastVersion: "current",
+          versions: {
+            current: {
+              label: `${getNextVersionName()} 🚧`,
+            },
+          },
         },
         blog: {
           blogTitle: 'News',
