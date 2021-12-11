@@ -144,10 +144,10 @@ module.exports = {
           editUrl:
               'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/master',
           showLastUpdateAuthor: true,
-          lastVersion: "current",
+          lastVersion: 'current',
           versions: {
             current: {
-              label: `${getNextVersionName()} 🚧`,
+              label: `${getNextVersionName()}`,
             },
           },
         },
