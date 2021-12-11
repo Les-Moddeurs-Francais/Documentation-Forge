@@ -3,15 +3,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const versions = require('./versions.json');
 
 function getNextVersionName() {
-  const expectedPrefix = '1.1';
+  const expectedPrefix = '1.';
 
   const lastReleasedVersion = versions[0];
   if (!lastReleasedVersion.includes(expectedPrefix)) {
     throw new Error(
-        'this code is only meant to be used during the 2.0 beta phase.',
+        'Erreur ! La dernière version ne respecte pas le pattern',
     );
   }
   const version = parseInt(lastReleasedVersion.replace(expectedPrefix, ''), 10);
+  console.log(version)
   return `${expectedPrefix}${version + 1}`;
 }
 
