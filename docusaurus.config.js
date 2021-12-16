@@ -29,7 +29,7 @@ module.exports = {
   projectName: 'forge-doc',
   themeConfig: {
     navbar: {
-      title: 'Les Moddeurs Francais',
+      title: 'Documentation Forge',
       logo: {
         alt: 'LMF Logo',
         src: 'img/logo.png',
@@ -97,7 +97,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} - Les Moddeurs Francais`,
+      copyright: `Copyright © ${new Date().getFullYear()} - <a href="https://www.lesmoddeursfrancais.fr">Les Moddeurs Francais</a>`,
     },
     prism: {
       theme: lightCodeTheme,
