@@ -225,5 +225,23 @@ module.exports = {
         ],
       },
     ],
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        blogDir: 'news',
+        blogRouteBasePath : "/news",
+        translations : {
+          "search_placeholder": "Recherche",
+          "see_all_results": "Voir tous les résultats",
+          "no_results": "Aucun résultat.",
+          "search_results_for": "Résultats de la recherche pour \"{{ keyword }}\"",
+          "search_the_documentation": "Recherche dans la documentation",
+          "count_documents_found": "{{ count }} page trouvée",
+          "count_documents_found_plural": "{{ count }} pages trouvées",
+          "no_documents_were_found": "Aucune page n'a été trouvée"
+        }
+      },
+    ],
   ],
 };
