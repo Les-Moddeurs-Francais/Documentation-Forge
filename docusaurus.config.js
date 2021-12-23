@@ -225,5 +225,6 @@ module.exports = {
         ],
       },
     ],
+    './pages-plugin',
   ],
 };
