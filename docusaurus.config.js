@@ -229,6 +229,7 @@ module.exports = {
       '@easyops-cn/docusaurus-search-local',
       {
         hashed: true,
+        blogDir: 'news',
       },
     ],
   ],
