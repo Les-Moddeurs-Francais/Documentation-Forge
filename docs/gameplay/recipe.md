@@ -54,7 +54,7 @@ tags: [gameplay]
 
 | Nom         | Description                                                                                                                    |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------|
-| type        | Type de la recette (ici `minecraft:crafting_shapeless`)                                                                           |
+| type        | Type de la recette (ici `minecraft:crafting_shapeless`)                                                                        |
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (applicable dans n'importe quel ordre)                                           |
 | result      | Résultat de la recette (ici cela est 9 diamants)                                                                               |
@@ -62,12 +62,25 @@ tags: [gameplay]
 ## Recette de fourneau
 
 ```json
-
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:cobblestone"
+  },
+  "result": "minecraft:stone",
+  "experience": 0.1,
+  "cookingtime": 200
+}
 ```
 
-| Nom | Description |
-|-----|-------------|
-|     |             |
+| Nom         | Description                                                                                                                    |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------|
+| type        | Type de la recette (ici `minecraft:smelting`)                                                                                  |
+| group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
+| ingredients | Ingrédients permettant de réaliser la recette (ici cela équivaut à l'item devant être cuit)                                    |
+| result      | Résultat de la recette (ici cela est de la _stone_)                                                                            |
+| experience  | Montant d'éxperience perçu par le joueur                                                                                       |
+| cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
 ## Recette de haut fourneau
 
