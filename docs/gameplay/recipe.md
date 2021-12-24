@@ -54,7 +54,7 @@ tags: [gameplay]
 
 | Nom         | Description                                                                                                                    |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------|
-| type        | Type de la recette (ici `minecraft:crafting_shaped`)                                                                           |
+| type        | Type de la recette (ici `minecraft:crafting_shapeless`)                                                                           |
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (applicable dans n'importe quel ordre)                                           |
 | result      | Résultat de la recette (ici cela est 9 diamants)                                                                               |
