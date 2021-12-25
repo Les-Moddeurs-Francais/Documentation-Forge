@@ -32,7 +32,7 @@ tags: [gameplay]
 | group   | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | pattern | Pattern de la recette dans la table de craft (les symbole correspondants à ceux définits dans le champ `key`)                  |
 | key     | Definitions des symboles comme des objets utilisés dans la recette (ici le symbole `#` correspond au diamant)                  |
-| result  | Résultat de la recette (ici cela est le bloc de diamant)                                                                       |
+| result  | Résultat de la recette                                                                                                         |
 
 
 ## Recette de base non structurée
@@ -57,7 +57,7 @@ tags: [gameplay]
 | type        | Type de la recette (ici `minecraft:crafting_shapeless`)                                                                        |
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (applicable dans n'importe quel ordre)                                           |
-| result      | Résultat de la recette (ici cela est 9 diamants)                                                                               |
+| result      | Résultat de la recette                                                                                                         |
 
 ## Recette de fourneau
 
@@ -78,7 +78,7 @@ tags: [gameplay]
 | type        | Type de la recette (ici `minecraft:smelting`)                                                                                  |
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (ici cela équivaut à l'item devant être cuit)                                    |
-| result      | Résultat de la recette (ici cela est de la _stone_)                                                                            |
+| result      | Résultat de la recette                                                                                                         |
 | experience  | Montant d'éxperience perçu par le joueur                                                                                       |
 | cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
@@ -102,7 +102,7 @@ tags: [gameplay]
 | type        | Type de la recette (ici `minecraft:blasting`)                                                                                  |
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (ici cela équivaut à l'item devant être cuit)                                    |
-| result      | Résultat de la recette (ici cela est un lingot de fer)                                                                         |
+| result      | Résultat de la recette                                                                                                         |
 | experience  | Montant d'éxperience perçu par le joueur                                                                                       |
 | cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
@@ -125,7 +125,7 @@ tags: [gameplay]
 | type        | Type de la recette (ici `minecraft:smoking`)                                                                                   |
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (ici cela équivaut à l'item devant être cuit)                                    |
-| result      | Résultat de la recette (ici cela est un steak cuit)                                                                            |
+| result      | Résultat de la recette                                                                                                         |
 | experience  | Montant d'éxperience perçu par le joueur                                                                                       |
 | cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
@@ -142,9 +142,13 @@ tags: [gameplay]
 }
 ```
 
-| Nom | Description |
-|-----|-------------|
-|     |             |
+| Nom        | Description                                                                                                                    |
+|------------|--------------------------------------------------------------------------------------------------------------------------------|
+| type       | Type de la recette (ici `minecraft:stonecutting`)                                                                              |
+| group      | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
+| ingredient | Ingrédients permettant de réaliser la recette (ici cela équivaut au bloc qui doit être taillé)                                 |
+| result     | Résultat de la recette                                                                                                         |
+| count      | Nombre d'item resultant                                                                                                        |
 
 ## Recette du feu de camp
 
@@ -160,9 +164,14 @@ tags: [gameplay]
 }
 ```
 
-| Nom | Description |
-|-----|-------------|
-|     |             |
+| Nom         | Description                                                                                                                    |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------|
+| type        | Type de la recette (ici `minecraft:campfire_cooking`)                                                                          |
+| group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
+| ingredients | Ingrédients permettant de réaliser la recette (ici cela équivaut à l'item devant être cuit)                                    |
+| result      | Résultat de la recette                                                                                                         |
+| experience  | Montant d'éxperience perçu par le joueur                                                                                       |
+| cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
 ## Recette de la table de forgeron
 
@@ -181,6 +190,10 @@ tags: [gameplay]
 }
 ```
 
-| Nom | Description |
-|-----|-------------|
-|     |             |
+| Nom      | Description                                                                                                                    |
+|----------|--------------------------------------------------------------------------------------------------------------------------------|
+| type     | Type de la recette (ici `minecraft:smithing`)                                                                                  |
+| group    | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
+| base     | Item devant être amélioré                                                                                                      |
+| addition | Second item nécessaire à l'amélioration                                                                                        |
+| result   | Résultat de la recette                                                                                                         |
