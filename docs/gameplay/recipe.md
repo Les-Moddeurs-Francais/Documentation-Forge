@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Recettes
-description: Comment sont structurés les recettes dans Minecraft ?
+description: Comment sont structurées les recettes dans Minecraft ?
 tags: [gameplay]
 ---
 
@@ -30,7 +30,7 @@ tags: [gameplay]
 |---------|--------------------------------------------------------------------------------------------------------------------------------|
 | type    | Type de la recette (ici `minecraft:crafting_shaped`)                                                                           |
 | group   | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
-| pattern | Forge du _craft_ de la recette dans la table de craft (les symboles correspondants à ceux définis dans le champ `key`)         |
+| pattern | Forme de la recette dans la table de craft (les symboles correspondants à ceux définis dans le champ `key`)                    |
 | key     | Definitions des symboles comme des objets utilisés dans la recette (ici le symbole `#` correspond au diamant)                  |
 | result  | Résultat de la recette                                                                                                         |
 
@@ -59,7 +59,7 @@ tags: [gameplay]
 | ingredients | Ingrédients permettant de réaliser la recette (applicable dans n'importe quel ordre)                                           |
 | result      | Résultat de la recette                                                                                                         |
 
-## Recette de fourneau
+## Recette du fourneau
 
 ```json
 {
@@ -82,7 +82,7 @@ tags: [gameplay]
 | experience  | Montant d'expérience reçu par le joueur                                                                                        |
 | cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
-## Recette de haut fourneau
+## Recette du haut fourneau
 
 ```json
 {
@@ -106,7 +106,7 @@ tags: [gameplay]
 | experience  | Montant d'expérience reçu par le joueur                                                                                        |
 | cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
-## Recette de fumoir
+## Recette du fumoir
 
 ```json
 {
