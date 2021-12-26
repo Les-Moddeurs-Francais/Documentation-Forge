@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdoc_forge=self.webpackChunkdoc_forge||[]).push([[6955],{6255:function(e){e.exports=JSON.parse('{"name":"gameplay","permalink":"/docs/tags/gameplay","docs":[{"id":"gameplay/recipe","title":"Recettes","description":"Comment sont structur\xe9s les recettes dans Minecraft ?","permalink":"/docs/gameplay/recipe"}],"allTagsPath":"/docs/tags"}')}}]);
