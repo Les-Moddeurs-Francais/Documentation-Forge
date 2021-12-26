@@ -30,7 +30,7 @@ tags: [gameplay]
 |---------|--------------------------------------------------------------------------------------------------------------------------------|
 | type    | Type de la recette (ici `minecraft:crafting_shaped`)                                                                           |
 | group   | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
-| pattern | Pattern de la recette dans la table de craft (les symbole correspondants à ceux définits dans le champ `key`)                  |
+| pattern | Forge du _craft_ de la recette dans la table de craft (les symboles correspondants à ceux définis dans le champ `key`)         |
 | key     | Definitions des symboles comme des objets utilisés dans la recette (ici le symbole `#` correspond au diamant)                  |
 | result  | Résultat de la recette                                                                                                         |
 
@@ -79,7 +79,7 @@ tags: [gameplay]
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (ici cela équivaut à l'item devant être cuit)                                    |
 | result      | Résultat de la recette                                                                                                         |
-| experience  | Montant d'éxperience perçu par le joueur                                                                                       |
+| experience  | Montant d'expérience reçu par le joueur                                                                                        |
 | cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
 ## Recette de haut fourneau
@@ -103,7 +103,7 @@ tags: [gameplay]
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (ici cela équivaut à l'item devant être cuit)                                    |
 | result      | Résultat de la recette                                                                                                         |
-| experience  | Montant d'éxperience perçu par le joueur                                                                                       |
+| experience  | Montant d'expérience reçu par le joueur                                                                                        |
 | cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
 ## Recette de fumoir
@@ -126,7 +126,7 @@ tags: [gameplay]
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (ici cela équivaut à l'item devant être cuit)                                    |
 | result      | Résultat de la recette                                                                                                         |
-| experience  | Montant d'éxperience perçu par le joueur                                                                                       |
+| experience  | Montant d'expérience reçu par le joueur                                                                                        |
 | cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
 ## Recette du tailleur de pierre
@@ -170,7 +170,7 @@ tags: [gameplay]
 | group       | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | ingredients | Ingrédients permettant de réaliser la recette (ici cela équivaut à l'item devant être cuit)                                    |
 | result      | Résultat de la recette                                                                                                         |
-| experience  | Montant d'éxperience perçu par le joueur                                                                                       |
+| experience  | Montant d'expérience reçu par le joueur                                                                                        |
 | cookingtime | Temps nécessaire afin que la cuisson soit réalisée                                                                             |
 
 ## Recette de la table de forgeron
