@@ -5,7 +5,7 @@ description: Comment utiliser les data generators pour les recettes ?
 tags: [data generators]
 ---
 
-Dans cet article nous allons voir comment générer nos différentes [recettes](../gameplay/recipe) à l'aide
+Dans cet article, nous allons voir comment générer nos différentes [recettes](../gameplay/recipe) à l'aide
 d'un générateur.
 
 ## Code

@@ -7,7 +7,7 @@ tags: [bases]
 
 ## Introduction
 
-A la création de votre mod, vous aurez besoin de créer sa base.
+À la création de votre mod, vous aurez besoin de créer sa base.
 Pour cela on va avoir besoin de créer la classe principale et
 modifier le mods.toml de quoi pouvoir faire détecter votre mod à Forge.
 
