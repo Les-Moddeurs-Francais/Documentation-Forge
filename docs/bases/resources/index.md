@@ -24,8 +24,16 @@ Les textures sont des fichiers PNG se trouvant dans un sous dossier du dossier `
 
 ## [Recettes](recipe)
 
+Les recettes sont définies par des fichiers JSON se trouvant dans le dossier `/data/<modid>/recipes`.
+
 ## Progrès
+
+Les progrès sont définis par des fichiers JSON se trouvant dans le dossier `/data/<modid>/advancements`.
 
 ## Tables de butin
 
+Les tables de butin sont définis par des fichiers JSON se trouvant dans le dossier `/data/<modid>/loot_tables` (des sous dossiers sont attendus selon si cela concerne les blocs (`blocks`), les coffres (`chests`) ou mêmes les entités (`entities`)).
+
 ## Tags
+
+Les _tags_ sont définis par des fichiers JSON se trouvant dans le dossier `/data/<modid>/tags` (des sous dossiers sont attendus selon si cela concerne les blocs (`blocks`), les items (`items`), les types d'entité (`entity_types`), les fluides (`fluids`) ou même les événements (`game_events`)).
