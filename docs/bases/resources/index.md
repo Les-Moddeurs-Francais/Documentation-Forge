@@ -5,6 +5,8 @@ description: Quelles sont les différentes ressources de Minecraft ?
 tags: [bases]
 ---
 
+Tous les dossiers (et donc les ressources associées) cités ici doivent se trouver dans le dossier `/src/main/resources/`.
+
 ## Blockstates
 
 Les _blockstates_ sont définies par des fichiers JSON se trouvant dans le dossier `/assets/<modid>/blockstates`.
