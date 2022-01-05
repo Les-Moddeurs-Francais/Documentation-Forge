@@ -11,7 +11,7 @@ Les `capabilities` sont un système mis à disposition par Forge permettant de s
 
 Forge fournit par défaut trois capabilities : `IItemHandler`, qui permet de stocker des items, `IFluidHandler`, qui permet de stocker des liquides et enfin `IEnergyStorage`, qui permet de stocker de l'énergie.
 
-Une capability possède au minimum normalement trois classes : l'interface(Exemple : IItemHandler), La classe qui contient l'instance de la capability et qui sert à l'enregistrer(Exemple : CapabilityItemHandler) et enfin l'(les) implémentation(s) par défaut de la capability(Exemple : ItemStackHandler).
+Une capability possède au minimum normalement trois classes : l'interface(Exemple : IItemHandler), l'(les) implémentation(s) par défaut de la capability(Exemple : ItemStackHandler) et enfin la classe qui contient l'instance de la capability et qui sert à l'enregistrer(Exemple : CapabilityItemHandler).
 
 Pour les utiliser, il faut d'abord les attacher à la BlockEntity/Entity/ItemStack/Level/LevelChunk de votre choix. 
 ### Attacher une Capability
@@ -40,9 +40,9 @@ Pour attacher une Capability, il faut passer par l'évènement `AttachCapabiliti
 :::caution
 Il n'existe d'évènement que pour ces cinq-là. Par exemple, si vous voulez attacher une Capability à un joueur spécifiquement, AttachCapabilitiesEvent<PlayerEntity\> ne marchera pas. À la place, il faut utiliser AttachCapabilitiesEvent<Entity\> et vérifier si AttachCapabilitiesEvent#getObject(l'entité) est une instance de PlayerEntity.
 :::caution
-Vous devrez avoir une implémentation de votre capability(utilisez celle par défaut ou créez la vôtre).
+Vous devrez avoir une implémentation de votre capability(utilisez celle par défaut ou créez la vôtre, voir [ici](#les-implémentations-de-linterface-de-votre-capability)).
 
-Il vous faudra également une ResourceLocation qui sera la "clé" de votre capability et qui sera utilisée pour éviter qu'une capability soit en double ou que d'autres erreurs du style se produisent.
+Il vous faudra également une ResourceLocation qui sera la "clé" de votre capability et qui sera utilisée pour éviter que la même capability soit ajoutée deux fois ou que d'autres erreurs du style se produisent.
 
 Pour finir, il vous faudra une implémentation de ICapabilityProvider qui retourne avec la fonction getCapability un lazyOptional de la capability(un Provider)
 
@@ -113,7 +113,7 @@ C'est une classe créée par Forge et qui est similaire à la classe Optional (t
 
 Maintenant que vous possédez votre LazyOptional, vous pouvez faire ce que vous voulez avec.
 
-Vous pouvez utiliser `LazyOptional#isPresent` pour savoir si votre Capability est présente, `LazyOptional#ifPresent` pour exécuter une lambda si la capability est présente, et d'autres comme `LazyOptional#orElse`. Pour plus d'informations, je vous invite à regarder dans la class LazyOptional, sur [cette page](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) ou à rechercher sur Internet.
+Vous pouvez utiliser `LazyOptional#isPresent` pour savoir si votre Capability est présente, `LazyOptional#ifPresent` pour exécuter un Consumer si la capability est présente, et d'autres comme `LazyOptional#orElse`. Pour plus d'informations, je vous invite à regarder dans la class LazyOptional, sur [cette page](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) ou à rechercher sur Internet.
 
 Exemples (si l'on utilise la Capability IEnergyStorage) :
 ```java
