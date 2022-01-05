@@ -38,7 +38,7 @@ Pour attacher une Capability, il faut passer par l'évènement `AttachCapabiliti
 * `AttachCapabilitiesEvent<LevelChunk>` pour les Chunks
 
 :::caution
-Il n'existe d'évènement que pour ces cinq-là. Par exemple, si vous voulez attacher une Capability à un joueur spécifiquement, AttachCapabilitiesEvent<PlayerEntity\> ne marchera pas. À la place, il faut utiliser AttachCapabilitiesEvent<Entity\> et vérifier si AttachCapabilitiesEvent#getObject(l'entité) est une instance de PlayerEntity.
+Il n'existe d'évènement que pour ces cinq-là. Par exemple, si vous voulez attacher une Capability à un joueur spécifiquement, AttachCapabilitiesEvent<Player\> ne marchera pas. À la place, il faut utiliser AttachCapabilitiesEvent<Entity\> et vérifier si AttachCapabilitiesEvent#getObject(l'entité) est une instance de Player.
 :::caution
 Vous devrez avoir une implémentation de votre capability(utilisez celle par défaut ou créez la vôtre, voir [ici](#les-implémentations-de-linterface-de-votre-capability)).
 
@@ -76,12 +76,12 @@ public static void attachToChunks(AttachCapabilitiesEvent<LevelChunks> event)
     event.addCapability(VOTRE_CLE, new EnergyStorageProvider());
 }
 ```
-Attacher la Capability IEnergyStorage avec le Provider fait plus haut à des PlayerEntity :
+Attacher la Capability IEnergyStorage avec le Provider fait plus haut à des Player :
 ```java
 @SubscribeEvent
 public static void attachToEntities(AttachCapabilitiesEvent<Entity> event)
 {
-    if(event.getObject() instanceof PlayerEntity){
+    if(event.getObject() instanceof Player){
         event.addCapability(VOTRE_CLE, new EnergyStorageProvider());
     }
 }
@@ -96,7 +96,7 @@ Attacher les Capabilities par défaut de Forge(voir [ici](#utiliser-une-capabili
 
 Une fois que la Capability est bien attachée, pour l'utiliser, il faut la récupérer ! Pour cela, reprenons l'exemple de la Capability IEnergyStorage attachée à un joueur :
 
-Pour la récupérer, il faut d'abord obtenir la classe sur laquelle vous avez attaché la Capability (une instance de PlayerEntity dans notre cas). Une fois cela fait (je n'explique pas comment faire, car cela dépend de sur quoi vous avez attaché la Capability), il faut utiliser dans notre cas(celui du joueur) :
+Pour la récupérer, il faut d'abord obtenir la classe sur laquelle vous avez attaché la Capability (une instance de Player dans notre cas). Une fois cela fait (je n'explique pas comment faire, car cela dépend de sur quoi vous avez attaché la Capability), il faut utiliser dans notre cas(celui du joueur) :
 
 ```java
 LazyOptional<IEnergyStorage> energyStorageLazyOptional = player.getCapability(CapabilityEnergy.ENERGY);
