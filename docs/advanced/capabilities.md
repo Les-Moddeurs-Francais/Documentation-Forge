@@ -38,7 +38,7 @@ Pour attacher une Capability, il faut passer par l'évènement `AttachCapabiliti
 * `AttachCapabilitiesEvent<LevelChunk>` pour les `LevelChunk`
 
 :::caution
-Il n'existe d'évènement que pour ces cinq-là. Par exemple, si vous voulez attacher une Capability à un joueur spécifiquement, `AttachCapabilitiesEvent<Player\>` ne marchera pas. À la place, il faut utiliser `AttachCapabilitiesEvent<Entity\>` et vérifier si `AttachCapabilitiesEvent#getObject`(l'entité) est une instance de Player.
+Il n'existe d'évènement que pour ces cinq-là. Par exemple, si vous voulez attacher une Capability à un joueur spécifiquement, `AttachCapabilitiesEvent<Player>` ne marchera pas. À la place, il faut utiliser `AttachCapabilitiesEvent<Entity>` et vérifier si `AttachCapabilitiesEvent#getObject`(l'entité) est une instance de Player.
 :::caution
 Vous devrez avoir une implémentation de votre capability(utilisez celle par défaut ou créez la vôtre, voir [ici](#les-implémentations-de-linterface-de-votre-capability)).
 
@@ -86,7 +86,7 @@ public static void attachToChunks(AttachCapabilitiesEvent<LevelChunks> event)
     event.addCapability(VOTRE_CLE, new EnergyStorageProvider());
 }
 ```
-Attacher la Capability IEnergyStorage avec le Provider fait plus haut à des Player :
+Attacher la Capability `IEnergyStorage` avec le Provider fait plus haut à des `Player` :
 ```java
 @SubscribeEvent
 public static void attachToEntities(AttachCapabilitiesEvent<Entity> event)
@@ -140,12 +140,12 @@ Si vous avez fait quelques tests par vous-mêmes, vous avez sûrement remarqué 
 Pour sauvegarder sa Capability, il faut modifier votre Provider comme ceci :
 
 - Tout d'abord, il faut savoir quel type de données vous voulez sauvegarder et trouver le `Tag`(anciennement `NBT`) correspondant : `IntTag` si vous souhaitez sauvegarder un `int`, `StringTag` pour un `String`, ou encore `CompoundTag` pour stocker différents types de données. Il en existe beaucoup d'autres, je vous invite donc à regarder le package *`net.minecraft.nbt`* pour la liste complète.
-- Ensuite, changez votre classe pour implémenter `ICapabilitySerializable<VotreTag\>`(remplacez VotreTag par le `Tag` que vous avez choisi) au lieu de `ICapabilityProvider`. Cela devrait générer une erreur, c'est normal.
+- Ensuite, changez votre classe pour implémenter `ICapabilitySerializable<VotreTag>`(remplacez VotreTag par le `Tag` que vous avez choisi) au lieu de `ICapabilityProvider`. Cela devrait générer une erreur, c'est normal.
 - Ajoutez la fonction `serializeNBT` qui retourne le `Tag` que vous avez décidé d'utiliser que vous aurez préalablement set avec les données que vous voulez sauvegarder
 - Finalement, ajoutez la fonction `deserializeNBT` qui a pour argument le `Tag` que vous avez décidé d'utiliser et que vous pouvez récupérer pour l'utiliser
 
 :::tip
-La plupart des implémentations par défaut des Capabilities fournies par Forge(regardez les classes qui implémentent l'interface de la Capability de votre choix) possèdent des fonctions permettant de sérialiser et de désérialiser des Tags. Si elles existent, il est donc préférable de les utiliser dans les fonctions correspondantes de votre Provider.
+La plupart des implémentations par défaut des Capabilities fournies par Forge(regardez les classes qui implémentent l'interface de la Capability de votre choix) possèdent des fonctions permettant de sérialiser et de désérialiser des `Tag`. Si elles existent, il est donc préférable de les utiliser dans les fonctions correspondantes de votre Provider.
 :::
 
 Voici ce que cela donne si l'on reprend le Provider créé plus haut :
