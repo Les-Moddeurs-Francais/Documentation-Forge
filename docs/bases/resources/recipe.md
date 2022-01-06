@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Recettes
 description: Comment sont structurées les recettes dans Minecraft ?
-tags: [gameplay]
+tags: [bases, ressources]
 ---
 
 ## Recette de base structurée
