@@ -44,6 +44,16 @@ Vous devrez avoir une implémentation de votre capability(utilisez celle par dé
 
 Il vous faudra également une ResourceLocation qui sera la "clé" de votre capability et qui sera utilisée pour éviter que la même capability soit ajoutée deux fois ou que d'autres erreurs du style se produisent.
 
+:::tip
+Votre clé peut être n'importe quelle ResourceLocation, mais elle doit être unique.
+
+Vous pouvez, par exemple, créer une ResourceLocation à partir de votre modid et du nom de la Capability que vous ajoutez comme ceci :
+
+```java
+ResourceLocation VOTRE_CLE = new ResourceLocation(VOTRE_MODID, NOM_DE_LA_CAPABILITY)
+```
+:::tip
+
 Pour finir, il vous faudra une implémentation de ICapabilityProvider qui retourne avec la fonction getCapability un lazyOptional de la capability(un Provider)
 
 Exemple :
@@ -86,7 +96,7 @@ public static void attachToEntities(AttachCapabilitiesEvent<Entity> event)
     }
 }
 ```
-(pensez bien à remplacer VOTRE_CLE par la ResourceLocation que vous avez créée plus haut et new EnergyStorageProvider() par votre provider)
+(pensez bien à remplacer VOTRE_CLE par la ResourceLocation servant de clé que vous avez créée plus haut et new EnergyStorageProvider() par votre provider)
 
 :::warning
 Attacher les Capabilities par défaut de Forge(voir [ici](#utiliser-une-capability)) à des classes vanilla peut causer certains problèmes. Par exemple, attacher un IItemHandler à un joueur ne marchera pas, car si vous essayez de le récupérer en passant par le joueur, vous obtiendrez un IItemHandler qui correspond à l'inventaire du même joueur. Si vous souhaitez tout de même utiliser les Capabilities de Forge, il faut alors créer une nouvelle Capability qui extend celle que vous souhaitez attacher(voir [ici](#créer-une-capability)).
