@@ -18,7 +18,7 @@ Pour les utiliser, il faut d'abord les attacher à la `BlockEntity`/`Entity`/`It
 
 #### Récupérer l'instance d'une capability
 
-Pour attacher une capability, il faut déjà posséder son unique instance. Pour cela, vous pouvez l'obtenir soit dans la classe qui la contient par défaut, soit en obtenant une autre référence de la même instance en utilisant CapabilityManager#get comme ceci:
+Pour attacher une capability, il faut déjà posséder son unique instance. Pour cela, vous pouvez l'obtenir soit dans la classe qui la contient par défaut, soit en obtenant une autre référence de la même instance en utilisant `CapabilityManager#get` comme ceci:
 ```java
 static Capability<VotreInterface> VOTRE_CAPABILITY = CapabilityManager.get(new CapabilityToken<>(){});
 ```
