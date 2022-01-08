@@ -21,7 +21,7 @@ section sera dédiée pour l'ensemble des générateurs disponibles !
 
 Un event a été créé exprès par Forge pour que l'on puisse utiliser les générateurs.
 Nous allons créer une classe spécifique pour aérer notre code et éviter de surcharger
-notre classe principale (ce choix est pûrement personnel, à vous de choisir ce qui
+notre classe principale (ce choix est purement personnel, à vous de choisir ce qui
 vous convient le mieux)
 
 Dans un nouveau package `data`, on va créer une classe `DataGen` et y écrire :
