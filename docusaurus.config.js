@@ -1,9 +1,23 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const versions = require('./versions.json');
+
+function getNextVersionName() {
+  const expectedPrefix = '1.';
+
+  const lastReleasedVersion = versions[0];
+  if (!lastReleasedVersion.includes(expectedPrefix)) {
+    throw new Error(
+        'Erreur ! La dernière version ne respecte pas le pattern',
+    );
+  }
+  const version = parseInt(lastReleasedVersion.replace(expectedPrefix, ''), 10);
+  return `${expectedPrefix}${version + 1}`;
+}
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Les Moddeurs Francais',
+  title: 'Documentation Forge',
   tagline: '¯\\_(ツ)_/¯',
   url: 'https://www.forge-doc.lesmoddeursfrancais.fr',
   baseUrl: '/',
@@ -15,9 +29,9 @@ module.exports = {
   projectName: 'forge-doc',
   themeConfig: {
     navbar: {
-      title: 'Les Moddeurs Francais',
+      title: 'Documentation Forge',
       logo: {
-        alt: 'LMF Logo Logo',
+        alt: 'LMF Logo',
         src: 'img/logo.png',
       },
       items: [
@@ -28,6 +42,11 @@ module.exports = {
           label: 'Documentation',
         },
         {to: '/news', label: 'News', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
+        },
         {
           href: 'https://github.com/Les-Moddeurs-Francais/Forge-Doc',
           label: 'GitHub',
@@ -78,13 +97,39 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} - Les Moddeurs Francais`,
+      copyright: `Copyright © ${new Date().getFullYear()} - <a href="https://www.lesmoddeursfrancais.fr">Les Moddeurs Francais</a>`,
     },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
       additionalLanguages: ['java'],
     },
+    metadata : [
+      {
+        name: 'og:site_name',
+        content: 'Les Moddeurs Francais'
+      },
+      {
+        name: 'keywords',
+        content: 'Forge, Modding, Minecraft, Développement, Mods, Programmation'
+      },
+      {
+        name: 'og:type',
+        content: 'website'
+      },
+      {
+        name: 'og:image',
+        content: 'https://cdn.lesmoddeursfrancais.fr/logo-256x256.png'
+      },
+      {
+        name: 'og:image:width',
+        content: '256'
+      },
+      {
+        name: 'og:image:height',
+        content: '256'
+      }
+    ],
   },
   i18n: {
     defaultLocale: 'fr',
@@ -92,15 +137,23 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
               'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/master',
           showLastUpdateAuthor: true,
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: `${getNextVersionName()}`,
+            },
+          },
         },
         blog: {
+          blogTitle: 'News',
+          blogDescription: 'Les dernières news concernant le projet MinecraftForge',
           path: 'news',
           routeBasePath: 'news',
           showReadingTime: false,
@@ -170,6 +223,24 @@ module.exports = {
             content: '#000',
           },
         ],
+      },
+    ],
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        blogDir: 'news',
+        blogRouteBasePath : "/news",
+        translations : {
+          "search_placeholder": "Recherche",
+          "see_all_results": "Voir tous les résultats",
+          "no_results": "Aucun résultat.",
+          "search_results_for": "Résultats de la recherche pour \"{{ keyword }}\"",
+          "search_the_documentation": "Recherche dans la documentation",
+          "count_documents_found": "{{ count }} page trouvée",
+          "count_documents_found_plural": "{{ count }} pages trouvées",
+          "no_documents_were_found": "Aucune page n'a été trouvée"
+        }
       },
     ],
   ],

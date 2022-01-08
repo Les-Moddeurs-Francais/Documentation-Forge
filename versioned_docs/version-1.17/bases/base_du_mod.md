@@ -7,7 +7,7 @@ tags: [bases]
 
 ## Introduction
 
-À la création de votre mod, vous aurez besoin de créer sa base.
+A la création de votre mod, vous aurez besoin de créer sa base.
 Pour cela on va avoir besoin de créer la classe principale et
 modifier le mods.toml de quoi pouvoir faire détecter votre mod à Forge.
 
@@ -62,7 +62,7 @@ public class TestMod {
 
 ```
 
-Décomposons le code petit à petit.
+Décomposons le code petit à petit.  
 
 ````java
 @Mod(TestMod.MODID)
@@ -116,7 +116,7 @@ lancer le jeu avec notre mod pour être détecté par Forge. Il nous reste plus 
 ## mods.toml
 
 Cette fois-ci, on va se rendre dans le dossier *src/main/resources* et vous devriez
-trouver le fichier [mods.toml](../bases/mods_toml) dans le dossier *META-INF*.
+trouver le fichier mods.toml dans le dossier *META-INF*.
 Ce dernier contient toutes les informations pour identifier votre mod. On va passer en revue ici les informations les plus importantes du fichier.
 
 ### Modid

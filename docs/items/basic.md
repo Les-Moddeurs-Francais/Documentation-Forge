@@ -10,7 +10,7 @@ Pour que l'item soit reconnu par le jeu, il nous faut l'enregistrer, et pour cel
 
 ### DeferredRegister
 
-Veuillez-vous referrer à la [page sur ce sujet](../register/deferred_register).
+Veuillez-vous referrer à la [page sur ce sujet](../register/deferred).
 
 ## Enregistrer l'item
 
