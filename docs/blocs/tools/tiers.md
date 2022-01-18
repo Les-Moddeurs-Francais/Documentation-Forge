@@ -9,7 +9,7 @@ Depuis la 1.17, le niveau pour récolter un bloc est défini par un tag attribu�
 
 ## Tiers de base
 
-Si vous souhaitez que votre bloc soit récoltable avec n'importe quel _tier_ d'outil, il n'est pas nécessaire d'ajouter votre bloc dans un tag. Dans le cas contraire il faudra s'assurer que le bloc ait la [propriété](../properties) `requiresToolForDrops()` de définie et ajouter celui-ci au(x) tag(s) approprié(s) (contenu(s) dans le dossier `data/minecraft/tags/blocks` ou `data/forge/tags/blocks` selon les cas) parmi ceux-ci : 
+Si vous souhaitez que votre bloc soit récoltable avec n'importe quel _tier_ d'outil, il n'est pas nécessaire de l'ajouter dans un tag. Dans le cas contraire il faudra s'assurer que le bloc ait la [propriété](../properties) `requiresToolForDrops()` de définie et ajouter celui-ci au(x) tag(s) approprié(s) (contenu(s) dans le dossier `data/minecraft/tags/blocks` ou `data/forge/tags/blocks` selon les cas) parmi ceux-ci : 
 
 - `forge:needs_wood_tool`
 - `forge:needs_gold_tool`
