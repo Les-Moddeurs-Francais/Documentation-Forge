@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Types d'outil
+title: Types
 description: Comment définir le type d'outil nécessaire pour récolter un bloc ?
 tags: [blocs, tools]
 ---
