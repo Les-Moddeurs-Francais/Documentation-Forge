@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-title: Harvest Level
-description: Comment définir le niveau de récolte d'un bloc ?
+title: Tiers
+description: Comment définir le tier nécessaire d'outil pour récolter un bloc ?
 tags: [blocs, tools]
 ---
 
@@ -42,10 +42,17 @@ public static final Tier MON_TIER = TierSortingRegistry.registerTier(
 ```
 
 
-Ici le premier paramètre correspond à la configuration du _tier_, le deuxième lui correspond à l'ID du _tier_, et les 2 derniers correspondent au placement du _tier_ par rapport aux autres (supérieur et inférieur à..., dans ce cas présent, il se placera comme supérieur au diamant et ne sera inférieur à aucun _tier_).
+Ici le premier paramètre correspond à la configuration du _tier_ (explication disponible ci-dessous), le deuxième lui correspond à l'ID du _tier_, et les 2 derniers correspondent au placement du _tier_ par rapport aux autres (supérieur et inférieur à..., dans ce cas présent, il se placera comme supérieur au diamant et ne sera inférieur à aucun _tier_).
+
+<details>
+<summary>Explication de la classe ForgeTier</summary>
 
 ```java
 new ForgeTier(5, 5000, 10, 100, 0, MON_TIER_TAG, () -> Ingredient.of(Items.OBSIDIAN))
 ```
+
+Ici le premier paramètre correspond au niveau du _tier_ (hiérarchie entre tous malgré le fait que ce système soit déprécié depuis la version 37.0.31 de Forge), le second correspond quant à lui au nombre d'utilisations maximum (cela peut être recalculé selon l'item concerné), le troisième à la rapidité de l'item possédant ce _tier_, le quatrième au nombre de dégâts, le cinquième à la valeur d'enchantement (par exemple les outils en or s'enchante plus facilement que ceux en fer) et le sixième correspond à l'item nécessaire pour réparer les outils de ce _tier_.
+
+</details>
 
 Après ça il ne vous restera plus qu'à ajouter le bloc dans ledit tag lié au _tier_ (dans ce cas ça sera `modid:mon_tier` se trouvant dans le dossier `data/modid/tags/blocks`).
