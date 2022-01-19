@@ -5,7 +5,7 @@ description: Comment définir le tier nécessaire d'outil pour récolter un bloc
 tags: [blocs, tools]
 ---
 
-Depuis la 1.17, le niveau pour récolter un bloc est défini par un tag attribué le contenant.
+Depuis la 1.17, le _tier_ pour un outil nécessaire à la récolte d'un bloc est défini par un tag contenant ledit bloc.
 
 ## Tiers de base
 
