@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Ressources
 description: Quelles sont les différentes ressources de Minecraft ?
 hide_table_of_contents: true
@@ -37,6 +36,6 @@ Les progrès sont définis par des fichiers JSON se trouvant dans le dossier `/d
 
 Les tables de butin sont définies par des fichiers JSON se trouvant dans le dossier `/data/<modid>/loot_tables` (des sous dossiers sont attendus selon si cela concerne les blocs (`blocks`), les coffres (`chests`) ou mêmes les entités (`entities`)).
 
-## Tags
+## [Tags](tags)
 
 Les _tags_ sont définis par des fichiers JSON se trouvant dans le dossier `/data/<modid>/tags` (des sous dossiers sont attendus selon si cela concerne les blocs (`blocks`), les items (`items`), les types d'entité (`entity_types`), les fluides (`fluids`) ou même les événements (`game_events`)).
