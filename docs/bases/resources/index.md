@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Ressources
 description: Quelles sont les différentes ressources de Minecraft ?
 hide_table_of_contents: true
