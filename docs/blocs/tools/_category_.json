@@ -2,8 +2,8 @@
   "label": "Outils",
   "link": {
     "type": "generated-index",
-    "title": "Blocs",
-    "description": "Tous ce qu'il y a à savoir pour définir les bons outils/niveaux de récolte pour un bloc.",
+    "title": "Outils",
+    "description": "Tous ce qu'il y a à savoir pour définir les bons types/tiers d'outil pour récolter un bloc.",
     "slug": "/category/blocs/tools"
   },
   "position": 6
