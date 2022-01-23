@@ -10,7 +10,7 @@ Nous n'aborderons pas la création de l'item en tant que telle sur cette page, c
 
 ## Enregistrer l'item comme pouvant être coloré
 
-Le rendu des items se faisant côté client, nous aurons besoin d'exécuter le code suivant dans la fonction doClientStuff de la classe principale (la fonction pouvant changer de nom, mais celle-ci doit avoir un paramètre de type **FMLClientSetupEvent**) :
+Le rendu des items se faisant côté client, nous aurons besoin d'exécuter le code suivant dans la fonction **client** de la classe principale (la fonction pouvant changer de nom, mais celle-ci doit avoir un paramètre de type **FMLClientSetupEvent**) :
 
 ```java
 Minecraft.getInstance().getItemColors().register((stack, color) -> {
