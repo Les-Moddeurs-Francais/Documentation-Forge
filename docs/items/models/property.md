@@ -39,3 +39,5 @@ Ici dans l'exemple notre propriété se nomme **full** et sa valeur varie entre 
   ]
 }
 ```
+
+Ici nous nous intéresserons au champ `overrides` (les champs au-dessus sont à connaitre, car ils servent à définir le modèle d'un item de base) qui dans notre cas contient un seul élément. Celui-ci vérifie si la propriété `minecraft:full` (que nous avons enregistré tout à l’heure) a pour valeur 1 (donc si l’item que nous tenons possède le tag `full`), si c’est le cas alors le modèle de l’item deviendra `test_mod_forge:item/test_simple_item_one_full` sinon il restera `test_mod_forge:item/test_simple_item_one` (ceux-ci peuvent être changé à tout moment).
