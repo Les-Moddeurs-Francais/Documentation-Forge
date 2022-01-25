@@ -13,7 +13,7 @@ Le rendu des items se faisant côté client, nous aurons besoin d'exécuter le c
 
 ```java
 ItemProperties.register(Items.TEST_SIMPLE_ITEM_ONE.get(), new ResourceLocation("modid", example_property"), (stack, level, livingEntity, id) -> {
-    return stack.getOrCreateTag().getBoolean("example_property") ? 1.0f : 0.0f;
+    return stack.getOrCreateTag().getBoolean("tag") ? 1.0f : 0.0f;
 });
 ```
 
