@@ -27,6 +27,15 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'Les-Moddeurs-Francais',
   projectName: 'forge-doc',
+  //Bad usage, but it's working
+  stylesheets: [
+    {
+      rel: "search",
+      type: "application/opensearchdescription+xml",
+      title: "Documentation Forge",
+      href: '/opensearch.xml',
+    },
+  ],
   themeConfig: {
     navbar: {
       title: 'Documentation Forge',
