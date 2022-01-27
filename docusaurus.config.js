@@ -37,6 +37,7 @@ module.exports = {
     },
   ],
   themeConfig: {
+    autoCollapseSidebarCategories: true,
     navbar: {
       title: 'Documentation Forge',
       logo: {
