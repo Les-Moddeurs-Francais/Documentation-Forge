@@ -19,7 +19,7 @@ ItemProperties.register(Items.TEST_SIMPLE_ITEM_ONE.get(), new ResourceLocation("
 
 Ici dans cet exemple, l'item (premier paramètre) qui comportera un modèle variable sera un item de test (mais il est possible de changer celui-ci par l'item de votre choix). En second, nous avons l'identifiant de la propriété qui sera utilisé dans le fichier modèle de l'item. Le troisième quant à lui permet de retourner une valeur flottante (généralement comprise entre 0 et 1) qui sera utilisé après dans le modèle de l'item (en ayant accès à certaines variables comme l'item, le monde, l'entité tenant l'item, etc...).
 
-Ici dans l'exemple notre propriété se nomme `modid:example_property` et sa valeur varie entre 0 et 1 selon si l'item en question possède un tag `tag` de valeur **true** ou non, si c'est le cas la propriété `tag` aura pour valeur 1, sinon 0.
+Dans ce cas précis, notre propriété se nomme `modid:example_property` et sa valeur varie entre 0 et 1 selon si l'item en question possède un tag `tag` de valeur **true** ou non, si c'est le cas la propriété `tag` aura pour valeur 1, sinon 0.
 
 ## Modèle
 
