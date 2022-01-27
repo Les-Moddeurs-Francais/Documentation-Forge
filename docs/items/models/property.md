@@ -9,7 +9,7 @@ Disponibles depuis la 1.9, les propriétés de modèle (anciennement appelées _
 
 ## Enregistrer l'item comme ayant un modèle variable
 
-Le rendu des items se faisant côté client, nous aurons besoin d'exécuter le code suivant dans la fonction **client** de la classe principale (la fonction pouvant changer de nom, mais celle-ci doit avoir un paramètre de type **FMLClientSetupEvent**) :
+Le rendu des items se faisant côté client, nous aurons besoin d'exécuter le code suivant dans la fonction **client** de la classe principale (celle-ci doit avoir un paramètre de type **FMLClientSetupEvent**) :
 
 ```java
 ItemProperties.register(Items.TEST_SIMPLE_ITEM_ONE.get(), new ResourceLocation("modid", example_property"), (stack, level, livingEntity, id) -> {
