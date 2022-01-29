@@ -69,12 +69,12 @@ Il faut savoir que dans Minecraft, il y a plusieurs types de crafts. Les *shaped
 Les *shaped* définissent les crafts dont la disposition des items dans
 la table doit respecter un certain schéma.
 
-``Ex: les épées, les pioches, la table d'enchantement, les coffres, etc...` 
+`Ex: les épées, les pioches, la table d'enchantement, les coffres, etc...`
 
 Les *shapeless* eux, n'ont pas de forme prédéfinie.
 Seul le contenu même du craft importe.
 
-``Ex: les feux d'artifices (customisation), les soupes de champignons, etc...``
+`Ex: les feux d'artifices (customisation), les soupes de champignons, etc...`
 :::
 
 ### Shaped recipes
@@ -129,7 +129,7 @@ De cette manière, lorsqu'on dessinera le schéma de notre craft, le caractère 
 associé au bloc de terre dans ce cas là.
 
 :::tip
-Ici le caractère 'D' n'est pas anodin. Etant donné que j'utlise le bloc de `Dirt``,
+Ici le caractère 'D' n'est pas anodin. Etant donné que j'utlise le bloc de `Dirt`,
 j'ai pris l'initial du mot comme caractère. Essayez de rendre vos craft le plus lisible
 possible. Comme votre code d'ailleurs !
 :::
@@ -266,9 +266,9 @@ en l'occurence la fonction `smelting` associée au four. Voici les autres
 fonctions pour les autres blocs :
 
 :::tip
-- Blast furnace -> `blasting``
-- Smoker -> `smoking``
-- Campfire -> `campfireCooking``
+- Blast furnace -> `blasting`
+- Smoker -> `smoking`
+- Campfire -> `campfireCooking`
 :::
 
 Voyons maintenant un exemple concret d'une recette de cuisson où à partir

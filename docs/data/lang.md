@@ -22,7 +22,7 @@ public class LangGenerator extends LanguageProvider {
 ```
 
 Ici, j'ai simplement laissé le premier paramètre au constructeur et j'ai renseigné
-toutes les autres valeurs directement dans le `super``. Le premier paramètre
+toutes les autres valeurs directement dans le `super`. Le premier paramètre
 à renseigner dans ce dernier est le `DataGenerator` passé en paramètre du constructeur.
 Ensuite, on aura besoin du **modid** de votre mod ainsi que de la langue
 pour laquelle vous ajoutez une traduction.
@@ -34,7 +34,7 @@ défaut de Minecraft.
 :::
 
 J'ai marqué `"en_us"` pour l'anglais américain qui est la langue de base de
-Minecraft. Pour le français par exemple, il faut noter `"fr_fr""``.
+Minecraft. Pour le français par exemple, il faut noter `"fr_fr""`.
 
 :::tip
 Vous pouvez retrouver toutes les langues [ici](https://minecraft.fandom.com/wiki/Language)
