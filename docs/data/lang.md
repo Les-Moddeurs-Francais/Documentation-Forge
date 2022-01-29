@@ -5,10 +5,7 @@ description: Comment utiliser les data generators pour les fichiers de traductio
 tags: [data generators]
 ---
 
-## Introduction
-
-Dans cette section, nous allons voir comment générer nos fichiers de traductions
-directement à l'aide des data generators.
+Dans cette section, nous allons voir comment générer nos fichiers de traductions directement à l'aide d'un générateur.
 
 ## Lang Provider
 
@@ -92,7 +89,7 @@ public static void dataGen(final GatherDataEvent e)
 
 :::tip
 Remarquez le ``e.includeClient()`` qui permet de répartir les différentes
-ressources selon le côté qui les utilise. En l'occurence, le fichier lang
+ressources selon le côté qui les utilise. En l'occurrence, le fichier lang
 n'est utilisé que par le client, donc pas besoin de le générer pour le serveur.
 :::
 
