@@ -34,6 +34,11 @@ protected void registerAdvancements(Consumer<Advancement> consumer, ExistingFile
 }
 ```
 
+## GatherDataEvent
+
+Dans votre fonction avec en paramètre l'event `GatherDataEvent` il nous
+faudra ajouter notre 'provider'.
+
 ```java
 @SubscribeEvent
 public static void dataGen(final GatherDataEvent e)
@@ -51,3 +56,9 @@ public static void dataGen(final GatherDataEvent e)
     }
 }
 ```
+
+:::tip
+Remarquez le `e.includeServer()` qui permet de répartir les différentes
+ressources selon le côté qui les utilise. En l'occurrence, les progrès
+ne sont utilisés que par le serveur, donc pas besoin de le générer coté client.
+:::
