@@ -20,3 +20,34 @@ public class AdvancementsGenerator extends AdvancementProvider {
     }
 }
 ```
+
+Ici le premier paramètre à renseigner dans ce dernier est le `DataGenerator` passé en paramètre du constructeur.
+En deuxième, on aura besoin du **ExistingFileHelper** (celui-ci servant pour la vérification des fichiers déjà générés).
+
+Il sera ensuite nécessaire d'utiliser la fonction `registerAdvancements` héritée de la classe mère.
+
+```java
+@Override
+protected void registerAdvancements(Consumer<Advancement> consumer, ExistingFileHelper fileHelper) 
+{
+
+}
+```
+
+```java
+@SubscribeEvent
+public static void dataGen(final GatherDataEvent e)
+{
+    DataGenerator generator = e.getGenerator();
+
+    if(e.includeClient())
+    {
+
+    }
+
+    if(e.includeServer())
+    {
+        generator.addProvider(new AdvancementsGenerator(generator, event.getExistingFileHelper()));
+    }
+}
+```
