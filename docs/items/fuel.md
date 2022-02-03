@@ -16,3 +16,9 @@ public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) 
     return 500;
 }
 ```
+
+:::tip
+La valeur retournée peut être changée à votre guise.
+:::
+
+Ici la fonction retourne une durée de 500 ticks (_pour rappels, 1 seconde équivaut à 20 ticks dans le jeu_). Il est tout à fait possible de changer le temps de cuisson de l'item selon différents paramètres (la fonction donnant accès au type de recette ainsi qu'a _l'item stack_).
