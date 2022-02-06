@@ -21,7 +21,7 @@ public class AdvancementsGenerator extends AdvancementProvider {
 }
 ```
 
-Ici le premier paramètre à renseigner dans ce dernier est le `DataGenerator` passé en paramètre du constructeur.
+Ici le premier paramètre à renseigner est le `DataGenerator` passé en paramètre du constructeur.
 En deuxième, on aura besoin du **ExistingFileHelper** (celui-ci servant pour la vérification des fichiers déjà générés).
 
 Il sera ensuite nécessaire d'utiliser la fonction `registerAdvancements` héritée de la classe mère pour enregistrer nos succès.
