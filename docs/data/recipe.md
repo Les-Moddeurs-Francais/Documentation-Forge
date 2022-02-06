@@ -202,7 +202,7 @@ Dans mon cas, les items en question seront : la pomme et le bloc de terre.
 save(consumer, new ResourceLocation(Testmod.MODID, "mon_craft"))
 ```
 
-Enfin, la fonction `save` sert, comme son nom l'indique, à sauvegarder notre craft. En
+Enfin, la fonction `save` qui sert, comme son nom l'indique, à sauvegarder notre craft. En
 premier paramètre on renseigne `consumer` qui est le paramètre de notre fonction
 `buildCraftingRecipes`. En second paramètre on doit renseigner une `ResourceLocation`
 qui est en fait l'emplacement et le nom du fichier `.json`.
