@@ -64,7 +64,7 @@ parent(new ResourceLocation("story/mine_stone"))
 ```
 
 La fonction `parent` permet de définir le _parent_ du succès (arborescence des succès).
-Ici le premier paramètre est m'identifiant du succès _parent_ (ici le succès `mine_stone`).
+Ici le premier paramètre est l'identifiant du succès _parent_ (ici le succès `mine_stone`).
 
 ```java
 addCriterion("get_diamond_block", InventoryChangeTrigger.TriggerInstance.hasItems(Items.DIAMOND_BLOCK))
