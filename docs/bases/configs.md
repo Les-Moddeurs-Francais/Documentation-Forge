@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
-title: Configs
-description: Comment créer des configs pour son mod ?
+title: Configurations
+description: Comment créer des configurations pour son mod ?
 tags: [bases]
 ---
 
@@ -19,4 +19,10 @@ Nous allons voir ici comment en rajouter à votre mod pour permettre aux joueurs
 ModLoadingContext.get().registerConfig(type, spec);
 ```
 
-Ici nous avons deux arguments, le premier sera le type de configuration (il en existe 3, **CLIENT**, **SERVER** et **COMMON**).
+Ici nous avons deux arguments, le premier est le type de configuration (il en existe 3, **CLIENT**, **SERVER** et **COMMON**) et le deuxième quant à lui est le _spec_ crée plus tôt.
+
+Dans notre cas, pour une configuration côté client, nous obtiendrons cette ligne :
+
+```java
+ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, CLIENT_BUILDER.build());
+```
