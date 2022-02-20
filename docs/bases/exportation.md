@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Exporter le mod
 description: Comment exporter le mod ?
 tags: [bases]
