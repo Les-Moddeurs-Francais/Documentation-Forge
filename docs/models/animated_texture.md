@@ -17,10 +17,10 @@ La texture animée de votre item doit être agencée en vertical (c'est-à-dire 
 
 Le fichier _mcmeta_ quant à lui permet de faire comprendre au jeu que la texture doit être animée, avec deux paramètres :
 
-| Nom         | Description                                                                 | Nécessité            |
-|-------------|-----------------------------------------------------------------------------|----------------------|
-| interpolate | Applique une transition ou non entre les différentes textures               | Non                  |
-| frametime   | Temps nécessaire à la transition des textures (_interpolate_ activé ou non) | Non (mais conseillé) |
+| Nom         | Description                                                                                                                 | Nécessité            |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------|----------------------|
+| interpolate | Applique une transition ou non entre les différentes textures                                                               | Non                  |
+| frametime   | Temps nécessaire à la transition des textures (_interpolate_ activé ou non). Pour rappel, une seconde équivaut à 20 _ticks_ | Non (mais conseillé) |
 
 Il est nécessaire que le fichier _mcmeta_ (contenu dans le même dossier que la texture) comporte le nom de la texture (de manière exacte) avec ensuite l'extension `.png.mcmeta`.
 
