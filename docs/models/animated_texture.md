@@ -22,6 +22,8 @@ Le fichier _mcmeta_ quant à lui permet de faire comprendre au jeu que la textur
 | interpolate | Applique une transition ou non entre les différentes textures               | Non                  |
 | frametime   | Temps nécessaire à la transition des textures (_interpolate_ activé ou non) | Non (mais conseillé) |
 
+Il est nécessaire que le fichier comporte le nom de la texture (de manière exacte) avec ensuite l'extension `.png.mcmeta`.
+
 Ce qui peut nous donner deux cas d'exemple, le premier :
 
 ```json
