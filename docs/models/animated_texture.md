@@ -15,7 +15,7 @@ La texture animée de votre item doit être agencée en vertical (c'est-à-dire 
 
 ## Mcmeta
 
-Le fichier _mcmeta_ quant à lui permet de faire comprendre au jeu que la texture doit être animé avec deux paramètres :
+Le fichier _mcmeta_ quant à lui permet de faire comprendre au jeu que la texture doit être animée, avec deux paramètres :
 
 | Nom         | Description                                                                 | Nécessité            |
 |-------------|-----------------------------------------------------------------------------|----------------------|
