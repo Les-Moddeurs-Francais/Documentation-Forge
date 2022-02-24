@@ -9,7 +9,7 @@ Depuis plusieurs versions, il est possible d'animer les textures d'un item grâc
 
 ## Texture
 
-La texture animée de votre item doit être agencée en vertical (c'est-à-dire que les texture doivent être de même taille et agencée les unes sur les autres) comme ceci :
+La texture animée de votre item doit être agencée à la verticale (c'est-à-dire que les texture doivent être de même taille et agencée les unes sur les autres) comme ceci :
 
 ![Exemple de texture](/img/docs/animated-texture/example-texture.png)
 
