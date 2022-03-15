@@ -28,7 +28,7 @@ Tous les textes succédant un `#` avant la fin de la ligne seront interprétés 
 Trois syntaxes sont disponibles selon le type de la cible pour modifier son accès :
 
 - Pour les classes : `<modificateur> <nom de la classe>`
-- Pour les méthodes : `<modificateur> <nom de la classe> <nom de la méthode>([description des paramètres])<description de ce qui est retourné>`
+- Pour les méthodes : `<modificateur> <nom de la classe> <nom de la méthode>([descripteurs des paramètres])<descripteur de ce qui est retourné>`
 - Pour les variables : `<modificateur> <nom de la classe> <nom de la variable>`
 
 ## Les modifieurs d'accès
@@ -40,6 +40,21 @@ Les modificateurs d'accès spécifient vers quelle nouvelle visibilité la cible
 - `private` - visible uniquement à l'intérieur de la classe
 
 Le modificateur spécial +f et -f peut être ajouté aux modificateurs mentionnés plus haut afin d'ajouter ou de supprimer l'attribut `final`.
+
+## Descripteur des retours
+
+| Descripteur          | Equivalent         | Description                                                                                                                                                                                                                                                                                |
+|----------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `Z`                  | `Booléen`          | Valeur oscillant entre `true`et `false`seulement                                                                                                                                                                                                                                           |
+| `B`                  | `Byte`             | Nombre en 8-bit                                                                                                                                                                                                                                                                            |
+| `S`                  | `Short`            | Nombre en 16-bit                                                                                                                                                                                                                                                                           |
+| `C`                  | `Char`             | Caractère unicode en UTF-16                                                                                                                                                                                                                                                                |
+| `I`                  | `Int`              | Nombre en 32-bit                                                                                                                                                                                                                                                                           |
+| `F`                  | `Float`            | Valeur flottante (à virgule allant jusqu'à 6 a 7 décimales)                                                                                                                                                                                                                                |
+| `J`                  | `Long`             | Nombre en 64-bit                                                                                                                                                                                                                                                                           |
+| `D`                  | `Double`           | Valeur flottante (à virgule allant jusqu'à 15 à 16 décimales)                                                                                                                                                                                                                              |
+| `Ljava/lang/Object;` | `java.lang.Object` | un type de référence ; la forme interne du nom binaire de la classe doit être présente (dans l'exemple donné, la classe référencée est `java.lang.Object`). Notez que les classes internes sont séparées par le caractère `$` (signe dollar), comme par exemple `java/lang/System$Logger`. |
+
 
 ## Exemples
 
