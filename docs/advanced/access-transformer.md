@@ -15,9 +15,9 @@ minecraft {
 }
 ```
 
-Après cela, vous devrez créer un fichier `accesstransformer.cfg` au niveau du chemin spécifié.
+Après cela, vous devrez créer un fichier `accesstransformer.cfg` au niveau du chemin spécifié (ici le dossier `META-INF` situé dans vos ressources).
 
-Pour appliquer les `access trasnformers` après une modification du fichier, vous devrez rafraichir le projet gradle.
+Il est à chaque fois nécessaire de rafraichir son projet Gradle pour que les _transformers_ soit appliqués.
 
 ## Commentaires
 
