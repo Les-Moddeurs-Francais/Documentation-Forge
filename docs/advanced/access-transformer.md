@@ -25,22 +25,21 @@ Tous les textes succédant un `#` avant la fin de la ligne seront interprétés 
 
 ## Syntaxe 
 
+Trois syntaxes sont disponibles selon le type de la cible pour modifier son accès :
+
+- Pour les classes : `<modificateur> <nom de la classe>`
+- Pour les méthodes : `<modificateur> <nom de la classe> <nom de la méthode>([description des paramètres])<description de ce qui est retourné>`
+- Pour les variables : `<modificateur> <nom de la classe> <nom de la variable>`
+
 ## Les modifieurs d'accès
 
-Les modificateurs d'accès spécifient vers quelle nouvelle visibilité la cible donnée sera transformée. Par ordre décroissant de visibilité :
+Les modificateurs d'accès spécifient vers quelle nouvelle visibilité la cible donnée sera transformée :
 - `public` - visible pour toutes les classes à l'intérieur et à l'extérieur de son package
 - `protected` - visible uniquement pour les classes à l'intérieur du package et les sous-classes
 - `default` - visible uniquement pour les classes à l'intérieur du package
 - `private` - visible uniquement à l'intérieur de la classe
 
 Le modificateur spécial +f et -f peut être ajouté aux modificateurs mentionnés plus haut afin d'ajouter ou de supprimer l'attribut `final`.
-
-## Obtenir les access transformers
-
-Pour obtenir les access transformers, vous pouvez rejoindre le [discord](https://discord.gg/UvedJ9m) de Forge, vous rendre dans le channel bot-commands et utiliser ces 3 commandes (ceci concerne les mappings officiels) :
-- `!mojf` suivi du nom de la variable (et cela peut être précédé du nom de la classe suivie d'un point pour plus de précisions, ex : `Block.harvestLevel`) pour obtenir la ligne d'access transformer correspondante.
-- `!mojm` suivi du nom de la fonction (et cela peut être précédé du nom de la classe suivie d'un point pour plus de précisions, ex : `Block.asBlock`) pour obtenir la ligne d'access transformer correspondante.
-- `!mojc` suivi du nom de la classe pour obtenir la ligne d'access transformer correspondante.
 
 ## Exemples
 
