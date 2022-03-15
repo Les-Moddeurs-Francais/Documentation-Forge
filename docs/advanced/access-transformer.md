@@ -21,7 +21,9 @@ Pour appliquer les `access trasnformers` après une modification du fichier, vou
 
 ## Commentaires
 
-Tous les textes succédant un `#` avant la fin de la ligne seront transcrits comme des commentaires et ne seront pas pris en compte.
+Tous les textes succédant un `#` avant la fin de la ligne seront interprétés comme des commentaires et ne seront pas pris en compte par _ForgeGradle_.
+
+## Syntaxe 
 
 ## Les modifieurs d'accès
 
