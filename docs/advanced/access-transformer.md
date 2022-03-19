@@ -17,7 +17,7 @@ minecraft {
 
 Après cela, vous devrez créer un fichier `accesstransformer.cfg` au niveau du chemin spécifié (ici le dossier `META-INF` situé dans vos ressources).
 
-Il est à chaque fois nécessaire de rafraichir son projet Gradle pour que les _transformers_ soit appliqués.
+Il est à chaque fois nécessaire de rafraîchir son projet Gradle pour que les _transformers_ soit appliqués.
 
 ## Commentaires
 
@@ -59,12 +59,12 @@ Le modificateur spécial +f et -f peut être ajouté aux modificateurs mentionn�
 ## Exemples
 
 ```
-# Définis la visibilité de la méthode en public
+# Définit la visibilité de la méthode en public
 public net.minecraft.data.loot.BlockLoot m_124254_(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder; # createStemDrops
 
-# Définis la visibilité de la variable en protected
+# Définit la visibilité de la variable en protected
 protected net.minecraft.client.gui.Gui f_168670_ # LINE_HEIGHT
 
-# Définis la visibilité de la classe en protected
+# Définit la visibilité de la classe en protected
 protected net.minecraft.client.gui.screens.MenuScreens
 ```
