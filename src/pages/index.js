@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <Layout
       title={`Accueil`}
-      description="Documentation française et non officiel du projet MinecraftForge">
+      description="Documentation française et non officielle du projet MinecraftForge">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
