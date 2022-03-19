@@ -17,7 +17,20 @@
             <author>mysterious_dev@lesmoddeursfrancais.fr (Mysterious_Dev)</author>
             <category>forge</category>
             <category>update</category>
-            <category>118</category>
+            <category>1.18.1</category>
+        </item>
+        <item>
+            <title><![CDATA[Forge 1.18.2 40.0]]></title>
+            <link>https://www.forge-doc.lesmoddeursfrancais.fr/news/forge-118-400</link>
+            <guid>forge-118-400</guid>
+            <pubDate>Sat, 19 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Malgré le fait que la 1.18.2 soit une mise à jour mineure, celle-ci apporte quelques changements plus ou moins importants.]]></description>
+            <content:encoded><![CDATA[<p>Malgré le fait que la 1.18.2 soit une mise à jour mineure, celle-ci apporte quelques changements plus ou moins importants.</p><p>Lien de l'annonce de Forge : <a href="https://forums.minecraftforge.net/topic/109680-forge-400-minecraft-1182/" target="_blank" rel="noopener noreferrer">https://forums.minecraftforge.net/topic/109680-forge-400-minecraft-1182/</a></p><h2 class="anchor anchorWithStickyNavbar_mojV" id="changements">Changements<a class="hash-link" href="#changements" title="Lien direct vers le titre">​</a></h2><p>Depuis l'épisode de Log4Shell (faille de sécurité d'une librairie utilisée par Minecraft), Mojang a commencé à faire la transition vers SLF4J pour les <em>logs</em>. Assurez-vous donc d'utiliser LogUtils.getLogger() plutôt que Log4J utilisée précédemment.</p><p>Mis à part cela, pas beaucoup de changements à signaler depuis la version <a href="/news/forge-118-391">1.18.1 39.1</a>.
+Les principaux changements sont de Mojang avec les tags qui ont été complètement réécrits ainsi que les registres <em>vanilla</em> qui sont désormais verrouillés par du code.</p>]]></content:encoded>
+            <author>mysterious_dev@lesmoddeursfrancais.fr (Mysterious_Dev)</author>
+            <category>forge</category>
+            <category>update</category>
+            <category>1.18.2</category>
         </item>
         <item>
             <title><![CDATA[Forge 1.18 38.0]]></title>
