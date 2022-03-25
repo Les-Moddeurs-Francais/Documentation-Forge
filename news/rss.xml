@@ -7,6 +7,7 @@
         <lastBuildDate>Sat, 19 Mar 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <language>fr</language>
         <item>
             <title><![CDATA[Forge 1.18.1 39.1]]></title>
             <link>https://www.forge-doc.lesmoddeursfrancais.fr/news/forge-118-391</link>
