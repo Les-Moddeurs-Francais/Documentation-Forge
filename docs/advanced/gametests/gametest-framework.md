@@ -57,7 +57,7 @@ Pour créer un test, il suffit d'aller en jeu et d'utiliser la commande :
 
 `/test create nomDuTest longueurDeLaStructure hauteurDeLaStructure profondeurDeLaStructure`
 
-(La taille, la largeur et la profondeur de la structure sont des valeurs optionnelles)
+(La longueur, la largeur et la profondeur de la structure sont des valeurs optionnelles)
 Le nom du test n'est pas important, car il devra être changé plus tard de toute façon.
 
 Vous devriez normalement voir quelque chose de similaire à cela :
@@ -157,7 +157,7 @@ Peu importe le type de test, vous devriez trouver une méthode qui vous permettr
 
 
 ## Lancer les tests
-Pour lancer les tests et vérifier leur bon fonctionnement, vous avez deux solutions :
+Pour lancer les tests et vérifier leurs bons fonctionnements, vous avez deux solutions :
 - Les lancer en jeu dans la configuration runClient
 - Les lancer de manière non visible avec la configuration runGameTestServer
 
