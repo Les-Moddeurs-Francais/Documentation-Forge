@@ -166,7 +166,7 @@ Lorsque vous êtes en jeu, vous pouvez soit lancer tous les tests en utilisant l
 
 Une fois le ou les tests lancés, vous devriez voir les templates être ajoutées au monde et les tests s'exécuter.
 
-Si un test succède, un beacon vert apparaîtra proche de la template.
+Si un test est un succès, un beacon vert apparaîtra proche de la template.
 
 Si un test échoue, un beacon rouge apparaîtra proche de la template ainsi qu'un livre contenant les erreurs posé sur un pupitre. Vous aurez aussi un message dans le chat.
 
