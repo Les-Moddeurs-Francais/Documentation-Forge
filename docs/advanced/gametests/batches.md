@@ -2,7 +2,7 @@
 sidebar_position: 2
 title: Les Batch
 description: Comment utiliser les batchs pour grouper des GameTests ?
-tags: [GameTest]
+tags: [game_test]
 ---
 
 Les `Batch`s sont utilisés pour grouper des GameTests. Cela peut être utile par exemple pour des tests nécessitant des conditions spéciales (nuit, etc.), pour ne pas causer de conflits (exemple : tests devant se produire le jour)

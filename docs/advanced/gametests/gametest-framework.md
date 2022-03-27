@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Game Test Framework
 description: Comment utiliser le framework de test intégré à Forge ?
-tags: [GameTest]
+tags: [game_test]
 ---
 
 Le **Game Test Framework** est, comme son nom l'indique, un *framework* permettant de *tester* le jeu. Plus précisément, il permet de tester des mécaniques du jeu stockées sous forme de structures et exécutées par groupes, par exemple le pathfinding d'un villageois ou encore un piston qui pousse des blocks.

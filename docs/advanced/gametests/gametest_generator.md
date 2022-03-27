@@ -2,7 +2,7 @@
 sidebar_position: 3
 title: GameTest Generator
 description: Comment utiliser les GameTest Generator ?
-tags: [GameTest]
+tags: [game_test]
 ---
 
 Les GameTest Generators sont des méthodes annotées avec `@GameTestGenerator` qui permettent de générer plusieurs GameTests dynamiquement depuis une seule méthode.
