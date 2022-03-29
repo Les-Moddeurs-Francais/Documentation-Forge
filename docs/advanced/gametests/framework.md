@@ -12,7 +12,7 @@ Si vous souhaitez en savoir plus sur ce framework, par exemple sur comment Mojan
 :::
 
 :::caution
-L'implémentation de ce système pour les moddeurs ayant été ajoutée dans dans Forge 39.0.88, vous devez être dans une version supérieure ou égale à celle-ci pour l'utiliser. (Je vous invite cependant à utiliser la dernière version, car il y a eu des changements dans ce système depuis son implémentation)
+L'implémentation de ce système pour les moddeurs ayant été ajoutée dans Forge 39.0.88, vous devez être dans une version supérieure ou égale à celle-ci pour l'utiliser (Je vous invite cependant à utiliser la dernière version, car il y a eu des changements dans ce système depuis son implémentation).
 
 Vous devez aussi vérifier que pour chaque configuration de lancement dans votre build.gradle, vous avez bien la ligne suivante : property `forge.enabledGameTestNamespaces`, `votre_mod_id`, celle-ci activant tous les tests liés à votre modid.
 
