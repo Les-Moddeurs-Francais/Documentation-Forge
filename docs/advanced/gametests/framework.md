@@ -14,9 +14,9 @@ Si vous souhaitez en savoir plus sur ce framework, par exemple sur comment Mojan
 :::caution
 L'implémentation de ce système pour les moddeurs ayant été ajoutée dans dans Forge 39.0.88, vous devez être dans une version supérieure ou égale à celle-ci pour l'utiliser. (Je vous invite cependant à utiliser la dernière version, car il y a eu des changements dans ce système depuis son implémentation)
 
-Vous devez aussi vérifier que pour chaque configuration de run dans votre build.gradle, vous avez bien la ligne `property 'forge.enabledGameTestNamespaces', 'votre_mod_id'`. Cette ligne active tous les tests liés à votre modid.
+Vous devez aussi vérifier que pour chaque configuration de lancement dans votre build.gradle, vous avez bien la ligne suivante : property `forge.enabledGameTestNamespaces`, `votre_mod_id`, celle-ci activant tous les tests liés à votre modid.
 
-Enfin, si vous ne l'avez pas, je vous invite à ajouter la configuration de run `runGameTestServer` avec les autres, qui va lancer un serveur sur votre ordinateur qui va exécuter tous les tests puis se fermer. Vous pouvez trouver plus d'informations dessus dans la section **Exécuter les tests**.
+Enfin, si vous ne l'avez pas, je vous invite à ajouter la configuration de lancement `runGameTestServer` avec les autres. Celle-ci va lancer un serveur sur votre ordinateur qui va exécuter tous les tests puis se fermer. Vous pouvez trouver plus d'informations dessus dans la section **Exécuter les tests**.
 <details>
       <summary>
         Le code en question (remplacez bien <code>votre_mod_id</code> par votre modid, attention il est présent plusieurs fois)
@@ -109,7 +109,7 @@ L'annotation `@GameTest` est configurable avec les arguments suivants :
 | `batch`             | Le nom d'un groupe qui peut être utilisé pour grouper des tests similaires ensemble.                                                                                                                                                                                                                | "defaultBatch"         |
 | `rotationSteps`     | Permet de tourner une template. 0 = aucune rotation, 1 = 90 degrés dans le sens des aiguilles d'une montre, 2 = 180 degrés, 3 = 270 degrés dans le sens des aiguilles d'une montre. N'importe quelle valeur non comprise entre 0 et 3 retournera une erreur.                                        | 0 (Aucune rotation)    |
 | `required`          | Si cette valeur est mise à `true`, le groupe de tests entier retournera une erreur si le test n'est pas validé. Au contraire, si cette valeur est mise à `false`, l'erreur sera présente dans les logs mais n'affectera pas le groupe de tests.                                                     | true                   |
-| `templateNamespace` | Ajoutée par Forge, cet argument détermine depuis quel namespace (un modid est un namespace) la template sera chargée. Cet argument détermine aussi si un GameTest sera chargé en se basant sur la propriété `forge.enabledGameTestNamespaces` qui est dans chacune de vos configurations de run.    | "minecraft"            |
+| `templateNamespace` | Ajoutée par Forge, cet argument détermine depuis quel namespace (un modid est un namespace) la template sera chargée. Cet argument détermine aussi si un GameTest sera chargé en se basant sur la propriété `forge.enabledGameTestNamespaces` qui est dans chacune de vos configurations de lancement.    | "minecraft"            |
 | `template`          | Définit le chemin d'accès à la template relatif à `data/modid/structures` utilisé pour la charger.                                                                                                                                                                                                  | ""                     |
 | `setupTicks`        | Définit combien de ticks le jeu attend après avoir fait apparaître la template avant que le game test ne commence.                                                                                                                                                                                  | 0                      |
 | `attempts`          | Définit combien de fois le jeu essaye d'exécuter le game test avant de renvoyer une erreur (si le nombre de succès requis est atteint avant, le jeu valide le test et arrête de l'exécuter).                                                                                                        | 1                      |
@@ -121,7 +121,7 @@ Si vous ne spécifiez pas l'argument `template`, Forge prendra le nom de la mét
 
 Si vous avez utilisé l'annotation `@GameTestHolder` avec votre modid, vous n'avez pas besoin de spécifier le `templateNamespace`. Ce n'est pas le cas si vous utilisez l'event `RegisterGameTestEvent`.
 
-Veuillez aussi noter que le `templateNamespace` sert aussi à déterminer si le test sera exécuté ou non, en méthode du ou des modid renseignés dans le build.gradle dans les lignes `property 'forge.enabledGameTestNamespaces', 'votre_mod_id'` dans vos configurations de run présentes dans votre build.gradle. Vous pouvez d'ailleurs utiliser plusieurs modid pour les tests comme ceci : `property 'forge.enabledGameTestNamespaces', 'votre_mod_id,autre_mod_id,encore_un_autre'`
+Veuillez aussi noter que le `templateNamespace` sert aussi à déterminer si le test sera exécuté ou non, en méthode du ou des modid renseignés dans le build.gradle dans les lignes `property 'forge.enabledGameTestNamespaces', 'votre_mod_id'` dans vos configurations de lancement présentes dans votre build.gradle. Vous pouvez d'ailleurs utiliser plusieurs modid pour les tests comme ceci : `property 'forge.enabledGameTestNamespaces', 'votre_mod_id,autre_mod_id,encore_un_autre'`
 :::info
 
 #### Renommer la template
