@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: GameTest Generator
+title: Generator
 description: Comment utiliser les GameTest Generator ?
 tags: [game_test]
 ---

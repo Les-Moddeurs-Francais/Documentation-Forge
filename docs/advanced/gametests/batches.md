@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Les Batch
+title: Batches
 description: Comment utiliser les batchs pour grouper des GameTests ?
 tags: [game_test]
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Game Test Framework
+title: Framework
 description: Comment utiliser le framework de test intégré à Forge ?
 tags: [game_test]
 ---
