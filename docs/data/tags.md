@@ -64,6 +64,39 @@ protected void addTags() {
 }
 ```
 
+### Classes non définies
+
+Pour commencer, nous avons besoin d'une classe qui héritera de la classe `TagsProvider<?>` (le type paramètre doit correspondre avec le type d'élément (par exemple pour un enchantement, cela doit être `TagsProvider<Enchantment>`)). 
+On rajoutera ensuite, le constructeur de la classe dans lequel nous allons modifier quelques trucs.
+
+Nous allons prendre ici l'exemple des enchantements :
+```java
+public class EnchantmentTagsGenerator extends TagsProvider<Enchantment> {
+
+    public EnchantmentTagsGenerator(DataGenerator p_126546_, String modId, @Nullable ExistingFileHelper existingFileHelper) {
+        super(p_126546_, Registry.ENCHANTMENT, modId, existingFileHelper);
+    }
+}
+```
+
+Pour expliquer un peu plus les différents paramètres, le premier correspond aux data generator (renseigné au moment de l'enregistrement du _provider_), le deuxième lui correspond au modid de votre mod, le troisième correspond au registre du type d'élément (ici nous avons le registre pour les enchantements) et le quatrième, le **ExistingFileHelper** (celui-ci servant pour la vérification des fichiers déjà générés).
+
+Ensuite, on va devoir utiliser la fonction `addTags` ainsi que `getName`, héritée de la classe mère.
+
+```java
+@Override
+protected void addTags() {
+    
+}
+
+@Override
+public String getName() {
+    return "Mon Provider Custom";
+}
+```
+
+---
+
 Après cette fonction, 4 types de fonction sont disponibles, `add`, `addOptional`, `addTag` et `addOptionalTag`.
 
 ```java
@@ -90,9 +123,13 @@ addOptionalTag(net.minecraftforge.common.Tags.Blocks.COBBLESTONE.location());
 
 La fonction `addOptionalTag` permet d'ajouter chaque valeur d'un [_tag_](../bases/resources/tags) au [_tag_](../bases/resources/tags) en question, qui seront optionnelles (c'est-à-dire que si le jeu ne connait pas l'identifiant de ce [_tag_](../bases/resources/tags), celui-ci ne sera pas pris en compte par le jeu). Le paramètre est l'identifiant du [_tag_](../bases/resources/tags) optionnel (`ResourceLocation`).
 
-### Classes non définies
-
-
+```java
+tag(BlockTags.create(new ResourceLocation("modid, "mon_tag")))
+        .add(Blocks.DIAMOND_BLOCK)
+        .addOptional(Blocks.GOLD_BLOCK.getRegistryName())
+        .addTag(BlockTags.STONE_BRICKS)
+        .addOptionalTag(net.minecraftforge.common.Tags.Blocks.COBBLESTONE.location());
+```
 
 ## GatherDataEvent
 
