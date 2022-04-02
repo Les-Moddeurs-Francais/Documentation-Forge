@@ -5,7 +5,7 @@ description: Comment sont structurées les tags dans Minecraft ?
 tags: [bases, ressources]
 ---
 
-Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du jeu (comme des items, blocs, entitées, etc...) dans un même fichier pour après les utiliser dans des recettes (par exemple celle du coffre nécessitant n'importe quels types de bois) ou même dans votre code.
+Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du même type, disponible dans le jeu (comme des items, blocs, entitées, biomes, etc...) dans un même fichier pour après les utiliser dans des recettes (par exemple celle du coffre nécessitant n'importe quels types de bois) ou même dans votre code.
 
 ## Structure générale
 
