@@ -99,6 +99,8 @@ C'est dans cette fonction que tout va se jouer. On a accès à des fonctions ven
 
 Dans un premier temps, la fonction requiert un identifiant pour le [_tag_](../bases/resources/tags). Celui-ci ayant un type `TagKey`, nous pouvons soit utiliser la fonction `TagKey#create` qui prend en premier argument le registre du type du [_tag_](../bases/resources/tags) et en deuxième l'identifiant du tag (`ResourceLocation`) 
 
+Dans notre cas, nous obtenons ce code :
+
 ```java
 @Override
 protected void addTags() {
