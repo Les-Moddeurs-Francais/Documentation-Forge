@@ -64,6 +64,24 @@ protected void addTags() {
 }
 ```
 
+Après cette fonction, 4 types de fonction sont disponibles, `add`, `addOptional`, `addTag` et `addOptionalTag`.
+
+```java
+add(Blocks.DIAMOND_BLOCK)
+```
+
+```java
+addOptional(Blocks.GOLD_BLOCK.getRegistryName())
+```
+
+```java
+addTag(BlockTags.STONE_BRICKS)
+```
+
+```java
+addOptionalTag(net.minecraftforge.common.Tags.Blocks.COBBLESTONE.location());
+```
+
 ### Classes non définies
 
 
