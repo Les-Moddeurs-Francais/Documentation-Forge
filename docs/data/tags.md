@@ -70,17 +70,25 @@ Après cette fonction, 4 types de fonction sont disponibles, `add`, `addOptional
 add(Blocks.DIAMOND_BLOCK)
 ```
 
+La fonction `add` permet d'ajouter une valeur au tag en question, qui sera requise (c'est-à-dire que si le jeu ne connait pas l'identifiant de cette valeur, une erreur sera produite).
+
 ```java
 addOptional(Blocks.GOLD_BLOCK.getRegistryName())
 ```
+
+La fonction `addOptional` permet d'ajouter une valeur au tag en question, qui sera optionnelle (c'est-à-dire que si le jeu ne connait pas l'identifiant de cette valeur, celle-ci ne sera pas prise en compte par le jeu). Le paramètre est l'identifiant de l'élément optionnel (`ResourceLocation`).
 
 ```java
 addTag(BlockTags.STONE_BRICKS)
 ```
 
+La fonction `addTag` permet d'ajouter chaque valeur d'un tag au tag en question, qui seront requises (c'est-à-dire que si le jeu ne connait pas l'identifiant de ce tag, une erreur sera produite).
+
 ```java
 addOptionalTag(net.minecraftforge.common.Tags.Blocks.COBBLESTONE.location());
 ```
+
+La fonction `addOptionalTag` permet d'ajouter chaque valeur d'un tag au tag en question, qui seront optionnelles (c'est-à-dire que si le jeu ne connait pas l'identifiant de ce tag, celui-ci ne sera pas pris en compte par le jeu). Le paramètre est l'identifiant du [_tag_](../bases/resources/tags) optionnel (`ResourceLocation`)
 
 ### Classes non définies
 
