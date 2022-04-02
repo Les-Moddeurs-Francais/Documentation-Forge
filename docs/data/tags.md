@@ -5,7 +5,7 @@ description: Comment utiliser les data generators pour tags ?
 tags: [data generators]
 ---
 
-Dans cette section, nous allons voir comment générer nos tags directement à l'aide d'un générateur.
+Dans cette section, nous allons voir comment générer nos [_tags_](../bases/resources/tags) directement à l'aide d'un générateur.
 
 ## Tags Provider
 
@@ -42,7 +42,7 @@ protected void addTags() {
 
 C'est dans cette fonction que tout va se jouer. On a accès à des fonctions venant de la classe mère nommées `tag` qui permettent d'ajouter nos _tags_.
 
-Dans un premier temps, la fonction requiert un identifiant pour le _tag_. Celui-ci ayant un type `TagKey`, nous pouvons soit utiliser la fonction `TagKey#create`, soit des fonctions prédéfinies ou même des valeurs prédéfinies par Mojang (disponibles dans les différentes classes des [_tags_](../bases/resources/tags)) :
+Dans un premier temps, la fonction requiert un identifiant pour le [_tag_](../bases/resources/tags). Celui-ci ayant un type `TagKey`, nous pouvons soit utiliser la fonction `TagKey#create`, soit des fonctions prédéfinies ou même des valeurs prédéfinies par Mojang (disponibles dans les différentes classes des [_tags_](../bases/resources/tags)) :
 
 :::tip
 Pour les classes prédéfinies, une fonction est disponible pour que cela soit plus simple. Les fonctions associées selon les classes mères sont :
@@ -70,25 +70,25 @@ Après cette fonction, 4 types de fonction sont disponibles, `add`, `addOptional
 add(Blocks.DIAMOND_BLOCK)
 ```
 
-La fonction `add` permet d'ajouter une valeur au tag en question, qui sera requise (c'est-à-dire que si le jeu ne connait pas l'identifiant de cette valeur, une erreur sera produite).
+La fonction `add` permet d'ajouter une valeur au [_tag_](../bases/resources/tags) en question, qui sera requise (c'est-à-dire que si le jeu ne connait pas l'identifiant de cette valeur, une erreur sera produite). Le paramètre est la valeur de l'élément (clé de ressource ou objet du type visé (ici `Block`)).
 
 ```java
 addOptional(Blocks.GOLD_BLOCK.getRegistryName())
 ```
 
-La fonction `addOptional` permet d'ajouter une valeur au tag en question, qui sera optionnelle (c'est-à-dire que si le jeu ne connait pas l'identifiant de cette valeur, celle-ci ne sera pas prise en compte par le jeu). Le paramètre est l'identifiant de l'élément optionnel (`ResourceLocation`).
+La fonction `addOptional` permet d'ajouter une valeur au [_tag_](../bases/resources/tags) en question, qui sera optionnelle (c'est-à-dire que si le jeu ne connait pas l'identifiant de cette valeur, celle-ci ne sera pas prise en compte par le jeu). Le paramètre est l'identifiant de l'élément optionnel (`ResourceLocation`).
 
 ```java
 addTag(BlockTags.STONE_BRICKS)
 ```
 
-La fonction `addTag` permet d'ajouter chaque valeur d'un tag au tag en question, qui seront requises (c'est-à-dire que si le jeu ne connait pas l'identifiant de ce tag, une erreur sera produite).
+La fonction `addTag` permet d'ajouter chaque valeur d'un [_tag_](../bases/resources/tags) au [_tag_](../bases/resources/tags) en question, qui seront requises (c'est-à-dire que si le jeu ne connait pas l'identifiant de ce [_tag_](../bases/resources/tags), une erreur sera produite). Le paramètre est l'identifiant du [_tag_](../bases/resources/tags) (clé de [_tag_](../bases/resources/tags)).
 
 ```java
 addOptionalTag(net.minecraftforge.common.Tags.Blocks.COBBLESTONE.location());
 ```
 
-La fonction `addOptionalTag` permet d'ajouter chaque valeur d'un tag au tag en question, qui seront optionnelles (c'est-à-dire que si le jeu ne connait pas l'identifiant de ce tag, celui-ci ne sera pas pris en compte par le jeu). Le paramètre est l'identifiant du [_tag_](../bases/resources/tags) optionnel (`ResourceLocation`)
+La fonction `addOptionalTag` permet d'ajouter chaque valeur d'un [_tag_](../bases/resources/tags) au [_tag_](../bases/resources/tags) en question, qui seront optionnelles (c'est-à-dire que si le jeu ne connait pas l'identifiant de ce [_tag_](../bases/resources/tags), celui-ci ne sera pas pris en compte par le jeu). Le paramètre est l'identifiant du [_tag_](../bases/resources/tags) optionnel (`ResourceLocation`).
 
 ### Classes non définies
 
