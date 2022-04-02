@@ -40,7 +40,7 @@ protected void addTags() {
 }
 ```
 
-C'est dans cette fonction que tout va se jouer. On a accès à des fonctions venant de la classe mère nommées `tag` qui permettent d'ajouter nos _tags_.
+C'est dans cette fonction que tout va se jouer. On a accès à des fonctions venant de la classe mère nommées `tag` qui permettent d'ajouter nos [_tags_](../bases/resources/tags).
 
 Dans un premier temps, la fonction requiert un identifiant pour le [_tag_](../bases/resources/tags). Celui-ci ayant un type `TagKey`, nous pouvons soit utiliser la fonction `TagKey#create`, soit des fonctions prédéfinies ou même des valeurs prédéfinies par Mojang (disponibles dans les différentes classes des [_tags_](../bases/resources/tags)) :
 
@@ -92,6 +92,17 @@ protected void addTags() {
 @Override
 public String getName() {
     return "Mon Provider Custom";
+}
+```
+
+C'est dans cette fonction que tout va se jouer. On a accès à des fonctions venant de la classe mère nommées `tag` qui permettent d'ajouter nos [_tags_](../bases/resources/tags).
+
+Dans un premier temps, la fonction requiert un identifiant pour le [_tag_](../bases/resources/tags). Celui-ci ayant un type `TagKey`, nous pouvons soit utiliser la fonction `TagKey#create` qui prend en premier argument le registre du type du [_tag_](../bases/resources/tags) et en deuxième l'identifiant du tag (`ResourceLocation`) 
+
+```java
+@Override
+protected void addTags() {
+    tag(TagKey.create(Registry.ENCHANTMENT_REGISTRY, new ResourceLocation("modid", "mon_tag")));
 }
 ```
 
@@ -156,6 +167,6 @@ public static void dataGen(final GatherDataEvent e)
 
 :::tip
 Remarquez le `e.includeServer()` qui permet de répartir les différentes
-ressources selon le côté qui les utilise. En l'occurrence, les _tags_
+ressources selon le côté qui les utilise. En l'occurrence, les [_tags_](../bases/resources/tags)
 ne sont utilisés que par le serveur, donc pas besoin de le générer coté client.
 :::
