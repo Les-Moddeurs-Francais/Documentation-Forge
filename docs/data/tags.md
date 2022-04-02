@@ -9,7 +9,7 @@ Dans cette section, nous allons voir comment générer nos tags directement à l
 
 ## Tags Provider
 
-Depuis la 1.18.2, les [tags](../bases/resources/tags) peuvent être utilisés pour regrouper tout type d'élément dans le jeu. Dans cette partie nous allons voir comment utiliser les classes pour les types prédéfinis et ensuite pour ceux non définis de base.
+Depuis la 1.18.2, les [_tags_](../bases/resources/tags) peuvent être utilisés pour regrouper tout type d'élément dans le jeu. Dans cette partie nous allons voir comment utiliser les classes pour les types prédéfinis et ensuite pour ceux non définis de base.
 
 ### Classes prédéfinies
 
@@ -41,6 +41,28 @@ protected void addTags() {
 ```
 
 C'est dans cette fonction que tout va se jouer. On a accès à des fonctions venant de la classe mère nommées `tag` qui permettent d'ajouter nos _tags_.
+
+Dans un premier temps, la fonction requiert un identifiant pour le _tag_. Celui-ci ayant un type `TagKey`, nous pouvons soit utiliser la fonction `TagKey#create`, soit des fonctions prédéfinies ou même des valeurs prédéfinies par Mojang (disponibles dans les différentes classes des [_tags_](../bases/resources/tags)) :
+
+:::tip
+Pour les classes prédéfinies, une fonction est disponible pour que cela soit plus simple. Les fonctions associées selon les classes mères sont :
+- `BiomeTagsProvider` -> `BiomeTags#create`
+- `BlockTagsProvider` -> `BlockTags#create`
+- `ConfiguredStructureTagsProvider` -> `ConfiguredStructureTags#create`
+- `EntityTypeTagsProvider` -> `EntityTypeTags#create`
+- `FluidTagsProvider` -> `FluidTags#create`
+- `GameEventTagsProvider` -> `GameEventTags#create`
+- `ItemTagsProvider` -> `ItemTags#create`
+:::
+
+Dans notre cas, nous allons utiliser la fonction prédéfinie pour cela dans la classe `BlockTags` :
+
+```java
+@Override
+protected void addTags() {
+    tag(BlockTags.create(new ResourceLocation("modid, "mon_tag")));
+}
+```
 
 ### Classes non définies
 
