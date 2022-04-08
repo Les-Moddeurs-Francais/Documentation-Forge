@@ -19,7 +19,7 @@ function getNextVersionName() {
 module.exports = {
   title: 'Documentation Forge',
   tagline: '¯\\_(ツ)_/¯',
-  url: 'https://www.forge-doc.lesmoddeursfrancais.fr',
+  url: 'https://forge-doc.lesmoddeursfrancais.fr',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
