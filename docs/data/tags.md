@@ -9,11 +9,11 @@ Dans cette section, nous allons voir comment générer nos [_tags_](../bases/res
 
 ## Tags Provider
 
-Depuis la 1.18.2, les [_tags_](../bases/resources/tags) peuvent être utilisés pour regrouper tout type d'élément dans le jeu. Dans cette partie nous allons voir comment utiliser les classes pour les types prédéfinis et ensuite pour ceux non définis de base.
+Depuis la 1.18.2, les [_tags_](../bases/resources/tags) peuvent être utilisés pour regrouper tout type d'élément dans le jeu. Dans cette partie nous allons voir comment utiliser les classes pour les types prédéfinis et ensuite pour ceux non définis de base par Mojang.
 
 ### Classes prédéfinies
 
-Pour commencer, nous avons besoin d'une classe qui héritera de l'une des classes ci-dessous. On rajoutera ensuite, le constructeur de la classe dans lequel nous allons modifier quelques trucs.
+Pour commencer, nous avons besoin d'une classe qui héritera de l'une des classes ci-dessous. On rajoutera ensuite, le constructeur de celle-ci dans lequel nous allons modifier quelques trucs.
 
 - BiomeTagsProvider
 - BlockTagsProvider
