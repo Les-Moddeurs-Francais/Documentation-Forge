@@ -136,6 +136,8 @@ addOptionalTag(net.minecraftforge.common.Tags.Blocks.COBBLESTONE.location());
 
 La fonction `addOptionalTag` permet d'ajouter chaque valeur d'un [_tag_](../bases/resources/tags) au [_tag_](../bases/resources/tags) en question, qui seront optionnelles (c'est-à-dire que si le jeu ne connait pas l'identifiant de ce [_tag_](../bases/resources/tags), celui-ci ne sera pas pris en compte par le jeu). Le paramètre est l'identifiant du [_tag_](../bases/resources/tags) optionnel (`ResourceLocation`).
 
+Ici pour l'exemple, en combiant toutes ces fonctions, nous allons créer un [_tag_](../bases/resources/tags) dont l'id est `mod_tag`, contenu dans les _data_ du mod dont le _modid_ est `modid` et qui contient comme valeur l'identifiant du bloc de diamant (qui est obligatoire), l'identifiant du bloc d'or (qui est optionnel), l'identifiant du tag regroupant tous les types de pierre taillée (qui est obligatoire) ainsi que l'identifiant du tag regroupant tous les types de pierre (qui est optionnel) :
+
 ```java
 tag(BlockTags.create(new ResourceLocation("modid, "mon_tag")))
         .add(Blocks.DIAMOND_BLOCK)
@@ -162,7 +164,7 @@ public static void dataGen(final GatherDataEvent e)
 
     if(e.includeServer())
     {
-        generator.addProvider(new TagsGenerator(generator, event.getExistingFileHelper()));
+        generator.addProvider(new TagsGenerator(generator, "modid", event.getExistingFileHelper()));
     }
 }
 ```
