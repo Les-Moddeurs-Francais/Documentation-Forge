@@ -109,6 +109,9 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} - <a href="https://www.lesmoddeursfrancais.fr">Les Moddeurs Francais</a>`,
     },
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
