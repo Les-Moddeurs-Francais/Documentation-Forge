@@ -58,8 +58,9 @@ module.exports = {
         },
         {
           href: 'https://github.com/Les-Moddeurs-Francais/Forge-Doc',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
