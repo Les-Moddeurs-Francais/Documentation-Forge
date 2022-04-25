@@ -15,7 +15,6 @@ function getNextVersionName() {
   return `${expectedPrefix}${version + 1}`;
 }
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Documentation Forge',
   tagline: '¯\\_(ツ)_/¯',
@@ -68,11 +67,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Documentations',
+          title: 'Liens connexes',
           items: [
             {
-              label: 'Forge',
-              to: '/docs/intro',
+              label: 'Téléchargements de Forge',
+              href: 'https://files.minecraftforge.net',
+            },
+            {
+              label: 'Forum de Forge',
+              href: 'https://minecraftforge.net',
             },
           ],
         },
@@ -86,10 +89,6 @@ module.exports = {
             {
               label: 'Twitter',
               href: 'https://twitter.com/lesmoddeursfr',
-            },
-            {
-              label: 'Trello',
-              href: 'https://trello.com/lesmoddeursfrancais',
             },
           ],
         },
