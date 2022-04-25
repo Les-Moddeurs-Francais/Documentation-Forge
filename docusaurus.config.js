@@ -15,7 +15,6 @@ function getNextVersionName() {
   return `${expectedPrefix}${version + 1}`;
 }
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Documentation Forge',
   tagline: '¯\\_(ツ)_/¯',
