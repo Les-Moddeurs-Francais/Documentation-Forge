@@ -168,6 +168,7 @@ module.exports = {
           blogTitle: 'News',
           blogDescription: 'Les dernières news concernant le projet MinecraftForge',
           path: 'news',
+          blogSidebarTitle: 'Dernières news',
           routeBasePath: 'news',
           showReadingTime: false,
           editUrl:
