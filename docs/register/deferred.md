@@ -16,41 +16,46 @@ public static final DeferredRegister<Item> MON_REGISTRE = DeferredRegister.creat
 ```
 
 Quelques explications :
-- La classe référencée entre les chevrons doit correspondre au type définit par le premier argument.
-- Le premier argument permet de définir le type d'élément que nous allons pouvoir enregistrer (ici, cela sera pour les items). Il en existe different types :
-    - BLOCKS
-    - FLUIDS
-    - ITEMS
-    - MOB_EFFECTS
-    - SOUND_EVENTS
-    - POTIONS
-    - ENCHANTMENTS
-    - ENTITIES
-    - BLOCK_ENTITIES
-    - PARTICLE_TYPES
-    - CONTAINERS
-    - PAINTING_TYPES
-    - RECIPE_SERIALIZERS
-    - ATTRIBUTES
-    - STAT_TYPES
-    - PROFESSIONS
-    - POI_TYPES
-    - MEMORY_MODULE_TYPES
-    - SENSOR_TYPES
-    - SCHEDULES
-    - ACTIVITIES
-    - WORLD_CARVERS
-    - FEATURES
-    - CHUNK_STATUS
-    - STRUCTURE_FEATURES
-    - BLOCK_STATE_PROVIDER_TYPES
-    - FOLIAGE_PLACER_TYPES
-    - TREE_DECORATOR_TYPES
-    - BIOMES
-    - DATA_SERIALIZERS
-    - LOOT_MODIFIER_SERIALIZERS
-    - WORLD_TYPES
-- Le deuxième quant à lui est le modid sous lequel votre élément sera enregistré (il est préférable de mettre le modid de votre mod).
+- La classe référencée entre les chevrons doit correspondre au type définit par le premier argument
+- Le premier argument permet de définir le type d'élément (liste ci-dessous) que nous allons pouvoir enregistrer (ici, cela sera pour les items)
+<details>
+<summary>Liste des types</summary>
+<ul>
+  <li>BLOCKS</li>
+  <li>FLUIDS</li>
+  <li>ITEMS</li>
+  <li>MOB_EFFECTS</li>
+  <li>SOUND_EVENTS</li>
+  <li>POTIONS</li>
+  <li>ENCHANTMENTS</li>
+  <li>ENTITIES</li>
+  <li>BLOCK_ENTITIES</li>
+  <li>PARTICLE_TYPES</li>
+  <li>CONTAINERS</li>
+  <li>PAINTING_TYPES</li>
+  <li>RECIPE_SERIALIZERS</li>
+  <li>ATTRIBUTES</li>
+  <li>STAT_TYPES</li>
+  <li>PROFESSIONS</li>
+  <li>POI_TYPES</li>
+  <li>MEMORY_MODULE_TYPES</li>
+  <li>SENSOR_TYPES</li>
+  <li>SCHEDULES</li>
+  <li>ACTIVITIES</li>
+  <li>WORLD_CARVERS</li>
+  <li>FEATURES</li>
+  <li>CHUNK_STATUS</li>
+  <li>STRUCTURE_FEATURES</li>
+  <li>BLOCK_STATE_PROVIDER_TYPES</li>
+  <li>FOLIAGE_PLACER_TYPES</li>
+  <li>TREE_DECORATOR_TYPES</li>
+  <li>BIOMES</li>
+  <li>DATA_SERIALIZERS</li>
+  <li>LOOT_MODIFIER_SERIALIZERS</li>
+  <li>WORLD_TYPES</li>
+</ul>
+</details>
+- Le deuxième quant à lui est le modid sous lequel votre élément sera enregistré (il est préférable de mettre le modid de votre mod)
 
 Il ne reste plus qu'à faire comprendre au jeu que le Deferred Register existe et pour cela il faudra disposer ce bout de code dans le constructeur de votre classe principale.
 
