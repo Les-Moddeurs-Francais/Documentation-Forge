@@ -7,10 +7,12 @@ tags: [enregistrement]
 
 Pour créer un Deferred Register, il nous faut tout d'abord ajouter une variable dans une classe où nous enregistrerons tous les éléments concernés (comme les items, les blocs, etc...) comme celle-ci :
 
-# Créer le Deferred Register
+## Créer un Deferred Register
+
+### Registres gérés par Forge
 
 ```java 
-public static final DeferredRegister<Item> NOM_VARIABLE = DeferredRegister.create(ForgeRegistries.ITEMS, "modid");
+public static final DeferredRegister<Item> MON_REGISTRE = DeferredRegister.create(ForgeRegistries.ITEMS, "modid");
 ```
 
 Quelques explications :
@@ -60,4 +62,13 @@ Classe.NOM_VARIABLE.register(FMLJavaModLoadingContext.get().getModEventBus());
 Tous les noms de classes, de variables et de méthodes sont personnalisables comme vous le souhaitez, et cela, tout au long du tutoriel.
 :::
 
-Voilà maintenant le jeu pourra reconnaitre le Deferred Register. Il ne reste plus qu'à enregistrer des éléments du type de celui-ci
+### Registres non gérés par Forge
+
+En raison de certaines particularités du code de base, tous les registres ne sont pas gérés par Forge. Il peut s'agir de registres statiques, comme `RecipeType`, qui peuvent être utilisés en toute sécurité, ou des registres dynamiques, comme `ConfiguredFeature` et certains autres registres concernant la génération, qui sont généralement représentés en JSON. Ces objets ne doivent être enregistrés de cette manière que si un autre objet de registre le nécessite. La fonction `DeferredRegister#create` possède une surcharge (depuis la 1.18.2) qui permet aux moddeurs de spécifier la clé du registre pour lequel il est nécessaire de créer un RegistryObject :
+
+```java
+private static final DeferredRegister<RecipeType<?>> MON_REGISTRE = DeferredRegister.create(Registry.RECIPE_TYPE_REGISTRY, "modid");
+
+
+public static final RegistryObject<RecipeType<ExampleRecipe>> MON_TYPE_RECETTE = REGISTER.register("example_recipe_type", () -> new RecipeType<>() {});
+```
