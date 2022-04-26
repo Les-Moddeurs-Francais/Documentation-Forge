@@ -74,6 +74,5 @@ En raison de certaines particularités du code de base, tous les registres ne so
 ```java
 private static final DeferredRegister<RecipeType<?>> MON_REGISTRE = DeferredRegister.create(Registry.RECIPE_TYPE_REGISTRY, "modid");
 
-
 public static final RegistryObject<RecipeType<ExampleRecipe>> MON_TYPE_RECETTE = REGISTER.register("example_recipe_type", () -> new RecipeType<>() {});
 ```
