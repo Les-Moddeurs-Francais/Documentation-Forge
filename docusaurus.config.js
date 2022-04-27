@@ -15,7 +15,6 @@ function getNextVersionName() {
   return `${expectedPrefix}${version + 1}`;
 }
 
-
 module.exports = {
   title: 'Documentation Forge',
   tagline: '¯\\_(ツ)_/¯',
