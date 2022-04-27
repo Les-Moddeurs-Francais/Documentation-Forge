@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_forge=self.webpackChunkdoc_forge||[]).push([[6584],{7085:function(e){e.exports=JSON.parse('{"plugin":{"name":"docusaurus-theme-search-algolia","id":"default"}}')}}]);
