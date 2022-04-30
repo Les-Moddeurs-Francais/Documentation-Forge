@@ -141,6 +141,10 @@ module.exports = {
       {
         name: 'og:image:height',
         content: '256'
+      },
+      {
+        name: 'google-site-verification',
+        content: 'QBxA6M1SV1YsdK02eCEPEPYkdGa84Hr35oFj-o8gcJg'
       }
     ],
     algolia: {
