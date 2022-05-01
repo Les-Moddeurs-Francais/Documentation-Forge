@@ -1,6 +1,6 @@
 {
-  "name": "Les Moddeurs Francais",
-  "short_name": "LMF",
+  "name": "Documentation Forge",
+  "short_name": "Documentation Forge",
   "theme_color": "#4d5154",
   "background_color": "#18191a",
   "display": "standalone",
@@ -9,7 +9,7 @@
   "related_applications": [
     {
       "platform": "webapp",
-      "url": "https://www.forge-doc.lesmoddeursfrancais.fr/manifest.json"
+      "url": "https://forge-doc.lesmoddeursfrancais.fr/manifest.json"
     }
   ],
   "icons": [
