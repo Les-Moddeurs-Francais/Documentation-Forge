@@ -3,9 +3,9 @@
     <ShortName>Documentation Forge</ShortName>
     <Description>Documentation française sur l'api MinecraftForge</Description>
     <InputEncoding>UTF-8</InputEncoding>
-    <Image width="16" height="16" type="image/x-icon">https://www.forge-doc.lesmoddeursfrancais.fr/img/favicon.ico</Image>
-    <Url type="text/html" method="get" template="https://www.forge-doc.lesmoddeursfrancais.fr/search?q={searchTerms}"/>
+    <Image width="16" height="16" type="image/x-icon">https://forge-doc.lesmoddeursfrancais.fr/img/favicon.ico</Image>
+    <Url type="text/html" method="get" template="https://forge-doc.lesmoddeursfrancais.fr/search?q={searchTerms}"/>
     <Developer>Les Moddeurs Francais</Developer>
     <Attribution>Les Moddeurs Francais</Attribution>
-    <moz:SearchForm>https://www.forge-doc.lesmoddeursfrancais.fr/search</moz:SearchForm>
+    <moz:SearchForm>https://forge-doc.lesmoddeursfrancais.fr/search</moz:SearchForm>
 </OpenSearchDescription>
