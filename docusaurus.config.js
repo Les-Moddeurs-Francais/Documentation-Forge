@@ -15,7 +15,6 @@ function getNextVersionName() {
   return `${expectedPrefix}${version + 1}`;
 }
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Documentation Forge',
   tagline: '¯\\_(ツ)_/¯',
@@ -59,8 +58,9 @@ module.exports = {
         },
         {
           href: 'https://github.com/Les-Moddeurs-Francais/Forge-Doc',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -68,11 +68,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Documentations',
+          title: 'Liens connexes',
           items: [
             {
-              label: 'Forge',
-              to: '/docs/intro',
+              label: 'Téléchargements de Forge',
+              href: 'https://files.minecraftforge.net',
+            },
+            {
+              label: 'Forum de Forge',
+              href: 'https://minecraftforge.net',
             },
           ],
         },
@@ -86,10 +90,6 @@ module.exports = {
             {
               label: 'Twitter',
               href: 'https://twitter.com/lesmoddeursfr',
-            },
-            {
-              label: 'Trello',
-              href: 'https://trello.com/lesmoddeursfrancais',
             },
           ],
         },
@@ -108,6 +108,9 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} - <a href="https://www.lesmoddeursfrancais.fr">Les Moddeurs Francais</a>`,
+    },
+    colorMode: {
+      respectPrefersColorScheme: true,
     },
     prism: {
       theme: lightCodeTheme,
@@ -138,8 +141,21 @@ module.exports = {
       {
         name: 'og:image:height',
         content: '256'
+      },
+      {
+        name: 'google-site-verification',
+        content: 'QBxA6M1SV1YsdK02eCEPEPYkdGa84Hr35oFj-o8gcJg'
       }
     ],
+    algolia: {
+
+      appId: 'TPB1ACMMY6',
+
+      apiKey: 'bba8477814849a8e0ae1918cc33096be',
+
+      indexName: 'forge-doc-lesmoddeursfrancais',
+
+    },
   },
   i18n: {
     defaultLocale: 'fr',
@@ -165,6 +181,7 @@ module.exports = {
           blogTitle: 'News',
           blogDescription: 'Les dernières news concernant le projet MinecraftForge',
           path: 'news',
+          blogSidebarTitle: 'Dernières news',
           routeBasePath: 'news',
           showReadingTime: false,
           editUrl:
@@ -234,24 +251,6 @@ module.exports = {
           },
         ],
       },
-    ],
-    [
-      '@easyops-cn/docusaurus-search-local',
-      {
-        hashed: true,
-        blogDir: 'news',
-        blogRouteBasePath : "/news",
-        translations : {
-          "search_placeholder": "Recherche",
-          "see_all_results": "Voir tous les résultats",
-          "no_results": "Aucun résultat.",
-          "search_results_for": "Résultats de la recherche pour \"{{ keyword }}\"",
-          "search_the_documentation": "Recherche dans la documentation",
-          "count_documents_found": "{{ count }} page trouvée",
-          "count_documents_found_plural": "{{ count }} pages trouvées",
-          "no_documents_were_found": "Aucune page n'a été trouvée"
-        }
-      },
-    ],
+    ]
   ],
 };
