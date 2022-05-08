@@ -5,11 +5,13 @@ description: Comment utiliser les Deferred Registers ?
 tags: [enregistrement]
 ---
 
-Pour créer un Deferred Register, il nous faut tout d'abord ajouter une variable dans une classe où nous enregistrerons tous les éléments concernés (comme les items, les blocs, etc...) comme celle-ci :
+`DeferredRegister` est une couche d'abstraction de l'événement de registre utilisé pour enregistrer des éléments. Il maintient une correspondance entre les "noms de registre" et leurs _fournisseurs_ associés et arrange ceux-ci lors de l'appel de l'événement `RegistryEvent$Register`.
 
 ## Créer un Deferred Register
 
 ### Registres gérés par Forge
+
+Pour créer un Deferred Register, il nous faut tout d'abord ajouter une variable dans une classe où nous enregistrerons tous les éléments concernés (comme les items, les blocs, etc...) comme celle-ci :
 
 ```java 
 public static final DeferredRegister<Item> MON_REGISTRE = DeferredRegister.create(ForgeRegistries.ITEMS, "modid");
