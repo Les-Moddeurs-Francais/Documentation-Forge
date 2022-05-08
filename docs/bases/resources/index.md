@@ -11,7 +11,7 @@ Tous les dossiers (et donc les ressources associées) cités ici doivent se trou
 
 Les _blockstates_ sont définies par des fichiers JSON se trouvant dans le dossier `/assets/<modid>/blockstates`.
 
-## Traductions
+## [Traductions](lang)
 
 Les traductions sont définies dans des fichiers JSON dont le nom dépend du [_code de la langue_](https://minecraft.fandom.com/wiki/Language) visé, se trouvant dans le dossier `/assets/<modid>/lang`.
 
