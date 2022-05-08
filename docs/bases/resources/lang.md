@@ -1,9 +1,11 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 title: Traductions
 description : Comment sont structurées les fichiers de traductions dans Minecraft ?
 tags: [bases, ressources]
 ---
+
+## Tableau des types communs avec leurs traductions
 
 | Type de registre | Format                           |
 |------------------|----------------------------------|
