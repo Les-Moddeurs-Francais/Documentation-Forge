@@ -25,6 +25,11 @@ export default function NotFound() {
               <p>
                   Si c'est le cas, n'hésitez pas à nous contacter sur <a href="https://discord.lesmoddeursfrancais.fr">Discord</a> 😊.
               </p>
+                <Link
+                    className="button button--secondary button--lg"
+                    to="/">
+                    Revenir à l'accueil
+                </Link>
             </div>
           </div>
         </main>
