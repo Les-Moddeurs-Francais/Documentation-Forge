@@ -20,7 +20,7 @@ export default function NotFound() {
                 Oups 🙄
               </h1>
               <p>
-                  Il semble que nous ayons peut-être oublier cette page 👀
+                  Il semble que nous ayons peut-être oublié cette page 👀
               </p>
               <p>
                   Si c'est le cas, n'hésitez pas à nous contacter sur <a href="https://discord.lesmoddeursfrancais.fr">Discord</a> 😊.
