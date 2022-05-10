@@ -18,7 +18,7 @@ Les entrées des fichiers de traduction se présentent comme ceci :
 "clé de traduction" : "traduction"
 ```
 
-## Tableau des types communs, traductibles
+## Principaux modèles de clés de traductions
 
 | Type de registre | Format de la clé de traduction   |
 |------------------|----------------------------------|
