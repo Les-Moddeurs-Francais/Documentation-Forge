@@ -13,7 +13,10 @@ tags: [bases, ressources]
 }
 ```
 
-Les entrées des fichiers de traduction se présentent comme ceci `"clé de traduction" : "traduction"`.
+Les entrées des fichiers de traduction se présentent comme ceci :
+```
+"clé de traduction" : "traduction"
+```
 
 ## Tableau des types communs, traductibles
 
