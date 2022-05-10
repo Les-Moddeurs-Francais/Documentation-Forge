@@ -5,9 +5,19 @@ description : Comment sont structurées les fichiers de traductions dans Minecra
 tags: [bases, ressources]
 ---
 
-## Tableau des types communs avec leurs traductions
+## Structure générale
 
-| Type de registre | Format                           |
+```json
+{
+  //Entrées
+}
+```
+
+Les entrées des fichiers de traduction se présentent comme ceci `"clé de traduction" : "traduction"`.
+
+## Tableau des types communs, traductibles
+
+| Type de registre | Format de la clé de traduction   |
 |------------------|----------------------------------|
 | Block            | `block.<namespace>.<path>`       |
 | Item             | `item.<namespace>.<path>`        |
