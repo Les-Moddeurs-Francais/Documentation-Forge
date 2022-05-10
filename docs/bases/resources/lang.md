@@ -20,13 +20,13 @@ Les entrées des fichiers de traduction se présentent comme ceci :
 
 ## Principaux modèles de clés de traductions
 
-| Type de registre | Format de la clé de traduction   |
-|------------------|----------------------------------|
-| Block            | `block.<namespace>.<path>`       |
-| Item             | `item.<namespace>.<path>`        |
-| Onglet créatif   | `itemGroup.<path>`               |
-| Effet de potion  | `effect.<namespace>.<path>`      |
-| Enchantement     | `enchantment.<namespace>.<path>` |
-| Type d'entité    | `entity.<namespace>.<path>`      |
-| Biome            | `biome.<namespace>.<path>`       |
-| Stat             | `stat.<namespace>.<path>`        |
+| Type de registre | Format de la clé de traduction |
+|------------------|--------------------------------|
+| Block            | `block.<modid>.<id>`           |
+| Item             | `item.<modid>.<id>`            |
+| Onglet créatif   | `itemGroup.<id>`               |
+| Effet de potion  | `effect.<modid>.<id>`          |
+| Enchantement     | `enchantment.<modid>.<id>`     |
+| Type d'entité    | `entity.<modid>.<id>`          |
+| Biome            | `biome.<modid>.<id>`           |
+| Stat             | `stat.<modid>.<id>`            |
