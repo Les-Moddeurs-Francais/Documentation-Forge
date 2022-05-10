@@ -1,4 +1,4 @@
-name: Build Documentation
+name: Documentation CLI
 
 on:
   pull_request:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   checks:
+    name: Check Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -25,7 +26,9 @@ jobs:
           fi
           npm run build
   gh-release:
+    name: Publish
     if: github.event_name != 'pull_request'
+    needs: checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
