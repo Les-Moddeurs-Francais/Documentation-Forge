@@ -188,6 +188,9 @@ module.exports = {
           blogSidebarTitle: 'Dernières news',
           routeBasePath: 'news',
           showReadingTime: false,
+          feedOptions: {
+            type: 'all',
+          },
           editUrl:
               'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/master',
         },
