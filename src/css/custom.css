@@ -47,8 +47,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 [data-theme='light'] .DocSearch {
-  /* --docsearch-primary-color: var(--ifm-color-primary); */
-  /* --docsearch-text-color: var(--ifm-font-color-base); */
   --docsearch-muted-color: var(--ifm-color-emphasis-700);
   --docsearch-container-background: rgb(94 100 112 / 70%);
   /* Modal */
