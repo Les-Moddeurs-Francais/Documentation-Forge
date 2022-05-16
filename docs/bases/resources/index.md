@@ -38,4 +38,4 @@ Les tables de butin sont définies par des fichiers JSON se trouvant dans le dos
 
 ## [Tags](tags)
 
-Les _tags_ sont définis par des fichiers JSON se trouvant dans le dossier `/data/<modid>/tags` (des sous dossiers sont attendus selon si cela concerne les blocs (`blocks`), les items (`items`), les types d'entité (`entity_types`), les fluides (`fluids`) ou même les événements (`game_events`)).
+Les _tags_ sont définis par des fichiers JSON se trouvant dans le dossier `/data/<modid>/tags` ().
