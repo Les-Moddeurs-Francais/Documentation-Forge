@@ -20,7 +20,7 @@ Si vous souhaitez que votre bloc soit récoltable à la main, il n'est pas néce
 Pour créer un type custom, il vous suffit de créer un tag (qui sera contenu dans le dossier `data/modid/tags/blocks`) ainsi que sa variable associée comme celle-ci :
 
 ```java
-public static final Tag.Named<Block> MON_TOOL_TYPE = BlockTags.bind("modid:mon_tool_type");
+public static final TagKey<Block> MON_TOOL_TYPE = BlockTags.create(new ResourceLocation("modid", "mon_tool_type"));
 ```
 
 Il vous suffira ensuite d'utiliser ce tag dans l'appel `super()` du constructeur de votre classe héritière de `DiggerItem`.
