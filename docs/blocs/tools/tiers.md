@@ -25,7 +25,7 @@ Malgré tout, il est aussi possible de créer son propre _tier_ d'outil. Pour ce
 Pour créer le tag, rien de plus simple, il vous faut ajouter cette ligne
 
 ```java
-public static final Tag.Named<Block> MON_TIER_TAG = BlockTags.createOptional(new ResourceLocation("modid", "mon_tier_tag"));
+public static final TagKey<Block> MON_TIER_TAG = BlockTags.create(new ResourceLocation("modid", "mon_tier_tag"));
 ```
 
 :::note
