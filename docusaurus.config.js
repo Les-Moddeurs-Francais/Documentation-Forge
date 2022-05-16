@@ -61,7 +61,7 @@ module.exports = {
           dropdownActiveClassDisabled: true,
         },
         {
-          href: 'https://github.com/Les-Moddeurs-Francais/Forge-Doc',
+          href: 'https://github.com/Les-Moddeurs-Francais/Documentation-Forge',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -106,7 +106,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/Les-Moddeurs-Francais/Forge-Doc',
+              href: 'https://github.com/Les-Moddeurs-Francais/Documentation-Forge',
             },
           ],
         },
@@ -172,7 +172,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-              'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/master',
+              'https://github.com/Les-Moddeurs-Francais/Documentation-Forge/edit/master',
           showLastUpdateAuthor: true,
           lastVersion: 'current',
           versions: {
@@ -192,7 +192,7 @@ module.exports = {
             type: 'all',
           },
           editUrl:
-              'https://github.com/Les-Moddeurs-Francais/Forge-Doc/edit/master',
+              'https://github.com/Les-Moddeurs-Francais/Documentation-Forge/edit/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
