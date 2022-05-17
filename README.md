@@ -1,4 +1,4 @@
-# LMF - Forge Doc
+# LMF - Documentation Forge
 
 Documentation non officielle du projet Minecraft Forge.
 
