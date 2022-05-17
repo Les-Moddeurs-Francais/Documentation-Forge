@@ -1,6 +1,6 @@
 # Fork et clonage du repo
 
-Comme la plupart des grands projets open source que vous trouverez, la documenation est hébergé sur GitHub (le site où vous êtes normalement). Si vous avez déjà contribué à un autre projet, vous connaissez déjà ce processus et pouvez passer directement à la section suivante.
+Comme la plupart des grands projets open source que vous trouverez, la documentation est hébergée sur GitHub (le site où vous êtes normalement). Si vous avez déjà contribué à un autre projet, vous connaissez déjà ce processus et pouvez passer directement à la section suivante.
 
 Pour ceux qui débutent en matière de collaboration via Git, voici deux étapes faciles pour vous aider à démarrer.
 
