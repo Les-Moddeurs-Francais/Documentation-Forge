@@ -8,7 +8,7 @@ Pour ceux qui débutent en matière de collaboration via Git, voici deux étapes
 
 Avant toute chose, faites un fork du ["repo" de la documentation](https://github.com/Les-Moddeurs-Francais/Forge-Doc) en cliquant sur le bouton **Fork** en haut à droite.
 
-Cela est nécessaire car tous le monde n'a pas accès au droit. Le fork permet d'effectuer vos changements afin ensuite d'ouvrir un **pull request** pour proposer vos changements afin que nous puissions en discuter.
+Cela est nécessaire, car tout le monde n'a pas accès au droit. Le fork permet d'effectuer vos changements afin ensuite d'ouvrir un **pull request** pour proposer vos changements afin que nous puissions en discuter.
 
 ## Clonage
 
