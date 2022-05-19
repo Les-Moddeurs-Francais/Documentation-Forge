@@ -118,5 +118,4 @@ Les _tags_ sont définis par des fichiers JSON se trouvant dans le dossier `/dat
 | `STRUCTURE_PROCESSOR_REGISTRY`          | `worldgen/structure_processor`          |
 | `STRUCTURE_POOL_ELEMENT_REGISTRY`       | `worldgen/structure_pool_element`       |
 
-
 </details>
