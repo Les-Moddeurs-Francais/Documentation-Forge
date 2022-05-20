@@ -106,7 +106,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `crops`                                    | Liste des blocs                                                                                |
 | `crystal_sound_blocks`                     | Liste des blocs                                                                                |
 | `dark_oak_logs`                            | Liste des blocs                                                                                |
-| `deepslate_ore_replaceables`               | Liste des blocs                                                                                |
+| `deepslate_ore_replaceables`               | Liste des blocs pouvant être remplacés par des minerais des profondeurs                        |
 | `diamond_ores`                             | Liste des blocs                                                                                |
 | `dirt`                                     | Liste des blocs                                                                                |
 | `doors`                                    | Liste des blocs                                                                                |
@@ -144,9 +144,9 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `mooshrooms_spawnable_on`                  | Liste des blocs sur lesquels les vaches champignon peuvent apparaitre                          |
 | `moss_replaceable`                         | Liste des blocs                                                                                |
 | `mushroom_grow_block`                      | Liste des blocs                                                                                |
-| `needs_diamond_tool`                       | Liste des blocs                                                                                |
-| `needs_iron_tool`                          | Liste des blocs                                                                                |
-| `needs_stone_tool`                         | Liste des blocs                                                                                |
+| `needs_diamond_tool`                       | Liste des blocs nécessitant un outil en diamant pour être récolté                              |
+| `needs_iron_tool`                          | Liste des blocs nécessitant un outil en fer pour être récolté                                  |
+| `needs_stone_tool`                         | Liste des blocs nécessitant un outil en pierre pour être récolté                               |
 | `non_flammable_wood`                       | Liste des blocs                                                                                |
 | `nylium`                                   | Liste des blocs                                                                                |
 | `oak_logs`                                 | Liste des blocs                                                                                |
@@ -191,8 +191,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wall_signs`                               | Liste des blocs                                                                                |
 | `warped_stems`                             | Liste des blocs                                                                                |
 | `wart_blocks`                              | Liste des blocs                                                                                |
-| `wither_immune`                            | Liste des blocs                                                                                |
-| `wither_summon_base_blocks`                | Liste des blocs utilisables pour faire apparaitre le wither                                    |
+| `wither_immune`                            | Liste des blocs qui sont immunisés contre les explosions du Wither                             |
+| `wither_summon_base_blocks`                | Liste des blocs utilisables pour faire apparaitre le Wither                                    |
 | `wolves_spawnable_on`                      | Liste des blocs sur lesquels les loups peuvent apparaitre                                      |
 | `wooden_buttons`                           | Liste des blocs                                                                                |
 | `wooden_doors`                             | Liste des blocs                                                                                |
