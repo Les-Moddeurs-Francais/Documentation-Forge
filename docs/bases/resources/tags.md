@@ -307,5 +307,29 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 | `is_river`                             |             |
 | `is_taiga`                             |             |
 
+</details>
+
+### Structures configurées
+
+:::caution
+Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
+:::
+
+<details>
+
+<summary>Liste des tags concernant les structures configurées</summary>
+
+| Identifiant                 | Description |
+|-----------------------------|-------------|
+| `dolphin_located`           |             |
+| `eye_of_ender_located`      |             |
+| `mineshaft`                 |             |
+| `ocean_ruin`                |             |
+| `on_ocean_explorer_maps`    |             |
+| `on_treasure_maps`          |             |
+| `on_woodland_explorer_maps` |             |
+| `ruined_portal`             |             |
+| `shipwreck`                 |             |
+| `village`                   |             |
 
 </details>
