@@ -60,12 +60,12 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 </details>
 
-## Liste
+## Listes
 
 ### Blocs
 
 <details>
-<summary>Liste des tags pour les blocs</summary>
+<summary>Liste des tags concernant les blocs</summary>
 
 | Identifiant                                | Description                                                                                    |
 |--------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -202,5 +202,54 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wooden_stairs`                            | Liste des blocs                                                                                |
 | `wooden_trapdoors`                         | Liste des blocs                                                                                |
 | `wool`                                     | Liste des blocs                                                                                |
+
+</details>
+
+### Entités
+
+<details>
+
+<summary>Liste des tags concernant les entités</summary>
+
+| Identifiant                 | Description |
+|-----------------------------|-------------|
+| `arrows`                    |             |
+| `axolotl_always_hostiles`   |             |
+| `axolotl_hunt_targets`      |             |
+| `beehive_inhabitors`        |             |
+| `freeze_hurts_extra_types`  |             |
+| `freeze_hurts_extra_types`  |             |
+| `impact_projectiles`        |             |
+| `powder_snow_walkable_mobs` |             |
+| `raiders`                   |             |
+| `skeletons`                 |             |
+
+</details>
+
+### Fluides
+
+<details>
+
+<summary>Liste des tags concernant les fluides</summary>
+
+| Identifiant | Description |
+|-------------|-------------|
+| `lava`      |             |
+| `water`     |             |
+
+
+</details>
+
+### Évènements de jeu
+
+<details>
+
+<summary>Liste des tags concernant les évènements de jeu</summary>
+
+| Identifiant                  | Description |
+|------------------------------|-------------|
+| `ignore_vibrations_sneaking` |             |
+| `vibrations`                 |             |
+
 
 </details>
