@@ -59,3 +59,20 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 ```
 
 </details>
+
+## Liste
+
+<details>
+<summary>Liste des tags pour les blocs</summary>
+
+### Blocs
+
+| Identifiant             | Description |
+|-------------------------|-------------|
+| `mineable/axe`          |             |
+| `mineable/hoe.json`     |             |
+| `mineable/pickaxe.json` |             |
+| `mineable/shovel.json`  |             |
+
+
+</details>
