@@ -319,17 +319,17 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 
 <summary>Liste des tags concernant les structures configurées</summary>
 
-| Identifiant                 | Description |
-|-----------------------------|-------------|
-| `dolphin_located`           |             |
-| `eye_of_ender_located`      |             |
-| `mineshaft`                 |             |
-| `ocean_ruin`                |             |
-| `on_ocean_explorer_maps`    |             |
-| `on_treasure_maps`          |             |
-| `on_woodland_explorer_maps` |             |
-| `ruined_portal`             |             |
-| `shipwreck`                 |             |
-| `village`                   |             |
+| Identifiant                 | Description                                                                     |
+|-----------------------------|---------------------------------------------------------------------------------|
+| `dolphin_located`           | Liste des structure configurées pouvant être localisées par un dolphin          |
+| `eye_of_ender_located`      | Liste des structures configurées pouvant être localisées par un oeil de l'Ender |
+| `mineshaft`                 | Listes des structures configurées qui sont des puits de mine abandonné          |
+| `ocean_ruin`                | Listes des structures configurées qui sont des ruines d'océan                   |
+| `on_ocean_explorer_maps`    |                                                                                 |
+| `on_treasure_maps`          |                                                                                 |
+| `on_woodland_explorer_maps` |                                                                                 |
+| `ruined_portal`             | Listes des structures configurées qui sont des portails en ruines               |
+| `shipwreck`                 | Listes des structures configurées qui sont des épaves de navire                 |
+| `village`                   | Listes des structures configurées qui sont des villages                         |
 
 </details>
