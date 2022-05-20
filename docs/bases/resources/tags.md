@@ -110,10 +110,10 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `diamond_ores`                             | Liste des blocs                                                                                |
 | `dirt`                                     | Liste des blocs                                                                                |
 | `doors`                                    | Liste des blocs                                                                                |
-| `dragon_immune`                            | Liste des blocs                                                                                |
-| `dripstone_replaceable_blocks`             | Liste des blocs                                                                                |
+| `dragon_immune`                            | Liste des blocs qui sont immunisés contre le dragon                                            |
+| `dripstone_replaceable_blocks`             | Liste des blocs pouvant être remplacés par des blocs de spéléothème                            |
 | `emerald_ores`                             | Liste des blocs                                                                                |
-| `enderman_holdable`                        | Liste des blocs                                                                                |
+| `enderman_holdable`                        | Liste des blocs pouvant être récupérés par des enderman                                        |
 | `fall_damage_resetting`                    | Liste des blocs                                                                                |
 | `features_cannot_replace`                  | Liste des blocs                                                                                |
 | `fences`                                   | Liste des blocs                                                                                |
@@ -184,7 +184,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `trapdoors`                                | Liste des blocs                                                                                |
 | `underwater_bonemeals`                     | Liste des blocs                                                                                |
 | `unstable_bottom_center`                   | Liste des blocs                                                                                |
-| `valid_spawn`                              | Liste des blocs                                                                                |
+| `valid_spawn`                              | Liste des blocs qui sont valides pour l'apparition d'un joueur                                 |
 | `walls`                                    | Liste des blocs                                                                                |
 | `wall_corals`                              | Liste des blocs                                                                                |
 | `wall_post_override`                       | Liste des blocs                                                                                |
@@ -201,6 +201,6 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wooden_slabs`                             | Liste des blocs                                                                                |
 | `wooden_stairs`                            | Liste des blocs                                                                                |
 | `wooden_trapdoors`                         | Liste des blocs                                                                                |
-| `wool`                                     | Liste des blocs qui sont des laines                                                            |
+| `wool`                                     | Liste des blocs                                                                                |
 
 </details>
