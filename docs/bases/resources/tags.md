@@ -88,7 +88,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `beehives`                                 | Liste des blocs                                                                                |
 | `bee_growables`                            | Liste des blocs                                                                                |
 | `big_dripleaf_placeable`                   | Liste des blocs                                                                                |
-| `birch_logs`                               | Liste des blocs                                                                                |
+| `birch_logs`                               | Liste des blocs qui sont des buches de bouleau                                                 |
 | `buttons`                                  | Liste des blocs qui sont des boutons                                                           |
 | `campfires`                                | Liste des blocs qui sont des feux de camp                                                      |
 | `candles`                                  | Liste des blocs qui sont des bougies                                                           |
@@ -98,36 +98,36 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `cave_vines`                               | Liste des blocs qui sont des lianes des cavernes                                               |
 | `climbable`                                | Liste des blocs qui sont escaladables                                                          |
 | `coal_ores`                                | Liste des blocs qui sont des minerais de charbon                                               |
-| `copper_ores`                              | Liste des blocs                                                                                |
+| `copper_ores`                              | Liste des blocs qui sont des minerais de copper                                                |
 | `corals`                                   | Liste des blocs                                                                                |
 | `coral_blocks`                             | Liste des blocs                                                                                |
 | `coral_plants`                             | Liste des blocs                                                                                |
 | `crimson_stems`                            | Liste des blocs                                                                                |
-| `crops`                                    | Liste des blocs                                                                                |
+| `crops`                                    | Liste des blocs qui sont des cultures                                                          |
 | `crystal_sound_blocks`                     | Liste des blocs                                                                                |
-| `dark_oak_logs`                            | Liste des blocs                                                                                |
+| `dark_oak_logs`                            | Liste des blocs qui sont des buches de bois sombre                                             |
 | `deepslate_ore_replaceables`               | Liste des blocs pouvant être remplacés par des minerais des profondeurs                        |
-| `diamond_ores`                             | Liste des blocs                                                                                |
-| `dirt`                                     | Liste des blocs                                                                                |
-| `doors`                                    | Liste des blocs                                                                                |
+| `diamond_ores`                             | Liste des blocs qui sont des minerais de diamant                                               |
+| `dirt`                                     | Liste des blocs qui sont de la terre                                                           |
+| `doors`                                    | Liste des blocs qui sont des portes                                                            |
 | `dragon_immune`                            | Liste des blocs qui sont immunisés contre le dragon                                            |
 | `dripstone_replaceable_blocks`             | Liste des blocs pouvant être remplacés par des blocs de spéléothème                            |
-| `emerald_ores`                             | Liste des blocs                                                                                |
+| `emerald_ores`                             | Liste des blocs qui sont des minerais d'émeraude                                               |
 | `enderman_holdable`                        | Liste des blocs pouvant être récupérés par des enderman                                        |
 | `fall_damage_resetting`                    | Liste des blocs                                                                                |
 | `features_cannot_replace`                  | Liste des blocs                                                                                |
-| `fences`                                   | Liste des blocs                                                                                |
-| `fence_gates`                              | Liste des blocs                                                                                |
-| `fire`                                     | Liste des blocs                                                                                |
-| `flowers`                                  | Liste des blocs                                                                                |
+| `fences`                                   | Liste des blocs qui sont des barrières                                                         |
+| `fence_gates`                              | Liste des blocs qui sont des portillons                                                        |
+| `fire`                                     | Liste des blocs qui sont du feu                                                                |
+| `flowers`                                  | Liste des blocs qui sont des fleurs                                                            |
 | `flower_pots`                              | Liste des blocs                                                                                |
 | `foxes_spawnable_on`                       | Liste des blocs sur lesquels les loups peuvent apparaitre                                      |
 | `geode_invalid_blocks`                     | Liste des blocs                                                                                |
 | `goats_spawnable_on`                       | Liste des blocs sur lesquels les chèvres peuvent apparaitre                                    |
-| `gold_ores`                                | Liste des blocs                                                                                |
+| `gold_ores`                                | Liste des blocs qui sont des minerais d'or                                                     |
 | `guarded_by_piglins`                       | Liste des blocs                                                                                |
 | `hoglin_repellents`                        | Liste des blocs                                                                                |
-| `ice`                                      | Liste des blocs                                                                                |
+| `ice`                                      | Liste des blocs qui sont de la glace                                                           |
 | `impermeable`                              | Liste des blocs                                                                                |
 | `infiniburn_end`                           | Liste des blocs                                                                                |
 | `infiniburn_nether`                        | Liste des blocs                                                                                |
@@ -135,10 +135,10 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `inside_step_sound_blocks`                 | Liste des blocs                                                                                |
 | `iron_ores`                                | Liste des blocs                                                                                |
 | `jungle_logs`                              | Liste des blocs                                                                                |
-| `lapis_ores`                               | Liste des blocs                                                                                |
+| `lapis_ores`                               | Liste des blocs qui sont des minerais de lapis lazuli                                          |
 | `lava_pool_stone_cannot_replace`           | Liste des blocs                                                                                |
-| `leaves`                                   | Liste des blocs                                                                                |
-| `logs`                                     | Liste des blocs                                                                                |
+| `leaves`                                   | Liste des blocs qui sont des feuilles                                                          |
+| `logs`                                     | Liste des blocs qui sont des buches                                                            |
 | `logs_that_burn`                           | Liste des blocs                                                                                |
 | `lush_ground_replaceable`                  | Liste des blocs                                                                                |
 | `mooshrooms_spawnable_on`                  | Liste des blocs sur lesquels les vaches champignon peuvent apparaitre                          |
@@ -149,27 +149,27 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `needs_stone_tool`                         | Liste des blocs nécessitant un outil en pierre pour être récolté                               |
 | `non_flammable_wood`                       | Liste des blocs                                                                                |
 | `nylium`                                   | Liste des blocs                                                                                |
-| `oak_logs`                                 | Liste des blocs                                                                                |
+| `oak_logs`                                 | Liste des blocs qui sont des buches de bois de chêne                                           |
 | `occludes_vibration_signals`               | Liste des blocs                                                                                |
 | `parrots_spawnable_on`                     | Liste des blocs sur lesquels les perroquets peuvent apparaitre                                 |
 | `piglin_repellents`                        | Liste des blocs                                                                                |
-| `planks`                                   | Liste des blocs                                                                                |
+| `planks`                                   | Liste des blocs qui sont des planches                                                          |
 | `polar_bears_spawnable_on_in_frozen_ocean` | Liste des blocs sur lesquels les ours polaires peuvent apparaitre dans des biomes d'océan gelé |
-| `portals`                                  | Liste des blocs                                                                                |
-| `pressure_plates`                          | Liste des blocs                                                                                |
+| `portals`                                  | Liste des blocs qui sont des portails                                                          |
+| `pressure_plates`                          | Liste des blocs qui sont des plaques de pression                                               |
 | `prevent_mob_spawning_inside`              | Liste des blocs                                                                                |
 | `rabbits_spawnable_on`                     | Liste des blocs sur lesquels les lapins peuvent apparaitre                                     |
 | `rails`                                    | Liste des blocs                                                                                |
 | `redstone_ores`                            | Liste des blocs                                                                                |
 | `replaceable_plants`                       | Liste des blocs                                                                                |
-| `sand`                                     | Liste des blocs                                                                                |
-| `saplings`                                 | Liste des blocs                                                                                |
+| `sand`                                     | Liste des blocs qui sont du sable                                                              |
+| `saplings`                                 | Liste des blocs qui sont des pousses d'arbre                                                   |
 | `shulker_boxes`                            | Liste des blocs                                                                                |
-| `signs`                                    | Liste des blocs                                                                                |
-| `slabs`                                    | Liste des blocs                                                                                |
+| `signs`                                    | Liste des blocs qui sont des panneaux                                                          |
+| `slabs`                                    | Liste des blocs qui sont des dalles                                                            |
 | `small_dripleaf_placeable`                 | Liste des blocs                                                                                |
 | `small_flowers`                            | Liste des blocs                                                                                |
-| `snow`                                     | Liste des blocs                                                                                |
+| `snow`                                     | Liste des blocs qui sont de la neige                                                           |
 | `soul_fire_base_blocks`                    | Liste des blocs                                                                                |
 | `soul_speed_blocks`                        | Liste des blocs                                                                                |
 | `spruce_logs`                              | Liste des blocs qui sont des buches de bois de sapin                                           |
@@ -177,15 +177,15 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `standing_signs`                           | Liste des blocs                                                                                |
 | `stone_bricks`                             | Liste des blocs qui sont des pierres taillées                                                  |
 | `stone_ore_replaceables`                   | Liste des blocs pouvant être remplacés par des minerais                                        |
-| `stone_pressure_plates`                    | Liste des blocs                                                                                |
+| `stone_pressure_plates`                    | Liste des blocs qui sont des plaques de pression en pierre                                     |
 | `strider_warm_blocks`                      | Liste des blocs                                                                                |
 | `tall_flowers`                             | Liste des blocs                                                                                |
 | `terracotta`                               | Liste des blocs                                                                                |
-| `trapdoors`                                | Liste des blocs                                                                                |
+| `trapdoors`                                | Liste des blocs qui sont des trappes                                                           |
 | `underwater_bonemeals`                     | Liste des blocs                                                                                |
 | `unstable_bottom_center`                   | Liste des blocs                                                                                |
 | `valid_spawn`                              | Liste des blocs qui sont valides pour l'apparition d'un joueur                                 |
-| `walls`                                    | Liste des blocs                                                                                |
+| `walls`                                    | Liste des blocs qui sont des murets                                                            |
 | `wall_corals`                              | Liste des blocs                                                                                |
 | `wall_post_override`                       | Liste des blocs                                                                                |
 | `wall_signs`                               | Liste des blocs                                                                                |
