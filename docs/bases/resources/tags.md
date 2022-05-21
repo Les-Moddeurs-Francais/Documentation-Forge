@@ -80,7 +80,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `azalea_grows_on`                          | Liste des blocs sur lesquels les arbres d'azalées peuvent pousser                                                                                                             |
 | `azalea_root_replaceable`                  | Liste des blocs qui peuvent être remplacé par les racines des azalées                                                                                                         |
 | `bamboo_plantable_on`                      | Liste des blocs où le bambou peut être planté                                                                                                                                 |
-| `banners`                                  | Liste des blocs qui sont des bannières                                                                                                                                        |
+| `banners`                                  | Liste de toutes les bannières avec leurs couleurs respective (blocs)                                                                                                          |
 | `base_stone_nether`                        | Liste des blocs qui peuvent être remplacés par des ressources (par exemple des minerais) de la dimension du Nether                                                            |
 | `base_stone_overworld`                     | Liste des blocs qui peuvent être remplacés par des ressources (par exemple des minerais) du monde normal                                                                      |
 | `beacon_base_blocks`                       | Liste des blocs qui peuvent activer une balise selon une structure pré-définit                                                                                                |
@@ -258,79 +258,79 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les items</summary>
 
-| Identifiant                  | Description |
-|------------------------------|-------------|
-| `acacia_logs`                |             |
-| `anvil`                      |             |
-| `arrows`                     |             |
-| `axolotl_tempt_items`        |             |
-| `banners`                    |             |
-| `beacon_payment_items`       |             |
-| `beds`                       |             |
-| `birch_logs`                 |             |
-| `boats`                      |             |
-| `buttons`                    |             |
-| `candles`                    |             |
-| `carpets`                    |             |
-| `cluster_max_harvestables`   |             |
-| `coals`                      |             |
-| `coal_ores`                  |             |
-| `copper_ores`                |             |
-| `creeper_drop_music_discs`   |             |
-| `crimson_stems`              |             |
-| `dark_oak_logs`              |             |
-| `diamond_ores`               |             |
-| `dirt`                       |             |
-| `doors`                      |             |
-| `emerald_ores`               |             |
-| `fences`                     |             |
-| `fishes`                     |             |
-| `flowers`                    |             |
-| `fox_food`                   |             |
-| `freeze_immune_wearables`    |             |
-| `gold_ores`                  |             |
-| `ignored_by_piglin_babies`   |             |
-| `iron_ores`                  |             |
-| `jungle_logs`                |             |
-| `lapis_ores`                 |             |
-| `leaves`                     |             |
-| `lectern_books`              |             |
-| `logs`                       |             |
-| `logs_that_burn`             |             |
-| `music_discs`                |             |
-| `non_flammable_wood`         |             |
-| `oak_logs`                   |             |
-| `occludes_vibration_signals` |             |
-| `piglin_food`                |             |
-| `piglin_loved`               |             |
-| `piglin_repellents`          |             |
-| `planks`                     |             |
-| `rails`                      |             |
-| `redstone_ores`              |             |
-| `sand`                       |             |
-| `saplings`                   |             |
-| `signs`                      |             |
-| `slabs`                      |             |
-| `small_flowers`              |             |
-| `soul_fire_base_blocks`      |             |
-| `spruce_logs`                |             |
-| `stairs`                     |             |
-| `stone_bricks`               |             |
-| `stone_crafting_materials`   |             |
-| `stone_tool_materials`       |             |
-| `tall_flowers`               |             |
-| `terracotta`                 |             |
-| `trapdoors`                  |             |
-| `walls`                      |             |
-| `warped_stems`               |             |
-| `wooden_buttons`             |             |
-| `wooden_doors`               |             |
-| `wooden_fences`              |             |
-| `wooden_pressure_plates`     |             |
-| `wooden_slabs`               |             |
-| `wooden_stairs`              |             |
-| `wooden_trapdoors`           |             |
-| `wool`                       |             |
+| Identifiant                  | Description                                                                                      |
+|------------------------------|--------------------------------------------------------------------------------------------------|
+| `acacia_logs`                |                                                                                                  |
+| `anvil`                      |                                                                                                  |
+| `arrows`                     | Liste de tous les types de flèche (items)                                                        |
+| `axolotl_tempt_items`        |                                                                                                  |
+| `banners`                    | Liste de toutes les bannières avec leurs couleurs respective (items)                             |
+| `beacon_payment_items`       | Liste des items pouvant être utilisés pour l'activation d'une balise                             |
+| `beds`                       |                                                                                                  |
+| `birch_logs`                 |                                                                                                  |
+| `boats`                      |                                                                                                  |
+| `buttons`                    |                                                                                                  |
+| `candles`                    |                                                                                                  |
+| `carpets`                    |                                                                                                  |
+| `cluster_max_harvestables`   |                                                                                                  |
+| `coals`                      | Liste de tous les types de charbon                                                               |
+| `coal_ores`                  | Liste des minerais de charbon (items)                                                            |
+| `copper_ores`                | Liste des minerais de cuivre (items)                                                             |
+| `creeper_drop_music_discs`   | Liste de tous les disques pouvant être _dropés_ par un creeper quand il est tué par un squelette |
+| `crimson_stems`              |                                                                                                  |
+| `dark_oak_logs`              |                                                                                                  |
+| `diamond_ores`               |                                                                                                  |
+| `dirt`                       | Liste de tous les types de terre (items)                                                         |
+| `doors`                      | Liste de tous les types de porte (items)                                                         |
+| `emerald_ores`               | Liste des minerais d'émeraude (items)                                                            |
+| `fences`                     |                                                                                                  |
+| `fishes`                     |                                                                                                  |
+| `flowers`                    |                                                                                                  |
+| `fox_food`                   |                                                                                                  |
+| `freeze_immune_wearables`    |                                                                                                  |
+| `gold_ores`                  |                                                                                                  |
+| `ignored_by_piglin_babies`   |                                                                                                  |
+| `iron_ores`                  |                                                                                                  |
+| `jungle_logs`                |                                                                                                  |
+| `lapis_ores`                 |                                                                                                  |
+| `leaves`                     |                                                                                                  |
+| `lectern_books`              |                                                                                                  |
+| `logs`                       |                                                                                                  |
+| `logs_that_burn`             |                                                                                                  |
+| `music_discs`                |                                                                                                  |
+| `non_flammable_wood`         |                                                                                                  |
+| `oak_logs`                   |                                                                                                  |
+| `occludes_vibration_signals` |                                                                                                  |
+| `piglin_food`                |                                                                                                  |
+| `piglin_loved`               |                                                                                                  |
+| `piglin_repellents`          |                                                                                                  |
+| `planks`                     |                                                                                                  |
+| `rails`                      |                                                                                                  |
+| `redstone_ores`              |                                                                                                  |
+| `sand`                       |                                                                                                  |
+| `saplings`                   |                                                                                                  |
+| `signs`                      |                                                                                                  |
+| `slabs`                      |                                                                                                  |
+| `small_flowers`              |                                                                                                  |
+| `soul_fire_base_blocks`      |                                                                                                  |
+| `spruce_logs`                |                                                                                                  |
+| `stairs`                     |                                                                                                  |
+| `stone_bricks`               |                                                                                                  |
+| `stone_crafting_materials`   |                                                                                                  |
+| `stone_tool_materials`       |                                                                                                  |
+| `tall_flowers`               |                                                                                                  |
+| `terracotta`                 |                                                                                                  |
+| `trapdoors`                  |                                                                                                  |
+| `walls`                      |                                                                                                  |
+| `warped_stems`               |                                                                                                  |
+| `wooden_buttons`             |                                                                                                  |
+| `wooden_doors`               |                                                                                                  |
+| `wooden_fences`              |                                                                                                  |
+| `wooden_pressure_plates`     |                                                                                                  |
+| `wooden_slabs`               |                                                                                                  |
+| `wooden_stairs`              |                                                                                                  |
+| `wooden_trapdoors`           |                                                                                                  |
+| `wool`                       |                                                                                                  |
 
 </details>
 
