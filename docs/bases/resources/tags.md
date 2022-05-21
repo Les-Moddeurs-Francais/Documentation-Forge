@@ -260,11 +260,11 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 | Identifiant                  | Description                                                                                      |
 |------------------------------|--------------------------------------------------------------------------------------------------|
-| `acacia_logs`                | Liste de toutes les types de buche en acajou (items)                                             |
+| `acacia_logs`                | Liste de toutes les types de buche en acajou                                                     |
 | `anvil`                      |                                                                                                  |
-| `arrows`                     | Liste de tous les types de flèche (items)                                                        |
+| `arrows`                     | Liste de tous les types de flèche                                                                |
 | `axolotl_tempt_items`        |                                                                                                  |
-| `banners`                    | Liste de toutes les bannières avec leurs couleurs respective (items)                             |
+| `banners`                    | Liste de toutes les bannières avec leurs couleurs respective                                     |
 | `beacon_payment_items`       | Liste des items pouvant être utilisés pour l'activation d'une balise                             |
 | `beds`                       |                                                                                                  |
 | `birch_logs`                 |                                                                                                  |
@@ -274,15 +274,15 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `carpets`                    |                                                                                                  |
 | `cluster_max_harvestables`   |                                                                                                  |
 | `coals`                      | Liste de tous les types de charbon                                                               |
-| `coal_ores`                  | Liste de tous les types de minerai de charbon (items)                                            |
-| `copper_ores`                | Liste de tous les types de minerai de cuivre (items)                                             |
+| `coal_ores`                  | Liste de tous les types de minerai de charbon                                                    |
+| `copper_ores`                | Liste de tous les types de minerai de cuivre                                                     |
 | `creeper_drop_music_discs`   | Liste de tous les disques pouvant être _dropés_ par un creeper quand il est tué par un squelette |
 | `crimson_stems`              |                                                                                                  |
 | `dark_oak_logs`              |                                                                                                  |
 | `diamond_ores`               |                                                                                                  |
-| `dirt`                       | Liste de tous les types de terre (items)                                                         |
-| `doors`                      | Liste de tous les types de porte (items)                                                         |
-| `emerald_ores`               | Liste des minerais d'émeraude (items)                                                            |
+| `dirt`                       | Liste de tous les types de terre                                                                 |
+| `doors`                      | Liste de tous les types de porte                                                                 |
+| `emerald_ores`               | Liste des minerais d'émeraude                                                                    |
 | `fences`                     |                                                                                                  |
 | `fishes`                     |                                                                                                  |
 | `flowers`                    |                                                                                                  |
@@ -304,7 +304,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `piglin_food`                |                                                                                                  |
 | `piglin_loved`               |                                                                                                  |
 | `piglin_repellents`          |                                                                                                  |
-| `planks`                     | Liste de tous les types de planche (items)                                                       |
+| `planks`                     | Liste de tous les types de planche                                                               |
 | `rails`                      |                                                                                                  |
 | `redstone_ores`              |                                                                                                  |
 | `sand`                       |                                                                                                  |
@@ -321,7 +321,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `tall_flowers`               |                                                                                                  |
 | `terracotta`                 |                                                                                                  |
 | `trapdoors`                  |                                                                                                  |
-| `walls`                      | Liste de tous les types de muret (items)                                                         |
+| `walls`                      | Liste de tous les types de muret                                                                 |
 | `warped_stems`               |                                                                                                  |
 | `wooden_buttons`             |                                                                                                  |
 | `wooden_doors`               |                                                                                                  |
@@ -329,8 +329,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wooden_pressure_plates`     |                                                                                                  |
 | `wooden_slabs`               |                                                                                                  |
 | `wooden_stairs`              |                                                                                                  |
-| `wooden_trapdoors`           | Liste de tous les types de trappe en bois (items)                                                |
-| `wool`                       | Liste de toutes les laines avec leurs couleurs respective (items)                                |
+| `wooden_trapdoors`           | Liste de tous les types de trappe en bois                                                        |
+| `wool`                       | Liste de toutes les laines avec leurs couleurs respective                                        |
 
 </details>
 
