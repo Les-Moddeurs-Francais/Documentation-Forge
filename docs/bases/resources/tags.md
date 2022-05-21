@@ -245,10 +245,10 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les évènements de jeu</summary>
 
-| Identifiant                  | Description |
-|------------------------------|-------------|
-| `ignore_vibrations_sneaking` |             |
-| `vibrations`                 |             |
+| Identifiant                  | Description                                                                                       |
+|------------------------------|---------------------------------------------------------------------------------------------------|
+| `ignore_vibrations_sneaking` | Liste des évènements considérés comme des vibrations, qui peuvent être masqués en s'accroupissant |
+| `vibrations`                 | Liste des évènements considérés comme des vibrations                                              |
 
 </details>
 
