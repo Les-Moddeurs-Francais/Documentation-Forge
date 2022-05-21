@@ -211,18 +211,18 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les entités</summary>
 
-| Identifiant                 | Description |
-|-----------------------------|-------------|
-| `arrows`                    |             |
-| `axolotl_always_hostiles`   |             |
-| `axolotl_hunt_targets`      |             |
-| `beehive_inhabitors`        |             |
-| `freeze_hurts_extra_types`  |             |
-| `freeze_hurts_extra_types`  |             |
-| `impact_projectiles`        |             |
-| `powder_snow_walkable_mobs` |             |
-| `raiders`                   |             |
-| `skeletons`                 |             |
+| Identifiant                  | Description                                                                                              |
+|------------------------------|----------------------------------------------------------------------------------------------------------|
+| `arrows`                     | Liste de toutes les flèches (entités)                                                                    |
+| `axolotl_always_hostiles`    | Liste des entités contre lesquels les axolotls sont toujours hostiles                                    |
+| `axolotl_hunt_targets`       | Liste des entités que les axolotls attaquent                                                             |
+| `beehive_inhabitors`         | Liste des entités qui habitent dans une ruche                                                            |
+| `freeze_hurts_extra_types`   | Liste des entités qui sont plus sensible au froid et subissent donc des points de dégâts supplémentaires |
+| `freeze_immune_entity_types` | Liste des entités qui ne gèle pas dans la poudreuse                                                      |
+| `impact_projectiles`         | Liste des entités qui sont des projectiles                                                               |
+| `powder_snow_walkable_mobs`  | Liste des entités qui peuvent marcher sur la poudreuse sans s'enfoncer dedans                            |
+| `raiders`                    | Liste des entités qui composent les raids contre les villages                                            |
+| `skeletons`                  | Liste de tous les types de squelette                                                                     |
 
 </details>
 
