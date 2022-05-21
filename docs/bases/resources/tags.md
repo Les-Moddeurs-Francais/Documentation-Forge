@@ -260,7 +260,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 | Identifiant                  | Description                                                                                      |
 |------------------------------|--------------------------------------------------------------------------------------------------|
-| `acacia_logs`                |                                                                                                  |
+| `acacia_logs`                | Liste de toutes les types de buche en acajou (items)                                             |
 | `anvil`                      |                                                                                                  |
 | `arrows`                     | Liste de tous les types de flèche (items)                                                        |
 | `axolotl_tempt_items`        |                                                                                                  |
@@ -274,8 +274,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `carpets`                    |                                                                                                  |
 | `cluster_max_harvestables`   |                                                                                                  |
 | `coals`                      | Liste de tous les types de charbon                                                               |
-| `coal_ores`                  | Liste des minerais de charbon (items)                                                            |
-| `copper_ores`                | Liste des minerais de cuivre (items)                                                             |
+| `coal_ores`                  | Liste de tous les types de minerai de charbon (items)                                            |
+| `copper_ores`                | Liste de tous les types de minerai de cuivre (items)                                             |
 | `creeper_drop_music_discs`   | Liste de tous les disques pouvant être _dropés_ par un creeper quand il est tué par un squelette |
 | `crimson_stems`              |                                                                                                  |
 | `dark_oak_logs`              |                                                                                                  |
@@ -304,7 +304,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `piglin_food`                |                                                                                                  |
 | `piglin_loved`               |                                                                                                  |
 | `piglin_repellents`          |                                                                                                  |
-| `planks`                     |                                                                                                  |
+| `planks`                     | Liste de tous les types de planche (items)                                                       |
 | `rails`                      |                                                                                                  |
 | `redstone_ores`              |                                                                                                  |
 | `sand`                       |                                                                                                  |
@@ -321,7 +321,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `tall_flowers`               |                                                                                                  |
 | `terracotta`                 |                                                                                                  |
 | `trapdoors`                  |                                                                                                  |
-| `walls`                      |                                                                                                  |
+| `walls`                      | Liste de tous les types de muret (items)                                                         |
 | `warped_stems`               |                                                                                                  |
 | `wooden_buttons`             |                                                                                                  |
 | `wooden_doors`               |                                                                                                  |
@@ -329,8 +329,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wooden_pressure_plates`     |                                                                                                  |
 | `wooden_slabs`               |                                                                                                  |
 | `wooden_stairs`              |                                                                                                  |
-| `wooden_trapdoors`           |                                                                                                  |
-| `wool`                       |                                                                                                  |
+| `wooden_trapdoors`           | Liste de tous les types de trappe en bois (items)                                                |
+| `wool`                       | Liste de toutes les laines avec leurs couleurs respective (items)                                |
 
 </details>
 
