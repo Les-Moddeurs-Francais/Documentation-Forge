@@ -73,31 +73,31 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `mineable/hoe`                             | Liste des blocs pouvant être miné efficacement avec faux                                       |
 | `mineable/pickaxe`                         | Liste des blocs pouvant être miné efficacement avec pioche                                     |
 | `mineable/shovel`                          | Liste des blocs pouvant être miné efficacement avec pelle                                      |
-| `acacia_logs`                              | Liste des blocs                                                                                |
+| `acacia_logs`                              | Liste des blocs qui sont des buches d'acacia                                                   |
 | `animals_spawnable_on`                     | Liste des blocs sur lesquels les animaux peuvent apparaitre                                    |
-| `anvil`                                    | Liste des blocs                                                                                |
+| `anvil`                                    | Liste des blocs qui sont des enclumes                                                          |
 | `axolotls_spawnable_on`                    | Liste des blocs sur lesquels les axolotls peuvent apparaitre                                   |
 | `azalea_grows_on`                          | Liste des blocs                                                                                |
 | `azalea_root_replaceable`                  | Liste des blocs                                                                                |
 | `bamboo_plantable_on`                      | Liste des blocs                                                                                |
-| `banners`                                  | Liste des blocs                                                                                |
+| `banners`                                  | Liste des blocs qui sont des bannières                                                         |
 | `base_stone_nether`                        | Liste des blocs                                                                                |
 | `base_stone_overworld`                     | Liste des blocs                                                                                |
 | `beacon_base_blocks`                       | Liste des blocs                                                                                |
-| `beds`                                     | Liste des blocs                                                                                |
+| `beds`                                     | Liste des blocs qui sont des lits                                                              |
 | `beehives`                                 | Liste des blocs                                                                                |
 | `bee_growables`                            | Liste des blocs                                                                                |
 | `big_dripleaf_placeable`                   | Liste des blocs                                                                                |
 | `birch_logs`                               | Liste des blocs                                                                                |
-| `buttons`                                  | Liste des blocs                                                                                |
-| `campfires`                                | Liste des blocs                                                                                |
-| `candles`                                  | Liste des blocs                                                                                |
-| `candle_cakes`                             | Liste des blocs                                                                                |
-| `carpets`                                  | Liste des blocs                                                                                |
-| `cauldrons`                                | Liste des blocs                                                                                |
-| `cave_vines`                               | Liste des blocs                                                                                |
-| `climbable`                                | Liste des blocs                                                                                |
-| `coal_ores`                                | Liste des blocs                                                                                |
+| `buttons`                                  | Liste des blocs qui sont des boutons                                                           |
+| `campfires`                                | Liste des blocs qui sont des feux de camp                                                      |
+| `candles`                                  | Liste des blocs qui sont des bougies                                                           |
+| `candle_cakes`                             | Liste des blocs qui sont des gateaux avec une bougie                                           |
+| `carpets`                                  | Liste des blocs qui sont des tapis                                                             |
+| `cauldrons`                                | Liste des blocs qui sont des chaudrons                                                         |
+| `cave_vines`                               | Liste des blocs qui sont des lianes des cavernes                                               |
+| `climbable`                                | Liste des blocs qui sont escaladables                                                          |
+| `coal_ores`                                | Liste des blocs qui sont des minerais de charbon                                               |
 | `copper_ores`                              | Liste des blocs                                                                                |
 | `corals`                                   | Liste des blocs                                                                                |
 | `coral_blocks`                             | Liste des blocs                                                                                |
@@ -172,10 +172,10 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `snow`                                     | Liste des blocs                                                                                |
 | `soul_fire_base_blocks`                    | Liste des blocs                                                                                |
 | `soul_speed_blocks`                        | Liste des blocs                                                                                |
-| `spruce_logs`                              | Liste des blocs                                                                                |
-| `stairs`                                   | Liste des blocs                                                                                |
+| `spruce_logs`                              | Liste des blocs qui sont des buches de bois de sapin                                           |
+| `stairs`                                   | Liste des blocs qui sont des escaliers                                                         |
 | `standing_signs`                           | Liste des blocs                                                                                |
-| `stone_bricks`                             | Liste des blocs                                                                                |
+| `stone_bricks`                             | Liste des blocs qui sont des pierres taillées                                                  |
 | `stone_ore_replaceables`                   | Liste des blocs pouvant être remplacés par des minerais                                        |
 | `stone_pressure_plates`                    | Liste des blocs                                                                                |
 | `strider_warm_blocks`                      | Liste des blocs                                                                                |
@@ -194,14 +194,14 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wither_immune`                            | Liste des blocs qui sont immunisés contre les explosions du Wither                             |
 | `wither_summon_base_blocks`                | Liste des blocs utilisables pour faire apparaitre le Wither                                    |
 | `wolves_spawnable_on`                      | Liste des blocs sur lesquels les loups peuvent apparaitre                                      |
-| `wooden_buttons`                           | Liste des blocs                                                                                |
-| `wooden_doors`                             | Liste des blocs                                                                                |
-| `wooden_fences`                            | Liste des blocs                                                                                |
-| `wooden_pressure_plates`                   | Liste des blocs                                                                                |
-| `wooden_slabs`                             | Liste des blocs                                                                                |
-| `wooden_stairs`                            | Liste des blocs                                                                                |
-| `wooden_trapdoors`                         | Liste des blocs                                                                                |
-| `wool`                                     | Liste des blocs                                                                                |
+| `wooden_buttons`                           | Liste des blocs qui sont des boutons en bois                                                   |
+| `wooden_doors`                             | Liste des blocs qui sont des portes en bois                                                    |
+| `wooden_fences`                            | Liste des blocs qui sont des barrières en bois                                                 |
+| `wooden_pressure_plates`                   | Liste des blocs qui sont des plaques de pression en bois                                       |
+| `wooden_slabs`                             | Liste des blocs qui sont des dalles en bois                                                    |
+| `wooden_stairs`                            | Liste des blocs qui sont des escaliers en bois                                                 |
+| `wooden_trapdoors`                         | Liste des blocs qui sont des trappes en bois                                                   |
+| `wool`                                     | Liste des blocs qui sont des laines                                                            |
 
 </details>
 
@@ -232,10 +232,10 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les fluides</summary>
 
-| Identifiant | Description |
-|-------------|-------------|
-| `lava`      |             |
-| `water`     |             |
+| Identifiant | Description                           |
+|-------------|---------------------------------------|
+| `lava`      | Liste des fluides qui sont de la lave |
+| `water`     | Liste des fluides qui sont de l'eau   |
 
 </details>
 
