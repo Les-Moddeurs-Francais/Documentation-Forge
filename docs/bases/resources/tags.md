@@ -70,9 +70,9 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | Identifiant                                | Description                                                                                                                                                                   |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `mineable/axe`                             | Liste des blocs pouvant être miné efficacement avec une hache                                                                                                                 |
-| `mineable/hoe`                             | Liste des blocs pouvant être miné efficacement avec faux                                                                                                                      |
-| `mineable/pickaxe`                         | Liste des blocs pouvant être miné efficacement avec pioche                                                                                                                    |
-| `mineable/shovel`                          | Liste des blocs pouvant être miné efficacement avec pelle                                                                                                                     |
+| `mineable/hoe`                             | Liste des blocs pouvant être miné efficacement avec une houe                                                                                                                  |
+| `mineable/pickaxe`                         | Liste des blocs pouvant être miné efficacement avec une pioche                                                                                                                |
+| `mineable/shovel`                          | Liste des blocs pouvant être miné efficacement avec une pelle                                                                                                                 |
 | `acacia_logs`                              | Liste des blocs qui sont des buches d'acacia                                                                                                                                  |
 | `animals_spawnable_on`                     | Liste des blocs sur lesquels les animaux peuvent apparaitre                                                                                                                   |
 | `anvil`                                    | Liste des blocs qui sont des enclumes                                                                                                                                         |
@@ -92,15 +92,15 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `buttons`                                  | Liste des blocs qui sont des boutons                                                                                                                                          |
 | `campfires`                                | Liste des blocs qui sont des feux de camp                                                                                                                                     |
 | `candles`                                  | Liste des blocs qui sont des bougies                                                                                                                                          |
-| `candle_cakes`                             | Liste des blocs qui sont des gateaux avec une bougie                                                                                                                          |
+| `candle_cakes`                             | Liste des blocs qui sont des gâteaux avec une bougie                                                                                                                          |
 | `carpets`                                  | Liste des blocs qui sont des tapis                                                                                                                                            |
 | `cauldrons`                                | Liste des blocs qui sont des chaudrons                                                                                                                                        |
 | `cave_vines`                               | Liste des blocs qui sont des lianes des cavernes                                                                                                                              |
 | `climbable`                                | Liste des blocs qui sont escaladables                                                                                                                                         |
 | `coal_ores`                                | Liste des blocs qui sont des minerais de charbon                                                                                                                              |
-| `copper_ores`                              | Liste des blocs qui sont des minerais de copper                                                                                                                               |
-| `corals`                                   | Liste des blocs qui sont des coraux                                                                                                                                           |
-| `coral_blocks`                             | Liste des blocs qui sont des coraux                                                                                                                                           |
+| `copper_ores`                              | Liste des blocs qui sont des minerais de cuivre                                                                                                                               |
+| `corals`                                   | Liste des blocs qui sont des coraux (en général)                                                                                                                              |
+| `coral_blocks`                             | Liste des blocs qui sont des coraux (blocs)                                                                                                                                   |
 | `coral_plants`                             | Liste des blocs qui sont des coraux (plantes)                                                                                                                                 |
 | `crimson_stems`                            | Liste des blocs qui sont des tiges carmins                                                                                                                                    |
 | `crops`                                    | Liste des blocs qui sont des cultures                                                                                                                                         |
@@ -114,7 +114,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `dripstone_replaceable_blocks`             | Liste des blocs pouvant être remplacés par des blocs de spéléothème                                                                                                           |
 | `emerald_ores`                             | Liste des blocs qui sont des minerais d'émeraude                                                                                                                              |
 | `enderman_holdable`                        | Liste des blocs pouvant être récupérés par des enderman                                                                                                                       |
-| `fall_damage_resetting`                    | Liste des blocs qui reinitialises les dégâts de chute d'un joueur                                                                                                             |
+| `fall_damage_resetting`                    | Liste des blocs qui réinitialisent les dégâts de chute d'un joueur                                                                                                            |
 | `features_cannot_replace`                  | Liste des blocs ne peuvent pas être remplacés par des éléments générés                                                                                                        |
 | `fences`                                   | Liste des blocs qui sont des barrières                                                                                                                                        |
 | `fence_gates`                              | Liste des blocs qui sont des portillons                                                                                                                                       |
@@ -157,7 +157,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `polar_bears_spawnable_on_in_frozen_ocean` | Liste des blocs sur lesquels les ours polaires peuvent apparaitre dans des biomes d'océan gelé                                                                                |
 | `portals`                                  | Liste des blocs qui sont des portails                                                                                                                                         |
 | `pressure_plates`                          | Liste des blocs qui sont des plaques de pression                                                                                                                              |
-| `prevent_mob_spawning_inside`              | Liste des blocs qui empêches les monstres d'apparaître à l'intérieur de ceux-ci                                                                                               |
+| `prevent_mob_spawning_inside`              | Liste des blocs empêchent les monstres d'apparaître à l'intérieur de ceux-ci                                                                                                  |
 | `rabbits_spawnable_on`                     | Liste des blocs sur lesquels les lapins peuvent apparaitre                                                                                                                    |
 | `rails`                                    | Liste des blocs qui sont des rails                                                                                                                                            |
 | `redstone_ores`                            | Liste des blocs qui sont des minerais de redstone                                                                                                                             |
@@ -218,7 +218,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `axolotl_hunt_targets`       | Liste des entités que les axolotls attaquent                                                             |
 | `beehive_inhabitors`         | Liste des entités qui habitent dans une ruche                                                            |
 | `freeze_hurts_extra_types`   | Liste des entités qui sont plus sensible au froid et subissent donc des points de dégâts supplémentaires |
-| `freeze_immune_entity_types` | Liste des entités qui ne gèle pas dans la poudreuse                                                      |
+| `freeze_immune_entity_types` | Liste des entités qui ne gèlent pas dans la poudreuse                                                    |
 | `impact_projectiles`         | Liste des entités qui sont des projectiles                                                               |
 | `powder_snow_walkable_mobs`  | Liste des entités qui peuvent marcher sur la poudreuse sans s'enfoncer dedans                            |
 | `raiders`                    | Liste des entités qui composent les raids contre les villages                                            |
@@ -274,8 +274,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `carpets`                    | Liste de tous les types de tapis                                                                 |
 | `cluster_max_harvestables`   | Liste des outils permettant de récolter efficacement de l'améthyste                              |
 | `coals`                      | Liste de tous les types de charbon                                                               |
-| `coal_ores`                  | Liste de tous les types de minerai de charbon                                                    |
-| `copper_ores`                | Liste de tous les types de minerai de cuivre                                                     |
+| `coal_ores`                  | Liste des minerais de charbon                                                                    |
+| `copper_ores`                | Liste des minerais de cuivre                                                                     |
 | `creeper_drop_music_discs`   | Liste de tous les disques pouvant être _dropés_ par un creeper quand il est tué par un squelette |
 | `crimson_stems`              | Liste de tous les types de troncs carmins                                                        |
 | `dark_oak_logs`              | Liste de tous les types de troncs en chêne noir                                                  |
