@@ -74,16 +74,16 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `mineable/pickaxe`                         | Liste des blocs pouvant être miné efficacement avec une pioche                                                                                                                |
 | `mineable/shovel`                          | Liste des blocs pouvant être miné efficacement avec une pelle                                                                                                                 |
 | `acacia_logs`                              | Liste des blocs qui sont des buches d'acacia                                                                                                                                  |
-| `animals_spawnable_on`                     | Liste des blocs sur lesquels les animaux peuvent apparaitre                                                                                                                   |
+| `animals_spawnable_on`                     | Liste des blocs sur lesquels les animaux peuvent apparaître                                                                                                                   |
 | `anvil`                                    | Liste des blocs qui sont des enclumes                                                                                                                                         |
-| `axolotls_spawnable_on`                    | Liste des blocs sur lesquels les axolotls peuvent apparaitre                                                                                                                  |
+| `axolotls_spawnable_on`                    | Liste des blocs sur lesquels les axolotls peuvent apparaître                                                                                                                  |
 | `azalea_grows_on`                          | Liste des blocs sur lesquels les arbres d'azalées peuvent pousser                                                                                                             |
 | `azalea_root_replaceable`                  | Liste des blocs qui peuvent être remplacé par les racines des azalées                                                                                                         |
 | `bamboo_plantable_on`                      | Liste des blocs où le bambou peut être planté                                                                                                                                 |
 | `banners`                                  | Liste des blocs qui sont des bannières                                                                                                                                        |
 | `base_stone_nether`                        | Liste des blocs qui peuvent être remplacés par des ressources (par exemple des minerais) de la dimension du Nether                                                            |
 | `base_stone_overworld`                     | Liste des blocs qui peuvent être remplacés par des ressources (par exemple des minerais) du monde normal                                                                      |
-| `beacon_base_blocks`                       | Liste des blocs qui peuvent activer une balise selon une structure pré-définit                                                                                                |
+| `beacon_base_blocks`                       | Liste des blocs qui peuvent activer une balise selon une structure prédéfinie                                                                                                 |
 | `beds`                                     | Liste des blocs qui sont des lits                                                                                                                                             |
 | `beehives`                                 | Liste des blocs qui sont des ruches                                                                                                                                           |
 | `bee_growables`                            | Liste des blocs qui réagissent au pollen des abeilles pour pousser plus rapidement                                                                                            |
@@ -121,9 +121,9 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `fire`                                     | Liste des blocs qui sont du feu                                                                                                                                               |
 | `flowers`                                  | Liste des blocs qui sont des fleurs                                                                                                                                           |
 | `flower_pots`                              | Liste des blocs qui sont des fleurs dans des pots                                                                                                                             |
-| `foxes_spawnable_on`                       | Liste des blocs sur lesquels les loups peuvent apparaitre                                                                                                                     |
+| `foxes_spawnable_on`                       | Liste des blocs sur lesquels les loups peuvent apparaître                                                                                                                     |
 | `geode_invalid_blocks`                     | Liste des blocs qui empêchent les géodes de se générer                                                                                                                        |
-| `goats_spawnable_on`                       | Liste des blocs sur lesquels les chèvres peuvent apparaitre                                                                                                                   |
+| `goats_spawnable_on`                       | Liste des blocs sur lesquels les chèvres peuvent apparaître                                                                                                                   |
 | `gold_ores`                                | Liste des blocs qui sont des minerais d'or                                                                                                                                    |
 | `guarded_by_piglins`                       | Liste des blocs qui rendent hostile les Piglin's quand ils sont cassés ou ouvert (pour ceux le pouvant)                                                                       |
 | `hoglin_repellents`                        | Liste des blocs qui font fuir les hoglin's                                                                                                                                    |
@@ -141,7 +141,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `logs`                                     | Liste des blocs qui sont des buches                                                                                                                                           |
 | `logs_that_burn`                           | Liste des blocs de buche qui sont inflammables                                                                                                                                |
 | `lush_ground_replaceable`                  | Liste des blocs qui seront remplacés par de la terre racineuse                                                                                                                |
-| `mooshrooms_spawnable_on`                  | Liste des blocs sur lesquels les vaches champignon peuvent apparaitre                                                                                                         |
+| `mooshrooms_spawnable_on`                  | Liste des blocs sur lesquels les vaches champignon peuvent apparaître                                                                                                         |
 | `moss_replaceable`                         | Liste des blocs qui peuvent être remplacés par des blocs de mousse lorsque de la poudre d'os a été appliquée à un bloc de mousse voisin                                       |
 | `mushroom_grow_block`                      | Liste des blocs sur lesquels les champignons peuvent être placés ou se propager                                                                                               |
 | `needs_diamond_tool`                       | Liste des blocs nécessitant un outil en diamant pour être récolté                                                                                                             |
@@ -151,14 +151,14 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `nylium`                                   | Liste des blocs qui sont des blocs de nylium                                                                                                                                  |
 | `oak_logs`                                 | Liste des blocs qui sont des buches de bois de chêne                                                                                                                          |
 | `occludes_vibration_signals`               | Liste des blocs qui empêchent les capteurs sculk d'entendre les vibrations si le bloc se trouve entre le capteur et la vibration.                                             |
-| `parrots_spawnable_on`                     | Liste des blocs sur lesquels les perroquets peuvent apparaitre                                                                                                                |
+| `parrots_spawnable_on`                     | Liste des blocs sur lesquels les perroquets peuvent apparaître                                                                                                                |
 | `piglin_repellents`                        | Liste des blocs qui font fuir les piglin's                                                                                                                                    |
 | `planks`                                   | Liste des blocs qui sont des planches                                                                                                                                         |
-| `polar_bears_spawnable_on_in_frozen_ocean` | Liste des blocs sur lesquels les ours polaires peuvent apparaitre dans des biomes d'océan gelé                                                                                |
+| `polar_bears_spawnable_on_in_frozen_ocean` | Liste des blocs sur lesquels les ours polaires peuvent apparaître dans des biomes d'océan gelé                                                                                |
 | `portals`                                  | Liste des blocs qui sont des portails                                                                                                                                         |
 | `pressure_plates`                          | Liste des blocs qui sont des plaques de pression                                                                                                                              |
 | `prevent_mob_spawning_inside`              | Liste des blocs empêchent les monstres d'apparaître à l'intérieur de ceux-ci                                                                                                  |
-| `rabbits_spawnable_on`                     | Liste des blocs sur lesquels les lapins peuvent apparaitre                                                                                                                    |
+| `rabbits_spawnable_on`                     | Liste des blocs sur lesquels les lapins peuvent apparaître                                                                                                                    |
 | `rails`                                    | Liste des blocs qui sont des rails                                                                                                                                            |
 | `redstone_ores`                            | Liste des blocs qui sont des minerais de redstone                                                                                                                             |
 | `replaceable_plants`                       | Liste des plantes qui peuvent être remplacées pendant la génération d'un élément                                                                                              |
@@ -192,8 +192,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `warped_stems`                             | Liste des blocs qui sont des tiges biscornues                                                                                                                                 |
 | `wart_blocks`                              | Liste des blocs qui sont des blocs de verrue                                                                                                                                  |
 | `wither_immune`                            | Liste des blocs qui sont immunisés contre les explosions du Wither                                                                                                            |
-| `wither_summon_base_blocks`                | Liste des blocs utilisables pour faire apparaitre le Wither                                                                                                                   |
-| `wolves_spawnable_on`                      | Liste des blocs sur lesquels les loups peuvent apparaitre                                                                                                                     |
+| `wither_summon_base_blocks`                | Liste des blocs utilisables pour faire apparaître le Wither                                                                                                                   |
+| `wolves_spawnable_on`                      | Liste des blocs sur lesquels les loups peuvent apparaître                                                                                                                     |
 | `wooden_buttons`                           | Liste des blocs qui sont des boutons en bois                                                                                                                                  |
 | `wooden_doors`                             | Liste des blocs qui sont des portes en bois                                                                                                                                   |
 | `wooden_fences`                            | Liste des blocs qui sont des barrières en bois                                                                                                                                |
@@ -347,12 +347,12 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 | Identifiant                            | Description                                                            |
 |----------------------------------------|------------------------------------------------------------------------|
 | `has_structure\bastion_remnant`        | Liste des biomes pouvant contenir des ruines de bastion                |
-| `has_structure\buried_treasure`        | Liste des biomes pouvant contenir des trésors enfuis                   |
+| `has_structure\buried_treasure`        | Liste des biomes pouvant contenir des trésors enfouis                  |
 | `has_structure\desert_pyramid`         | Liste des biomes pouvant contenir des pyramides                        |
 | `has_structure\end_city`               | Liste des biomes pouvant contenir des villes de l'End                  |
 | `has_structure\igloo`                  | Liste des biomes pouvant contenir des igloos                           |
 | `has_structure\jungle_temple`          | Liste des biomes pouvant contenir des temples de la jungle             |
-| `has_structure\mineshaft`              | Liste des biomes pouvant contenir des mines abandonnée                 |
+| `has_structure\mineshaft`              | Liste des biomes pouvant contenir des mines abandonnées                |
 | `has_structure\mineshaft_mesa`         | Liste des biomes pouvant contenir des mines abandonnées du mesa        |
 | `has_structure\nether_fortress`        | Liste des biomes pouvant contenir des forteresses du Nether            |
 | `has_structure\nether_fossil`          | Liste des biomes pouvant contenir des fossiles du Nether               |
@@ -403,9 +403,9 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 
 | Identifiant                 | Description                                                                       |
 |-----------------------------|-----------------------------------------------------------------------------------|
-| `dolphin_located`           | Liste des structure _configurées_ pouvant être localisées par un dolphin          |
+| `dolphin_located`           | Liste des structure _configurées_ pouvant être localisées par un dauphin          |
 | `eye_of_ender_located`      | Liste des structures _configurées_ pouvant être localisées par un oeil de l'Ender |
-| `mineshaft`                 | Listes des structures _configurées_ qui sont des puits de mine abandonné          |
+| `mineshaft`                 | Listes des structures _configurées_ qui sont des puits de mine abandonnée         |
 | `ocean_ruin`                | Listes des structures _configurées_ qui sont des ruines d'océan                   |
 | `on_ocean_explorer_maps`    | Liste des structures _configurées_ visibles sur les cartes au trésor marines      |
 | `on_treasure_maps`          | Liste des structures _configurées_ visibles sur les cartes au trésor              |
