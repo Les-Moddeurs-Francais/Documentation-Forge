@@ -136,7 +136,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `iron_ores`                                | Liste des blocs qui sont des minerais de fer                                                                                                                                  |
 | `jungle_logs`                              | Liste des blocs qui sont des buches de bois de la jungle                                                                                                                      |
 | `lapis_ores`                               | Liste des blocs qui sont des minerais de lapis lazuli                                                                                                                         |
-| `lava_pool_stone_cannot_replace`           | Liste des blocs qui ne peuvent pas être remplacé par la génération d'un lac de lave.                                                                                          |
+| `lava_pool_stone_cannot_replace`           | Liste des blocs qui ne peuvent pas être remplacé par la génération d'un lac de lave                                                                                           |
 | `leaves`                                   | Liste des blocs qui sont des feuilles                                                                                                                                         |
 | `logs`                                     | Liste des blocs qui sont des buches                                                                                                                                           |
 | `logs_that_burn`                           | Liste des blocs de buche qui sont inflammables                                                                                                                                |
@@ -150,7 +150,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `non_flammable_wood`                       | Liste des blocs de bois qui sont inflammables                                                                                                                                 |
 | `nylium`                                   | Liste des blocs qui sont des blocs de nylium                                                                                                                                  |
 | `oak_logs`                                 | Liste des blocs qui sont des buches de bois de chêne                                                                                                                          |
-| `occludes_vibration_signals`               | Liste des blocs qui empêchent les capteurs sculk d'entendre les vibrations si le bloc se trouve entre le capteur et la vibration.                                             |
+| `occludes_vibration_signals`               | Liste des blocs qui empêchent les capteurs sculk d'entendre les vibrations si le bloc se trouve entre le capteur et la vibration                                              |
 | `parrots_spawnable_on`                     | Liste des blocs sur lesquels les perroquets peuvent apparaître                                                                                                                |
 | `piglin_repellents`                        | Liste des blocs qui font fuir les piglin's                                                                                                                                    |
 | `planks`                                   | Liste des blocs qui sont des planches                                                                                                                                         |
@@ -187,7 +187,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `valid_spawn`                              | Liste des blocs qui sont valides pour l'apparition d'un joueur                                                                                                                |
 | `walls`                                    | Liste des blocs qui sont des murets                                                                                                                                           |
 | `wall_corals`                              | Liste des blocs qui sont des coraux muraux                                                                                                                                    |
-| `wall_post_override`                       | Liste des blocs qui transforment les murs en piliers, même s'ils ne sont pas solides.                                                                                         |
+| `wall_post_override`                       | Liste des blocs qui transforment les murs en piliers, même s'ils ne sont pas solides                                                                                          |
 | `wall_signs`                               | Liste des blocs qui sont des panneaux accrochés au mur                                                                                                                        |
 | `warped_stems`                             | Liste des blocs qui sont des tiges biscornues                                                                                                                                 |
 | `wart_blocks`                              | Liste des blocs qui sont des blocs de verrue                                                                                                                                  |
@@ -300,8 +300,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `music_discs`                | Liste de tous les disques de musique                                                             |
 | `non_flammable_wood`         | Liste des tous les types de bois non combustibles                                                |
 | `oak_logs`                   | Liste de tous les types de troncs en chêne                                                       |
-| `occludes_vibration_signals` | Liste des items absorbant les vibrations qui le traverse.                                        |
-| `piglin_food`                | Liste des items que mangent les plugins                                                          |
+| `occludes_vibration_signals` | Liste des items absorbant les vibrations qui le traverse                                         |
+| `piglin_food`                | Liste des items que mangent les piglins                                                          |
 | `piglin_loved`               | Liste des items que les Piglins accepte pour faire un échange                                    |
 | `piglin_repellents`          | Liste des items qui repoussent les piglins                                                       |
 | `planks`                     | Liste de tous les types de planches                                                              |
@@ -316,7 +316,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `spruce_logs`                | Liste de tous les types de troncs en sapin                                                       |
 | `stairs`                     | Liste de tous les types d'escaliers                                                              |
 | `stone_bricks`               | Liste de tous les types de pierres taillées                                                      |
-| `stone_crafting_materials`   | Liste des items permettant de crafter les objets à base de roche.                                |
+| `stone_crafting_materials`   | Liste des items permettant de crafter les objets à base de pierre                                |
 | `stone_tool_materials`       | Liste des items permettant de crafter les outils et armes en roche                               |
 | `tall_flowers`               | Liste de tous les types de fleurs haute                                                          |
 | `terracotta`                 | Liste de tous les types de terres cuites                                                         |
@@ -365,7 +365,7 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 | `has_structure\ruined_portal_mountain` | Liste des biomes pouvant contenir des ruines de portail des montages   |
 | `has_structure\ruined_portal_nether`   | Liste des biomes pouvant contenir des ruines de portail du Nether      |
 | `has_structure\ruined_portal_ocean`    | Liste des biomes pouvant contenir des ruines de portail de l'océan     |
-| `has_structure\ruined_portal_standard` | Liste des biomes pouvant contenir des ruines de portail _standards_    |
+| `has_structure\ruined_portal_standard` | Liste des biomes pouvant contenir des ruines de portail _standard_     |
 | `has_structure\ruined_portal_swamp`    | Liste des biomes pouvant contenir des ruines de portail des marais     |
 | `has_structure\shipwreck`              | Liste des biomes pouvant contenir des épaves                           |
 | `has_structure\shipwreck_beached`      | Liste des biomes pouvant contenir des bateaux échoués sur une plage    |
@@ -401,17 +401,17 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 
 <summary>Liste des tags concernant les structures configurées</summary>
 
-| Identifiant                 | Description                                                                       |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| `dolphin_located`           | Liste des structure _configurées_ pouvant être localisées par un dauphin          |
-| `eye_of_ender_located`      | Liste des structures _configurées_ pouvant être localisées par un oeil de l'Ender |
-| `mineshaft`                 | Listes des structures _configurées_ qui sont des puits de mine abandonnée         |
-| `ocean_ruin`                | Listes des structures _configurées_ qui sont des ruines d'océan                   |
-| `on_ocean_explorer_maps`    | Liste des structures _configurées_ visibles sur les cartes au trésor marines      |
-| `on_treasure_maps`          | Liste des structures _configurées_ visibles sur les cartes au trésor              |
-| `on_woodland_explorer_maps` | Liste des structures _configurées_ visibles sur les cartes au trésor forestières  |
-| `ruined_portal`             | Listes des structures _configurées_ qui sont des portails en ruines               |
-| `shipwreck`                 | Listes des structures _configurées_ qui sont des épaves de navire                 |
-| `village`                   | Listes des structures _configurées_ qui sont des villages                         |
+| Identifiant                 | Description                                                                      |
+|-----------------------------|----------------------------------------------------------------------------------|
+| `dolphin_located`           | Liste des structure _configurées_ pouvant être localisées par un dauphin         |
+| `eye_of_ender_located`      | Liste des structures _configurées_ pouvant être localisées par un œil de l'Ender |
+| `mineshaft`                 | Listes des structures _configurées_ qui sont des puits de mine abandonnée        |
+| `ocean_ruin`                | Listes des structures _configurées_ qui sont des ruines d'océan                  |
+| `on_ocean_explorer_maps`    | Liste des structures _configurées_ visibles sur les cartes au trésor marines     |
+| `on_treasure_maps`          | Liste des structures _configurées_ visibles sur les cartes au trésor             |
+| `on_woodland_explorer_maps` | Liste des structures _configurées_ visibles sur les cartes au trésor forestières |
+| `ruined_portal`             | Listes des structures _configurées_ qui sont des portails en ruines              |
+| `shipwreck`                 | Listes des structures _configurées_ qui sont des épaves de navire                |
+| `village`                   | Listes des structures _configurées_ qui sont des villages                        |
 
 </details>
