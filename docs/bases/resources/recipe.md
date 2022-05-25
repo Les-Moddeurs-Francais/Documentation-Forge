@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 title: Recettes
 description: Comment sont structurées les recettes dans Minecraft ?
 tags: [bases, ressources]

@@ -28,7 +28,7 @@ Les textures sont des fichiers PNG se trouvant dans un sous dossier du dossier `
 
 Les recettes sont définies par des fichiers JSON se trouvant dans le dossier `/data/<modid>/recipes`.
 
-## Progrès
+## [Progrès](advancements)
 
 Les progrès sont définis par des fichiers JSON se trouvant dans le dossier `/data/<modid>/advancements`.
 

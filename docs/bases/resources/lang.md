@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: Traductions
 description : Comment sont structurées les fichiers de traductions dans Minecraft ?
 tags: [bases, ressources]

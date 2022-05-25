@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 8
 title: Tags
 description: Comment sont structurées les tags dans Minecraft ?
 tags: [bases, ressources]
