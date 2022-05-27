@@ -123,28 +123,8 @@ module.exports = {
     },
     metadata : [
       {
-        name: 'og:site_name',
-        content: 'Les Moddeurs Francais'
-      },
-      {
         name: 'keywords',
         content: 'Forge, Modding, Minecraft, Développement, Mods, Programmation'
-      },
-      {
-        name: 'og:type',
-        content: 'website'
-      },
-      {
-        name: 'og:image',
-        content: 'https://cdn.lesmoddeursfrancais.fr/logo-256x256.png'
-      },
-      {
-        name: 'og:image:width',
-        content: '256'
-      },
-      {
-        name: 'og:image:height',
-        content: '256'
       },
       {
         name: 'google-site-verification',
@@ -160,6 +140,7 @@ module.exports = {
       indexName: 'forge-doc-lesmoddeursfrancais',
 
     },
+    image: 'img/icons/icon-256x256.png',
   },
   i18n: {
     defaultLocale: 'fr',
