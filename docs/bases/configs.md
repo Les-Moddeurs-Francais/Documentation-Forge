@@ -5,9 +5,7 @@ description: Comment créer des configurations pour son mod ?
 tags: [bases]
 ---
 
-Les configurations sont une partie essentielle de l'api [MinecraftForge](http://minecraftforge.net/). En effet, celle-ci permet ensuite au joueur de configurer certaines valeurs données depuis un fichier crée par le jeu.
-
-Nous allons voir ici comment en rajouter à votre mod pour permettre aux joueurs l'utilisant de personnaliser certains points.
+Les configurations sont une partie essentielle de l'api [MinecraftForge](http://minecraftforge.net/). En effet, celle-ci permet au joueur de configurer certaines valeurs données, depuis un fichier crée par le jeu.
 
 ## Création
 
