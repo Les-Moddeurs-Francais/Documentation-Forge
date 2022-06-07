@@ -62,6 +62,24 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 ## Listes
 
+### Motifs de bannière
+
+<details>
+
+<summary>Liste des tags concernant les motifs de bannière</summary>
+
+| Identifiant            | Description |
+|------------------------|-------------|
+| `pattern_item/creeper` |             |
+| `pattern_item/flower`  |             |
+| `pattern_item/globe`   |             |
+| `pattern_item/mojang`  |             |
+| `pattern_item/piglin`  |             |
+| `pattern_item/piglin`  |             |
+| `no_item_required`     |             |
+
+</details>
+
 ### Blocs
 
 <details>
@@ -205,6 +223,19 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 </details>
 
+### Variantes de chat
+
+<details>
+
+<summary>Liste des tags concernant les variantes de chat</summary>
+
+| Identifiant        | Description |
+|--------------------|-------------|
+| `default_spawns`   |             |
+| `full_moon_spawns` |             |
+
+</details>
+
 ### Entités
 
 <details>
@@ -219,6 +250,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `beehive_inhabitors`         | Liste des entités qui habitent dans une ruche                                                            |
 | `freeze_hurts_extra_types`   | Liste des entités qui sont plus sensible au froid et subissent donc des points de dégâts supplémentaires |
 | `freeze_immune_entity_types` | Liste des entités qui ne gèlent pas dans la poudreuse                                                    |
+| `frog_food`                  | Liste des entités qui peuvent être mangées par les grenouilles                                           |
 | `impact_projectiles`         | Liste des entités qui sont des projectiles                                                               |
 | `powder_snow_walkable_mobs`  | Liste des entités qui peuvent marcher sur la poudreuse sans s'enfoncer dedans                            |
 | `raiders`                    | Liste des entités qui composent les raids contre les villages                                            |
@@ -249,6 +281,20 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 |------------------------------|---------------------------------------------------------------------------------------------------|
 | `ignore_vibrations_sneaking` | Liste des évènements considérés comme des vibrations, qui peuvent être masqués en s'accroupissant |
 | `vibrations`                 | Liste des évènements considérés comme des vibrations                                              |
+
+</details>
+
+### Instruments
+
+<details>
+
+<summary>Liste des tags concernant les instruments</summary>
+
+| Identifiant            | Description |
+|------------------------|-------------|
+| `goat_horns`           |             |
+| `regular_goat_horns`   |             |
+| `screaming_goat_horns` |             |
 
 </details>
 
@@ -331,6 +377,32 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wooden_stairs`              | Liste de tous les types d'escaliers en bois                                                      |
 | `wooden_trapdoors`           | Liste de tous les types de trappes en bois                                                       |
 | `wool`                       | Liste de toutes les laines avec leurs couleurs respective                                        |
+
+</details>
+
+### Variantes de peinture
+
+<details>
+
+<summary>Liste des tags concernant les variantes de peinture</summary>
+
+| Identifiant           | Description |
+|-----------------------|-------------|
+| `placeable`           |             |
+
+</details>
+
+### Points d'intérêt
+
+<details>
+
+<summary>Liste des tags concernant les variantes de points d'intérêt</summary>
+
+| Identifiant           | Description |
+|-----------------------|-------------|
+| `acquirable_job_site` |             |
+| `bee_home`            |             |
+| `village`             |             |
 
 </details>
 
