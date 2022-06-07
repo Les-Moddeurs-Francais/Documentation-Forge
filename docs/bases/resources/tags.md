@@ -463,7 +463,7 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 
 </details>
 
-### Structures configurées
+### Structures
 
 :::caution
 Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
@@ -471,19 +471,21 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 
 <details>
 
-<summary>Liste des tags concernant les structures configurées</summary>
+<summary>Liste des tags concernant les structures</summary>
 
-| Identifiant                 | Description                                                                      |
-|-----------------------------|----------------------------------------------------------------------------------|
-| `dolphin_located`           | Liste des structure _configurées_ pouvant être localisées par un dauphin         |
-| `eye_of_ender_located`      | Liste des structures _configurées_ pouvant être localisées par un œil de l'Ender |
-| `mineshaft`                 | Listes des structures _configurées_ qui sont des puits de mine abandonnée        |
-| `ocean_ruin`                | Listes des structures _configurées_ qui sont des ruines d'océan                  |
-| `on_ocean_explorer_maps`    | Liste des structures _configurées_ visibles sur les cartes au trésor marines     |
-| `on_treasure_maps`          | Liste des structures _configurées_ visibles sur les cartes au trésor             |
-| `on_woodland_explorer_maps` | Liste des structures _configurées_ visibles sur les cartes au trésor forestières |
-| `ruined_portal`             | Listes des structures _configurées_ qui sont des portails en ruines              |
-| `shipwreck`                 | Listes des structures _configurées_ qui sont des épaves de navire                |
-| `village`                   | Listes des structures _configurées_ qui sont des villages                        |
+| Identifiant                 | Description                                                        |
+|-----------------------------|--------------------------------------------------------------------|
+| `cats_spawn_as_black.json`  | Liste des structure où les chats noirs peuvent apparaitre          |
+| `cats_spawn_in.json`        | Liste des structure où les chats peuvent apparaitre                |
+| `dolphin_located`           | Liste des structure pouvant être localisées par un dauphin         |
+| `eye_of_ender_located`      | Liste des structures pouvant être localisées par un œil de l'Ender |
+| `mineshaft`                 | Listes des structures qui sont des puits de mine abandonnée        |
+| `ocean_ruin`                | Listes des structures qui sont des ruines d'océan                  |
+| `on_ocean_explorer_maps`    | Liste des structures visibles sur les cartes au trésor marines     |
+| `on_treasure_maps`          | Liste des structures visibles sur les cartes au trésor             |
+| `on_woodland_explorer_maps` | Liste des structures visibles sur les cartes au trésor forestières |
+| `ruined_portal`             | Listes des structures qui sont des portails en ruines              |
+| `shipwreck`                 | Listes des structures qui sont des épaves de navire                |
+| `village`                   | Listes des structures qui sont des villages                        |
 
 </details>
