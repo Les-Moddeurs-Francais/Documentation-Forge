@@ -411,9 +411,9 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les variantes de peinture</summary>
 
-| Identifiant | Description                                             |
-|-------------|---------------------------------------------------------|
-| `placeable` | Liste des variantes de peinture plaçable en mode survie |
+| Identifiant | Description                                              |
+|-------------|----------------------------------------------------------|
+| `placeable` | Liste des variantes de peinture plaçables en mode survie |
 
 </details>
 
@@ -427,7 +427,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 |-----------------------|----------------------------------------------------------|
 | `acquirable_job_site` | Liste des points d'intérêt recherchés par les villageois |
 | `bee_home`            | Liste des points d'intérêt ciblés par les abeilles       |
-| `village`             | Liste des points qui font partie d'un village            |
+| `village`             | Liste des points d'intérêt qui font partie d'un village  |
 
 </details>
 
