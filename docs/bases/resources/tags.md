@@ -398,11 +398,11 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les variantes de points d'intérêt</summary>
 
-| Identifiant           | Description |
-|-----------------------|-------------|
-| `acquirable_job_site` |             |
-| `bee_home`            |             |
-| `village`             |             |
+| Identifiant           | Description                                              |
+|-----------------------|----------------------------------------------------------|
+| `acquirable_job_site` | Liste des points d'intérêt recherchés par les villageois |
+| `bee_home`            | Liste des points d'intérêt ciblés par les abeilles       |
+| `village`             | Liste des points qui font partie d'un village            |
 
 </details>
 
