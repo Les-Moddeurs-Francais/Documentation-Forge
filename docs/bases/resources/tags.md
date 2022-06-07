@@ -416,50 +416,72 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 
 <summary>Liste des tags concernant les biomes</summary>
 
-| Identifiant                            | Description                                                            |
-|----------------------------------------|------------------------------------------------------------------------|
-| `has_structure\bastion_remnant`        | Liste des biomes pouvant contenir des ruines de bastion                |
-| `has_structure\buried_treasure`        | Liste des biomes pouvant contenir des trésors enfouis                  |
-| `has_structure\desert_pyramid`         | Liste des biomes pouvant contenir des pyramides                        |
-| `has_structure\end_city`               | Liste des biomes pouvant contenir des villes de l'End                  |
-| `has_structure\igloo`                  | Liste des biomes pouvant contenir des igloos                           |
-| `has_structure\jungle_temple`          | Liste des biomes pouvant contenir des temples de la jungle             |
-| `has_structure\mineshaft`              | Liste des biomes pouvant contenir des mines abandonnées                |
-| `has_structure\mineshaft_mesa`         | Liste des biomes pouvant contenir des mines abandonnées du mesa        |
-| `has_structure\nether_fortress`        | Liste des biomes pouvant contenir des forteresses du Nether            |
-| `has_structure\nether_fossil`          | Liste des biomes pouvant contenir des fossiles du Nether               |
-| `has_structure\ocean_monument`         | Liste des biomes pouvant contenir des monuments océaniques             |
-| `has_structure\ocean_ruin_cold`        | Liste des biomes pouvant contenir des ruines océaniques d'eaux froides |
-| `has_structure\ocean_ruin_warm`        | Liste des biomes pouvant contenir des ruines océaniques d'eaux chaudes |
-| `has_structure\pillager_outpost`       | Liste des biomes pouvant contenir des avant-postes de pillards         |
-| `has_structure\ruined_portal_desert`   | Liste des biomes pouvant contenir des ruines de portail du désert      |
-| `has_structure\ruined_portal_jungle`   | Liste des biomes pouvant contenir des ruines de portail de la jungle   |
-| `has_structure\ruined_portal_mountain` | Liste des biomes pouvant contenir des ruines de portail des montages   |
-| `has_structure\ruined_portal_nether`   | Liste des biomes pouvant contenir des ruines de portail du Nether      |
-| `has_structure\ruined_portal_ocean`    | Liste des biomes pouvant contenir des ruines de portail de l'océan     |
-| `has_structure\ruined_portal_standard` | Liste des biomes pouvant contenir des ruines de portail _standard_     |
-| `has_structure\ruined_portal_swamp`    | Liste des biomes pouvant contenir des ruines de portail des marais     |
-| `has_structure\shipwreck`              | Liste des biomes pouvant contenir des épaves                           |
-| `has_structure\shipwreck_beached`      | Liste des biomes pouvant contenir des bateaux échoués sur une plage    |
-| `has_structure\stronghold`             | Liste des biomes pouvant contenir des bastions                         |
-| `has_structure\swamp_hut`              | Liste des biomes pouvant contenir des huttes de sorcière               |
-| `has_structure\village_desert`         | Liste des biomes pouvant contenir des villages du désert               |
-| `has_structure\village_plains`         | Liste des biomes pouvant contenir des villages de la plaine            |
-| `has_structure\village_savanna`        | Liste des biomes pouvant contenir des villages de la savane            |
-| `has_structure\village_snowy`          | Liste des biomes pouvant contenir des villages enneigés                |
-| `has_structure\village_taiga`          | Liste des biomes pouvant contenir des villages de la taïga             |
-| `has_structure\woodland_mansion`       | Liste des biomes pouvant contenir des manoirs de la forêt              |
-| `is_badlands`                          | Liste des biomes de type _badland_                                     |
-| `is_beach`                             | Liste des biomes _plage_                                               |
-| `is_deep_ocean`                        | Liste des biomes de type _océan profond_                               |
-| `is_forest`                            | Liste des biomes de type _forêt_                                       |
-| `is_hill`                              | Liste des biomes _collines_                                            |
-| `is_jungle`                            | Liste des biomes de type _jungle_                                      |
-| `is_mountain`                          | Liste des biomes de type _montagne_                                    |
-| `is_nether`                            | Liste des biomes du Nether                                             |
-| `is_ocean`                             | Liste des biomes océaniques                                            |
-| `is_river`                             | Liste des différents type de _rivières_                                |
-| `is_taiga`                             | Liste des biomes de type _taïga_                                       |
+| Identifiant                                 | Description                                                                                                          |
+|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `has_structure\ancient_city`                | Liste des biomes pouvant contenir des cités antiques                                                                 |
+| `has_structure\bastion_remnant`             | Liste des biomes pouvant contenir des ruines de bastion                                                              |
+| `has_structure\buried_treasure`             | Liste des biomes pouvant contenir des trésors enfouis                                                                |
+| `has_structure\desert_pyramid`              | Liste des biomes pouvant contenir des pyramides                                                                      |
+| `has_structure\end_city`                    | Liste des biomes pouvant contenir des villes de l'End                                                                |
+| `has_structure\igloo`                       | Liste des biomes pouvant contenir des igloos                                                                         |
+| `has_structure\jungle_temple`               | Liste des biomes pouvant contenir des temples de la jungle                                                           |
+| `has_structure\mineshaft`                   | Liste des biomes pouvant contenir des mines abandonnées                                                              |
+| `has_structure\mineshaft_mesa`              | Liste des biomes pouvant contenir des mines abandonnées du mesa                                                      |
+| `has_structure\nether_fortress`             | Liste des biomes pouvant contenir des forteresses du Nether                                                          |
+| `has_structure\nether_fossil`               | Liste des biomes pouvant contenir des fossiles du Nether                                                             |
+| `has_structure\ocean_monument`              | Liste des biomes pouvant contenir des monuments océaniques                                                           |
+| `has_structure\ocean_ruin_cold`             | Liste des biomes pouvant contenir des ruines océaniques d'eaux froides                                               |
+| `has_structure\ocean_ruin_warm`             | Liste des biomes pouvant contenir des ruines océaniques d'eaux chaudes                                               |
+| `has_structure\pillager_outpost`            | Liste des biomes pouvant contenir des avant-postes de pillards                                                       |
+| `has_structure\ruined_portal_desert`        | Liste des biomes pouvant contenir des ruines de portail du désert                                                    |
+| `has_structure\ruined_portal_jungle`        | Liste des biomes pouvant contenir des ruines de portail de la jungle                                                 |
+| `has_structure\ruined_portal_mountain`      | Liste des biomes pouvant contenir des ruines de portail des montages                                                 |
+| `has_structure\ruined_portal_nether`        | Liste des biomes pouvant contenir des ruines de portail du Nether                                                    |
+| `has_structure\ruined_portal_ocean`         | Liste des biomes pouvant contenir des ruines de portail de l'océan                                                   |
+| `has_structure\ruined_portal_standard`      | Liste des biomes pouvant contenir des ruines de portail _standard_                                                   |
+| `has_structure\ruined_portal_swamp`         | Liste des biomes pouvant contenir des ruines de portail des marais                                                   |
+| `has_structure\shipwreck`                   | Liste des biomes pouvant contenir des épaves                                                                         |
+| `has_structure\shipwreck_beached`           | Liste des biomes pouvant contenir des bateaux échoués sur une plage                                                  |
+| `has_structure\stronghold`                  | Liste des biomes pouvant contenir des forts de l'End                                                                 |
+| `has_structure\swamp_hut`                   | Liste des biomes pouvant contenir des huttes de sorcière                                                             |
+| `has_structure\village_desert`              | Liste des biomes pouvant contenir des villages du désert                                                             |
+| `has_structure\village_plains`              | Liste des biomes pouvant contenir des villages de la plaine                                                          |
+| `has_structure\village_savanna`             | Liste des biomes pouvant contenir des villages de la savane                                                          |
+| `has_structure\village_snowy`               | Liste des biomes pouvant contenir des villages enneigés                                                              |
+| `has_structure\village_taiga`               | Liste des biomes pouvant contenir des villages de la taïga                                                           |
+| `has_structure\woodland_mansion`            | Liste des biomes pouvant contenir des manoirs de la forêt                                                            |
+| `allows_surface_slime_spawns`               | Liste des biomes dans lesquels les slimes peuvent apparaitre en surface                                              |
+| `allows_tropical_fish_spawns_at_any_height` | Liste des biomes dans lesquels les poissons tropicaux peuvent apparaitre dans les lacs à n'importe quel altitude     |
+| `has_closer_water_fog`                      | Liste des biomes dans lesquels la distance de vue sous l'eau est réduite                                             |
+| `is_badlands`                               | Liste des biomes de type _badland_                                                                                   |
+| `is_beach`                                  | Liste des biomes _plage_                                                                                             |
+| `is_deep_ocean`                             | Liste des biomes de type _océan profond_                                                                             |
+| `is_end`                                    | Liste des biomes de l'End                                                                                            |
+| `is_forest`                                 | Liste des biomes de type _forêt_                                                                                     |
+| `is_hill`                                   | Liste des biomes _collines_                                                                                          |
+| `is_jungle`                                 | Liste des biomes de type _jungle_                                                                                    |
+| `is_mountain`                               | Liste des biomes de type _montagne_                                                                                  |
+| `is_nether`                                 | Liste des biomes du Nether                                                                                           |
+| `is_ocean`                                  | Liste des biomes océaniques                                                                                          |
+| `is_overworld`                              | Liste des biomes du monde normal                                                                                     |
+| `is_river`                                  | Liste des différents type de _rivières_                                                                              |
+| `is_savanna`                                | Liste des biomes de type _savane_                                                                                    |
+| `is_taiga`                                  | Liste des biomes de type _taïga_                                                                                     |
+| `mineshaft_blocking`                        | Liste des biomes où les mines abandonnées sont bloquées                                                              |
+| `more_frequent_drowned_spawns`              | Liste des biomes dans lesquels la quantité d'apparition de noyé est plus importante que les autres                   |
+| `only_allows_snow_and_gold_rabbits`         | Liste des biomes dans lesquels les lapins qui apparaissent sont de couleur beige uniquement                          |
+| `plays_underwater_music`                    | Liste des biomes dans lesquels le jeu joue des musiques spécifiques à l'ambiance sous-marine                         |
+| `polar_bears_spawn_on_alternate_blocks`     | Liste des biomes dans lesquels les ours polaires peuvent apparaitre                                                  |
+| `produces_corals_from_bonemeal`             | Liste des biomes dans lesquels des coraux sont produit après l'utilisation d'engrais                                 |
+| `reduce_water_ambient_spawns`               | Liste des biomes dans lesquels la quantité d'apparition de créature marine est réduite par rapport aux autres biomes |
+| `required_ocean_monument_surrounding`       | Liste des biomes qui doivent être autour d'un monument sous-marin                                                    |
+| `spawns_cold_variant_frogs`                 | Liste des biomes dans lesquels une grenouille aura une variante de biome froid quand elle est générée/elle grandit   |
+| `spawns_warm_variant_frogs`                 | Liste des biomes dans lesquels une grenouille aura une variante de biome chaud quand elle est générée/elle grandit   |
+| `stronghold_biased_to`                      | Liste des biomes qui contrôle la génération des forts de l'End                                                       |
+| `water_on_map_outlines`                     | Liste des biomes qui sont considéré comme étant des océans sur les cartes aux trésors                                |
+| `without_patrol_spawns`                     | Liste des biomes où les patrouilles ne peuvent pas apparaitre                                                        |
+| `without_wandering_trader_spawns`           | Liste des biomes où les marchands ambulants ne peuvent pas apparaitre                                                |
+| `without_zombie_sieges`                     | Liste des biomes où les attaques de zombies ne peuvent pas être lancées                                              |
 
 </details>
 
@@ -516,9 +538,9 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 
 <summary>Liste des tags concernant les préréglages du monde</summary>
 
-| Identifiant | Description                                                                                               |
-|-------------|-----------------------------------------------------------------------------------------------------------|
-| `extended`  | Liste des préréglages du monde qui apparaissent uniquement lorsque vous maintenez la touche Alt enfoncée. |
-| `normal`    | Liste des préréglages du monde qui apparaissent dans le menu de configuration à la création d'un monde    |
+| Identifiant | Description                                                                                              |
+|-------------|----------------------------------------------------------------------------------------------------------|
+| `extended`  | Liste des préréglages du monde qui apparaissent uniquement lorsque vous maintenez la touche Alt enfoncée |
+| `normal`    | Liste des préréglages du monde qui apparaissent dans le menu de configuration à la création d'un monde   |
 
 </details>
