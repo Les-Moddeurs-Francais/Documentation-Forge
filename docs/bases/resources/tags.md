@@ -348,7 +348,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `copper_ores`                  | Liste des minerais de cuivre                                                                     |
 | `creeper_drop_music_discs`     | Liste de tous les disques pouvant être _dropés_ par un creeper quand il est tué par un squelette |
 | `crimson_stems`                | Liste de tous les types de troncs carmins                                                        |
-| `dampens_vibrations`           | Liste de tous les types de blocs absorbant les vibrations qui le touchent.                       |
+| `dampens_vibrations`           | Liste de tous les types de blocs absorbant les vibrations qui le touchent                        |
 | `dark_oak_logs`                | Liste de tous les types de troncs en chêne noir                                                  |
 | `diamond_ores`                 | Liste des minerais de diamant                                                                    |
 | `dirt`                         | Liste de tous les types de terre                                                                 |
