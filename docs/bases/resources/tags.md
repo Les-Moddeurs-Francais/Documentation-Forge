@@ -489,3 +489,20 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 | `village`                   | Listes des structures qui sont des villages                        |
 
 </details>
+
+### Préréglages du monde
+
+:::caution
+Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
+:::
+
+<details>
+
+<summary>Liste des tags concernant les préréglages du monde</summary>
+
+| Identifiant | Description                                                                                               |
+|-------------|-----------------------------------------------------------------------------------------------------------|
+| `extended`  | Liste des préréglages du monde qui apparaissent uniquement lorsque vous maintenez la touche Alt enfoncée. |
+| `normal`    | Liste des préréglages du monde qui apparaissent dans le menu de configuration à la création d'un monde    |
+
+</details>
