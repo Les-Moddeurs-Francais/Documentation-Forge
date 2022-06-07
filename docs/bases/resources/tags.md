@@ -298,8 +298,11 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 | Identifiant                  | Description                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------|
+| `allay_can_listen`           | Liste des évènements pouvant être écoutés par les allay's                                         |
 | `ignore_vibrations_sneaking` | Liste des évènements considérés comme des vibrations, qui peuvent être masqués en s'accroupissant |
+| `shrieker_can_listen`        | Liste des évènements pouvant être écoutés par les _shrieker_'s                                    |
 | `vibrations`                 | Liste des évènements considérés comme des vibrations                                              |
+| `warden_can_listen`          | Liste des évènements pouvant être écoutés par les warden's                                        |
 
 </details>
 
