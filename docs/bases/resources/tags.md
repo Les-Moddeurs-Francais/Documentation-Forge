@@ -463,6 +463,22 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 
 </details>
 
+### Générateurs de niveau plat préréglés
+
+:::caution
+Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
+:::
+
+<details>
+
+<summary>Liste des tags concernant les générateurs de niveau plat préréglés</summary>
+
+| Identifiant | Description                                                                  |
+|-------------|------------------------------------------------------------------------------|
+| `visible`   | Liste des générateurs visibles sur l'écran de configuration des mondes plats |
+
+</details>
+
 ### Structures
 
 :::caution
