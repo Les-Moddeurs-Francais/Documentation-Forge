@@ -437,7 +437,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 ### Biomes
 
 :::caution
-Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
+Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
 <details>
@@ -516,7 +516,7 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 ### Générateurs de niveau plat préréglés
 
 :::caution
-Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
+Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
 <details>
@@ -532,7 +532,7 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 ### Structures
 
 :::caution
-Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
+Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
 <details>
@@ -559,7 +559,7 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 ### Préréglages du monde
 
 :::caution
-Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
+Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
 <details>
