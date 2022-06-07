@@ -68,15 +68,15 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les motifs de bannière</summary>
 
-| Identifiant            | Description |
-|------------------------|-------------|
-| `pattern_item/creeper` |             |
-| `pattern_item/flower`  |             |
-| `pattern_item/globe`   |             |
-| `pattern_item/mojang`  |             |
-| `pattern_item/piglin`  |             |
-| `pattern_item/piglin`  |             |
-| `no_item_required`     |             |
+| Identifiant            | Description                                                                  |
+|------------------------|------------------------------------------------------------------------------|
+| `pattern_item/creeper` | Liste des motifs qui peuvent être fabriqués en utilisant le motif de creeper |
+| `pattern_item/flower`  | Liste des motifs qui peuvent être fabriqués en utilisant le motif de fleur   |
+| `pattern_item/globe`   | Liste des motifs qui peuvent être fabriqués en utilisant le motif de globe   |
+| `pattern_item/mojang`  | Liste des motifs qui peuvent être fabriqués en utilisant le motif de Mojang  |
+| `pattern_item/piglin`  | Liste des motifs qui peuvent être fabriqués en utilisant le motif de Piglin  |
+| `pattern_item/skull`   | Liste des motifs qui peuvent être fabriqués en utilisant le motif de crâne   |
+| `no_item_required`     | Motif de drapeau qui peuvent être fabriqués sans motif                       |
 
 </details>
 
