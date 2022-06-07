@@ -229,10 +229,10 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les variantes de chat</summary>
 
-| Identifiant        | Description |
-|--------------------|-------------|
-| `default_spawns`   |             |
-| `full_moon_spawns` |             |
+| Identifiant        | Description                                                     |
+|--------------------|-----------------------------------------------------------------|
+| `default_spawns`   | Liste des variantes de chat pouvant apparaitre naturellement    |
+| `full_moon_spawns` | Liste des variantes de chat pouvant apparaitre à la pleine lune |
 
 </details>
 
@@ -290,11 +290,11 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les instruments</summary>
 
-| Identifiant            | Description |
-|------------------------|-------------|
-| `goat_horns`           |             |
-| `regular_goat_horns`   |             |
-| `screaming_goat_horns` |             |
+| Identifiant            | Description                                                                   |
+|------------------------|-------------------------------------------------------------------------------|
+| `goat_horns`           | Liste des instruments des cornes de chèvres lâchées par des chèvres           |
+| `regular_goat_horns`   | Liste des instruments des cornes de chèvres lâchées par des chèvres normales  |
+| `screaming_goat_horns` | Liste des instruments des cornes de chèvres lâchées par des chèvres hurlantes |
 
 </details>
 
@@ -392,9 +392,9 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les variantes de peinture</summary>
 
-| Identifiant           | Description |
-|-----------------------|-------------|
-| `placeable`           |             |
+| Identifiant | Description                                             |
+|-------------|---------------------------------------------------------|
+| `placeable` | Liste des variantes de peinture plaçable en mode survie |
 
 </details>
 
