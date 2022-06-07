@@ -475,8 +475,8 @@ Le dossier pour ces tags est préalablement contenu dans le dossier `worldgen` q
 
 | Identifiant                 | Description                                                        |
 |-----------------------------|--------------------------------------------------------------------|
-| `cats_spawn_as_black.json`  | Liste des structure où les chats noirs peuvent apparaitre          |
-| `cats_spawn_in.json`        | Liste des structure où les chats peuvent apparaitre                |
+| `cats_spawn_as_black`       | Liste des structure où les chats noirs peuvent apparaitre          |
+| `cats_spawn_in`             | Liste des structure où les chats peuvent apparaitre                |
 | `dolphin_located`           | Liste des structure pouvant être localisées par un dauphin         |
 | `eye_of_ender_located`      | Liste des structures pouvant être localisées par un œil de l'Ender |
 | `mineshaft`                 | Listes des structures qui sont des puits de mine abandonnée        |
