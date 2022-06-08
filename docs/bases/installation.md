@@ -8,7 +8,7 @@ tags: [bases]
 # Installation de la workspace
 
 - Installez Java 17 Development Kit (JDK) en suivant l'un de ces 3 liens : **[Oracle](https://www.oracle.com/java/technologies/downloads/#java17)** OU **[Zulu](https://www.azul.com/downloads/?version=java-17-sts&package=jdk-fx)** OU **[Adoptium](https://adoptium.net/?variant=openjdk17&jvmVariant=hotspot)**. Minecraft et MinecraftForge depuis la 1.18 sont compilés sous Java 17.
-- Installez le Mod Development Kit (MDK) en suivant ce [lien](https://files.minecraftforge.net/).
+- Installez le Mod Development Kit (MDK) en suivant ce [lien](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.html).
 - Extrayez tous les fichiers et dossiers contenus dans le dossier compressé dans un nouveau dossier (ceci sera votre dossier de mod).
 - Selon votre IDE:
   - Pour Intellij IDEA, ouvrez un nouveau projet (bouton `Open` dans la version **2021.2**) et sélectionnez ensuite le fichier `build.gradle` dans le dossier de votre mod, cliquez pour finir sur **OK**.
