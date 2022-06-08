@@ -36,12 +36,20 @@ ajoutez le générateur comme ceci :
 
 ```java
 @SubscribeEvent
-public static void dataGen(final GatherDataEvent e)
-{
-    DataGenerator generator = e.getGenerator();
+    public static void dataGen(final GatherDataEvent e)
+    {
+        DataGenerator generator = e.getGenerator();
 
-    generator.addProvider(event.includeServer(), new RecipeGenerator(generator));
-}
+        if(e.includeClient())
+        {
+
+        }
+
+        if(e.includeServer())
+        {
+            generator.addProvider(new RecipeGenerator(generator));
+        }
+    }
 ```
 
 :::tip

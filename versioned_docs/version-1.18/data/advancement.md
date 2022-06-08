@@ -92,7 +92,15 @@ public static void dataGen(final GatherDataEvent e)
 {
     DataGenerator generator = e.getGenerator();
 
-    generator.addProvider(event.includeServer(), new AdvancementsGenerator(generator, event.getExistingFileHelper()));
+    if(e.includeClient())
+    {
+
+    }
+
+    if(e.includeServer())
+    {
+        generator.addProvider(new AdvancementsGenerator(generator, event.getExistingFileHelper()));
+    }
 }
 ```
 

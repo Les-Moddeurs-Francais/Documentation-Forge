@@ -35,7 +35,6 @@ Quelques explications :
   <li>PARTICLE_TYPES</li>
   <li>CONTAINERS</li>
   <li>PAINTING_TYPES</li>
-  <li>RECIPE_TYPES</li>
   <li>RECIPE_SERIALIZERS</li>
   <li>ATTRIBUTES</li>
   <li>STAT_TYPES</li>
@@ -48,6 +47,7 @@ Quelques explications :
   <li>WORLD_CARVERS</li>
   <li>FEATURES</li>
   <li>CHUNK_STATUS</li>
+  <li>STRUCTURE_FEATURES</li>
   <li>BLOCK_STATE_PROVIDER_TYPES</li>
   <li>FOLIAGE_PLACER_TYPES</li>
   <li>TREE_DECORATOR_TYPES</li>
@@ -55,7 +55,6 @@ Quelques explications :
   <li>DATA_SERIALIZERS</li>
   <li>LOOT_MODIFIER_SERIALIZERS</li>
   <li>WORLD_TYPES</li>
-  <li>BIOME_MODIFIER_SERIALIZERS</li>
 </ul>
 </details>
 - Le deuxième quant à lui est le modid sous lequel votre élément sera enregistré (il est préférable de mettre le modid de votre mod)

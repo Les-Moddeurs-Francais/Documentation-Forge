@@ -122,6 +122,7 @@ Ce dernier contient toutes les informations pour identifier votre mod. On va pas
 ### Modid
 
 ````text
+# The modid of the mod
 modId="testmod" #mandatory
 ````
 
@@ -132,6 +133,7 @@ votre classe principale. Pour ma part ce sera **"testmod"**.
 ### Nom du mod
 
 ````text
+# A display name for the mod
 displayName="TestMod" #mandatory
 ````
 
@@ -142,7 +144,9 @@ pouvez insérer des espaces, des majuscules et même des accents.
 ### Crédits
 
 ````text
+# A text field displayed in the mod UI
 credits="Tutoriel réalisé pour LMF" #optional
+# A text field displayed in the mod UI
 authors="Zom'" #optional
 ````
 
@@ -153,6 +157,7 @@ pouvez également renseigner les auteurs du mod dans *authors*.
 ### Description
 
 ````text
+# The description text for the mod (multi line!) (#mandatory)
 description='''
 Ceci est la 
 description sur plusieurs lignes
