@@ -77,13 +77,9 @@ reste à ajouter notre 'provider'.
 @SubscribeEvent
 public static void dataGen(final GatherDataEvent e)
 {
-
     DataGenerator gen = e.getGenerator();
 
-    if(e.includeClient())
-    {
-        gen.addProvider(new LangGenerator(gen));
-    }
+    gen.addProvider(event.includeClient(), new LangGenerator(gen));
 }
 ```
 
