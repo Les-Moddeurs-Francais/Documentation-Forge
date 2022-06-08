@@ -16,11 +16,11 @@ Le champ **license** du fichier mods.toml est obligatoire. S'il n'est pas fourni
 :::
 ```
 modLoader="javafml"
-loaderVersion="[37,)"
+loaderVersion="[41,)"
 license="All rights reserved"
 [[mods]]
 
-modId="monmod"
+modId="modid"
 version="0.0.1"
 displayName="Mon mod"
 updateJSONURL="https://masuperurl.fr/updates.json"
@@ -33,17 +33,17 @@ Cette description peut être très longue
 et en plusieurs lignes !
 '''
 
-[[dependencies.monmod]]
+[[dependencies.modid]]
     modId="forge"
     mandatory=true
-    versionRange="[37,)"
+    versionRange="[41,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.monmod]]
+[[dependencies.modid]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.17.1,1.18)"
+    versionRange="[1.19,1.20)"
     ordering="NONE"
     side="BOTH"
 ```
