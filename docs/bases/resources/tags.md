@@ -66,7 +66,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <details>
 
-<summary>Liste des tags concernant les motifs de bannière</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant            | Description                                                                  |
 |------------------------|------------------------------------------------------------------------------|
@@ -83,7 +83,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 ### Blocs
 
 <details>
-<summary>Liste des tags concernant les blocs</summary>
+
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant                                | Description                                                                                                                                                                   |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -242,11 +243,121 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 </details>
 
+<details>
+
+<summary>Tags ajoutés par Forge</summary>
+
+| Identifiant             | Description |
+|-------------------------|-------------|
+| `barrels/wooden`        |             |
+| `chests/ender`          |             |
+| `chests/trapped`        |             |
+| `chests/wooden`         |             |
+| `cobblestone/deepslate` |             |
+| `cobblestone/infested`  |             |
+| `cobblestone/mossy`     |             |
+| `cobblestone/normal`    |             |
+| `fence_gates/wooden`    |             |
+| `fences/nether_brick`   |             |
+| `fences/wooden`         |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+| ``                      |             |
+
+</details>
+
 ### Variantes de chat
 
 <details>
 
-<summary>Liste des tags concernant les variantes de chat</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant        | Description                                                     |
 |--------------------|-----------------------------------------------------------------|
@@ -259,7 +370,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <details>
 
-<summary>Liste des tags concernant les entités</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant                  | Description                                                                                              |
 |------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -281,7 +392,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <details>
 
-<summary>Liste des tags concernant les fluides</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant | Description                           |
 |-------------|---------------------------------------|
@@ -290,11 +401,22 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 </details>
 
+<details>
+
+<summary>Tags ajoutés par Forge</summary>
+
+| Identifiant | Description                        |
+|-------------|------------------------------------|
+| `milk`      | Liste des fluides qui sont du lait |
+
+
+</details>
+
 ### Évènements de jeu
 
 <details>
 
-<summary>Liste des tags concernant les évènements de jeu</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant                  | Description                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------|
@@ -310,7 +432,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <details>
 
-<summary>Liste des tags concernant les instruments</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant            | Description                                                                   |
 |------------------------|-------------------------------------------------------------------------------|
@@ -324,7 +446,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <details>
 
-<summary>Liste des tags concernant les items</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant                    | Description                                                                                      |
 |--------------------------------|--------------------------------------------------------------------------------------------------|
@@ -412,7 +534,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <details>
 
-<summary>Liste des tags concernant les variantes de peinture</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant | Description                                              |
 |-------------|----------------------------------------------------------|
@@ -424,7 +546,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <details>
 
-<summary>Liste des tags concernant les variantes de points d'intérêt</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant           | Description                                              |
 |-----------------------|----------------------------------------------------------|
@@ -442,7 +564,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 
 <details>
 
-<summary>Liste des tags concernant les biomes</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant                                 | Description                                                                                                          |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -521,7 +643,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 
 <details>
 
-<summary>Liste des tags concernant les générateurs de niveau plat préréglés</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant | Description                                                                  |
 |-------------|------------------------------------------------------------------------------|
@@ -537,7 +659,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 
 <details>
 
-<summary>Liste des tags concernant les structures</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant                 | Description                                                        |
 |-----------------------------|--------------------------------------------------------------------|
@@ -564,7 +686,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 
 <details>
 
-<summary>Liste des tags concernant les préréglages du monde</summary>
+<summary>Tags ajoutés par Minecraft</summary>
 
 | Identifiant | Description                                                                                              |
 |-------------|----------------------------------------------------------------------------------------------------------|
