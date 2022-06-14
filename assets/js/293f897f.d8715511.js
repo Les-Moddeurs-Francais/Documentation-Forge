@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdoc_forge=self.webpackChunkdoc_forge||[]).push([[5659],{1555:function(e){e.exports=JSON.parse('{"permalink":"/news","page":1,"postsPerPage":10,"totalPages":1,"totalCount":7,"blogDescription":"Les derni\xe8res news concernant le projet MinecraftForge","blogTitle":"News"}')}}]);
