@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 title: Capabilities
 description: Comment utiliser les capabilities ?
 tags: [avancé]
