@@ -8,13 +8,14 @@ on:
 
 jobs:
   checks:
-    name: Check Build
+    name: Check Documentation Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
+          cache: 'npm'
       - name: Test Build
         run: |
           if [ -e yarn.lock ]; then
@@ -26,15 +27,16 @@ jobs:
           fi
           npm run build
   gh-release:
-    name: Publish
+    name: Publish Documentation
     if: github.event_name != 'pull_request'
     needs: checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
+          cache: 'npm'
       - name: build
         run: |
           if [ -e yarn.lock ]; then
