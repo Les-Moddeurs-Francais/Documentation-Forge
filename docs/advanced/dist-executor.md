@@ -5,7 +5,6 @@ description: Comment utiliser les dist executors ?
 tags: [avancé]
 ---
 
-## Introduction
 Le système de `Dist Executor` est une API efficace fournie par **FML** située dans le projet `fmlcore` permettant de gérer le code ne devant s'exécuter que sur une `Dist` particulière. Ce système a été ajouté en remplacement du système de `SidedProxy`, présent lors des anciennes versions de **Forge** (1.12.2 et avant).
 
 

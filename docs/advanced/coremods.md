@@ -5,7 +5,6 @@ description: Comment utiliser les coremods ?
 tags: [avancé]
 ---
 
-## Introduction
 Le système de `CoreMod` est un outil fourni par **Forge** dans le projet [CoreMods](https://github.com/MinecraftForge/CoreMods). Il permet d'effectuer des modifications directement dans le code de Minecraft, sans passer ni par des événements, ni par les autres outils fournis par l'API **Forge**. Ce système est apparu pour remplacer l'ancien système de coremods présent dans les versions de Forge antérieures à la 1.13.
 
 :::warning
