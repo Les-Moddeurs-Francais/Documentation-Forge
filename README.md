@@ -1,7 +1,7 @@
-# LMF - Documentation Forge
+# Les Moddeurs Francais - Documentation Forge
 
 Documentation non officielle du projet Minecraft Forge.
 
-# Contribution
+## Contribution
 
 Pour contribuer à la documentation, rien de plus simple, suivez le [guide](/CONTRIBUTING.md).
