@@ -5,8 +5,6 @@ description: Comment exporter le mod ?
 tags: [bases]
 ---
 
-## Introduction
-
 Exporter le mod ou le compiler est nécessaire si vous voulez partager votre mod,
 ou même jouer avec dans un modpack ou sur un serveur avec vos amis. Vous avez besoin
 du *.jar*, et c'est ce qu'on va chercher à obtenir dans cette section.  

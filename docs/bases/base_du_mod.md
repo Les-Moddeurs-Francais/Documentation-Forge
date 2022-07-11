@@ -5,8 +5,6 @@ description: Comment installer les bases du mod ?
 tags: [bases]
 ---
 
-## Introduction
-
 À la création de votre mod, vous aurez besoin de créer sa base.
 Pour cela on va avoir besoin de créer la classe principale et
 modifier le mods.toml de quoi pouvoir faire détecter votre mod à Forge.
