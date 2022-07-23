@@ -4,8 +4,8 @@
   <ShortName>Documentation Forge</ShortName>
   <Description>Search Documentation Forge</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://forge-doc.lesmoddeursfrancais.fr/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://forge-doc.lesmoddeursfrancais.fr/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://forge-doc.lesmoddeursfrancais.fr/opensearch.xml" />
-  <moz:SearchForm>https://forge-doc.lesmoddeursfrancais.fr/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://les-moddeurs-francais.github.io/Documentation-Forge/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://les-moddeurs-francais.github.io/Documentation-Forge/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://les-moddeurs-francais.github.io/Documentation-Forge/opensearch.xml" />
+  <moz:SearchForm>https://les-moddeurs-francais.github.io/Documentation-Forge/</moz:SearchForm>
 </OpenSearchDescription>
