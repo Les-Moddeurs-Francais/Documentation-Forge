@@ -13,7 +13,7 @@ const FeatureList = [
     },
     {
         title: 'Moddeur_Ultime',
-        img: 'https://cdn.lesmoddeursfrancais.fr/le_moddeur_ultime.jpg',
+        img: 'https://avatars.githubusercontent.com/u/107265068?v=4',
     }
 ];
 
