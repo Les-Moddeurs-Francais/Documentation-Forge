@@ -18,8 +18,8 @@ function getNextVersionName() {
 module.exports = {
   title: 'Documentation Forge',
   tagline: '¯\\_(ツ)_/¯',
-  url: 'https://les-moddeurs-francais.github.io/Documentation-Forge',
-  baseUrl: '/',
+  url: 'https://les-moddeurs-francais.github.io',
+  baseUrl: '/Documentation-Forge',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   baseUrlIssueBanner : false,
