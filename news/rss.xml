@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Documentation Forge Blog</title>
-        <link>https://les-moddeurs-francais.github.io/Documentation-Forge/news</link>
+        <link>https://forge-doc.lesmoddeursfrancais.com/news</link>
         <description>Documentation Forge Blog</description>
         <lastBuildDate>Tue, 07 Jun 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>fr</language>
         <item>
             <title><![CDATA[Forge 1.19 41.0]]></title>
-            <link>https://les-moddeurs-francais.github.io/Documentation-Forge/news/forge-119-410</link>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-119-410</link>
             <guid>forge-119-410</guid>
             <pubDate>Tue, 07 Jun 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Minecraft 1.19 à peine sortie, Forge n'en a pas attendu plus pour sortir sa mise à jour 1.19-41.0.0. Quelques nouveautés y sont présentes.]]></description>
@@ -22,7 +22,7 @@
         </item>
         <item>
             <title><![CDATA[Forge 1.18.2 40.1]]></title>
-            <link>https://les-moddeurs-francais.github.io/Documentation-Forge/news/forge-118-401</link>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-118-401</link>
             <guid>forge-118-401</guid>
             <pubDate>Tue, 19 Apr 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Seulement 1 mois après sa sortie, la version stable de Forge 1.18.2 est disponible. Celle-ci apporte quelques améliorations et corrections mineures.]]></description>
@@ -34,7 +34,7 @@
         </item>
         <item>
             <title><![CDATA[Forge 1.18.1 39.1]]></title>
-            <link>https://les-moddeurs-francais.github.io/Documentation-Forge/news/forge-118-391</link>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-118-391</link>
             <guid>forge-118-391</guid>
             <pubDate>Sat, 19 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Pour la sortie de la 1.18.2, la version stable de Forge 1.18.1 a été publiée, celle-ci apportant quelques nouveautés/corrections.]]></description>
@@ -46,11 +46,11 @@
         </item>
         <item>
             <title><![CDATA[Forge 1.18.2 40.0]]></title>
-            <link>https://les-moddeurs-francais.github.io/Documentation-Forge/news/forge-118-400</link>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-118-400</link>
             <guid>forge-118-400</guid>
             <pubDate>Sat, 19 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Malgré le fait que la 1.18.2 soit une mise à jour mineure, celle-ci apporte quelques changements plus ou moins importants.]]></description>
-            <content:encoded><![CDATA[<p>Malgré le fait que la 1.18.2 soit une mise à jour mineure, celle-ci apporte quelques changements plus ou moins importants.</p><p>Lien de l'annonce de Forge : <a href="https://forums.minecraftforge.net/topic/109680-forge-400-minecraft-1182/" target="_blank" rel="noopener noreferrer">https://forums.minecraftforge.net/topic/109680-forge-400-minecraft-1182/</a></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a class="hash-link" href="#changements" title="Lien direct vers le titre">​</a></h2><p>Depuis l'épisode de <a href="https://www.minecraft.net/fr-fr/article/important-message--security-vulnerability-java-edition" target="_blank" rel="noopener noreferrer">Log4Shell</a> (faille de sécurité d'une librairie utilisée par Minecraft), Mojang a débuté une transition vers la librairie <a href="https://www.slf4j.org/" target="_blank" rel="noopener noreferrer">SLF4J</a> pour tout ce qui concerne les <em>logs</em>. Assurez-vous donc d'utiliser SLF4J avec <code>LogUtils.getLogger()</code> plutôt que Log4J utilisée précédemment.</p><p>Mis à part cela, pas beaucoup de changements sont à signaler depuis la version <a href="/Documentation-Forge/news/forge-118-391">1.18.1 39.1</a>.
+            <content:encoded><![CDATA[<p>Malgré le fait que la 1.18.2 soit une mise à jour mineure, celle-ci apporte quelques changements plus ou moins importants.</p><p>Lien de l'annonce de Forge : <a href="https://forums.minecraftforge.net/topic/109680-forge-400-minecraft-1182/" target="_blank" rel="noopener noreferrer">https://forums.minecraftforge.net/topic/109680-forge-400-minecraft-1182/</a></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a class="hash-link" href="#changements" title="Lien direct vers le titre">​</a></h2><p>Depuis l'épisode de <a href="https://www.minecraft.net/fr-fr/article/important-message--security-vulnerability-java-edition" target="_blank" rel="noopener noreferrer">Log4Shell</a> (faille de sécurité d'une librairie utilisée par Minecraft), Mojang a débuté une transition vers la librairie <a href="https://www.slf4j.org/" target="_blank" rel="noopener noreferrer">SLF4J</a> pour tout ce qui concerne les <em>logs</em>. Assurez-vous donc d'utiliser SLF4J avec <code>LogUtils.getLogger()</code> plutôt que Log4J utilisée précédemment.</p><p>Mis à part cela, pas beaucoup de changements sont à signaler depuis la version <a href="/news/forge-118-391">1.18.1 39.1</a>.
 Les principaux sont par Mojang avec les <em>tags</em> qui ont été réécrits (pour être universels) ainsi que les registres <em>vanilla</em> qui sont désormais verrouillés par du code.</p>]]></content:encoded>
             <author>mysterious_dev@lesmoddeursfrancais.fr (Mysterious_Dev)</author>
             <category>forge</category>
@@ -59,7 +59,7 @@ Les principaux sont par Mojang avec les <em>tags</em> qui ont été réécrits (
         </item>
         <item>
             <title><![CDATA[Forge 1.18 38.0]]></title>
-            <link>https://les-moddeurs-francais.github.io/Documentation-Forge/news/forge-118-380</link>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-118-380</link>
             <guid>forge-118-380</guid>
             <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Seulement quelques heures après la sortie de la version 1.18, Forge 1.18 38.0 est sortie et elle apporte quelques changements (peu voir aucun ajout).]]></description>
@@ -71,7 +71,7 @@ Les principaux sont par Mojang avec les <em>tags</em> qui ont été réécrits (
         </item>
         <item>
             <title><![CDATA[Forge 1.17.1 37.1]]></title>
-            <link>https://les-moddeurs-francais.github.io/Documentation-Forge/news/forge-117-371</link>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-117-371</link>
             <guid>forge-117-371</guid>
             <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[La version 1.17.1 37.1 de Forge est sortie et elle apporte quelques nouveautés et correctifs. Ceci est cependant la dernière version stable de Forge pour la version 1.17.1.]]></description>
@@ -83,7 +83,7 @@ Les principaux sont par Mojang avec les <em>tags</em> qui ont été réécrits (
         </item>
         <item>
             <title><![CDATA[Forge 1.16.5 36.2]]></title>
-            <link>https://les-moddeurs-francais.github.io/Documentation-Forge/news/forge-116-362</link>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-116-362</link>
             <guid>forge-116-362</guid>
             <pubDate>Thu, 22 Jul 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[La version 1.16.5 36.2 de Forge est sortie et elle apporte quelques nouveautés.]]></description>
@@ -95,7 +95,7 @@ Les principaux sont par Mojang avec les <em>tags</em> qui ont été réécrits (
         </item>
         <item>
             <title><![CDATA[Forge 1.17.1 37.0]]></title>
-            <link>https://les-moddeurs-francais.github.io/Documentation-Forge/news/forge-117-370</link>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-117-370</link>
             <guid>forge-117-370</guid>
             <pubDate>Thu, 22 Jul 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[La version 1.17.1 37.0 de Forge est sortie après des semaines d'attente, et celle-ci change beaucoup de choses.]]></description>
