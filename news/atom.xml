@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://forge-doc.lesmoddeursfrancais.com/news</id>
     <title>Documentation Forge Blog</title>
-    <updated>2022-07-27T00:00:00.000Z</updated>
+    <updated>2022-07-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://forge-doc.lesmoddeursfrancais.com/news"/>
     <subtitle>Documentation Forge Blog</subtitle>
     <icon>https://forge-doc.lesmoddeursfrancais.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Forge 1.19.1 42.0]]></title>
+        <id>forge-119-420</id>
+        <link href="https://forge-doc.lesmoddeursfrancais.com/news/forge-119-420"/>
+        <updated>2022-07-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Avec la sortie de la si controversée 1.19.1, la première version de Forge 1.19.1 a donc été publiée. Celle-ci apporte quelques petits changements.]]></summary>
+        <content type="html"><![CDATA[<p>Avec la sortie de la si controversée 1.19.1, la première version de Forge 1.19.1 a donc été publiée. Celle-ci apporte quelques petits changements.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nouveautés">Nouveautés<a class="hash-link" href="#nouveautés" title="Lien direct vers le titre">​</a></h3><ul><li>Ajout de l'appel de l'évènement <code>EntityMobGriefingEvent</code> dans la fonction <code>Allay#wantsToPickUp</code></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a class="hash-link" href="#changements" title="Lien direct vers le titre">​</a></h3><ul><li>Les types d'arguments de commande ont désormais un registre</li><li>Refonte de l'évènement <code>ServerChatEvent</code> pour utiliser le système <code>ChatDecorator</code></li><li>Forge utilise désormais Gradle 7.5</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="suppressions">Suppressions<a class="hash-link" href="#suppressions" title="Lien direct vers le titre">​</a></h3><ul><li>La fonction <code>ClientChatEvent#setMessage</code> a été supprimée pour le moment</li></ul>]]></content>
+        <author>
+            <name>Mysterious_Dev</name>
+            <email>mysterious_dev@lesmoddeursfrancais.fr</email>
+            <uri>https://github.com/Mysterious-Dev</uri>
+        </author>
+        <category label="forge" term="forge"/>
+        <category label="update" term="update"/>
+        <category label="1.19" term="1.19"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Forge 1.19 41.1]]></title>
         <id>forge-119-411</id>

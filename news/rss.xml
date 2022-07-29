@@ -4,10 +4,22 @@
         <title>Documentation Forge Blog</title>
         <link>https://forge-doc.lesmoddeursfrancais.com/news</link>
         <description>Documentation Forge Blog</description>
-        <lastBuildDate>Wed, 27 Jul 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Jul 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
+        <item>
+            <title><![CDATA[Forge 1.19.1 42.0]]></title>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-119-420</link>
+            <guid>forge-119-420</guid>
+            <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Avec la sortie de la si controversée 1.19.1, la première version de Forge 1.19.1 a donc été publiée. Celle-ci apporte quelques petits changements.]]></description>
+            <content:encoded><![CDATA[<p>Avec la sortie de la si controversée 1.19.1, la première version de Forge 1.19.1 a donc été publiée. Celle-ci apporte quelques petits changements.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nouveautés">Nouveautés<a class="hash-link" href="#nouveautés" title="Lien direct vers le titre">​</a></h3><ul><li>Ajout de l'appel de l'évènement <code>EntityMobGriefingEvent</code> dans la fonction <code>Allay#wantsToPickUp</code></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a class="hash-link" href="#changements" title="Lien direct vers le titre">​</a></h3><ul><li>Les types d'arguments de commande ont désormais un registre</li><li>Refonte de l'évènement <code>ServerChatEvent</code> pour utiliser le système <code>ChatDecorator</code></li><li>Forge utilise désormais Gradle 7.5</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="suppressions">Suppressions<a class="hash-link" href="#suppressions" title="Lien direct vers le titre">​</a></h3><ul><li>La fonction <code>ClientChatEvent#setMessage</code> a été supprimée pour le moment</li></ul>]]></content:encoded>
+            <author>mysterious_dev@lesmoddeursfrancais.fr (Mysterious_Dev)</author>
+            <category>forge</category>
+            <category>update</category>
+            <category>1.19</category>
+        </item>
         <item>
             <title><![CDATA[Forge 1.19 41.1]]></title>
             <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-119-411</link>
