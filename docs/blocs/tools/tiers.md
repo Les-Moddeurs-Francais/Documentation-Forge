@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Tiers
 description: Comment définir le tier nécessaire d'outil pour récolter un bloc ?
-tags: [blocs, tools]
+tags: [blocs, outils]
 ---
 
 Depuis la 1.17, le _tier_ pour un outil nécessaire à la récolte d'un bloc est défini par un tag contenant ledit bloc.

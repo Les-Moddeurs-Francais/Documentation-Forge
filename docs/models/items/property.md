@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Propriétés de modèle
 description: Comment utiliser les propriétés de modèle pour les items ?
-tags: [items, models]
+tags: [items, modèles]
 ---
 
 Disponibles depuis la 1.9, les propriétés de modèle (anciennement appelées _models predicates_) permettent de changer le modèle d'un item dynamiquement.

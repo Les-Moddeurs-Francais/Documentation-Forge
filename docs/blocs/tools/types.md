@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Types
 description: Comment définir le type d'outil nécessaire pour récolter un bloc ?
-tags: [blocs, tools]
+tags: [blocs, outils]
 ---
 
 Depuis la 1.17, le type d'outil nécessaire pour récolter un bloc est défini par un tag attribué le contenant.

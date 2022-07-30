@@ -2,7 +2,7 @@
 sidebar_position: 2
 title: Texture animée
 description: Comment créer une texture animée pour son item ?
-tags: [models]
+tags: [modèles]
 ---
 
 Depuis plusieurs versions, il est possible d'animer les textures d'un item grâce à un simple fichier supplémentaire. Nous allons voir ici comment ajouter une texture animée pour vos blocs/items.

@@ -1,7 +1,7 @@
 ---
 title: Item coloré
 description: Comment créer un item coloré ?
-tags: [items, color]
+tags: [items]
 ---
 
 Depuis plusieurs versions, Minecraft permet à certains items de pouvoir être colorés. Nous permettant une palette de couleurs gigantesque, et ceci pour un seul item.
