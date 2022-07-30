@@ -20,7 +20,7 @@
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.19" term="1.19"/>
     </entry>
     <entry>
@@ -36,7 +36,7 @@
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.19" term="1.19"/>
     </entry>
     <entry>
@@ -52,7 +52,7 @@
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.19" term="1.19"/>
     </entry>
     <entry>
@@ -68,7 +68,7 @@
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.18" term="1.18"/>
     </entry>
     <entry>
@@ -84,7 +84,7 @@
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.18" term="1.18"/>
     </entry>
     <entry>
@@ -101,7 +101,7 @@ Les principaux sont par Mojang avec les <em>tags</em> qui ont été réécrits (
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.18" term="1.18"/>
     </entry>
     <entry>
@@ -117,7 +117,7 @@ Les principaux sont par Mojang avec les <em>tags</em> qui ont été réécrits (
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.18" term="1.18"/>
     </entry>
     <entry>
@@ -133,7 +133,7 @@ Les principaux sont par Mojang avec les <em>tags</em> qui ont été réécrits (
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.17" term="1.17"/>
     </entry>
     <entry>
@@ -149,7 +149,7 @@ Les principaux sont par Mojang avec les <em>tags</em> qui ont été réécrits (
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.16" term="1.16"/>
     </entry>
     <entry>
@@ -172,7 +172,7 @@ Les tutoriels pour créer un serveur ne fonctionneront donc plus sur Forge &gt;=
             <uri>https://github.com/Mysterious-Dev</uri>
         </author>
         <category label="forge" term="forge"/>
-        <category label="update" term="update"/>
+        <category label="mise à jour" term="mise à jour"/>
         <category label="1.17" term="1.17"/>
     </entry>
 </feed>
