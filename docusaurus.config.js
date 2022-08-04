@@ -133,11 +133,11 @@ module.exports = {
     ],
     algolia: {
 
-      appId: 'TPB1ACMMY6',
+      appId: 'BR2QYUV5GS',
 
-      apiKey: 'bba8477814849a8e0ae1918cc33096be',
+      apiKey: '9f64b631b5fe2ec0a5b57cfdb1fd5e3c',
 
-      indexName: 'forge-doc-lesmoddeursfrancais',
+      indexName: 'forge-lesmoddeursfrancais',
 
     },
     image: 'img/icons/icon-256x256.png',
