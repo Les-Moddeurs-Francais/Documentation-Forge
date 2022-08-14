@@ -1,4 +1,4 @@
-name: Adds all issues that don't include the 'bug' or 'needs-triage' labels to project board
+name: Add issues to project (roadmap)
 
 on:
   issues:
