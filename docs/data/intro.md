@@ -22,7 +22,7 @@ section sera dédiée pour l'ensemble des générateurs disponibles !
 Un event a été créé exprès par Forge pour que l'on puisse utiliser les générateurs.
 Nous allons créer une classe spécifique pour aérer notre code et éviter de surcharger
 notre classe principale (ce choix est pûrement personnel, à vous de choisir ce qui
-vous convient le mieux)
+vous convient le mieux).
 
 Dans un nouveau package `data`, on va créer une classe `DataGen` et y écrire :
 
@@ -48,7 +48,7 @@ Allons-y pas à pas pour les explications.
 
 Tout d'abord, nous avons l'annotation ``@Mod.EventBusSubscriber`` qui permets de signaler
 à Forge la présence de notre classe et que cette dernière écoute des évènements.
-Utiliser cette annotation nous permet d'enregistrer tous les méthodes statiques de notre
+Utiliser cette annotation nous permet d'enregistrer toutes les méthodes statiques de notre
 classe ayant un event de Forge en paramètre et l'annotation `@SubscribeEvent`.
 
 ````java
@@ -57,7 +57,7 @@ public static final ExistingFileHelper IGNORING_FILES_EFH = new ExistingFileHelp
 
 Ici, je crée une variable de type `ExistingFileHelper` qui me servira pour mes différents
 générateurs à l'avenir. Initialement, les générateurs vérifient que certains fichiers existent
-lorsqu'on génére un asset. Par exemple, pour les modèles d'item, si la texture n'est pas
+lorsqu'on génère un asset. Par exemple, pour les modèles d'item, si la texture n'est pas
 présente dans les fichiers du mod, le générateur renvoie une erreur. Cette fonctionnalité
 peut être utile dans certains cas, mais dans le nôtre, ignorer ses vérifications
 nous facilitera le travail.

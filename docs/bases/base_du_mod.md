@@ -85,7 +85,7 @@ Il est fortement conseillé de mettre votre modid dans une variable final de sor
 ````
 
 Ici j'ai sauté quelques lignes, on reviendra sur le constructeur plus haut un peu après.
-Les deux méthodes que nous avons créé juste ici serviront à certaines fonctions, notamment
+Les deux méthodes que nous avons créées juste ici serviront à certaines fonctions, notamment
 pour la génération de minerais ou encore le changement de rendu de certains blocs/items
 par exemple. La méthode *setup* servira pour les fonctionnalités côté serveur.
 La méthode *clientSetup* quant à elle, servira pour le côté client, d'où son nom.
@@ -107,7 +107,7 @@ Grossièrement, on exécute les méthodes *setup* et *clientSetup* lorsque Forge
 La variable **bus** nous servira dans les tutoriels suivants pour enregistrer nos items et blocs.
 :::
 
-On en a fini avec le code. Il n'y a pas grand chose pour le moment, juste de quoi
+On en a fini avec le code. Il n'y a pas grand-chose pour le moment, juste de quoi
 lancer le jeu avec notre mod pour être détecté par Forge. Il nous reste plus qu'à remplir la
 "carte d'identité" de notre mod.
 
@@ -159,7 +159,7 @@ du mod.
 ````
 
 Ligne 33 est renseignée la description du mod que vous pourrez retrouver
-dans la liste des mods quand vous sélectionner le votre. Vous pouvez
+dans la liste des mods quand vous sélectionner le vôtre. Vous pouvez
 y décrire de manière conscise ce qu'ajoute votre mod au jeu.
 
 > À vous de jouer ! Il ne vous reste plus qu'à lancer la configuration

@@ -70,6 +70,6 @@ autrement le build ne fonctionnera pas !
 :::
 
 :::tip
-Pour retrouver le *.jar* généré, rendez vous dans votre dossier principal, puis dans
+Pour retrouver le *.jar* généré, rendez-vous dans votre dossier principal, puis dans
 `build/libs` et vous trouverez par exemple : `TestMod-1.0.jar`.
 :::
