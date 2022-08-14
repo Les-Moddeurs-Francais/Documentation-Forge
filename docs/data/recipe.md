@@ -49,7 +49,7 @@ Les crafts sont gérés par le serveur, on exécute donc la génération des rec
 seulement si l'event l'inclus.
 :::
 
-De cette façon on ajoute notre générateur de crafts aux générateurs associés de notre
+De cette façon, on ajoute notre générateur de crafts aux générateurs associés de notre
 mod.
 
 ## Recettes dans la table de craft
@@ -92,14 +92,14 @@ ShapedRecipeBuilder.shaped(Items.DIAMOND, 1)
 
 Ne vous inquiètez pas, au premier abord, ça paraît un peu compliqué, mais en décomposant
 petit à petit ça va se clarifier. On voit donc qu'on a besoin de la classe `ShapedRecipeBuilder`
-qui comme son nom l'indique permet de construire notre craft. A l'aide de plusieurs fonctions
+qui comme son nom l'indique permet de construire notre craft. À l'aide de plusieurs fonctions,
 on va pouvoir définir les propriétés de notre craft.
 
 ```java
 shaped(Items.DIAMOND, 1)
 ```
 
-La fonction `shaped` sert à donner le résulat, du craft. Oui, on commence par le résultat
+La fonction `shaped` sert à donner le résultat, du craft. Oui, on commence par le résultat
 et non par les ingrédients. En premier argument vous pouvez donner un `Item`, `Block` ou
 même un `Tag<Item>`.
 
@@ -118,10 +118,10 @@ define('A', Items.APPLE)
 
 La fonction `define` permet d'associer à un caractère : un item, un block, ou encore un tag.
 De cette manière, lorsqu'on dessinera le schéma de notre craft, le caractère `D` sera
-associé au bloc de terre dans ce cas là.
+associé au bloc de terre dans ce cas-là.
 
 :::tip
-Ici le caractère 'D' n'est pas anodin. Etant donné que j'utlise le bloc de `Dirt`,
+Ici le caractère 'D' n'est pas anodin. Etant donné que j'utilise le bloc de `Dirt`,
 j'ai pris l'initial du mot comme caractère. Essayez de rendre vos craft le plus lisible
 possible. Comme votre code d'ailleurs !
 :::
@@ -134,7 +134,7 @@ pattern(" D ")
 
 La fonction `pattern` sert à donner la forme de notre craft. Souvenez-vous de la forme
 que j'ai donné plus haut. Chaque `pattern` représente une ligne de la table de craft.
-Ici, on utlise tout l'espace disponible de notre table, donc nous sommes obligés de combler
+Ici, on utilise tout l'espace disponible de notre table, donc nous sommes obligés de combler
 les vides avec des espaces. Un espace représentant un item vide, soit rien.
 La table de craft de Minecraft ayant 3x3 slots, il y a trois lignes composées chacune
 de 3 caractères au maximum.
@@ -145,7 +145,7 @@ la cause d'erreurs ou bien de dysfonctionnement de votre craft.
 :::
 
 Vous n'êtes pas obligés d'utiliser les trois lignes de la table ou même de remplir chaque
-ligne. Par exemple, pour crafter une épée on ferait ça :
+ligne. Par exemple, pour crafter une épée, on ferait ça :
 
 ```java
 pattern("D")
@@ -162,7 +162,7 @@ pattern("DD")
 ```
 
 On a juste besoin de deux lignes et les quatre éléments en forme de carré.
-De cette manière on peut crafter notre table dans n'importe quel coin de la table
+De cette manière, on peut crafter notre table dans n'importe quel coin de la table
 ou même dans l'inventaire du joueur.
 
 ```java
@@ -171,7 +171,7 @@ group("diamond")
 
 La fonction `group` sert quant à elle à rassembler différents crafts pour le même
 objet. Ici, j'ai décidé de créer un groupe `diamond` étant donné que mon craft
-donne un diamant. C'est à dire que tous les crafts ayant le même group seront rassemblés
+donne un diamant. C'est-à-dire que tous les crafts ayant le même group seront rassemblés
 dans le livre de recettes du jeu sur la même case.
 
 ```java
@@ -179,15 +179,15 @@ unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredica
 ```
 
 La fonction `unlockedBy` sert à définir le moyen d'obtention du craft. Comme vous le
-savez, les crafts sont obtenus soit en ayant un item dans l'inventaire soit par le
+savez, les crafts sont obtenus soit en ayant un item dans l'inventaire, soit par le
 biais d'autres recettes. C'est ce qu'on appelle un `Criterion` et il y en a plusieurs.
-Ici pour l'exemple j'utliserai le plus simple : `InventoryChangeTrigger`. C'est
+Ici pour l'exemple j'utiliserai le plus simple : `InventoryChangeTrigger`. C'est
 un criterion qui se déclenche lorsque le joueur possède dans son inventaire certains
 items. Ici la fonction `hasItems` prend en compte soit un item directement, soit
 un `ItemPredicate` et c'est ce qu'on utlise ici.
 
 Je ne vais pas détailler ici ce qu'est
-un *Predicate*, ici ce sera juste un ensemble d'items qui permettront de débloquer le craft.
+un *Predicate*, ici, ce sera juste un ensemble d'items qui permettront de débloquer le craft.
 Dans mon cas, les items en question seront : la pomme et le bloc de terre.
 
 ```java
@@ -303,7 +303,7 @@ SingleItemRecipeBuilder.stonecutting(Ingredient.of(ItemTags.PLANKS), Blocks.OAK_
 Comme plus haut, le premier argument est un `Ingredient` et le deuxième
 un item ou un bloc.
 
-Quant au troisième, il est optionnel mais vous permet de gérer la quantité
+Quant au troisième, il est optionnel, mais vous permet de gérer la quantité
 du résultat obtenu.
 
 ## Recettes dans la smithing table

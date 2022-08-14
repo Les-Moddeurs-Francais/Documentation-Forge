@@ -76,7 +76,7 @@ public static final RegistryObject<RecipeType<ExampleRecipe>> MON_TYPE_RECETTE =
 
 ## Indiquer au jeu que le DeferredRegister existe
 
-Après avoir créée votre `DeferredRegister`, il ne reste plus qu'à faire comprendre au jeu que celui existe et pour cela il faudra disposer ce bout de code dans le constructeur de votre classe principale.
+Après avoir créé votre `DeferredRegister`, il ne reste plus qu'à faire comprendre au jeu que celui-ci existe et pour cela il faudra disposer ce bout de code dans le constructeur de votre classe principale.
 
 ```java 
 Classe.NOM_VARIABLE.register(FMLJavaModLoadingContext.get().getModEventBus());

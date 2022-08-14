@@ -120,7 +120,7 @@ Les _tags_ sont définis par des fichiers JSON se trouvant dans le dossier `/dat
 | `CONDITION_REGISTRY`                   | `worldgen/material_condition`          |
 | `RULE_REGISTRY`                        | `worldgen/material_rule`               |
 | `DENSITY_FUNCTION_TYPE_REGISTRY`       | `worldgen/density_function_type`       |
-| `STRUCTURE_PROCESSOR_REGISTRY`         | `worldgen/structure_processor`   *     |
+| `STRUCTURE_PROCESSOR_REGISTRY`         | `worldgen/structure_processor`         |
 | `STRUCTURE_POOL_ELEMENT_REGISTRY`      | `worldgen/structure_pool_element`      |
 | `CHAT_TYPE_REGISTRY`                   | `chat_type`                            |
 | `CAT_VARIANT_REGISTRY`                 | `cat_variant`                          |

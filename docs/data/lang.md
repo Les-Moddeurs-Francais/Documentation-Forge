@@ -40,7 +40,7 @@ Minecraft. Pour le français par exemple, il faut noter `"fr_fr""`.
 Vous pouvez retrouver toutes les langues [ici](https://minecraft.fandom.com/wiki/Language)
 :::
 
-Ensuite, on va devoir utiliser la fonction `addTranslations` hérité de la classe
+Ensuite, on va devoir utiliser la fonction `addTranslations`, héritée de la classe
 mère.
 
 ```java
@@ -53,7 +53,7 @@ protected void addTranslations()
 
 C'est dans cette fonction que tout va se jouer. On a accès à des fonctions venant
 de la classe mère nommées `add` qui permettent d'ajouter nos traductions.
-Il y a une surchage de la fonction pour presque tous les objets importants du
+Il y a une surcharge de la fonction pour presque tous les objets importants du
 jeu. Je vous laisse regarder les différentes surcharges de la fonction.
 Pour l'exemple, je vais créer la traduction d'un item.
 
