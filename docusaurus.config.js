@@ -89,7 +89,7 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.lesmoddeursfrancais.fr/',
+              href: 'https://discord.lesmoddeursfrancais.com/',
             },
             {
               label: 'Twitter',
@@ -111,7 +111,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} - <a href="https://www.lesmoddeursfrancais.fr">Les Moddeurs Francais</a>`,
+      copyright: `Copyright © ${new Date().getFullYear()} - <a href="https://www.lesmoddeursfrancais.com">Les Moddeurs Francais</a>`,
     },
     colorMode: {
       respectPrefersColorScheme: true,
