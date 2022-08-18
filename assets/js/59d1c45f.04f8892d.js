@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_forge=self.webpackChunkdoc_forge||[]).push([[7140],{6151:e=>{e.exports=JSON.parse('{"label":"mise \xe0 jour","permalink":"/news/tags/mise-a-jour","allTagsPath":"/news/tags","count":11}')}}]);
