@@ -276,7 +276,7 @@ public class LightCapability {
 
 ### Enregistrer la Capability
 
-Finalement i suffit d'enregistrer sa Capability et cela peut être fait de 2 manières différentes, soit avec un événement, soit avec une annotation.
+Finalement il suffit d'enregistrer sa Capability et cela peut être fait de 2 manières différentes, soit avec un événement, soit avec une annotation.
 
 #### Avec l'événement `RegisterCapabilitiesEvent`
 
