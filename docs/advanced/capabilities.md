@@ -7,16 +7,14 @@ tags: [avancé]
 
 Les `capabilities` sont un système mis à disposition par Forge permettant de stocker des données sur des **BlockEntities**(TileEntities), des **Entities**, des **ItemStacks**, des **Levels**(Worlds) et des **LevelChunks**(Chunks).
 
-## Utiliser une Capability
-
 Forge fournit par défaut trois capabilities : `IItemHandler`, qui permet de stocker des items, `IFluidHandler`, qui permet de stocker des liquides et enfin `IEnergyStorage`, qui permet de stocker de l'énergie.
 
 Une capability possède au minimum normalement trois classes : l'interface(Exemple : `IItemHandler`), l'(les) implémentation(s) par défaut de la capability(Exemple : `ItemStackHandler`) et enfin la classe qui contient l'instance de la capability et qui sert à l'enregistrer(Exemple : `CapabilityItemHandler`).
 
-Pour les utiliser, il faut d'abord les attacher à la `BlockEntity`/`Entity`/`ItemStack`/`Level`/`LevelChunk` de votre choix. 
-### Attacher une Capability
+Pour les utiliser, il faut d'abord les attacher à la `BlockEntity`/`Entity`/`ItemStack`/`Level`/`LevelChunk` de votre choix.
+## Attacher une Capability
 
-#### Récupérer l'instance d'une capability
+### Récupérer l'instance d'une capability
 
 Pour attacher une capability, il faut déjà posséder son unique instance. Pour cela, vous pouvez l'obtenir soit dans la classe qui la contient par défaut, soit en obtenant une autre référence de la même instance en utilisant `CapabilityManager#get` comme ceci:
 ```java
@@ -28,7 +26,7 @@ Exemple :
 ```java
 static Capability<IEnergyStorage> ENERGY_STORAGE =  CapabilityManager.get(new CapabilityToken<>(){});
 ```
-#### Attacher une Capability
+### Attacher une Capability
 
 Pour attacher une Capability, il faut passer par l'évènement `AttachCapabilitiesEvent`:
 * `AttachCapabilitiesEvent<Entity>` pour les `Entity`
@@ -102,7 +100,7 @@ public static void attachToEntities(AttachCapabilitiesEvent<Entity> event)
 Attacher les Capabilities par défaut de Forge(voir [ici](#utiliser-une-capability)) à des classes vanilla peut causer certains problèmes. Par exemple, attacher un `IItemHandler` à un joueur ne marchera pas, car si vous essayez de le récupérer en passant par le joueur, vous obtiendrez un `IItemHandler` qui correspond à l'inventaire du même joueur. Si vous souhaitez tout de même utiliser les Capabilities de Forge, il faut alors créer une nouvelle Capability qui extend celle que vous souhaitez attacher(voir [ici](#créer-une-capability)).
 :::
 
-### Récupérer la Capability
+## Récupérer la Capability
 
 Une fois que la Capability est bien attachée, pour l'utiliser, il faut la récupérer ! Pour cela, reprenons l'exemple de la Capability `IEnergyStorage` attachée à un joueur :
 
@@ -133,7 +131,7 @@ IEnergyStorage energyStorage = lazyOptional.orElse(new EnergyStorage(10000));
 energyStorage.extractEnergy(500, false);
 ```
 
-### Sauvegarder la Capability
+## Sauvegarder la Capability
 
 Si vous avez fait quelques tests par vous-mêmes, vous avez sûrement remarqué que la Capability n'est pas sauvegardée : c'est normal.
 
@@ -178,13 +176,13 @@ public class EnergyStorageProvider implements ICapabilitySerializable<IntTag> {
 }
 ```
 
-### Créer une Capability
+## Créer une Capability
 
 Si aucune des Capabilities fournies par Forge ne vous convient, vous pouvez créer la vôtre.
 
 Pour ce faire, vous allez devoir créer plusieurs classes : l'interface de la Capability, une ou plusieurs implémentations et enfin une classe qui va contenir l'instance de la Capability.
 
-#### L'interface de la Capability
+### L'interface de la Capability
 
 Cette partie est relativement simple et dépend beaucoup de l'usage que vous voulez faire de votre Capability. Créez juste les fonctions dont vous avez besoin.
 
@@ -223,7 +221,7 @@ public interface ILightCapability {
 }
 ```
 
-#### Les implémentations de l'interface de votre Capability
+### Les implémentations de l'interface de votre Capability
 
 Après avoir créé l'interface de sa Capability, il faut aussi créer des implémentations de cette même interface : ce seront elles qui seront utilisées en temps réel par le biais des `LazyOptional` lorsque vous récupérez votre Capability.
 
@@ -263,7 +261,7 @@ public class LightStorage implements ILightCapability{
 }
 ```
 
-#### Créer la classe contenant l'instance de la Capability
+### Créer la classe contenant l'instance de la Capability
 
 Il faut maintenant créer une classe qui contiendra l'instance par défaut de votre Capability(il s'agit en fait d'une instance de la classe `Capability`)
 
@@ -276,7 +274,7 @@ public class LightCapability {
 }
 ```
 
-#### Enregistrer la Capability
+### Enregistrer la Capability
 
 Finalement, il faut enregistrer sa Capability à l'aide de la fonction `register` de l'event `RegisterCapabilitiesEvent` pour que Forge sache qu'elle existe.
 
