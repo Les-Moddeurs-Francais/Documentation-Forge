@@ -276,14 +276,36 @@ public class LightCapability {
 
 ### Enregistrer la Capability
 
-Finalement, il faut enregistrer sa Capability à l'aide de la fonction `register` de l'event `RegisterCapabilitiesEvent` pour que Forge sache qu'elle existe.
+Finalement i suffit d'enregistrer sa Capability et cela peut être fait de 2 manières différentes, soit avec un événement, soit avec une annotation.
 
-N'oubliez pas de faire attention à ce que la classe dans laquelle vous mettez l'event soit bien "abonnée" aux flux d'events !
+#### Avec l'événement `RegisterCapabilitiesEvent`
+
+Pour ce qui est de la méthode avec l'événement, il faut enregistrer sa Capability à l'aide de la fonction `register` de l'événement `RegisterCapabilitiesEvent` pour que Forge sache qu'elle existe.
+
+:::caution
+N'oubliez pas de faire attention à ce que la classe dans laquelle vous mettez ledit événement soit bien "abonnée" aux flux d'événements !
+:::
 
 Exemple :
 ```java
 @SubscribeEvent
 public void registerCaps(RegisterCapabilitiesEvent event) {
     event.register(ILightCapability.class);
+}
+```
+
+#### Avec l'annotation `@AutoRegisterCapability`
+
+:::caution
+Cette méthode n'est possible que dans les versions supérieures à la 1.19.2-43.1.1.
+:::
+
+Avec la méthode de l'annotation, il suffit de rajouter l'annotation `@AutoRegisterCapability` au-dessus de l'[interface](#linterface-de-la-capability) que nous avons créée précédemment
+
+Exemple :
+```java
+@AutoRegisterCapability
+public interface ILightCapability {
+    ...
 }
 ```
