@@ -6,7 +6,7 @@ tags: [items]
 
 Les onglets créatifs (ou _creatives tabs_) sont des interfaces permettant d'organiser et de répertorier différents blocs et items.
 
-# Déclaration
+## Déclaration
 
 Pour créer votre onglet, vous devrez le déclarer dans une classe comme ceci :
 
@@ -31,7 +31,7 @@ La fonction **makeIcon** permet de définir l'icône de l'onglet créatif. Il es
 
 Et voilà, l'onglet est créé, mais celui-ci est vide. Il faut donc ajouter des items à cet onglet.
 
-# Ajout des items
+## Ajout des items
 
 Pour ajouter les items dans l'onglet, allez à la déclaration de votre item :
 
@@ -39,7 +39,7 @@ Pour ajouter les items dans l'onglet, allez à la déclaration de votre item :
 public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_item", () -> new Item(new Item.Properties()));
 ```
 
-Ajoutez juste la méthode **.tab()** a la liste des propriétés de votre item, celle ci prends en paramètre la creativeTab crée auparavant :
+Ajoutez juste la méthode **.tab()** a la liste des [propriétés](https://forge-doc.lesmoddeursfrancais.com/docs/items/properties) de votre item, celle ci prends en paramètre la creativeTab crée auparavant :
 
 ```java
 public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_item", () -> new Item(new Item.Properties().tab(VotreClasse.MY_MOD_TAB)));
@@ -47,7 +47,7 @@ public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_
 
 Et voilà, votre item devrait être en jeu.
 
-# Traduction
+## Traduction
 
 Comme beaucoup d'éléments, les onglets créatifs possèdent aussi une clé de traduction.
 
