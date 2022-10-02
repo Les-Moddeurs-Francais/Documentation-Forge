@@ -39,7 +39,7 @@ Pour ajouter les items dans l'onglet, allez à la déclaration de votre item :
 public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_item", () -> new Item(new Item.Properties()));
 ```
 
-Ajoutez juste la méthode **.tab()** a la liste des [propriétés](https://forge-doc.lesmoddeursfrancais.com/docs/items/properties) de votre item, celle-ci prends en paramètre l'onglet créatif crée auparavant :
+Ajoutez juste la méthode **.tab()** a la liste des [propriétés](https://forge-doc.lesmoddeursfrancais.com/docs/items/properties) de votre item, celle-ci prends en paramètre l'onglet créatif créé auparavant :
 
 ```java
 public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_item", () -> new Item(new Item.Properties().tab(VotreClasse.MY_MOD_TAB)));
