@@ -45,7 +45,7 @@ Ajoutez juste la méthode **.tab()** a la liste des [propriétés](https://forge
 public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_item", () -> new Item(new Item.Properties().tab(VotreClasse.MY_MOD_TAB)));
 ```
 
-Et voilà, votre item devrait être en jeu.
+Et voilà, votre item devrait être accessible en jeu dans le menu créatif.
 
 ## Traduction
 
