@@ -91,10 +91,6 @@ module.exports = {
               label: 'Discord',
               href: 'https://discord.lesmoddeursfrancais.com/',
             },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/lesmoddeursfr',
-            },
           ],
         },
         {
@@ -107,6 +103,10 @@ module.exports = {
             {
               label: 'GitHub',
               href: 'https://github.com/Les-Moddeurs-Francais/Documentation-Forge',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/lesmoddeursfr',
             },
           ],
         },
