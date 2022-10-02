@@ -17,11 +17,11 @@ Vous pouvez aussi créer une classe custom (dépendante de la classe **CreativeM
 ```java
 
 public static final CreativeModeTab MY_MOD_TAB = new CreativeModeTab("mon_mod") {
-    @Override
-    public ItemStack makeIcon() {
+@Override
+public ItemStack makeIcon() {
         return new ItemStack(Items.DIAMOND);
-    }
-};
+        }
+        };
 
 ```
 
