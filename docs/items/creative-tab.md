@@ -39,13 +39,13 @@ Pour ajouter les items dans l'onglet, allez à la déclaration de votre item :
 public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_item", () -> new Item(new Item.Properties()));
 ```
 
-Ajoutez juste la méthode **.tab()** a la liste des [propriétés](https://forge-doc.lesmoddeursfrancais.com/docs/items/properties) de votre item, celle ci prends en paramètre la creativeTab crée auparavant :
-
+Ajoutez juste la méthode **.tab()** à la liste des [propriétés](https://forge-doc.lesmoddeursfrancais.com/docs/items/properties) de votre item, celle-ci prend en paramètre la creativeTab créée auparavant :
 ```java
 public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_item", () -> new Item(new Item.Properties().tab(VotreClasse.MY_MOD_TAB)));
 ```
 
-Et voilà, votre item devrait être en jeu.
+
+Et voilà, votre item devrait être accessible en jeu depuis le menu créatif.
 
 ## Traduction
 
