@@ -32,7 +32,7 @@ Le modèle de base est celui qui est affiché quand le cas d'une perspective n'e
 
 ## Perspectives
 
-Pour ce qui est des perspectives, il nous faudra ajouter une clé objet pour chaque perspectives où l'on veut modifier le modèle de l'item, avec à l'intérieur une clé `parent` pour spécifier le modèle. Cela nous donne une chose du style :
+Pour ce qui est des perspectives, il nous faudra ajouter une clé objet pour chaque perspective où l'on veut modifier le modèle de l'item, avec à l'intérieur une clé `parent` pour spécifier le modèle. Cela nous donne une chose du style :
 
 ```json
 "nom_de_la_perspective": {
@@ -55,7 +55,7 @@ Pour connaitre les différentes perspectives, vous pouvez vous référer au tabl
 
 ## Exemple
 
-En combinant tous cela, nous arrivons donc à un fichier modèle du type :
+En combinant tout cela, nous arrivons donc à un fichier modèle du type :
 
 ```json
 {
