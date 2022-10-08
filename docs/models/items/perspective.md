@@ -36,7 +36,7 @@ Pour ce qui est des perspectives, il nous faudra ajouter une clé objet pour cha
 
 ```json
 "nom_de_la_perspective": {
-"parent": "modid:item/example_item"
+  "parent": "modid:item/example_item"
 }
 ```
 
