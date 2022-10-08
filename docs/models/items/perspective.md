@@ -52,3 +52,25 @@ Pour connaitre les différentes perspectives, vous pouvez vous référer au tabl
 | `gui`                   | Perspective de l'item dans une interface                         |
 | `ground`                | Perspective de l'item sur le sol                                 |
 | `fixed`                 | Perspective de l'item dans un cadre                              |
+
+## Exemple
+
+En combinant tous cela, nous arrivons donc à un fichier modèle du type :
+
+```json
+{
+  "parent": "forge:item/default",
+  "base": {
+    "parent": "modid:item/example_item"
+  },
+  "loader": "forge:separate-perspective",
+  "perspectives": {
+    "firstperson_lefthand": {
+      "parent": "modid:item/example_item_fp_hand"
+    },
+    "gui": {
+      "parent": "modid:item/example_item_gui"
+    }
+  }
+}
+```
