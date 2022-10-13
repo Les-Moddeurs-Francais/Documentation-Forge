@@ -151,6 +151,7 @@ module.exports = {
       'classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
               'https://github.com/Les-Moddeurs-Francais/Documentation-Forge/edit/master',
