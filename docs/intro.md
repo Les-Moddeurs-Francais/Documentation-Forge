@@ -3,6 +3,7 @@ sidebar_position: 1
 title: Introduction
 description: Comment débuter le modding sur Forge ?
 tags: [introduction]
+slug: /
 ---
 
 Ceci est une documentation non officielle sur le projet [MinecraftForge](http://minecraftforge.net/) (une API de modding pour le jeu Minecraft).
