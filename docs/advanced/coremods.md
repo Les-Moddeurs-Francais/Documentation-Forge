@@ -11,7 +11,7 @@ Le système de `CoreMod` est un outil fourni par **Forge** dans le projet [CoreM
 Attention, utilisez les coremods à vos risques et périls, une sur-utilisation des coremods peut entraîner des incompatibilités inter-mods ! 
 Ils ne doivent être utilisés qu'en dernier recours. Il est possible d'ajouter autant de coremods que souhaité, mais la modification du code n'est pas gratuite (surtout avec de grosses modifications) : le temps de chargement du jeu peut-être impacté s'il y en a beaucoup. Enfin, le débug est plus difficile, puisque le code modifié apparaît uniquement pendant l'exécution, il n'existe pas physiquement.
 
-Il est fortement recommandé de se renseigner auparavant sur le bytecode Java. Les instructions et la bibliothèque ASM qui est utilisée par le système de coremods.
+Il est fortement recommandé de se renseigner auparavant sur le bytecode Java (les instructions), et la bibliothèque ASM qui est utilisée par le système de coremods.
 Voici quelques ressources :
 - https://asm.ow2.io
 - https://fr.wikipedia.org/wiki/ASM_(logiciel)
@@ -21,7 +21,7 @@ Voici quelques ressources :
 
 
 ## Fonctionnement
-Un coremod est représenté sous la forme d'un fichier JavaScript. En effet, le nouveau système de coremod utilise le moteur (déprécié) [Nashorn](https://openjdk.org/projects/nashorn/) pour lire et exécuter le coremod sous la forme d'un script JavaScript. L'objectif étant de restreindre le champ d'action du coremod pour des questions de sécurité et de stabilité. Pour cause, on ne peut pas appeler certaines classes à l'intérieur d'un coremod : seules les classes situées dans les packages `java.util`, `java.util.function`, `org.objectweb.asm.tree`, `org.objectweb.asm`, `org.objectweb.asm.util` et la classe `ASMAPI` (`net.minecraftforge.coremod.api.ASMAPI`) peuvent être utilisées.
+Un coremod est représenté sous la forme d'un fichier JavaScript. En effet, le nouveau système de coremod utilise le moteur (déprécié) [Nashorn](https://openjdk.org/projects/nashorn/) pour lire et exécuter le coremod sous la forme d'un script JavaScript. L'objectif étant de restreindre le champ d'action du coremod pour des questions de sécurité et de stabilité. Par conséquent, on ne peut pas appeler certaines classes à l'intérieur d'un coremod : seules les classes situées dans les packages `java.util`, `java.util.function`, `org.objectweb.asm.tree`, `org.objectweb.asm`, `org.objectweb.asm.util` et la classe `ASMAPI` (`net.minecraftforge.coremod.api.ASMAPI`) peuvent être utilisées.
 
 :::note
 La classe ASMAPI possède plein de méthodes utiles pour simplifier la transformation et éviter d'écrire du code redondant.
@@ -38,7 +38,7 @@ Exemple d'un fichier `coremods.json` :
 }
 ```
 
-Sa structure est très simple : il s'agit simplement d'un objet avec plusieurs clés ayant pour valeur des chaînes de caractères. Ces derniers représentent le chemin d'accès vers le fichier du coremod.
+Sa structure est très simple : il s'agit simplement d'un objet avec plusieurs clés ayant pour valeur des chaînes de caractères. Cette dernière représente le chemin d'accès vers le fichier du coremod.
 
 :::caution
 Le chemin d'accès démarre à la racine du mod, et non du dossier `META-INF` !
@@ -52,8 +52,8 @@ META-INF
 ```
 :::
 
-Ensuite, **FML** va charger un à un les coremods. Si des erreurs de syntaxe sont détectées, le coremod sera ignoré et une erreur sera imprimée dans les logs.
-À ce sujet, `Nashorn` ne supporte pas les dernières fonctionnalités des versions d'`ECMAScript`. Voici les règles à respecter et quelques conseils :
+Ensuite, **FML** va charger un à un les coremods. Si des erreurs de syntaxe sont détectées, le coremod sera ignoré et une erreur sera levée et visible dans les logs.
+À ce sujet, `Nashorn` ne supporte pas les fonctionnalités des dernières versions d'`ECMAScript`. Voici les règles à respecter et quelques conseils :
 
 Utiliser le mot clé `var` pour déclarer une variable. :
 ```js
@@ -103,7 +103,7 @@ Il y a trois types différents de transformers :
 - [`FieldTransformer`](#fieldtransformer) : pour modifier un champ dans une classe
 
 :::caution
-Pour rappel, il n'y a pas de notion de type. Dans les prochains extraits de code, les variables s'appellent `classNode`/`methodNode`/`fieldNode` par soucis de lisibilité. Elle pourrait très bien se nommer `cn`/`mn`/`fn` ou même `foo`.
+Pour rappel, le JavaScript n'est pas un langage avec un typage fort. Dans les prochains extraits de code, les variables s'appelleront `classNode`/`methodNode`/`fieldNode` par soucis de lisibilité. Elles pourraient très bien se nommer `cn`/`mn`/`fn` ou même `foo`.
 :::
 
 
@@ -121,7 +121,7 @@ Résultat en **JavaScript** :
 ```js
 function initializeCoreMod() {
     return {
-        'MonTransformer': {
+        'MonClassTransformer': {
             'target': {
                 'type': 'CLASS',
                 'name': 'net/minecraft/client/Minecraft'
@@ -151,7 +151,7 @@ Résultat en **JavaScript** :
 ```js
 function initializeCoreMod() {
     return {
-        'MonTransformer': {
+        'MonMethodTransformer': {
             'target': {
                 'type': 'METHOD',
                 'class': 'net/minecraft/client/Minecraft',
@@ -182,7 +182,7 @@ Résultat en **JavaScript** :
 ```js
 function initializeCoreMod() {
     return {
-        'MonTransformer': {
+        'MonFieldTransformer': {
             'target': {
                 'type': 'FIELD',
                 'class': 'net/minecraft/client/Minecraft',
@@ -197,11 +197,11 @@ function initializeCoreMod() {
 }
 ```
 
-On peut très bien ajouter à la suite des transformers dans le même coremod comme ceci :
+On peut très bien ajouter à la suite des transformers dans le même coremod, à condition qu'ils aient un nom différent, comme ceci :
 ```js
 function initializeCoreMod() {
     return {
-        'MonTransformer': {
+        'MonClassTransformer': {
             'target': {
                 'type': 'CLASS',
                 'name': 'net/minecraft/client/Minecraft'
@@ -211,7 +211,7 @@ function initializeCoreMod() {
                 return classNode;
             }
         },
-        'MonTransformer': {
+        'MonMethodTransformer': {
             'target': {
                 'type': 'METHOD',
                 'class': 'net/minecraft/client/Minecraft',
@@ -223,7 +223,7 @@ function initializeCoreMod() {
                 return methodNode;
             }
         },
-        'MonTransformer': {
+        'MonFieldTransformer': {
             'target': {
                 'type': 'FIELD',
                 'class': 'net/minecraft/client/Minecraft',
@@ -261,7 +261,7 @@ Bingo, dans la méthode `main`, on trouve la ligne `Thread.currentThread().setNa
 
 En utilisant un outil comme [**Recaf**](https://github.com/Col-E/Recaf), dans l'onglet `Search -> Strings` en cherchant `Render thread` on aurait trouvé toutes les occurrences où ce nom est utilisé.
 #### Étape 2
-Si on est encore débutant avec le bytecode, il peut être difficile d'imaginer immédiatement une solution à la problématique. Pour faciliter les choses, il peut, encore une fois, être intéressant d'utiliser **Recaf**. On charge le jar de minecraft en environnement de développement (pour ne pas avoir le jeu obfusqué). Puis, on ouvre la classe `net/minecraft/client/main/Main`. En faisant `Clic droit -> Edit with assembler` sur le nom de la méthode `main`, on peut ainsi lire (et modifier) les instructions en bytecode de la méthode. En parcourant les instructions, on remarque que tous les strings de la méthode sont utilisées via une instruction nommée **LDC**. En effet, cette instruction permet d'apporter sur la pile (la stack) une constante, ici de type `String`.
+Si on est encore débutant avec le bytecode, il peut être difficile d'imaginer immédiatement une solution à la problématique. Pour faciliter les choses, il peut, encore une fois, être intéressant d'utiliser **Recaf**. On charge le jar de minecraft utilisé en environnement de développement (pour ne pas avoir le jeu obfusqué). Puis, on ouvre la classe `net/minecraft/client/main/Main`. En faisant `Clic droit -> Edit with assembler` sur le nom de la méthode `main`, on peut ainsi lire (et modifier) les instructions en bytecode de la méthode. En parcourant les instructions, on remarque que tous les strings de la méthode sont utilisées via une instruction nommée **LDC**. En effet, cette instruction permet d'apporter sur la [pile (stack)](https://fr.wikipedia.org/wiki/Pile_(informatique)) une constante, ici de type `String`.
 
 En poursuivant les recherches, on trouve les trois lignes suivantes :
 ```
@@ -277,6 +277,10 @@ La seconde instruction (`LDC`) apporte sur la pile la constante "Render thread".
 La troisième (`INVOKEVIRTUAL`) sert à appeler une méthode non-statique sur une instance d'une classe donnée, ici sur une instance de la classe `Thread`, récupérée via la première instruction.
 
 La modification à effectuer est donc très simple, il suffit donc de changer la valeur constante (la seconde instruction) par ce que l'on souhaite.
+
+:::info
+En observant les instructions d'une méthode, vous avez sans doute remarqué la présence d'instructions `LINE X` avec X un nombre. Ces instructions sont ajoutées par le compilateur pour indiquer à quelle ligne dans le code source correspond ce bloc d'instructions. Elles ne sont pas nécessaires au bon fonctionnement d'un programme. En revanche, elles sont nécessaires pour afficher dans un rapport d'erreur le numéro de la ligne dans le code source où l'erreur s'est produite et la pile d'appels des méthodes concernées (stack-trace). Il est possible de désactiver l'ajout de ces instructions en ajoutant l'option `-g:none` au compilateur.
+:::
 
 #### Étape 3
 On considère qu'on utilise un coremod avec un transformer qui transformera la méthode `main` de la classe `net/minecraft/client/main/Main` :
@@ -322,7 +326,7 @@ function initializeCoreMod() {
 }
 ```
 
-On vérifie si l'instruction est bien une instruction LDC et on vérifie si la constante de l'instruction est bien égale à "Render thread".
+On vérifie si l'instruction est bien une instruction `LDC` et on vérifie si la constante de l'instruction est bien égale à "Render thread".
 ```js
 var Opcodes = Java.type('org.objectweb.asm.Opcodes');
 
@@ -349,7 +353,7 @@ function initializeCoreMod() {
 }
 ```
 
-On remplace la constante par "Thread vraiment lent". On peut ensuite casser la boucle avec le mot-clé `break` pour éviter de perdre du temps lors de la transformation de la méthode.
+On remplace la constante par "Thread vraiment lent" (en modifiant directement le champ `cst` de l'instruction, qui est la contraction du mot "constante"). On peut ensuite casser la boucle avec le mot-clé `break` pour éviter de perdre du temps lors de la transformation de la méthode.
 ```js
 var Opcodes = Java.type('org.objectweb.asm.Opcodes');
 
@@ -377,13 +381,13 @@ function initializeCoreMod() {
 }
 ```
 
-Et voilà, on peut désormais lancer le jeu et consulter notre nouveau et super nom du thread de rendu de Minecraft ! On peut aussi noter la présence de cette ligne `Transforming main with desc ([Ljava/lang/String;)V` qui indique que la méthode a bien été transformée, utile pour savoir si notre modification s'est appliquée ou non !
+Et voilà, on peut désormais lancer le jeu et consulter notre nouveau et super nom du thread de rendu de Minecraft ! On peut aussi noter la présence de cette ligne `Transforming main with desc ([Ljava/lang/String;)V` dans les logs du jeu, qui indique que la méthode a bien été transformée, utile pour savoir si notre modification s'est appliquée ou non !
 
 
 ### Affichage dans la console lors de l'initialisation du jeu
 Il s'agit d'un second exemple d'application des coremods. Ici, il s'agira d'ajouter à la fin du constructeur un simple `System.out.println("Initialisation du jeu");`
 
-Ici, la période de recherche est assez facile : on sait quelle méthode modifier dans quelle classe et où ajouter la ligne de code.
+Ici, le travail de recherche est assez facile : on sait quelle méthode modifier dans quelle classe et où ajouter la ligne de code.
 On a donc un début de coremod ainsi :
 ```js
 function initializeCoreMod() {
@@ -403,7 +407,7 @@ function initializeCoreMod() {
 }
 ```
 
-De la même manière, on parcourt les instructions de la méthode jusqu'à arriver à la dernière, l'instruction `RETURN` (par chance, il n'y en a qu'une seule) :
+De la même manière, on parcourt les instructions de la méthode jusqu'à arriver à la dernière, l'instruction `RETURN` (il n'y en a qu'une seule) :
 ```js
 var Opcodes = Java.type('org.objectweb.asm.Opcodes');
 
@@ -429,6 +433,9 @@ function initializeCoreMod() {
     }
 }
 ```
+:::info
+En Java, on a la possibilité d'écrire plusieurs `return;` dans une méthode ne retournant rien. En revanche, on retrouve une seule occurrence de l'instruction `RETURN` dans le bytecode. Il s'agit d'une optimisation réalisée à l'étape de compilation du code. En effet, une instruction `RETURN` unique est ajoutée à la fin du bytecode et tous les `return;` originaux sont remplacés par un saut vers cette instruction. De cette manière, on s'assure que la dernière instruction exécutée est l'instruction `RETURN`.
+:::
 
 Désormais, il faut ajouter la ligne de code juste avant l'instruction `RETURN`. La ligne de code est constituée de plusieurs instructions :
 ```
@@ -444,7 +451,7 @@ insnList.add(new FieldInsnNode(Opcodes.GETSTATIC, "java/lang/System", "out", "Lj
 insnList.add(new LdcInsnNode("Initialisation du jeu"));
 insnList.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "java/io/PrintStream", "println", "(Ljava/lang/String;)V"));
 ```
-On ajoute instruction par instruction à la liste d'instructions. Je conseille de consulter la documentation des constructeurs de ces classes pour savoir quel paramètre correspond à quoi. Il ne faut pas non plus oublier d'importer les quatres classes (`InsnList`, `FieldInsnNode`, `LdcInsnNode`, `MethodInsnNode`) qui sont utilisées dans cette liste d'instructions.
+On ajoute les trois instructions à la liste. Je conseille de consulter la documentation des constructeurs de ces classes pour savoir quel paramètre correspond à quoi. Il ne faut pas non plus oublier d'importer les quatre classes (`InsnList`, `FieldInsnNode`, `LdcInsnNode`, `MethodInsnNode`) qui sont utilisées dans cette liste d'instructions.
 
 On finit par ajouter la liste d'instructions juste avant l'instruction `RETURN` :
 ```js
@@ -496,7 +503,7 @@ Cette fois-ci, on souhaite retirer, pour une quelconque raison, un message de la
 
 Le fonctionnement est, encore une fois, similaire. Sauf que nous n'allons ni modifier, ni ajouter d'instructions, mais en retirer.
 Je passe l'étape de recherche qui nous permet de savoir où est la ligne de code à supprimer :
-Il s'agit, encore une fois, dans la classe `net/minecraft/client/Minecraft` du constructeur : `<init>(Lnet/minecraft/client/main/GameConfig;)V`.
+Il s'agit, encore une fois, du constructeur : `<init>(Lnet/minecraft/client/main/GameConfig;)V` dans la classe `net/minecraft/client/Minecraft`.
 Les instructions concernées sont :
 ```
 GETSTATIC net/minecraft/client/Minecraft.LOGGER Lorg/slf4j/Logger;
@@ -507,7 +514,7 @@ INVOKEVIRTUAL net/minecraft/client/User.getName()Ljava/lang/String;
 INVOKEINTERFACE org/slf4j/Logger.info(Ljava/lang/String;Ljava/lang/Object;)V
 ```
 
-On définit une instruction repère, qui permettra de nous situer dans la liste d'instructions. Ici, l'instruction LDc "Setting user: {}" est la plus pertinente, nous savons qu'il n'y a aucune instruction similaire utilisée dans la méthode. On peut donc imaginer un début de coremod :
+On définit une instruction repère, qui permettra de nous situer dans la liste d'instructions. Ici, l'instruction `LDC "Setting user: {}"` est la plus pertinente, nous savons qu'il n'y a aucune instruction similaire utilisée dans la méthode. On peut donc imaginer un début de coremod :
 ```js
 var Opcodes = Java.type('org.objectweb.asm.Opcodes');
 
@@ -534,7 +541,7 @@ function initializeCoreMod() {
 }
 ```
 
-Il faut donc ensuite retirer une a une l'instruction précédente, les quatre suivantes et cette instruction de la liste des instructions de la méthode. Pour cela, il existe une méthode dans la classe `InsnList` qui permet de supprimer une instruction. Son nom est explicite : `remove`.
+Il faut donc ensuite retirer une à une, l'instruction précédente, les quatre suivantes et cette instruction `LDC` de la liste des instructions de la méthode. Pour cela, il existe une méthode dans la classe `InsnList` qui permet de supprimer une instruction. Son nom est explicite : `remove`.
 
 ```js
 var Opcodes = Java.type('org.objectweb.asm.Opcodes');
@@ -571,9 +578,9 @@ function initializeCoreMod() {
 Désormais, le message dans la console affichant votre pseudo n'apparaît plus. J'en conviens, ce n'est pas très utile.
 
 ## Transformation et mappings (lancement en production)
-Vous avez peut-être codé plusieurs coremods (grâce à cette page :smile:), tout fonctionne en environnement de développement, mais quand vous exportez votre mod et que vous l'essayer sur le launcher officiel, patatra, rien ne marche !
+Vous avez peut-être déjà codé plusieurs coremods (grâce à cette page :smile:), tout fonctionne en environnement de développement, mais quand vous exportez votre mod et que vous l'essayez sur le launcher officiel, patatra, rien ne marche !
 
-Il est bien possible qu'il y ait un problème de mappings, c'est-à-dire que les noms des champs et des méthodes soit différents entre l'environnement de développement (lisibles) et la production (illisibles). Il faut donc rendre compatible le coremod dans les deux environnements.
+Il est bien possible qu'il y ait un problème de mappings, c'est-à-dire que les noms des champs et des méthodes sont différents entre l'environnement de développement (lisibles) et la production (illisibles). Il faut donc rendre compatible le coremod dans les deux environnements.
 
 Il y a donc trois endroits possibles qui peuvent causer ces problèmes dans les coremods :
 - [La cible du transformer concerne une méthode ou un champ d'une classe de Minecraft](#cible-du-transformer)
@@ -581,7 +588,7 @@ Il y a donc trois endroits possibles qui peuvent causer ces problèmes dans les 
 - [Une méthode d'une classe de Minecraft est appelée lors de la transformation](#méthode-appelée)
 
 :::info
-Les méthodes `main`, les constructeurs `<init>` et les static-initializers `<clinit>` ne sont pas concernés par les mappings.
+Les méthodes `main`, les constructeurs `<init>`, les static-initializers `<clinit>` ainsi que les méthodes héritées d'une classe ne faisant pas partie d'un mod ou de Minecraft (comme Java ou une lib par exemple), ne sont pas concerné(e)s par les mappings.
 :::
 
 ### Cible du transformer
