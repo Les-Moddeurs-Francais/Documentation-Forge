@@ -279,7 +279,7 @@ La troisième (`INVOKEVIRTUAL`) sert à appeler une méthode non-statique sur un
 La modification à effectuer est donc très simple, il suffit donc de changer la valeur constante (la seconde instruction) par ce que l'on souhaite.
 
 :::info
-En observant les instructions d'une méthode, vous avez sans doute remarqué la présence d'instructions `LINE X` avec X un nombre. Ces instructions sont ajoutées par le compilateur pour indiquer à quelle ligne dans le code source correspond ce bloc d'instructions. Elles ne sont pas necéssaires au bon fonctionnement d'un programme. En revanche, elles sont nécéssaires pour afficher dans un rapport d'erreur le numéro de la ligne dans le code source où l'erreur s'est produite et la pile d'appels des méthodes concernées (stack-trace). Il est possible de désactiver l'ajout de ces instructions en ajoutant l'option `-g:none` au compilateur.
+En observant les instructions d'une méthode, vous avez sans doute remarqué la présence d'instructions `LINE X` avec X un nombre. Ces instructions sont ajoutées par le compilateur pour indiquer à quelle ligne dans le code source correspond ce bloc d'instructions. Elles ne sont pas nécessaires au bon fonctionnement d'un programme. En revanche, elles sont nécessaires pour afficher dans un rapport d'erreur le numéro de la ligne dans le code source où l'erreur s'est produite et la pile d'appels des méthodes concernées (stack-trace). Il est possible de désactiver l'ajout de ces instructions en ajoutant l'option `-g:none` au compilateur.
 :::
 
 #### Étape 3
@@ -434,7 +434,7 @@ function initializeCoreMod() {
 }
 ```
 :::info
-En Java, on a la possibilité d'écrire plusieurs `return;` dans une méthode ne retournant rien. En revanche, on retrouve une seule occurence de l'instruction `RETURN` dans le bytecode. Il s'agit d'une optimisation réalisée à l'étape de compilation du code. En effet, une instruction `RETURN` unique est ajoutée à la fin du bytecode et tous les `return;` originaux sont remplacés par un saut vers cette instruction. De cette manière, on s'assure que la dernière instruction exécutée est l'instruction `RETURN`.
+En Java, on a la possibilité d'écrire plusieurs `return;` dans une méthode ne retournant rien. En revanche, on retrouve une seule occurrence de l'instruction `RETURN` dans le bytecode. Il s'agit d'une optimisation réalisée à l'étape de compilation du code. En effet, une instruction `RETURN` unique est ajoutée à la fin du bytecode et tous les `return;` originaux sont remplacés par un saut vers cette instruction. De cette manière, on s'assure que la dernière instruction exécutée est l'instruction `RETURN`.
 :::
 
 Désormais, il faut ajouter la ligne de code juste avant l'instruction `RETURN`. La ligne de code est constituée de plusieurs instructions :
@@ -451,7 +451,7 @@ insnList.add(new FieldInsnNode(Opcodes.GETSTATIC, "java/lang/System", "out", "Lj
 insnList.add(new LdcInsnNode("Initialisation du jeu"));
 insnList.add(new MethodInsnNode(Opcodes.INVOKEVIRTUAL, "java/io/PrintStream", "println", "(Ljava/lang/String;)V"));
 ```
-On ajoute les trois instructions à la liste. Je conseille de consulter la documentation des constructeurs de ces classes pour savoir quel paramètre correspond à quoi. Il ne faut pas non plus oublier d'importer les quatres classes (`InsnList`, `FieldInsnNode`, `LdcInsnNode`, `MethodInsnNode`) qui sont utilisées dans cette liste d'instructions.
+On ajoute les trois instructions à la liste. Je conseille de consulter la documentation des constructeurs de ces classes pour savoir quel paramètre correspond à quoi. Il ne faut pas non plus oublier d'importer les quatre classes (`InsnList`, `FieldInsnNode`, `LdcInsnNode`, `MethodInsnNode`) qui sont utilisées dans cette liste d'instructions.
 
 On finit par ajouter la liste d'instructions juste avant l'instruction `RETURN` :
 ```js
@@ -541,7 +541,7 @@ function initializeCoreMod() {
 }
 ```
 
-Il faut donc ensuite retirer une a une, l'instruction précédente, les quatre suivantes et cette instruction `LDC` de la liste des instructions de la méthode. Pour cela, il existe une méthode dans la classe `InsnList` qui permet de supprimer une instruction. Son nom est explicite : `remove`.
+Il faut donc ensuite retirer une à une, l'instruction précédente, les quatre suivantes et cette instruction `LDC` de la liste des instructions de la méthode. Pour cela, il existe une méthode dans la classe `InsnList` qui permet de supprimer une instruction. Son nom est explicite : `remove`.
 
 ```js
 var Opcodes = Java.type('org.objectweb.asm.Opcodes');
@@ -588,7 +588,7 @@ Il y a donc trois endroits possibles qui peuvent causer ces problèmes dans les 
 - [Une méthode d'une classe de Minecraft est appelée lors de la transformation](#méthode-appelée)
 
 :::info
-Les méthodes `main`, les constructeurs `<init>`, les static-initializers `<clinit>` ainsi que les méthodes héritées d'une classe ne faisant pas parti d'un mod ou de Minecraft (comme Java ou une lib par exemple), ne sont pas concernés par les mappings.
+Les méthodes `main`, les constructeurs `<init>`, les static-initializers `<clinit>` ainsi que les méthodes héritées d'une classe ne faisant pas partie d'un mod ou de Minecraft (comme Java ou une lib par exemple), ne sont pas concerné(e)s par les mappings.
 :::
 
 ### Cible du transformer
