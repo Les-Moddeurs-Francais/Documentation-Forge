@@ -17,7 +17,8 @@ export default function MyComponent() {
     return (
         <ul>
             {Events.events.map((data, index) => {
-                return <div>
+                return
+                <div>
                     <h2 id={data.name.toLowerCase().replace(" ", "-")} class="anchor anchorWithStickyNavbar_node_modules-@docusaurus-theme-classic-lib-theme-Heading-styles-module">
                         {data.name}
                     </h2>
