@@ -1,9 +1,9 @@
 {
-  "label": "Events",
+  "label": "Événements",
   "link": {
     "type": "generated-index",
-    "title": "Gameplay",
-    "description": "Tous ce qu'il y a à savoir pour utiliser des events dans son mod !",
+    "title": "Événements",
+    "description": "Tous ce qu'il y a à savoir pour utiliser des événements dans son mod !",
     "slug": "/category/generation"
   },
   "position": 4
