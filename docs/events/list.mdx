@@ -1,0 +1,29 @@
+---
+title: Liste des événements
+description: Quelles sont les événements disponibles avec Forge ?
+hide_table_of_contents: true
+tags: [événements]
+---
+
+import Events from '../../static/file/events.json';
+
+:::note
+
+Il vous est possible de contribuer à cette liste. Pour cela vous pouvez proposer une modification de ce [fichier](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
+
+:::
+
+export default function MyComponent() {
+    return (
+        <ul>
+            {Events.events.map((data, index) => {
+                return <div>
+                    <h2 id={data.name.toLowerCase().replace(" ", "-")} class="anchor anchorWithStickyNavbar_node_modules-@docusaurus-theme-classic-lib-theme-Heading-styles-module">
+                        {data.name}
+                    </h2>
+                    <p>{data.description}</p>
+                </div>
+            })}
+        </ul>
+    )
+}

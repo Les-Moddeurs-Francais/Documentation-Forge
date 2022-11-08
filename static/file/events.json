@@ -1,0 +1,8 @@
+{
+  "events" : [
+    {
+      "name": "BlockEvent.BreakEvent",
+      "description": "Cet événement se déclenche quand un bloc est cassé."
+    }
+  ]
+}
