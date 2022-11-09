@@ -8,12 +8,10 @@ tags: [événements]
 import Events from '../../static/file/events.json';
 
 :::note
-
 Il vous est possible de contribuer à cette liste. Pour cela vous pouvez proposer une modification de ce [fichier](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
-
 :::
 
-export default function MyComponent() {
+export function MyComponent() {
     return (
         <div>
             {Events.events.map((data, index) => {
@@ -29,3 +27,5 @@ export default function MyComponent() {
         </div>
     )
 }
+
+<MyComponent/>
