@@ -15,16 +15,17 @@ Il vous est possible de contribuer à cette liste. Pour cela vous pouvez propose
 
 export default function MyComponent() {
     return (
-        <ul>
+        <div>
             {Events.events.map((data, index) => {
-                return
-                <div>
-                    <h2 id={data.name.toLowerCase().replace(" ", "-")} class="anchor anchorWithStickyNavbar_node_modules-@docusaurus-theme-classic-lib-theme-Heading-styles-module">
-                        {data.name}
-                    </h2>
-                    <p>{data.description}</p>
-                </div>
+                return (
+                    <div>
+                        <h2 id={data.name.toLowerCase().replace(" ", "-")} class="anchor anchorWithStickyNavbar_node_modules-@docusaurus-theme-classic-lib-theme-Heading-styles-module">
+                            {data.name}
+                        </h2>
+                        <p>{data.description}</p>
+                    </div>
+                )
             })}
-        </ul>
+        </div>
     )
 }
