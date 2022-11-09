@@ -92,6 +92,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `mineable/pickaxe`                         | Liste des blocs pouvant être miné efficacement avec une pioche                                                                                                                |
 | `mineable/shovel`                          | Liste des blocs pouvant être miné efficacement avec une pelle                                                                                                                 |
 | `acacia_logs`                              | Liste des blocs qui sont des buches d'acacia                                                                                                                                  |
+| `all_hanging_signs`                        | Liste des blocs qui sont des pancartes suspendues (que ce soit au mur ou sous un bloc)                                                                                        |
 | `ancient_city_replaceable`                 | Liste des blocs remplaçables par les cités antiques                                                                                                                           |
 | `animals_spawnable_on`                     | Liste des blocs sur lesquels les animaux peuvent apparaître                                                                                                                   |
 | `anvil`                                    | Liste des blocs qui sont des enclumes                                                                                                                                         |
@@ -100,6 +101,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `azalea_root_replaceable`                  | Liste des blocs qui peuvent être remplacé par les racines des azalées                                                                                                         |
 | `bamboo_plantable_on`                      | Liste des blocs où le bambou peut être planté                                                                                                                                 |
 | `banners`                                  | Liste des blocs qui sont des bannières                                                                                                                                        |
+| `bamboo_blocks`                            | Liste des blocs qui sont des blocs de bambou                                                                                                                                  |
 | `base_stone_nether`                        | Liste des blocs qui peuvent être remplacés par des ressources (par exemple des minerais) de la dimension du Nether                                                            |
 | `base_stone_overworld`                     | Liste des blocs qui peuvent être remplacés par des ressources (par exemple des minerais) du monde normal                                                                      |
 | `beacon_base_blocks`                       | Liste des blocs qui peuvent activer une balise selon une structure prédéfinie                                                                                                 |
@@ -114,6 +116,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `candle_cakes`                             | Liste des blocs qui sont des gâteaux avec une bougie                                                                                                                          |
 | `cauldrons`                                | Liste des blocs qui sont des chaudrons                                                                                                                                        |
 | `cave_vines`                               | Liste des blocs qui sont des lianes des cavernes                                                                                                                              |
+| `ceiling_hanging_signs`                    | Liste des blocs qui sont des pancartes suspendues en dessous d'un bloc                                                                                                        |
 | `climbable`                                | Liste des blocs qui sont escaladables                                                                                                                                         |
 | `coal_ores`                                | Liste des blocs qui sont des minerais de charbon                                                                                                                              |
 | `completes_find_tree_tutorial`             | Liste des blocs qui, quand ils sont cassés, permettent de compléter le tutoriel `find_tree`                                                                                   |
@@ -158,6 +161,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `infiniburn_nether`                        | Liste des blocs qui peuvent rester en feu éternellement dans la dimension du Nether                                                                                           |
 | `infiniburn_overworld`                     | Liste des blocs qui peuvent rester en feu éternellement dans le monde normal                                                                                                  |
 | `inside_step_sound_blocks`                 | Liste des blocs jouant le son de pas quand une entité marche à l'intérieur                                                                                                    |
+| `invalid_spawn_inside`                     | Liste des blocs où le joueur ne peut pas apparaitre à l'intérieur                                                                                                             |
 | `iron_ores`                                | Liste des blocs qui sont des minerais de fer                                                                                                                                  |
 | `jungle_logs`                              | Liste des blocs qui sont des buches de bois de la jungle                                                                                                                      |
 | `lapis_ores`                               | Liste des blocs qui sont des minerais de lapis lazuli                                                                                                                         |
@@ -176,7 +180,6 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `needs_iron_tool`                          | Liste des blocs nécessitant un outil en fer pour être récolté                                                                                                                 |
 | `needs_stone_tool`                         | Liste des blocs nécessitant un outil en pierre pour être récolté                                                                                                              |
 | `nether_carver_replaceables`               | Liste des blocs qui peuvent être détruit par le générateur de monde pour y creuser des grottes dans le Nether                                                                 |
-| `non_flammable_wood`                       | Liste des blocs de bois qui sont inflammables                                                                                                                                 |
 | `nylium`                                   | Liste des blocs qui sont des blocs de nylium                                                                                                                                  |
 | `oak_logs`                                 | Liste des blocs qui sont des buches de bois de chêne                                                                                                                          |
 | `occludes_vibration_signals`               | Liste des blocs qui empêchent les capteurs sculk d'entendre les vibrations si le bloc se trouve entre le capteur et la vibration                                              |
@@ -202,7 +205,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `slabs`                                    | Liste des blocs qui sont des dalles                                                                                                                                           |
 | `small_dripleaf_placeable`                 | Liste des blocs sur lesquels il est possible de placer les petites foliogoutes                                                                                                |
 | `small_flowers`                            | Liste des blocs qui sont des petites fleurs                                                                                                                                   |
-| `snaps_goat_horn`                          | Liste des blocs qqui cassent une corne aux chèvres quand elles chargent dedans                                                                                                |
+| `snaps_goat_horn`                          | Liste des blocs qui cassent une corne aux chèvres quand elles chargent dedans                                                                                                 |
 | `snow`                                     | Liste des blocs qui sont de la neige                                                                                                                                          |
 | `snow_layer_cannot_survive_on`             | Liste des blocs sur lesquels les couches de neige ne peuvent pas survivre                                                                                                     |
 | `snow_layer_can_survive_on`                | Liste des blocs sur lesquels les couches de neige peuvent survivre                                                                                                            |
@@ -210,11 +213,12 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `soul_speed_blocks`                        | Liste des blocs qui donnent un effet de vitesse si jamais un joueur se situe sur l'un d'entre eux avec des bottes ayant l'enchantement _Agilité des âmes_                     |
 | `spruce_logs`                              | Liste des blocs qui sont des buches de bois de sapin                                                                                                                          |
 | `stairs`                                   | Liste des blocs qui sont des escaliers                                                                                                                                        |
-| `standing_signs`                           | Liste des blocs qui sont des panneaux _debouts_                                                                                                                               |
+| `standing_signs`                           | Liste des blocs qui sont des panneaux qui sont sur pied                                                                                                                       |
 | `stone_bricks`                             | Liste des blocs qui sont des pierres taillées                                                                                                                                 |
 | `stone_ore_replaceables`                   | Liste des blocs pouvant être remplacés par des minerais                                                                                                                       |
 | `stone_pressure_plates`                    | Liste des blocs qui sont des plaques de pression en pierre                                                                                                                    |
 | `strider_warm_blocks`                      | Liste des blocs qui ne font pas trembler un strider si jamais il se retrouve dessus                                                                                           |
+| `stripped_logs`                            | Liste des blocs qui sont des bûches écorcées                                                                                                                                  |
 | `tall_flowers`                             | Liste des blocs qui sont des fleurs hautes                                                                                                                                    |
 | `terracotta`                               | Liste des blocs qui sont de la terre cuite                                                                                                                                    |
 | `trapdoors`                                | Liste des blocs qui sont des trappes                                                                                                                                          |
@@ -223,6 +227,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `valid_spawn`                              | Liste des blocs qui sont valides pour l'apparition d'un joueur                                                                                                                |
 | `walls`                                    | Liste des blocs qui sont des murets                                                                                                                                           |
 | `wall_corals`                              | Liste des blocs qui sont des coraux muraux                                                                                                                                    |
+| `wall_hanging_signs`                       | Liste des blocs qui sont des pancartes suspendues au mur                                                                                                                      |
 | `wall_post_override`                       | Liste des blocs qui transforment les murs en piliers, même s'ils ne sont pas solides                                                                                          |
 | `wall_signs`                               | Liste des blocs qui sont des panneaux accrochés au mur                                                                                                                        |
 | `warped_stems`                             | Liste des blocs qui sont des tiges biscornues                                                                                                                                 |
@@ -332,11 +337,13 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `anvil`                        | Liste de tous les types d'enclumes                                                               |
 | `arrows`                       | Liste de tous les types de flèche                                                                |
 | `axolotl_tempt_items`          | Liste des items permettant d'attirer des axolotl                                                 |
+| `bamboo_blocks`                | Liste de toutes les types de blocs de bambou                                                     |
 | `banners`                      | Liste de toutes les bannières avec leurs couleurs respective                                     |
 | `beacon_payment_items`         | Liste des items pouvant être utilisés pour l'activation d'une balise                             |
 | `beds`                         | Liste de tous les types de lits                                                                  |
 | `birch_logs`                   | Liste de tous les types de troncs en bouleau                                                     |
 | `boats`                        | Liste de tous les types de bateaux                                                               |
+| `bookshelf_books`              | Liste de tous les types de bibliothèques                                                         |
 | `buttons`                      | Liste de tous les types de boutons                                                               |
 | `candles`                      | Liste de tous les types de bougies                                                               |
 | `chest_boats`                  | Liste de tous les types de bateaux avec coffre                                                   |
@@ -354,13 +361,15 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `dirt`                         | Liste de tous les types de terre                                                                 |
 | `doors`                        | Liste de tous les types de porte                                                                 |
 | `emerald_ores`                 | Liste des minerais d'émeraude                                                                    |
-| `fences`                       | Liste de tous les types de barrière                                                              |
+| `fences`                       | Liste de tous les types de barrières                                                             |
+| `fence_gates`                  | Liste de tous les types de portillons                                                            |
 | `fishes`                       | Liste de tous les types de poissons                                                              |
 | `flowers`                      | Liste de tous les types de fleurs                                                                |
 | `fox_food`                     | Liste des items que le renard peut manger                                                        |
 | `freeze_immune_wearables`      | Liste de tous les item pouvant être portés qui immunisent contre le froid                        |
 | `gold_ores`                    | Liste des minerais d'or                                                                          |
 | `ignored_by_piglin_babies`     | Liste des items ignorés par les bébés piglins                                                    |
+| `hanging_signs`                | Liste de tous les types de pancartes suspendues                                                  |
 | `iron_ores`                    | Liste des minerais de fer                                                                        |
 | `jungle_logs`                  | Liste de tous les types de troncs en acajou                                                      |
 | `lapis_ores`                   | Liste des minerais de lapis lazuli                                                               |
