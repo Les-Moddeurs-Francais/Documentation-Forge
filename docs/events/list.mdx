@@ -14,13 +14,25 @@ Il vous est possible de contribuer à cette liste. Pour cela vous pouvez propose
 export function MyComponent() {
     return (
         <div>
-            {Events.events.map((data, index) => {
+            {Events.category.map((category, index) => {
                 return (
                     <div>
-                        <h2 id={data.name.toLowerCase().replace(" ", "-")} class="anchor anchorWithStickyNavbar_node_modules-@docusaurus-theme-classic-lib-theme-Heading-styles-module">
-                            {data.name}
-                        </h2>
-                        <p>{data.description}</p>
+                        <h2 id={category.title.toLowerCase().replaceAll(" ", "-")}>{category.title}</h2>
+                        {category.events.map((data, index) => {
+                            return (
+                                <details>
+                                    <summary>
+                                        <strong>{data.name}</strong>
+                                    </summary>
+                                    <div>
+                                        <p>{data.description}</p>
+                                        <strong>
+                                            Annulable : {data.cancelable === true ? '✔' : '❌'}
+                                        </strong>
+                                    </div>
+                                </details>
+                            )
+                        })}
                     </div>
                 )
             })}

@@ -1,8 +1,19 @@
 {
-  "events" : [
+  "category" : [
     {
-      "name": "BlockEvent.BreakEvent",
-      "description": "Cet événement se déclenche quand un bloc est cassé."
+      "title": "Événements concernants les blocs",
+      "events": [
+        {
+          "name": "BlockEvent.BreakEvent",
+          "description": "Cet événement se déclenche quand un bloc est cassé.",
+          "cancelable": true
+        },
+        {
+          "name": "BlockEvent.EntityPlaceEvent",
+          "description": "Cet événement se déclenche quand un bloc est placé.",
+          "cancelable": true
+        }
+      ]
     }
   ]
 }
