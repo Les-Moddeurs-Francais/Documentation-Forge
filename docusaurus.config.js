@@ -17,15 +17,12 @@ function getNextVersionName() {
 
 module.exports = {
   title: 'Documentation Forge',
-  tagline: '¯\\_(ツ)_/¯',
   url: 'https://forge-doc.lesmoddeursfrancais.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   baseUrlIssueBanner : false,
   favicon: 'img/favicon.ico',
-  organizationName: 'Les-Moddeurs-Francais',
-  projectName: 'forge-doc',
   headTags: [
     {
       tagName: 'link',
