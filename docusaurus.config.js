@@ -128,6 +128,14 @@ module.exports = {
       {
         name: 'google-site-verification',
         content: 'QBxA6M1SV1YsdK02eCEPEPYkdGa84Hr35oFj-o8gcJg'
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      {
+        name: 'twitter:site',
+        content: '@lesmoddeursfr',
       }
     ],
     algolia: {
@@ -139,7 +147,7 @@ module.exports = {
       indexName: 'forge-lesmoddeursfrancais',
 
     },
-    image: 'img/icons/icon-256x256.png',
+    image: 'img/icons/icon-128x128.png',
   },
   i18n: {
     defaultLocale: 'fr',
