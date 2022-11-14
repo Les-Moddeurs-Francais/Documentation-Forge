@@ -17,26 +17,12 @@ function getNextVersionName() {
 
 module.exports = {
   title: 'Documentation Forge',
-  tagline: '¯\\_(ツ)_/¯',
   url: 'https://forge-doc.lesmoddeursfrancais.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   baseUrlIssueBanner : false,
   favicon: 'img/favicon.ico',
-  organizationName: 'Les-Moddeurs-Francais',
-  projectName: 'forge-doc',
-  headTags: [
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'search',
-        type: "application/opensearchdescription+xml",
-        title: "Documentation Forge",
-        href: '/opensearch.xml',
-      },
-    },
-  ],
   themeConfig: {
     docs :{
       sidebar:{
@@ -131,6 +117,14 @@ module.exports = {
       {
         name: 'google-site-verification',
         content: 'QBxA6M1SV1YsdK02eCEPEPYkdGa84Hr35oFj-o8gcJg'
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      {
+        name: 'twitter:site',
+        content: '@lesmoddeursfr',
       }
     ],
     algolia: {
@@ -142,7 +136,7 @@ module.exports = {
       indexName: 'forge-lesmoddeursfrancais',
 
     },
-    image: 'img/icons/icon-256x256.png',
+    image: 'img/icons/icon-128x128.png',
   },
   i18n: {
     defaultLocale: 'fr',
