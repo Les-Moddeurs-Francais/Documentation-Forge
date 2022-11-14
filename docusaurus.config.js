@@ -23,17 +23,6 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   baseUrlIssueBanner : false,
   favicon: 'img/favicon.ico',
-  headTags: [
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'search',
-        type: "application/opensearchdescription+xml",
-        title: "Documentation Forge",
-        href: '/opensearch.xml',
-      },
-    },
-  ],
   themeConfig: {
     docs :{
       sidebar:{
