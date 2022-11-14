@@ -4,13 +4,53 @@
       "title": "Événements concernants les blocs",
       "events": [
         {
+          "name": "BlockEvent.BlockToolModificationEvent",
+          "description": "Cet événement se déclenche lorsque le joueur clique sur un bloc avec un outil en main pour changer l'état du bloc (utilisé par exemple pour déterminer si une hache peut retirer les écorces d'une bûche).",
+          "cancelable": true
+        },
+        {
           "name": "BlockEvent.BreakEvent",
           "description": "Cet événement se déclenche quand un bloc est cassé.",
           "cancelable": true
         },
         {
+          "name": "BlockEvent.CreateFluidSourceEvent",
+          "description": "Cet événement se déclenche pour permettre de vérifier si un bloc qui n'est pas une source peut se transformée en cette dernière.",
+          "cancelable": false
+        },
+        {
+          "name": "BlockEvent.CropGrowEvent",
+          "description": "Cet événement se déclenche quand une culture grandi.",
+          "cancelable": false
+        },
+        {
+          "name": "BlockEvent.EntityMultiPlaceEvent",
+          "description": "Cet événement se déclenche quand le fait de poser un bloc provoque la création de multiples blocs (comme par exemple avec les lits).",
+          "cancelable": true
+        },
+        {
           "name": "BlockEvent.EntityPlaceEvent",
           "description": "Cet événement se déclenche quand un bloc est placé.",
+          "cancelable": true
+        },
+        {
+          "name": "BlockEvent.FarmlandTrampleEvent",
+          "description": "Cet événement se déclenche lorsqu'une terre labourée est piétinée (re-transformée en terre).",
+          "cancelable": true
+        },
+        {
+          "name": "BlockEvent.FluidPlaceBlockEvent",
+          "description": "Cet événement se déclenche lorsqu'un liquide place un bloc (comme pour un générateur de pierres ou du feu allumé par de la lave à proximité).",
+          "cancelable": true
+        },
+        {
+          "name": "BlockEvent.NeighborNotifyEvent",
+          "description": "Cet événement se déclenche quand une mise à jour physique se produit sur un bloc.",
+          "cancelable": true
+        },
+        {
+          "name": "BlockEvent.PortalSpawnEvent",
+          "description": "Cet événement se déclenche quand un portail du Nether est sur le point d'apparaitre.",
           "cancelable": true
         }
       ]
