@@ -63,11 +63,11 @@ module.exports = {
           title: 'Liens connexes',
           items: [
             {
-              label: 'Téléchargements de Forge',
+              label: 'Téléchargement de Minecraft Forge',
               href: 'https://files.minecraftforge.net',
             },
             {
-              label: 'Forum de Forge',
+              label: 'Forum de  Minecraft Forge',
               href: 'https://minecraftforge.net',
             },
           ],
