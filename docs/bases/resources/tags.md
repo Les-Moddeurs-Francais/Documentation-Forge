@@ -251,16 +251,38 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les blocs</summary>
 
-| Identifiant             | Description                                     |
-|-------------------------|-------------------------------------------------|
-| `barrels/wooden`        | Liste des blocs qui sont des barils en bois     |
-| `chests/ender`          | Liste des blocs qui sont des coffres de l'Ender |
-| `chests/trapped`        | Liste des blocs qui sont des coffres piégés     |
-| `chests/wooden`         | Liste des blocs qui sont des coffres en bois    |
-| `cobblestone/deepslate` | Liste des blocs qui sont des pierres des abîmes |
-| `cobblestone/infested`  | Liste des blocs qui sont des pierres infestées  |
-| `cobblestone/mossy`     | Liste des blocs qui sont des pierres moussues   |
-| `cobblestone/normal`    | Liste des blocs qui sont des pierres normales   |
+| Identifiant             | Description                                                 |
+|-------------------------|-------------------------------------------------------------|
+| `barrels/wooden`        | Liste des blocs qui sont des barils en bois                 |
+| `chests/ender`          | Liste des blocs qui sont des coffres de l'Ender             |
+| `chests/trapped`        | Liste des blocs qui sont des coffres piégés                 |
+| `chests/wooden`         | Liste des blocs qui sont des coffres en bois                |
+| `cobblestone/deepslate` | Liste des blocs qui sont des pierres des abîmes             |
+| `cobblestone/infested`  | Liste des blocs qui sont des pierres infestées              |
+| `cobblestone/mossy`     | Liste des blocs qui sont des pierres moussues               |
+| `cobblestone/normal`    | Liste des blocs qui sont des pierres normales               |
+| `fence_gates/wooden`    | Liste des blocs qui sont des portillons en bois             |
+| `fences/nether_brick`   | Liste des blocs qui sont des barrières en briques du Nether |
+| `fences/wooden`         | Liste des blocs qui sont des barrières en bois              |
+| `glass/black`           | Liste des blocs qui sont du verre noir                      |
+| `glass/blue`            | Liste des blocs qui sont du verre bleu                      |
+| `glass/brown`           | Liste des blocs qui sont du verre marron                    |
+| `glass/colorless`       | Liste des blocs qui sont du verre non coloré                |
+| `glass/cyan`            | Liste des blocs qui sont du verre cyan                      |
+| `glass/gray`            | Liste des blocs qui sont du verre gris                      |
+| `glass/green`           | Liste des blocs qui sont du verre vert                      |
+| `glass/light_blue`      | Liste des blocs qui sont du verre bleu clair                |
+| `glass/light_gray`      | Liste des blocs qui sont du verre gris clair                |
+| `glass/lime`            | Liste des blocs qui sont du verre vert clair                |
+| `glass/magenta`         | Liste des blocs qui sont du verre magenta                   |
+| `glass/orange`          | Liste des blocs qui sont du verre orange                    |
+| `glass/pink`            | Liste des blocs qui sont du verre rose                      |
+| `glass/purple`          | Liste des blocs qui sont du verre violet                    |
+| `glass/red`             | Liste des blocs qui sont du verre rouge                     |
+| `glass/silica`          | Liste de tous les blocs de verre (colorés ou non)           |
+| `glass/tinted`          | Liste des blocs qui sont du verre tinté                     |
+| `glass/white`           | Liste des blocs qui sont du verre blanc                     |
+| `glass/yellow`          | Liste des blocs qui sont du verre jaune                     |
 
 </details>
 
