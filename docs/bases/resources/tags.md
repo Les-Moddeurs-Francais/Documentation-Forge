@@ -83,6 +83,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 ### Blocs
 
+#### Minecraft
+
 <details>
 <summary>Liste des tags concernant les blocs</summary>
 
@@ -240,6 +242,25 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wooden_trapdoors`                         | Liste des blocs qui sont des trappes en bois                                                                                                                                  |
 | `wool`                                     | Liste des blocs qui sont des laines                                                                                                                                           |
 | `wool_carpets`                             | Liste des blocs qui sont des tapis de laine                                                                                                                                   |
+
+</details>
+
+#### Forge
+
+<details>
+
+<summary>Liste des tags concernant les blocs</summary>
+
+| Identifiant             | Description                                     |
+|-------------------------|-------------------------------------------------|
+| `barrels/wooden`        | Liste des blocs qui sont des barils en bois     |
+| `chests/ender`          | Liste des blocs qui sont des coffres de l'Ender |
+| `chests/trapped`        | Liste des blocs qui sont des coffres piégés     |
+| `chests/wooden`         | Liste des blocs qui sont des coffres en bois    |
+| `cobblestone/deepslate` | Liste des blocs qui sont des pierres des abîmes |
+| `cobblestone/infested`  | Liste des blocs qui sont des pierres infestées  |
+| `cobblestone/mossy`     | Liste des blocs qui sont des pierres moussues   |
+| `cobblestone/normal`    | Liste des blocs qui sont des pierres normales   |
 
 </details>
 
