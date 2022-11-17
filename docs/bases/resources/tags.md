@@ -3,6 +3,7 @@ sidebar_position: 3
 title: Tags
 description: Comment sont structurées les tags dans Minecraft ?
 tags: [bases, ressources]
+toc_max_heading_level: 4
 ---
 
 Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du jeu (comme des items, blocs, entitées, etc...) dans un même fichier pour après les utiliser dans des recettes (par exemple celle du coffre nécessitant n'importe quels types de bois) ou même dans votre code directement.
@@ -279,6 +280,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 ### Fluides
 
+#### Minecraft
+
 <details>
 
 <summary>Liste des tags concernant les fluides</summary>
@@ -287,6 +290,18 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 |-------------|---------------------------------------|
 | `lava`      | Liste des fluides qui sont de la lave |
 | `water`     | Liste des fluides qui sont de l'eau   |
+
+</details>
+
+#### Forge
+
+<details>
+
+<summary>Liste des tags concernant les fluides</summary>
+
+| Identifiant | Description                        |
+|-------------|------------------------------------|
+| `milk`      | Liste des fluides qui sont du lait |
 
 </details>
 
