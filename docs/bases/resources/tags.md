@@ -318,6 +318,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 ### Entités
 
+#### Minecraft
+
 <details>
 
 <summary>Liste des tags concernant les entités</summary>
@@ -335,6 +337,18 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `powder_snow_walkable_mobs`  | Liste des entités qui peuvent marcher sur la poudreuse sans s'enfoncer dedans                            |
 | `raiders`                    | Liste des entités qui composent les raids contre les villages                                            |
 | `skeletons`                  | Liste de tous les types de squelette                                                                     |
+
+</details>
+
+#### Forge
+
+<details>
+
+<summary>Liste des tags concernant les entités</summary>
+
+| Identifiant | Description                     |
+|-------------|---------------------------------|
+| `bosses`    | Liste de tous les "boss" du jeu |
 
 </details>
 
