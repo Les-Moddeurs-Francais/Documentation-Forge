@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 title: Liste des événements
 description: Quelles sont les événements disponibles avec Forge ?
 hide_table_of_contents: true
@@ -14,11 +15,11 @@ Ceci est une liste non exhaustive des événements disponibles avec [Minecraft F
 export function EventList() {
     return (
         <div>
-            {Events.category.map((category, index) => {
+            {Events.category.map((category) => {
                 return (
                     <div>
                         <h2 id={category.title.toLowerCase().replaceAll(" ", "-")}>{category.title}</h2>
-                        {category.events.map((data, index) => {
+                        {category.events.map((data) => {
                             return (
                                 <details>
                                     <summary>
