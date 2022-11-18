@@ -251,90 +251,110 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les blocs</summary>
 
-| Identifiant                     | Description                                                                                                            |
-|---------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| `barrels/wooden`                | Liste des blocs qui sont des barils en bois                                                                            |
-| `chests/ender`                  | Liste des blocs qui sont des coffres de l'Ender                                                                        |
-| `chests/trapped`                | Liste des blocs qui sont des coffres piégés                                                                            |
-| `chests/wooden`                 | Liste des blocs qui sont des coffres en bois                                                                           |
-| `cobblestone/deepslate`         | Liste des blocs qui sont des pierres des abîmes                                                                        |
-| `cobblestone/infested`          | Liste des blocs qui sont des pierres infestées                                                                         |
-| `cobblestone/mossy`             | Liste des blocs qui sont des pierres moussues                                                                          |
-| `cobblestone/normal`            | Liste des blocs qui sont des pierres normales                                                                          |
-| `fence_gates/wooden`            | Liste des blocs qui sont des portillons en bois                                                                        |
-| `fences/nether_brick`           | Liste des blocs qui sont des barrières en briques du Nether                                                            |
-| `fences/wooden`                 | Liste des blocs qui sont des barrières en bois                                                                         |
-| `glass/black`                   | Liste des blocs qui sont du verre noir                                                                                 |
-| `glass/blue`                    | Liste des blocs qui sont du verre bleu                                                                                 |
-| `glass/brown`                   | Liste des blocs qui sont du verre marron                                                                               |
-| `glass/colorless`               | Liste des blocs qui sont du verre non coloré                                                                           |
-| `glass/cyan`                    | Liste des blocs qui sont du verre cyan                                                                                 |
-| `glass/gray`                    | Liste des blocs qui sont du verre gris                                                                                 |
-| `glass/green`                   | Liste des blocs qui sont du verre vert                                                                                 |
-| `glass/light_blue`              | Liste des blocs qui sont du verre bleu clair                                                                           |
-| `glass/light_gray`              | Liste des blocs qui sont du verre gris clair                                                                           |
-| `glass/lime`                    | Liste des blocs qui sont du verre vert clair                                                                           |
-| `glass/magenta`                 | Liste des blocs qui sont du verre magenta                                                                              |
-| `glass/orange`                  | Liste des blocs qui sont du verre orange                                                                               |
-| `glass/pink`                    | Liste des blocs qui sont du verre rose                                                                                 |
-| `glass/purple`                  | Liste des blocs qui sont du verre violet                                                                               |
-| `glass/red`                     | Liste des blocs qui sont du verre rouge                                                                                |
-| `glass/silica`                  | Liste de tous les blocs de verre (colorés ou non)                                                                      |
-| `glass/tinted`                  | Liste des blocs qui sont du verre tinté                                                                                |
-| `glass/white`                   | Liste des blocs qui sont du verre blanc                                                                                |
-| `glass/yellow`                  | Liste des blocs qui sont du verre jaune                                                                                |
-| `glass_panes/black`             | Liste des blocs qui sont des vitres noires                                                                             |
-| `glass_panes/blue`              | Liste des blocs qui sont des vitres bleues                                                                             |
-| `glass_panes/brown`             | Liste des blocs qui sont des vitres marron                                                                             |
-| `glass_panes/colorless`         | Liste des blocs qui sont des vitres non colorées                                                                       |
-| `glass_panes/cyan`              | Liste des blocs qui sont des vitres cyan                                                                               |
-| `glass_panes/gray`              | Liste des blocs qui sont des vitres grises                                                                             |
-| `glass_panes/green`             | Liste des blocs qui sont des vitres vertes                                                                             |
-| `glass_panes/light_blue`        | Liste des blocs qui sont des vitres bleu clair                                                                         |
-| `glass_panes/light_gray`        | Liste des blocs qui sont des vitres gris clair                                                                         |
-| `glass_panes/lime`              | Liste des blocs qui sont des vitres vert clair                                                                         |
-| `glass_panes/magenta`           | Liste des blocs qui sont des vitres magenta                                                                            |
-| `glass_panes/orange`            | Liste des blocs qui sont des vitres oranges                                                                            |
-| `glass_panes/pink`              | Liste des blocs qui sont des vitres roses                                                                              |
-| `glass_panes/purple`            | Liste des blocs qui sont des vitres violettes                                                                          |
-| `glass_panes/red`               | Liste des blocs qui sont des vitres rouges                                                                             |
-| `glass_panes/white`             | Liste des blocs qui sont des vitres blanches                                                                           |
-| `glass_panes/yellow`            | Liste des blocs qui sont des vitres jaunes                                                                             |
-| `ore_bearing_ground/deepslate`  | Liste des blocs qui sont remplacés par des minerais des profondeurs pendant, la génération                             |
-| `ore_bearing_ground/netherrack` | Liste des blocs qui sont remplacés par des minerais du Nether pendant, la génération                                   |
-| `ore_bearing_ground/stone`      | Liste des blocs qui sont remplacés par des minerais de la surface, pendant la génération                               |
-| `ore_rates/dense`               | Liste des blocs qui sont des minerais qui, en moyenne, permettent d'obtenir plus d'une ressource du matériau donné     |
-| `ore_rates/singular`            | Liste des blocs qui sont des minerais qui, en moyenne, permettent d'obtenir en moyenne une ressource du matériau donné |
-| `ore_rates/sparse`              | Liste des blocs qui sont des minerais qui, en moyenne, permettent d'obtenir moins d'une ressource du matériau donné    |
-| `ore/coal`                      | Liste des blocs qui sont des minerais de charbon                                                                       |
-| `ore/copper`                    | Liste des blocs qui sont des minerais de cuivre                                                                        |
-| `ore/diamond`                   | Liste des blocs qui sont des minerais de diamant                                                                       |
-| `ore/emerald`                   | Liste des blocs qui sont des minerais d'émeraude                                                                       |
-| `ore/gold`                      | Liste des blocs qui sont des minerais d'or                                                                             |
-| `ore/iron`                      | Liste des blocs qui sont des minerais de fer                                                                           |
-| `ore/lapis`                     | Liste des blocs qui sont des minerais de lapis lazuli                                                                  |
-| `ore/netherite_scrap`           | Liste des blocs qui sont des minerais de fragments de Netherite                                                        |
-| `ore/quartz`                    | Liste des blocs qui sont des minerais de quartz                                                                        |
-| `ore/redstone`                  | Liste des blocs qui sont des minerais de redstone                                                                      |
-| `ores_in_ground/deepslate`      | Liste des blocs qui sont des minerais des profondeurs                                                                  |
-| `ores_in_ground/netherrack`     | Liste des blocs qui sont des minerais du Nether                                                                        |
-| `ores_in_ground/stone`          | Liste des blocs qui sont des minerais de la surface                                                                    |
-| `sand/colorless`                | Liste des blocs qui sont du sable non coloré                                                                           |
-| `sand/red`                      | Liste des blocs qui sont du sable rouge                                                                                |
-| `storage_blocks/amethyst`       | Liste des blocs qui sont des blocs de stockage pour l'améthyste                                                        |
-| `storage_blocks/coal`           | Liste des blocs qui sont des blocs de stockage pour le charbon                                                         |
-| `storage_blocks/copper`         | Liste des blocs qui sont des blocs de stockage pour le cuivre                                                          |
-| `storage_blocks/diamond`        | Liste des blocs qui sont des blocs de stockage pour le diamant                                                         |
-| `storage_blocks/emerald`        | Liste des blocs qui sont des blocs de stockage pour l'émeraude                                                         |
-| `storage_blocks/gold`           | Liste des blocs qui sont des blocs de stockage pour l'or                                                               |
-| `storage_blocks/iron`           | Liste des blocs qui sont des blocs de stockage pour le fer                                                             |
-| `storage_blocks/lapis`          | Liste des blocs qui sont des blocs de stockage pour le lapis lazuli                                                    |
-| `storage_blocks/netherite`      | Liste des blocs qui sont des blocs de stockage pour la netherite                                                       |
-| `storage_blocks/quartz`         | Liste des blocs qui sont des blocs de stockage pour le quartz                                                          |
-| `storage_blocks/raw_copper`     | Liste des blocs qui sont des blocs de stockage pour le cuivre brut                                                     |
-| `storage_blocks/raw_gold`       | Liste des blocs qui sont des blocs de stockage pour l'or brut                                                          |
-| `storage_blocks/raw_iron`       | Liste des blocs qui sont des blocs de stockage pour le fer brut                                                        |
-| `storage_blocks/redstone`       | Liste des blocs qui sont des blocs de stockage pour la redstone                                                        |
+| Identifiant                               | Description                                                                                                            |
+|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| `barrels/wooden`                          | Liste des blocs qui sont des barils en bois                                                                            |
+| `chests/ender`                            | Liste des blocs qui sont des coffres de l'Ender                                                                        |
+| `chests/trapped`                          | Liste des blocs qui sont des coffres piégés                                                                            |
+| `chests/wooden`                           | Liste des blocs qui sont des coffres en bois                                                                           |
+| `cobblestone/deepslate`                   | Liste des blocs qui sont des pierres des abîmes                                                                        |
+| `cobblestone/infested`                    | Liste des blocs qui sont des pierres infestées                                                                         |
+| `cobblestone/mossy`                       | Liste des blocs qui sont des pierres moussues                                                                          |
+| `cobblestone/normal`                      | Liste des blocs qui sont des pierres normales                                                                          |
+| `fence_gates/wooden`                      | Liste des blocs qui sont des portillons en bois                                                                        |
+| `fences/nether_brick`                     | Liste des blocs qui sont des barrières en briques du Nether                                                            |
+| `fences/wooden`                           | Liste des blocs qui sont des barrières en bois                                                                         |
+| `glass/black`                             | Liste des blocs qui sont du verre noir                                                                                 |
+| `glass/blue`                              | Liste des blocs qui sont du verre bleu                                                                                 |
+| `glass/brown`                             | Liste des blocs qui sont du verre marron                                                                               |
+| `glass/colorless`                         | Liste des blocs qui sont du verre non coloré                                                                           |
+| `glass/cyan`                              | Liste des blocs qui sont du verre cyan                                                                                 |
+| `glass/gray`                              | Liste des blocs qui sont du verre gris                                                                                 |
+| `glass/green`                             | Liste des blocs qui sont du verre vert                                                                                 |
+| `glass/light_blue`                        | Liste des blocs qui sont du verre bleu clair                                                                           |
+| `glass/light_gray`                        | Liste des blocs qui sont du verre gris clair                                                                           |
+| `glass/lime`                              | Liste des blocs qui sont du verre vert clair                                                                           |
+| `glass/magenta`                           | Liste des blocs qui sont du verre magenta                                                                              |
+| `glass/orange`                            | Liste des blocs qui sont du verre orange                                                                               |
+| `glass/pink`                              | Liste des blocs qui sont du verre rose                                                                                 |
+| `glass/purple`                            | Liste des blocs qui sont du verre violet                                                                               |
+| `glass/red`                               | Liste des blocs qui sont du verre rouge                                                                                |
+| `glass/silica`                            | Liste de tous les blocs de verre (colorés ou non)                                                                      |
+| `glass/tinted`                            | Liste des blocs qui sont du verre tinté                                                                                |
+| `glass/white`                             | Liste des blocs qui sont du verre blanc                                                                                |
+| `glass/yellow`                            | Liste des blocs qui sont du verre jaune                                                                                |
+| `glass_panes/black`                       | Liste des blocs qui sont des vitres noires                                                                             |
+| `glass_panes/blue`                        | Liste des blocs qui sont des vitres bleues                                                                             |
+| `glass_panes/brown`                       | Liste des blocs qui sont des vitres marron                                                                             |
+| `glass_panes/colorless`                   | Liste des blocs qui sont des vitres non colorées                                                                       |
+| `glass_panes/cyan`                        | Liste des blocs qui sont des vitres cyan                                                                               |
+| `glass_panes/gray`                        | Liste des blocs qui sont des vitres grises                                                                             |
+| `glass_panes/green`                       | Liste des blocs qui sont des vitres vertes                                                                             |
+| `glass_panes/light_blue`                  | Liste des blocs qui sont des vitres bleu clair                                                                         |
+| `glass_panes/light_gray`                  | Liste des blocs qui sont des vitres gris clair                                                                         |
+| `glass_panes/lime`                        | Liste des blocs qui sont des vitres vert clair                                                                         |
+| `glass_panes/magenta`                     | Liste des blocs qui sont des vitres magenta                                                                            |
+| `glass_panes/orange`                      | Liste des blocs qui sont des vitres oranges                                                                            |
+| `glass_panes/pink`                        | Liste des blocs qui sont des vitres roses                                                                              |
+| `glass_panes/purple`                      | Liste des blocs qui sont des vitres violettes                                                                          |
+| `glass_panes/red`                         | Liste des blocs qui sont des vitres rouges                                                                             |
+| `glass_panes/white`                       | Liste des blocs qui sont des vitres blanches                                                                           |
+| `glass_panes/yellow`                      | Liste des blocs qui sont des vitres jaunes                                                                             |
+| `ore_bearing_ground/deepslate`            | Liste des blocs qui sont remplacés par des minerais des profondeurs pendant, la génération                             |
+| `ore_bearing_ground/netherrack`           | Liste des blocs qui sont remplacés par des minerais du Nether pendant, la génération                                   |
+| `ore_bearing_ground/stone`                | Liste des blocs qui sont remplacés par des minerais de la surface, pendant la génération                               |
+| `ore_rates/dense`                         | Liste des blocs qui sont des minerais qui, en moyenne, permettent d'obtenir plus d'une ressource du matériau donné     |
+| `ore_rates/singular`                      | Liste des blocs qui sont des minerais qui, en moyenne, permettent d'obtenir en moyenne une ressource du matériau donné |
+| `ore_rates/sparse`                        | Liste des blocs qui sont des minerais qui, en moyenne, permettent d'obtenir moins d'une ressource du matériau donné    |
+| `ore/coal`                                | Liste des blocs qui sont des minerais de charbon                                                                       |
+| `ore/copper`                              | Liste des blocs qui sont des minerais de cuivre                                                                        |
+| `ore/diamond`                             | Liste des blocs qui sont des minerais de diamant                                                                       |
+| `ore/emerald`                             | Liste des blocs qui sont des minerais d'émeraude                                                                       |
+| `ore/gold`                                | Liste des blocs qui sont des minerais d'or                                                                             |
+| `ore/iron`                                | Liste des blocs qui sont des minerais de fer                                                                           |
+| `ore/lapis`                               | Liste des blocs qui sont des minerais de lapis lazuli                                                                  |
+| `ore/netherite_scrap`                     | Liste des blocs qui sont des minerais de fragments de Netherite                                                        |
+| `ore/quartz`                              | Liste des blocs qui sont des minerais de quartz                                                                        |
+| `ore/redstone`                            | Liste des blocs qui sont des minerais de redstone                                                                      |
+| `ores_in_ground/deepslate`                | Liste des blocs qui sont des minerais des profondeurs                                                                  |
+| `ores_in_ground/netherrack`               | Liste des blocs qui sont des minerais du Nether                                                                        |
+| `ores_in_ground/stone`                    | Liste des blocs qui sont des minerais de la surface                                                                    |
+| `sand/colorless`                          | Liste des blocs qui sont du sable non coloré                                                                           |
+| `sand/red`                                | Liste des blocs qui sont du sable rouge                                                                                |
+| `storage_blocks/amethyst`                 | Liste des blocs qui sont des blocs de stockage pour l'améthyste                                                        |
+| `storage_blocks/coal`                     | Liste des blocs qui sont des blocs de stockage pour le charbon                                                         |
+| `storage_blocks/copper`                   | Liste des blocs qui sont des blocs de stockage pour le cuivre                                                          |
+| `storage_blocks/diamond`                  | Liste des blocs qui sont des blocs de stockage pour le diamant                                                         |
+| `storage_blocks/emerald`                  | Liste des blocs qui sont des blocs de stockage pour l'émeraude                                                         |
+| `storage_blocks/gold`                     | Liste des blocs qui sont des blocs de stockage pour l'or                                                               |
+| `storage_blocks/iron`                     | Liste des blocs qui sont des blocs de stockage pour le fer                                                             |
+| `storage_blocks/lapis`                    | Liste des blocs qui sont des blocs de stockage pour le lapis lazuli                                                    |
+| `storage_blocks/netherite`                | Liste des blocs qui sont des blocs de stockage pour la netherite                                                       |
+| `storage_blocks/quartz`                   | Liste des blocs qui sont des blocs de stockage pour le quartz                                                          |
+| `storage_blocks/raw_copper`               | Liste des blocs qui sont des blocs de stockage pour le cuivre brut                                                     |
+| `storage_blocks/raw_gold`                 | Liste des blocs qui sont des blocs de stockage pour l'or brut                                                          |
+| `storage_blocks/raw_iron`                 | Liste des blocs qui sont des blocs de stockage pour le fer brut                                                        |
+| `storage_blocks/redstone`                 | Liste des blocs qui sont des blocs de stockage pour la redstone                                                        |
+| `barrels`                                 | Liste des blocs qui sont des barils                                                                                    |
+| `bookshelves`                             | Liste des blocs qui sont des bibliothèques                                                                             |
+| `chests`                                  | Liste des blocs qui sont des coffres                                                                                   |
+| `cobblestone`                             | Liste des blocs qui sont des pierres                                                                                   |
+| `end_stones`                              | Liste des blocs qui sont des roches de l'End                                                                           |
+| `enderman_place_on_blacklist`             | Liste des blocs où les Enderman ne peuvent placer de blocs                                                             |
+| `fence_gates`                             | Liste des blocs qui sont des portillons                                                                                |
+| `fences`                                  | Liste des blocs qui sont des barrières                                                                                 |
+| `glass`                                   | Liste des blocs qui sont du verre                                                                                      |
+| `glass_panes`                             | Liste des blocs qui sont des vitres                                                                                    |
+| `gravel`                                  | Liste des blocs qui sont du gravier                                                                                    |
+| `netherrack`                              | Liste des blocs qui sont de la roche du Nether                                                                         |
+| `obsidian`                                | Liste des blocs qui sont de l'obsidienne                                                                               |
+| `ores`                                    | Liste des blocs qui sont des minerais                                                                                  |
+| `sand`                                    | Liste des blocs qui sont du sable                                                                                      |
+| `sandstone`                               | Liste des blocs qui sont du grès                                                                                       |
+| `stained_glass`                           | Liste des blocs qui sont du verre teinté                                                                               |
+| `stained_glass_panes`                     | Liste des blocs qui sont des vitres teintées                                                                           |
+| `stone`                                   | Liste des blocs qui sont de la roche                                                                                   |
+| `storage_blocks`                          | Liste des blocs qui sont des blocs de stockage                                                                         |
 
 </details>
 
