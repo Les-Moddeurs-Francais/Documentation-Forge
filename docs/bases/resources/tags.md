@@ -466,6 +466,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 ### Items
 
+#### Minecraft
+
 <details>
 
 <summary>Liste des tags concernant les items</summary>
@@ -549,6 +551,22 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wooden_trapdoors`             | Liste de tous les types de trappes en bois                                                       |
 | `wool`                         | Liste de tous les types de laines                                                                |
 | `wool_carpets`                 | Liste de tous les types de tapis en laine                                                        |
+
+</details>
+
+#### Forge
+
+<details>
+
+<summary>Liste des tags concernant les items</summary>
+
+| Identifiant               | Description                               |
+|---------------------------|-------------------------------------------|
+| `armors/boots`            | Liste de tous les types de bottes         |
+| `armors/chestplates`      | Liste de tous les types de plastrons      |
+| `armors/helmets`          | Liste de tous les types de casques        |
+| `armors/leggings`         | Liste de tous les types de jambières      |
+| `barrels/wooden`          | Liste de tous les types de barils en bois |
 
 </details>
 
