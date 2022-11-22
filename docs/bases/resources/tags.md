@@ -560,16 +560,20 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les items</summary>
 
-| Identifiant          | Description                                       |
-|----------------------|---------------------------------------------------|
-| `armors/boots`       | Liste de tous les types de bottes                 |
-| `armors/chestplates` | Liste de tous les types de plastrons              |
-| `armors/helmets`     | Liste de tous les types de casques                |
-| `armors/leggings`    | Liste de tous les types de jambières              |
-| `barrels/wooden`     | Liste de tous les types de barils en bois         |
-| `chests/ender`       | Liste de tous les types de coffres de l'End       |
-| `chests/trapped`     | Liste de tous les types de coffres en bois piégés |
-| `chests/wooden`      | Liste de tous les types de coffres en bois        |
+| Identifiant             | Description                                       |
+|-------------------------|---------------------------------------------------|
+| `armors/boots`          | Liste de tous les types de bottes                 |
+| `armors/chestplates`    | Liste de tous les types de plastrons              |
+| `armors/helmets`        | Liste de tous les types de casques                |
+| `armors/leggings`       | Liste de tous les types de jambières              |
+| `barrels/wooden`        | Liste de tous les types de barils en bois         |
+| `chests/ender`          | Liste de tous les types de coffres de l'End       |
+| `chests/trapped`        | Liste de tous les types de coffres en bois piégés |
+| `chests/wooden`         | Liste de tous les types de coffres en bois        |
+| `cobblestone/deepslate` | Liste de tous les types de pierres des abîmes     |
+| `cobblestone/infested`  | Liste de tous les types de pierres infestées      |
+| `cobblestone/mossy`     | Liste de tous les types de pierres moussues       |
+| `cobblestone/normal`    | Liste de tous les types de pierres normales       |
 
 </details>
 
