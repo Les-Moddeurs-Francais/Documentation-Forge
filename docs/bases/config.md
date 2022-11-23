@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 title: Config
-description: Ajouter une configuration à son mod
+description: Comment ajouter un fichier de configuration ?
 tags: [bases]
 ---
 
@@ -79,7 +79,7 @@ Ensuite, on affecte la valeur de la config à notre variable `showGuiOnDeath` qu
 La méthode `define` prend deux paramètres : `"guiOnDeath"` est le nom affiché dans la config et `true` est sa
 valeur par défaut.
 
-Enfin, la méthode `pop` indique que l'on a terminé la configuration de notre config (ça fait beaucoup de config 🧐)
+Enfin, la méthode `pop` indique que l'on a terminé la catégorie actuelle de notre config (ici `'push'`)
 
 <br/>
 
