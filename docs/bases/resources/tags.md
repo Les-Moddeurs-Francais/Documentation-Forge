@@ -348,6 +348,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `completes_find_tree_tutorial` | Liste des types de blocs permettant de completer le tutoriel `find_tree`                         |
 | `copper_ores`                  | Liste des minerais de cuivre                                                                     |
 | `creeper_drop_music_discs`     | Liste de tous les disques pouvant être _dropés_ par un creeper quand il est tué par un squelette |
+| `creeper_igniters`             | Liste de tous les types d'items permettant d'allumer un creeper (pour le faire exploser)         |
 | `crimson_stems`                | Liste de tous les types de troncs carmins                                                        |
 | `dampens_vibrations`           | Liste de tous les types de blocs absorbant les vibrations qui le touchent                        |
 | `dark_oak_logs`                | Liste de tous les types de troncs en chêne noir                                                  |
@@ -356,6 +357,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `doors`                        | Liste de tous les types de porte                                                                 |
 | `emerald_ores`                 | Liste des minerais d'émeraude                                                                    |
 | `fences`                       | Liste de tous les types de barrière                                                              |
+| `fence_gates`                  | Liste de tous les types de portillons                                                            |
 | `fishes`                       | Liste de tous les types de poissons                                                              |
 | `flowers`                      | Liste de tous les types de fleurs                                                                |
 | `fox_food`                     | Liste des items que le renard peut manger                                                        |
@@ -373,7 +375,6 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `music_discs`                  | Liste de tous les disques de musique                                                             |
 | `non_flammable_wood`           | Liste des tous les types de bois non combustibles                                                |
 | `oak_logs`                     | Liste de tous les types de troncs en chêne                                                       |
-| `overworld_natural_logs`       | Liste de tous les types de troncs naturellement présent dans le monde normal                     |
 | `piglin_food`                  | Liste des items que mangent les piglins                                                          |
 | `piglin_loved`                 | Liste des items que les Piglins accepte pour faire un échange                                    |
 | `piglin_repellents`            | Liste des items qui repoussent les piglins                                                       |
