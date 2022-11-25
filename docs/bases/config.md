@@ -76,8 +76,8 @@ lisibilité de votre config. La méthode ``push`` quant à elle fait office de c
 valeurs d'un même thème.
 
 Ensuite, on affecte la valeur de la config à notre variable `showGuiOnDeath` que l'on pourra utiliser dans notre code.
-La méthode `define` prend deux paramètres : `"guiOnDeath"` est le nom affiché dans la config et `true` est sa
-valeur par défaut.
+La méthode `define` prend deux paramètres : le nom affiché dans la config (ici `"guiOnDeath"`) et sa
+valeur par défaut (ici `true`).
 
 Enfin, la méthode `pop` indique que l'on a terminé la catégorie actuelle de notre config (ici `'push'`)
 
