@@ -85,7 +85,7 @@ Enfin, la méthode `pop` indique que l'on a terminé la catégorie actuelle de n
 
 > **Voilà le schéma de nos trois classes. Elles seront toutes de la même forme, seul le fond différera.**
 
-## Server
+### Server
 
 On retrouve pour la classe `Server` le même pattern de classe. C'est sûrement cette classe qui va vous intéresser en
 premier lieu, car c'est dans celle-ci que l'on mettra les valeurs qui influeront le comportement du jeu.
