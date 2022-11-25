@@ -41,7 +41,7 @@ public class ModConfig {
 }
 ```
 
-## Client
+### Client
 
 On commence par la partie client qui va répertorier toutes les variables qui touchent le côté éponyme du jeu.
 Ce seront des valeurs qui serviront à moduler le rendu graphique du jeu.
