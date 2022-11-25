@@ -118,7 +118,7 @@ avant le kick d'un joueur, ainsi qu'une variable modulant les dégats d'une pote
 > **Vous remarquerez que les valeurs numériques sont définies sur un intervalle que vous imposez ! (ex: de 4 à 10 pour 
 > 'dmgCustomSword')**
 
-## Common
+### Common
 
 La classe `Common` est assez floue. L'entièreté des paramètres dans cette config ont été dépréciés dans les dernières
 versions de Forge. On pourrait s'en passer pour le moment, mais sachez qu'elle est utile pour des choses "générales" de
