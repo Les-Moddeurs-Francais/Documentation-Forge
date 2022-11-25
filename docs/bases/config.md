@@ -16,7 +16,7 @@ Par exemple, le nombre de minerais dans un filon de votre nouveau minerai, les d
 points de vie d'un mob, etc...
 :::
 
-### Classe de configuration
+## Classe de configuration
 
 Nous aurons besoin d'une seule classe pour cela. Une classe qui sera plutôt conséquente en nombre de lignes mais assez
 simple en fin de compte.
@@ -85,7 +85,7 @@ Enfin, la méthode `pop` indique que l'on a terminé la catégorie actuelle de n
 
 > **Voilà le schéma de nos trois classes. Elles seront toutes de la même forme, seul le fond différera.**
 
-### Server
+## Server
 
 On retrouve pour la classe `Server` le même pattern de classe. C'est sûrement cette classe qui va vous intéresser en
 premier lieu, car c'est dans celle-ci que l'on mettra les valeurs qui influeront le comportement du jeu.
@@ -118,13 +118,13 @@ avant le kick d'un joueur, ainsi qu'une variable modulant les dégats d'une pote
 > **Vous remarquerez que les valeurs numériques sont définies sur un intervalle que vous imposez ! (ex: de 4 à 10 pour 
 > 'dmgCustomSword')**
 
-### Common
+## Common
 
 La classe `Common` est assez floue. L'entièreté des paramètres dans cette config ont été dépréciés dans les dernières
 versions de Forge. On pourrait s'en passer pour le moment, mais sachez qu'elle est utile pour des choses "générales" de
 votre mod. Voyez ça comme le choix par défaut si un de vos paramètres ne rentre pas dans la case client ou serveur.
 
-### Enregistrement
+## Enregistrement
 
 Avant de pouvoir utiliser notre config il va falloit l'enregistrer dans notre mod.
 
@@ -207,7 +207,7 @@ modLoadingContext.registerConfig(net.minecraftforge.fml.config.ModConfig.Type.CO
 ```
 
 
-### Utilisation dans le code
+## Utilisation dans le code
 
 Par exemple, je vais créer une épée dont le nombre de dégats sera défini dans la config (on modifiera directement le tier de l'item).
     
