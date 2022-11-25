@@ -93,7 +93,6 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `mineable/shovel`                          | Liste des blocs pouvant être miné efficacement avec une pelle                                                                                                                 |
 | `acacia_logs`                              | Liste des blocs qui sont des buches d'acacia                                                                                                                                  |
 | `all_hanging_signs`                        | Liste des blocs qui sont des pancartes suspendues (que ce soit au mur ou sous un bloc)                                                                                        |
-| `all_signs`                                | Liste des blocs qui sont des pancartes (quelles soient sur pied ou non)                                                                                                       |
 | `ancient_city_replaceable`                 | Liste des blocs remplaçables par les cités antiques                                                                                                                           |
 | `animals_spawnable_on`                     | Liste des blocs sur lesquels les animaux peuvent apparaître                                                                                                                   |
 | `anvil`                                    | Liste des blocs qui sont des enclumes                                                                                                                                         |
@@ -162,7 +161,6 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `infiniburn_nether`                        | Liste des blocs qui peuvent rester en feu éternellement dans la dimension du Nether                                                                                           |
 | `infiniburn_overworld`                     | Liste des blocs qui peuvent rester en feu éternellement dans le monde normal                                                                                                  |
 | `inside_step_sound_blocks`                 | Liste des blocs jouant le son de pas quand une entité marche à l'intérieur                                                                                                    |
-| `invalid_spawn_inside`                     | Liste des blocs où le joueur ne peut pas apparaitre à l'intérieur                                                                                                             |
 | `iron_ores`                                | Liste des blocs qui sont des minerais de fer                                                                                                                                  |
 | `jungle_logs`                              | Liste des blocs qui sont des buches de bois de la jungle                                                                                                                      |
 | `lapis_ores`                               | Liste des blocs qui sont des minerais de lapis lazuli                                                                                                                         |
@@ -363,7 +361,6 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `doors`                        | Liste de tous les types de porte                                                                 |
 | `emerald_ores`                 | Liste des minerais d'émeraude                                                                    |
 | `fences`                       | Liste de tous les types de barrières                                                             |
-| `fence_gates`                  | Liste de tous les types de portillons                                                            |
 | `fishes`                       | Liste de tous les types de poissons                                                              |
 | `flowers`                      | Liste de tous les types de fleurs                                                                |
 | `fox_food`                     | Liste des items que le renard peut manger                                                        |
