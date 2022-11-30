@@ -23,6 +23,12 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   baseUrlIssueBanner : false,
   favicon: 'img/favicon.ico',
+  markdown: {
+    mermaid: true,
+  },
+  themes: [
+      '@docusaurus/theme-mermaid'
+  ],
   themeConfig: {
     docs :{
       sidebar:{
