@@ -560,47 +560,53 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les items</summary>
 
-| Identifiant               | Description                                              |
-|---------------------------|----------------------------------------------------------|
-| `armors/boots`            | Liste de tous les types de bottes                        |
-| `armors/chestplates`      | Liste de tous les types de plastrons                     |
-| `armors/helmets`          | Liste de tous les types de casques                       |
-| `armors/leggings`         | Liste de tous les types de jambières                     |
-| `barrels/wooden`          | Liste de tous les types de barils en bois                |
-| `chests/ender`            | Liste de tous les types de coffres de l'End              |
-| `chests/trapped`          | Liste de tous les types de coffres en bois piégés        |
-| `chests/wooden`           | Liste de tous les types de coffres en bois               |
-| `cobblestone/deepslate`   | Liste de tous les types de pierres des abîmes            |
-| `cobblestone/infested`    | Liste de tous les types de pierres infestées             |
-| `cobblestone/mossy`       | Liste de tous les types de pierres moussues              |
-| `cobblestone/normal`      | Liste de tous les types de pierres normales              |
-| `crops/beetroot`          | Liste de tous les types de betteraves                    |
-| `crops/carrot`            | Liste de tous les types de carottes                      |
-| `crops/nether_wart`       | Liste de tous les types de verrues du Nether             |
-| `crops/potato`            | Liste de tous les types de pommes de terre               |
-| `crops/wheat`             | Liste de tous les types de blés                          |
-| `dusts/glowstone`         | Liste de tous les types de poudres lumineuses            |
-| `dusts/prismarine`        | Liste de tous les types d'éclats de prismarine           |
-| `dusts/redstone`          | Liste de tous les types de poudres de redstone           |
-| `dyes/black`              | Liste de tous les types de colorants noirs               |
-| `dyes/blue`               | Liste de tous les types de colorants bleus               |
-| `dyes/brown`              | Liste de tous les types de colorants marrons             |
-| `dyes/cyan`               | Liste de tous les types de colorants cyan                |
-| `dyes/gray`               | Liste de tous les types de colorants gris                |
-| `dyes/green`              | Liste de tous les types de colorants verts               |
-| `dyes/light_blue`         | Liste de tous les types de colorants bleu clair          |
-| `dyes/light_gray`         | Liste de tous les types de colorants gris clair          |
-| `dyes/lime`               | Liste de tous les types de colorants vert clair          |
-| `dyes/magenta`            | Liste de tous les types de colorants magentas            |
-| `dyes/orange`             | Liste de tous les types de colorants oranges             |
-| `dyes/pink`               | Liste de tous les types de colorants roses               |
-| `dyes/purple`             | Liste de tous les types de colorants violets             |
-| `dyes/red`                | Liste de tous les types de colorants rouges              |
-| `dyes/white`              | Liste de tous les types de colorants blancs              |
-| `dyes/yellow`             | Liste de tous les types de colorants jaunes              |
-| `fence_gates/wooden`      | Liste de tous les types de portillons en bois            |
-| `fences/nether_brick`     | Liste de tous les types de barrières en brique du Nether |
-| `fences/wooden`           | Liste de tous les types de portillons en bois            |
+| Identifiant             | Description                                              |
+|-------------------------|----------------------------------------------------------|
+| `armors/boots`          | Liste de tous les types de bottes                        |
+| `armors/chestplates`    | Liste de tous les types de plastrons                     |
+| `armors/helmets`        | Liste de tous les types de casques                       |
+| `armors/leggings`       | Liste de tous les types de jambières                     |
+| `barrels/wooden`        | Liste de tous les types de barils en bois                |
+| `chests/ender`          | Liste de tous les types de coffres de l'End              |
+| `chests/trapped`        | Liste de tous les types de coffres en bois piégés        |
+| `chests/wooden`         | Liste de tous les types de coffres en bois               |
+| `cobblestone/deepslate` | Liste de tous les types de pierres des abîmes            |
+| `cobblestone/infested`  | Liste de tous les types de pierres infestées             |
+| `cobblestone/mossy`     | Liste de tous les types de pierres moussues              |
+| `cobblestone/normal`    | Liste de tous les types de pierres normales              |
+| `crops/beetroot`        | Liste de tous les types de betteraves                    |
+| `crops/carrot`          | Liste de tous les types de carottes                      |
+| `crops/nether_wart`     | Liste de tous les types de verrues du Nether             |
+| `crops/potato`          | Liste de tous les types de pommes de terre               |
+| `crops/wheat`           | Liste de tous les types de blés                          |
+| `dusts/glowstone`       | Liste de tous les types de poudres lumineuses            |
+| `dusts/prismarine`      | Liste de tous les types d'éclats de prismarine           |
+| `dusts/redstone`        | Liste de tous les types de poudres de redstone           |
+| `dyes/black`            | Liste de tous les types de colorants noirs               |
+| `dyes/blue`             | Liste de tous les types de colorants bleus               |
+| `dyes/brown`            | Liste de tous les types de colorants marrons             |
+| `dyes/cyan`             | Liste de tous les types de colorants cyan                |
+| `dyes/gray`             | Liste de tous les types de colorants gris                |
+| `dyes/green`            | Liste de tous les types de colorants verts               |
+| `dyes/light_blue`       | Liste de tous les types de colorants bleu clair          |
+| `dyes/light_gray`       | Liste de tous les types de colorants gris clair          |
+| `dyes/lime`             | Liste de tous les types de colorants vert clair          |
+| `dyes/magenta`          | Liste de tous les types de colorants magentas            |
+| `dyes/orange`           | Liste de tous les types de colorants oranges             |
+| `dyes/pink`             | Liste de tous les types de colorants roses               |
+| `dyes/purple`           | Liste de tous les types de colorants violets             |
+| `dyes/red`              | Liste de tous les types de colorants rouges              |
+| `dyes/white`            | Liste de tous les types de colorants blancs              |
+| `dyes/yellow`           | Liste de tous les types de colorants jaunes              |
+| `fence_gates/wooden`    | Liste de tous les types de portillons en bois            |
+| `fences/nether_brick`   | Liste de tous les types de barrières en brique du Nether |
+| `fences/wooden`         | Liste de tous les types de portillons en bois            |
+| `gems/amethyst`         | Liste de tous les types de gemmes d'améthyste            |
+| `gems/diamond`          | Liste de tous les types de gemmes de diamant             |
+| `gems/emerald`          | Liste de tous les types de gemmes d'émeraude             |
+| `gems/lapis`            | Liste de tous les types de gemmes de lapis lazuli        |
+| `gems/prismarine`       | Liste de tous les types de gemmes de prismarine          |
+| `gems/quartz`           | Liste de tous les types de gemmes de quartz              |
 
 </details>
 
