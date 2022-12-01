@@ -206,6 +206,13 @@ modLoadingContext.registerConfig(net.minecraftforge.fml.config.ModConfig.Type.SE
 modLoadingContext.registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, ModConfig.commonSpec, configFolder + "common.toml");
 ```
 
+<br/>
+
+:::tip
+La variable `configFolder` me sert à ne pas répéter le chemin vers le dossier où je souhaite enregistrer ma config.
+Vous pouvez vous en passer si vous le désirez ainsi que modifier le troisième paramètre
+des méthodes si besoin (vous pouvez omettre le troisième paramètre également).
+:::
 
 ## Utilisation dans le code
 
@@ -220,3 +227,5 @@ un peu plus haut.
 
 Désormais si vous lancez le jeu, dans le dossier config du monde vous aurez un dossier avec vos configs à l'intérieur où
 vous pourrez, et les joueurs également, modifier les valeurs inscrites dans l'intervalle que vous aurez imposé.
+
+> ![](../../static/img/docs/config/resultat_config.png)
