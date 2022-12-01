@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
-title: Config
-description: Comment ajouter un fichier de configuration ?
+title: Configurations
+description: Comment ajouter un fichier de configuration à son mod ?
 tags: [bases]
 ---
 
