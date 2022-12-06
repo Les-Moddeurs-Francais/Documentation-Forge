@@ -76,7 +76,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `pattern_item/mojang`  | Liste des motifs qui peuvent être fabriqués en utilisant le motif de Mojang  |
 | `pattern_item/piglin`  | Liste des motifs qui peuvent être fabriqués en utilisant le motif de Piglin  |
 | `pattern_item/skull`   | Liste des motifs qui peuvent être fabriqués en utilisant le motif de crâne   |
-| `no_item_required`     | Motif de drapeau qui peuvent être fabriqués sans motif                       |
+| `no_item_required`     | Liste des motifs qui peuvent être fabriqués sans aucun item                  |
 
 </details>
 
@@ -202,7 +202,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `slabs`                                    | Liste des blocs qui sont des dalles                                                                                                                                           |
 | `small_dripleaf_placeable`                 | Liste des blocs sur lesquels il est possible de placer les petites foliogoutes                                                                                                |
 | `small_flowers`                            | Liste des blocs qui sont des petites fleurs                                                                                                                                   |
-| `snaps_goat_horn`                          | Liste des blocs qqui cassent une corne aux chèvres quand elles chargent dedans                                                                                                |
+| `snaps_goat_horn`                          | Liste des blocs qui cassent une corne aux chèvres quand elles chargent dedans                                                                                                 |
 | `snow`                                     | Liste des blocs qui sont de la neige                                                                                                                                          |
 | `snow_layer_cannot_survive_on`             | Liste des blocs sur lesquels les couches de neige ne peuvent pas survivre                                                                                                     |
 | `snow_layer_can_survive_on`                | Liste des blocs sur lesquels les couches de neige peuvent survivre                                                                                                            |
@@ -210,7 +210,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `soul_speed_blocks`                        | Liste des blocs qui donnent un effet de vitesse si jamais un joueur se situe sur l'un d'entre eux avec des bottes ayant l'enchantement _Agilité des âmes_                     |
 | `spruce_logs`                              | Liste des blocs qui sont des buches de bois de sapin                                                                                                                          |
 | `stairs`                                   | Liste des blocs qui sont des escaliers                                                                                                                                        |
-| `standing_signs`                           | Liste des blocs qui sont des panneaux _debouts_                                                                                                                               |
+| `standing_signs`                           | Liste des blocs qui sont des panneaux qui sont sur pied                                                                                                                       |
 | `stone_bricks`                             | Liste des blocs qui sont des pierres taillées                                                                                                                                 |
 | `stone_ore_replaceables`                   | Liste des blocs pouvant être remplacés par des minerais                                                                                                                       |
 | `stone_pressure_plates`                    | Liste des blocs qui sont des plaques de pression en pierre                                                                                                                    |
