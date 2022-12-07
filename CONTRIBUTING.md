@@ -6,7 +6,7 @@ Pour ceux qui débutent en matière de collaboration via Git, voici deux étapes
 
 ## Fork
 
-Avant toute chose, faites un fork du ["repo" de la documentation](https://github.com/Les-Moddeurs-Francais/Forge-Doc) en cliquant sur le bouton **Fork** en haut à droite.
+Avant toute chose, faites un fork du ["repo" de la documentation](https://github.com/Les-Moddeurs-Francais/Documentation-Forge) en cliquant sur le bouton **Fork** en haut à droite.
 
 Cela est nécessaire, car tout le monde n'a pas accès au droit. Le fork permet d'effectuer vos changements afin ensuite d'ouvrir un **pull request** pour proposer vos changements afin que nous puissions en discuter.
 
@@ -14,7 +14,7 @@ Cela est nécessaire, car tout le monde n'a pas accès au droit. Le fork permet 
 
 Après avoir effectué un _fork_ du repo principale, c'est le moment de copier celui-ci en local. Pour cela vous devez le cloner sur votre machine en local.
 
-Pour cela, ouvrez le terminal **Git bash** dans le dossier où vous souhaitez cloner votre fork, ensuite tapez cette commande `https://github.com/<User>/Forge-Doc` (en remplaçant <User> par votre nom d'utilisateur github).
+Pour cela, ouvrez le terminal **Git bash** dans le dossier où vous souhaitez cloner votre fork, ensuite tapez cette commande `https://github.com/<User>/Documentation-Forge` (en remplaçant <User> par votre nom d'utilisateur github).
 
 # Installation
 
@@ -26,4 +26,4 @@ Une fois les modifications effectuées, vous pouvez voir ce que cela rend en ex�
 
 # Pull Requests
 
-Une fois les changements testés et terminés, il est temps de faire un PR pour nous proposer vos changements. Pour cela vous devrez ouvrir un PR (en vous rendant sur cette [page](https://github.com/Les-Moddeurs-Francais/Forge-Doc/compare)) et en sélectionnant votre _répo_ (qui correspond au fork) ainsi que la branche où vous aurez effectué vos changements (il est conseillé de faire des modifications sur différentes branches pour ainsi pouvoir travailler sur plusieurs aspects le temps que vos PR soient acceptés et ne pas rester bloquer).
+Une fois les changements testés et terminés, il est temps de faire un PR pour nous proposer vos changements. Pour cela vous devrez ouvrir un PR (en vous rendant sur cette [page](https://github.com/Les-Moddeurs-Francais/Documentation-Forge/compare)) et en sélectionnant votre _répo_ (qui correspond au fork) ainsi que la branche où vous aurez effectué vos changements (il est conseillé de faire des modifications sur différentes branches pour ainsi pouvoir travailler sur plusieurs aspects le temps que vos PR soient acceptés et ne pas rester bloquer).
