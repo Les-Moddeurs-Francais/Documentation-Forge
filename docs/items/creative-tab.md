@@ -11,7 +11,7 @@ Les onglets créatifs (ou _creatives tabs_) sont des interfaces permettant d'org
 Pour créer votre onglet, vous devrez le créer dans un événement dédié comme ceci :
 
 ```java
-private void onCreativeModeTabRegister(CreativeModeTabEvent.Register event)
+public void onCreativeModeTabRegister(CreativeModeTabEvent.Register event)
 {
     CreativeModeTab MY_MOD_TAB = event.registerCreativeModeTab(new ResourceLocation(MODID, "my_mod_tab"), List.of(), List.of(CreativeModeTabs.SPAWN_EGGS), builder -> builder
             .icon(() -> new ItemStack(Items.DIAMOND))
@@ -36,6 +36,10 @@ Ici, nous avons une fonction `registerCreativeModeTab` avec 4 arguments. Le prem
 - La couleur de son titre (`withLabelColor(...)`)
 - La couleur de ses emplacements (`withSlotColor(...)`)
 
+Vous pouvez ensuite indiquer l'existence de ce mod dans le constructeur de votre classe principale avec la ligne :
+
+`FMLJavaModLoadingContext.get().getModEventBus().addListener(MaClasse::onCreativeModeTabRegister);`
+
 Et voilà, l'onglet est créé, mais celui-ci est vide. Il faut donc ajouter des items à cet onglet.
 
 ## Ajout des items
@@ -45,7 +49,28 @@ Pour ajouter les items dans un onglet du menu créatif, 2 choix s'offrent à vou
 
 ### Ajout des items dans un onglet existant
 
+Dans ce cas, il sera nécessaire d'utiliser l'événement `CreativeModeTabEvent.BuildContents` :
+
+```java
+public void onCreativeModeTabBuildContents(CreativeModeTabEvent.BuildContents event)
+{
+    if (event.getTab() == CreativeModeTabs.NATURAL_BLOCKS)
+    {
+        event.register((flags, builder, hasPermissions) -> {
+            builder.accept(new ItemStack(Blocks.STRIPPED_ACACIA_LOG), ItemStack.EMPTY, new ItemStack(Blocks.STONE));
+        });
+    }
+}
+```
+
+Ici, nous vérifions que l'onglet qui est construit est celui des blocs naturels, et nous ajoutons le bloc de buche d'acacia écorché avant rien (deuxième argument) et après le bloc dde pierre lisse (troisième argument).
+
+À nouveau, vous pouvez ensuite indiquer l'existence de ce mod dans le constructeur de votre classe principale avec la ligne :
+
+`FMLJavaModLoadingContext.get().getModEventBus().addListener(MaClasse::onCreativeModeTabRegister);`
+
 ### Ajout des items dans un nouvel onglet
 
+Dans ce cas précis, si vous avez créé un onglet _custom_, vous pouvez tous simplement ajouter la ligne `output.accept(new ItemStack(...));` à l'intérieur de la fonction `displayItems`.
 
-Et voilà, votre item devrait être accessible en jeu dans le menu créatif.
+> Et voilà, votre item devrait être accessible en jeu dans le menu créatif.
