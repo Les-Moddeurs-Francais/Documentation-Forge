@@ -8,57 +8,44 @@ Les onglets créatifs (ou _creatives tabs_) sont des interfaces permettant d'org
 
 ## Déclaration
 
-Pour créer votre onglet, vous devrez le déclarer dans une classe comme ceci :
-
-:::tip
-Vous pouvez aussi créer une classe custom (dépendante de la classe **CreativeModeTab**).
-:::
+Pour créer votre onglet, vous devrez le créer dans un événement dédié comme ceci :
 
 ```java
-
-public static final CreativeModeTab MY_MOD_TAB = new CreativeModeTab("mon_mod") {
-    @Override
-    public ItemStack makeIcon() {
-        return new ItemStack(Items.DIAMOND);
-    }
-};
-
+private void onCreativeModeTabRegister(CreativeModeTabEvent.Register event)
+{
+    CreativeModeTab MY_MOD_TAB = event.registerCreativeModeTab(new ResourceLocation(MODID, "my_mod_tab"), List.of(), List.of(CreativeModeTabs.SPAWN_EGGS), builder -> builder
+            .icon(() -> new ItemStack(Items.DIAMOND))
+            .title(Component.literal("My Mod Tab"))
+            .withLabelColor(0x0000FF)
+            .displayItems((features, output, hasPermissions) -> {
+                //Items contenus dans cet onglet
+            }));
+}
 ```
 
-:::danger
-La fonction **makeIcon** permet de définir l'icône de l'onglet créatif. Il est donc impératif que celle-ci renvoie quelque chose de non null (sinon le jeu aura un crash une fois que le menu créatif sera affiché).
-:::
+Ici, nous avons une fonction `registerCreativeModeTab` avec 4 arguments. Le premier est l'identifiant de l'onglet, le deuxième est quant à lui les onglets qui seront placés après le nôtre, le troisième lui est donc les onglets qui seront placés avant le nôtre et enfin le quatrième est un supplier qui va nous permettre de construire notre onglet avec :
+- Son icone (`icon(...)`) 
+- Son titre (`title(...)`) qui peut très bien être une simple chaine de caractère comme ici, ou une clé de traduction.
+- Son alignement à droite ou non (`alignedRight()`)
+- La visibilité de son titre (`hideTitle()`)
+- La présence de barre de défilement sur le côté (`noScrollBar()`)
+- Son type (`type(...)`)
+- Son fond custom (`withBackgroundLocation(...)`)
+- S'il a une barre de recherche ou non (`withSearchBar()`) avec une variante pour définir la taille de la barre de recherche (`withSearchBar(...)`)
+- L'image de l'onglet (`withTabsImage(...)`)
+- La couleur de son titre (`withLabelColor(...)`)
+- La couleur de ses emplacements (`withSlotColor(...)`)
 
 Et voilà, l'onglet est créé, mais celui-ci est vide. Il faut donc ajouter des items à cet onglet.
 
 ## Ajout des items
 
-Pour ajouter les items dans l'onglet, allez à la déclaration de votre item :
+Pour ajouter les items dans un onglet du menu créatif, 2 choix s'offrent à vous, soit l'ajouter dans un onglet existant, soit dans un nouvel onglet.
 
-```java
-public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_item", () -> new Item(new Item.Properties()));
-```
 
-Ajoutez juste la méthode **.tab()** a la liste des [propriétés](https://forge-doc.lesmoddeursfrancais.com/docs/items/properties) de votre item, celle-ci prends en paramètre l'onglet créatif créé auparavant :
+### Ajout des items dans un onglet existant
 
-```java
-public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("exemple_item", () -> new Item(new Item.Properties().tab(VotreClasse.MY_MOD_TAB)));
-```
+### Ajout des items dans un nouvel onglet
+
 
 Et voilà, votre item devrait être accessible en jeu dans le menu créatif.
-
-## Traduction
-
-Comme beaucoup d'éléments, les onglets créatifs possèdent aussi une clé de traduction.
-
-Il est donc possible d'afficher un nom différent pour chaque langue, comme ceci :
-
-```json
-{
-  "itemGroup.mon_mod": "Mon Mod"
-}
-```
-
-:::tip
-L'identifiant après _itemGroup_ doit être le même que celui passé dans le constructeur de l'onglet créatif.
-:::
