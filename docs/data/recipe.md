@@ -17,19 +17,19 @@ la classe `RecipeProvider`.
 ```java
 public class RecipeGenerator extends RecipeProvider {
 
-    public RecipeGenerator(DataGenerator gen) {
-        super(gen);
+    public RecipeGenerator(DataGenerator packOutput) {
+        super(packOutput);
     }
 
     @Override
-    protected void buildCraftingRecipes(Consumer<FinishedRecipe> p_176532_) {
+    protected void buildRecipes(Consumer<FinishedRecipe> p_251297_) {
 
     }
 }
 ```
 
 Ecrivez le constructeur imposé par la classe mère, puis re-définissez la méthode
-`buildCraftingRecipes` en supprimant le `super`.
+`buildRecipes` en supprimant le `super`.
 
 Rendez-vous maintenant dans votre classe avec l'event `GatherDataEvent` et
 ajoutez le générateur comme ceci :
@@ -40,7 +40,7 @@ public static void dataGen(final GatherDataEvent e)
 {
     DataGenerator generator = e.getGenerator();
 
-    generator.addProvider(event.includeServer(), new RecipeGenerator(generator));
+    generator.addProvider(event.includeServer(), new RecipeGenerator(generator.getPackOutput()));
 }
 ```
 
@@ -76,7 +76,7 @@ une croix de dirt avec une pomme au milieu.
 
 ![Exemple de craft](/img/docs/exemple_craft_shaped.png)
 
-Allez dans la fonction `buildCraftingRecipes` puis insérez ce code :
+Allez dans la fonction `buildRecipes` puis insérez ce code :
 
 ```java
 ShapedRecipeBuilder.shaped(Items.DIAMOND, 1)
@@ -196,7 +196,7 @@ save(consumer, new ResourceLocation(Testmod.MODID, "mon_craft"))
 
 Enfin, la fonction `save` qui sert, comme son nom l'indique, à sauvegarder notre craft. En
 premier paramètre on renseigne `consumer` qui est le paramètre de notre fonction
-`buildCraftingRecipes`. En second paramètre on doit renseigner une `ResourceLocation`
+`buildRecipes`. En second paramètre on doit renseigner une `ResourceLocation`
 qui est en fait l'emplacement et le nom du fichier `.json`.
 
 Comme emplacement, j'ai mis le modid de mon mod, c'est-à-dire que le fichier sera
@@ -205,12 +205,6 @@ Enfin, `"mon_craft"` désigne le nom du fichier final.
 
 :::caution
 Faites attention à ne pas avoir deux crafts différents ayant le même nom !
-:::
-
-:::tip
-À partir de la version 36.2.0 de Forge, il est possible de laisser les fichiers dans le
-dossier `generated`. Ils seront tout de même détectés par le jeu. Vous n'avez donc
-plus besoin de les déplacer dans le dossier `resources` manuellement.
 :::
 
 ### Shapeless recipes
