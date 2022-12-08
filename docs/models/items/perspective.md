@@ -14,7 +14,7 @@ La structure du fichier du modèle sera celle-ci :
 ```json
 {
   "parent": "forge:item/default",
-  "loader": "forge:separate-perspective",
+  "loader": "forge:separate_transforms",
   "base": {
     //Modèle de base
   },
