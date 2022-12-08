@@ -79,7 +79,7 @@ une croix de dirt avec une pomme au milieu.
 Allez dans la fonction `buildRecipes` puis insérez ce code :
 
 ```java
-ShapedRecipeBuilder.shaped(Items.DIAMOND, 1)
+ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.DIAMOND, 1)
                 .define('D', Blocks.DIRT)
                 .define('A', Items.APPLE)
                 .pattern(" D ")
@@ -90,16 +90,16 @@ ShapedRecipeBuilder.shaped(Items.DIAMOND, 1)
                 .save(consumer, new ResourceLocation(Testmod.MODID, "mon_craft"));
 ```
 
-Ne vous inquiètez pas, au premier abord, ça paraît un peu compliqué, mais en décomposant
+Ne vous inquiétez pas, au premier abord, ça paraît un peu compliqué, mais en décomposant
 petit à petit ça va se clarifier. On voit donc qu'on a besoin de la classe `ShapedRecipeBuilder`
 qui comme son nom l'indique permet de construire notre craft. À l'aide de plusieurs fonctions,
 on va pouvoir définir les propriétés de notre craft.
 
 ```java
-shaped(Items.DIAMOND, 1)
+shaped(RecipeCategory.MISC, Items.DIAMOND, 1)
 ```
 
-La fonction `shaped` sert à donner le résultat, du craft. Oui, on commence par le résultat
+La fonction `shaped` sert à donner le résultat (deuxième argument), du craft. Oui, on commence par le résultat
 et non par les ingrédients. En premier argument vous pouvez donner un `Item`, `Block` ou
 même un `Tag<Item>`.
 
@@ -108,8 +108,10 @@ Ce dernier est très utile pour des crafts utilisant les laines
 de couleurs par exemple, vous permettant de spécifier l'ensemble des laines.
 :::
 
-En deuxième argument, vous pouvez, si vous le souhaitez, donner la quantité de votre
-résultat. Dans cet exemple je vais laisser la quantité à **1**.
+En premier argument, nous avons la catégorie (du livre des recettes) dans laquelle notre recette sera affichées.
+
+Et donc en troisième argument, vous pouvez, si vous le souhaitez, donner la quantité de votre
+résultat. Dans cet exemple, je vais laisser la quantité à **1**.
 
 ```java
 define('D', Blocks.DIRT)
@@ -210,10 +212,10 @@ Faites attention à ne pas avoir deux crafts différents ayant le même nom !
 ### Shapeless recipes
 
 On va voir maintenant les shapeless recipes ou recettes sans forme en français.
-Voici un exemple où à l'aide d'un diamant et d'un colorant vert je craft une émeraude: 
+Voici un exemple où à l'aide d'un diamant et d'un colorant vert je craft une émeraude : 
 
 ```java
-ShapelessRecipeBuilder.shapeless(Items.EMERALD)
+ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.EMERALD)
                 .requires(Items.DIAMOND)
                 .requires(Items.GREEN_DYE)
                 .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(Items.EMERALD).of(Items.GREEN_DYE).build()))
@@ -261,7 +263,7 @@ Voyons maintenant un exemple concret d'une recette de cuisson où à partir
 d'une planche de bois on récupère un charbon de bois.
 
 ```java
-SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemTags.PLANKS), Items.CHARCOAL, 1.0f, 200)
+SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemTags.PLANKS), RecipeCategory.MISC, Items.CHARCOAL, 1.0f, 200)
                 .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ItemTags.PLANKS).build()))
                 .save(consumer, new ResourceLocation(Testmod.MODID, "planks_to_charcoal"));
 ```
@@ -289,7 +291,7 @@ Intéressons-nous maintenant au stonecutter. Pour l'exemple je vais créer
 une recette à partir de planche pour obtenir une bûche.
 
 ```java
-SingleItemRecipeBuilder.stonecutting(Ingredient.of(ItemTags.PLANKS), Blocks.OAK_LOG, 1)
+SingleItemRecipeBuilder.stonecutting(Ingredient.of(ItemTags.PLANKS), RecipeCategory.BUILDING_BLOCKS, Blocks.OAK_LOG, 1)
                 .unlockedBy("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(ItemTags.PLANKS).build()))
                 .save(consumer, new ResourceLocation(Testmod.MODID, "planks_to_log"));
 ```
@@ -308,7 +310,7 @@ en pioche en fer à l'aide d'un lingot de fer. Ici aussi, c'est
 assez simple : 
 
 ```java
-UpgradeRecipeBuilder.smithing(Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), Items.IRON_PICKAXE)
+UpgradeRecipeBuilder.smithing(Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), RecipeCategory.TOOLS, Items.IRON_PICKAXE)
                 .unlocks("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STONE_PICKAXE))
                 .save(consumer, new ResourceLocation(Testmod.MODID, "stone_pickaxe_upgrade"));
 ```
