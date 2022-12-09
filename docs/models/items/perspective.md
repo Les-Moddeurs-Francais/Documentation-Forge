@@ -5,7 +5,7 @@ description: Comment utiliser les perspectives séparées des modèles pour les 
 tags: [items, modèles]
 ---
 
-:::warning
+:::caution
 Les perspectives séparées ne marchent pas pour le moment suite à un bug de Forge en 1.19.3. 
 :::
 
