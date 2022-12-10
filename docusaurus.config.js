@@ -100,7 +100,7 @@ module.exports = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/lesmoddeursfr',
+              href: 'https://twitter.com/les_moddeurs_fr',
             },
           ],
         },
