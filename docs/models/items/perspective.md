@@ -5,6 +5,10 @@ description: Comment utiliser les perspectives séparées des modèles pour les 
 tags: [items, modèles]
 ---
 
+:::caution
+Les perspectives séparées ne marchent pas pour le moment suite à un bug de Forge en 1.19.3. 
+:::
+
 Les perspectives séparées permettent d'afficher un modèle différent pour un item selon la perspective dans laquelle celui-ci est rendu. Cela nous permet donc d'attribuer un modèle à un item quand il est dans notre main, et un autre modèle pour quand il est affiché dans une interface.
 
 ## Base
@@ -14,7 +18,7 @@ La structure du fichier du modèle sera celle-ci :
 ```json
 {
   "parent": "forge:item/default",
-  "loader": "forge:separate-perspective",
+  "loader": "forge:separate_transforms",
   "base": {
     //Modèle de base
   },
