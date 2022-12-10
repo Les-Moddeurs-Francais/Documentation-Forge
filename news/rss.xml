@@ -4,10 +4,22 @@
         <title>Documentation Forge Blog</title>
         <link>https://forge-doc.lesmoddeursfrancais.com/news</link>
         <description>Documentation Forge Blog</description>
-        <lastBuildDate>Wed, 17 Aug 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Dec 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
+        <item>
+            <title><![CDATA[Forge 1.19.3 44.0]]></title>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-119-440</link>
+            <guid>forge-119-440</guid>
+            <pubDate>Thu, 08 Dec 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[La version 1.19.3-44.0 de Forge est sortie et elle apporte plusieurs changements notables.]]></description>
+            <content:encoded><![CDATA[<p>La version 1.19.3-44.0 de Forge est sortie et elle apporte plusieurs changements notables.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nouveautés">Nouveautés<a class="hash-link" href="#nouveautés" title="Lien direct vers le titre">​</a></h3><ul><li>Ajout d'un nouvel événement, <code>CreativeModeTabEvent</code>, qui permet de créer de nouveau onglet pour l'inventaire créatif ou de modifier le contenu de ceux déjà existants</li><li>Ajout d'un nouveau <em>provider</em>, <code>DatapackBuiltinEntriesProvider</code>, pour les data generators, facilitant la génération des fichiers JSON pour tout ce qui touche aux registres accessibles par des datapacks (principalement la génération)</li><li>Ajout d'un accès au champ <code>lookupProvider</code> pour les data generators par l'intermédiaire d'une fonction <em>getter</em></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="changements">Changements<a class="hash-link" href="#changements" title="Lien direct vers le titre">​</a></h3><ul><li>Déplacement des registres de <em>datapack</em> vers l'événement <code>DataPackRegistryEvent.NewRegistry</code> au lieu de les lier à la classe <code>ForgeRegistry</code></li><li>Mise à jour des événements <code>ClientChatReceivedEvent</code> et <code>ServerChatEvent</code> pour s'aligner sur les changements de Mojang</li><li>Modification de l'événement <code>RegisterShadersEvent</code> pour utiliser la classe <code>ResourceProvider</code></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="suppressions">Suppressions<a class="hash-link" href="#suppressions" title="Lien direct vers le titre">​</a></h3><ul><li>Suppression de la propriété <code>tab(...)</code> au profit du nouvel événement, <code>CreativeModeTabEvent</code></li><li>Suppression de la classe <code>ForgeRegistryTagsProvider</code></li></ul>]]></content:encoded>
+            <author>mysterious_dev@lesmoddeursfrancais.fr (Mysterious_Dev)</author>
+            <category>forge</category>
+            <category>mise à jour</category>
+            <category>1.19</category>
+        </item>
         <item>
             <title><![CDATA[Forge 1.19.2 43.1]]></title>
             <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-119-431</link>
