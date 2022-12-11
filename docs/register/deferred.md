@@ -30,16 +30,17 @@ Quelques explications :
   <li>SOUND_EVENTS</li>
   <li>POTIONS</li>
   <li>ENCHANTMENTS</li>
-  <li>ENTITIES</li>
-  <li>BLOCK_ENTITIES</li>
+  <li>ENTITY_TYPES</li>
+  <li>BLOCK_ENTITY_TYPES</li>
   <li>PARTICLE_TYPES</li>
-  <li>CONTAINERS</li>
+  <li>MENU_TYPES</li>
   <li>PAINTING_TYPES</li>
   <li>RECIPE_TYPES</li>
   <li>RECIPE_SERIALIZERS</li>
   <li>ATTRIBUTES</li>
   <li>STAT_TYPES</li>
-  <li>PROFESSIONS</li>
+  <li>COMMAND_ARGUMENT_TYPES</li>
+  <li>VILLAGER_PROFESSIONS</li>
   <li>POI_TYPES</li>
   <li>MEMORY_MODULE_TYPES</li>
   <li>SENSOR_TYPES</li>
@@ -52,10 +53,12 @@ Quelques explications :
   <li>FOLIAGE_PLACER_TYPES</li>
   <li>TREE_DECORATOR_TYPES</li>
   <li>BIOMES</li>
-  <li>DATA_SERIALIZERS</li>
-  <li>LOOT_MODIFIER_SERIALIZERS</li>
-  <li>WORLD_TYPES</li>
+  <li>ENTITY_DATA_SERIALIZERS</li>
+  <li>GLOBAL_LOOT_MODIFIER_SERIALIZERS</li>
   <li>BIOME_MODIFIER_SERIALIZERS</li>
+  <li>STRUCTURE_MODIFIER_SERIALIZERS</li>
+  <li>FLUID_TYPES</li>
+  <li>HOLDER_SET_TYPES</li>
 </ul>
 </details>
 - Le deuxième quant à lui est le modid sous lequel votre élément sera enregistré (il est préférable de mettre le modid de votre mod)
