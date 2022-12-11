@@ -15,3 +15,4 @@ tags: [items, propriétés]
 | rarity            | Définit la rareté de l'item (ce qui change entre autres la couleur du nom de l'item)                                                                                                   |
 | fireResistant     | Définit si l'item est résistant ou non à toute source de feu ou de lave                                                                                                                |
 | setNoRepair       | Définit l'item comme non réparable même si celui-ci est endommagé                                                                                                                      |
+| requiredFeatures  | Définit le pack de _features_ nécessaire pour que l'item soit accessible en jeu                                                                                                        |
