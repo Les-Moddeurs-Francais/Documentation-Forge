@@ -60,10 +60,10 @@ En combinant tout cela, nous arrivons donc à un fichier modèle du type :
 ```json
 {
   "parent": "forge:item/default",
+  "loader": "forge:separate_transforms",
   "base": {
     "parent": "modid:item/example_item"
   },
-  "loader": "forge:separate-perspective",
   "perspectives": {
     "firstperson_lefthand": {
       "parent": "modid:item/example_item_fp_hand"
