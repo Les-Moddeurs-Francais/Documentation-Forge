@@ -33,3 +33,5 @@ tags: [blocs, propriétés]
 | destroyTime                 | Définit le temps nécessaire pour casser le bloc                                                                    |
 | explosionResistance         | Définit la résistance du bloc aux explosions                                                                       |
 | offsetType                  | Définit l'axe(s) de décalage du modèle du bloc                                                                     |
+| noParticlesOnBreak          | Définit le fait que le bloc ne produira pas de particule une fois cassé                                            |
+| requiredFeatures            | Définit le pack de _features_ nécessaire pour que le bloc soit accessible en jeu                                   |
