@@ -9,10 +9,6 @@ tags: [événements]
 
 ### Priorité entre les événements
 
+Les événements disposent aussi d'un système de priorité, accessible par la propriété `priority` de l'annotation `@SubscribeEvent`. Pour ça, il existe 5 valeurs de priorité disponibles avec l'énumération `EventPriority`, `HIGHEST`, `HIGH`, `NORMAL`, `LOW` et `LOWEST`.
+
 ### Événements annulables
-
-## Enregistrement
-
-:::note
-Il existe plusieurs _bus_ pour l'enregistrement d'événements. `MinecraftForge.EVENT_BUS` pour la quasi totalité des événements (c'est principalement celui-ci que vous utiliserez) et `FMLJavaModLoadingContext.get().getModEventBus()` qui lui est spécifique au mod Java (il est utilisé par exemple pour l'enregistrement ou pour la séparation des instructions coté serveur ou client).
-:::
