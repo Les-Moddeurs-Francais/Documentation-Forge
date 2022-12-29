@@ -46,7 +46,7 @@ public class MonItem extends Item {
 
 Ainsi nous pourrons enregistrer l'item comme dans la technique sans classe custom sauf que nous ferons un `new MonItem` et non `new Item`, ce qui donne une variable du type
 ```java
-public static final RegistryObject<Item> MON_ITEM = ITEMS.register("mon_item", () -> new MonItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+public static final RegistryObject<Item> MON_ITEM = ITEMS.register("mon_item", () -> new MonItem(new Item.Properties()));
 ```
 
 ## Ressources
