@@ -228,4 +228,4 @@ un peu plus haut.
 Désormais si vous lancez le jeu, dans le dossier config du monde vous aurez un dossier avec vos configs à l'intérieur où
 vous pourrez, et les joueurs également, modifier les valeurs inscrites dans l'intervalle que vous aurez imposé.
 
-> ![](../../static/img/docs/config/resultat_config_light.png#gh-light-mode-only)![](../../static/img/docs/config/resultat_config_dark.png#gh-dark-mode-only)
+> ![](/img/docs/config/resultat_config_light.png#gh-light-mode-only)![](/img/docs/config/resultat_config_dark.png#gh-dark-mode-only)
