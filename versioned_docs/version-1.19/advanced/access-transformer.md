@@ -1,0 +1,70 @@
+---
+sidebar_position: 1
+title: Access Transformer
+description: Comment utiliser les access transformers ?
+tags: [avancé]
+---
+
+Les `access transformers` (ou AT) permettent de modifier l'accessibilité  et la visibilité des variables, méthodes et classes des librairies (retirer le `final`, changer l'attribut `private` en `public`, etc...).
+
+## Ajout du fichier pour les AT's
+Pour spécifier à ForgeGradle que le mod utilisera les access transformers, vous devez ajouter cette ligne dans le build.gradle (la catégorie `minecraft` est normalement déjà présente dans votre fichier) :
+```
+minecraft {
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+}
+```
+
+Après cela, vous devrez créer un fichier `accesstransformer.cfg` au niveau du chemin spécifié (ici le dossier `META-INF` situé dans vos ressources).
+
+Il est à chaque fois nécessaire de rafraîchir son projet Gradle pour que les _transformers_ soit appliqués.
+
+## Commentaires
+
+Tous les textes succédant un `#` avant la fin de la ligne seront interprétés comme des commentaires et ne seront pas pris en compte par _ForgeGradle_.
+
+## Syntaxe 
+
+Trois syntaxes sont disponibles selon le type de la cible pour modifier son accès :
+
+- Pour les classes : `<modificateur> <nom de la classe>`
+- Pour les méthodes : `<modificateur> <nom de la classe> <nom de la méthode>([descripteurs des paramètres])<descripteur de ce qui est retourné>`
+- Pour les variables : `<modificateur> <nom de la classe> <nom de la variable>`
+
+## Les modifieurs d'accès
+
+Les modificateurs d'accès spécifient vers quelle nouvelle visibilité la cible donnée sera transformée :
+- `public` - visible pour toutes les classes à l'intérieur et à l'extérieur de son package
+- `protected` - visible uniquement pour les classes à l'intérieur du package et les sous-classes
+- `default` - visible uniquement pour les classes à l'intérieur du package
+- `private` - visible uniquement à l'intérieur de la classe
+
+Le modificateur spécial +f et -f peut être ajouté aux modificateurs mentionnés plus haut afin d'ajouter ou de supprimer l'attribut `final`.
+
+## Descripteur des retours
+
+| Descripteur          | Equivalent         | Description                                                                                                                                                                                                                                                                                |
+|----------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `Z`                  | `Booléen`          | Valeur oscillant entre `true`et `false`seulement                                                                                                                                                                                                                                           |
+| `B`                  | `Byte`             | Nombre en 8-bit                                                                                                                                                                                                                                                                            |
+| `S`                  | `Short`            | Nombre en 16-bit                                                                                                                                                                                                                                                                           |
+| `C`                  | `Char`             | Caractère unicode en UTF-16                                                                                                                                                                                                                                                                |
+| `I`                  | `Int`              | Nombre en 32-bit                                                                                                                                                                                                                                                                           |
+| `F`                  | `Float`            | Valeur flottante (à virgule allant jusqu'à 6 a 7 décimales)                                                                                                                                                                                                                                |
+| `J`                  | `Long`             | Nombre en 64-bit                                                                                                                                                                                                                                                                           |
+| `D`                  | `Double`           | Valeur flottante (à virgule allant jusqu'à 15 à 16 décimales)                                                                                                                                                                                                                              |
+| `Ljava/lang/Object;` | `java.lang.Object` | un type de référence ; la forme interne du nom binaire de la classe doit être présente (dans l'exemple donné, la classe référencée est `java.lang.Object`). Notez que les classes internes sont séparées par le caractère `$` (signe dollar), comme par exemple `java/lang/System$Logger`. |
+
+
+## Exemples
+
+```
+# Définit la visibilité de la méthode en public
+public net.minecraft.data.loot.BlockLoot m_124254_(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item;)Lnet/minecraft/world/level/storage/loot/LootTable$Builder; # createStemDrops
+
+# Définit la visibilité de la variable en protected
+protected net.minecraft.client.gui.Gui f_168670_ # LINE_HEIGHT
+
+# Définit la visibilité de la classe en protected
+protected net.minecraft.client.gui.screens.MenuScreens
+```
