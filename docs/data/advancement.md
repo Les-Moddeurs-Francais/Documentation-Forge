@@ -13,11 +13,9 @@ Pour commencer, nous avons besoin d'une classe qui héritera de la classe `Advan
 On rajoutera le constructeur de la classe dans lequel nous allons modifier quelques trucs.
 
 ```java
-public class AdvancementsGenerator extends AdvancementProvider {
-
-    public AdvancementsGenerator(DataGenerator generatorIn, ExistingFileHelper fileHelper){
-        super(generatorIn, fileHelper);
-    }
+public class AdvancementsGenerator implements ForgeAdvancementProvider.AdvancementGenerator 
+{
+    
 }
 ```
 
@@ -28,7 +26,7 @@ Il sera ensuite nécessaire d'utiliser la fonction `registerAdvancements` hérit
 
 ```java
 @Override
-protected void registerAdvancements(Consumer<Advancement> consumer, ExistingFileHelper fileHelper) 
+public void generate(HolderLookup.Provider registries, Consumer<Advancement> saver, ExistingFileHelper existingFileHelper)
 {
 
 }
@@ -39,8 +37,8 @@ protected void registerAdvancements(Consumer<Advancement> consumer, ExistingFile
 Ici pour ajouter un succès il nous suffira d'écrire le code suivant : 
 ```java
 Advancement.Builder.advancement().display(Items.DIAMOND_BLOCK,
-                        new TranslatableComponent(Items.DIAMOND_BLOCK.getDescriptionId()),
-                        new TextComponent("You obtained a DiamondBlock"),
+                        Component.translatable(Items.DIAMOND_BLOCK.getDescriptionId()),
+                        Component.translatable("You obtained a DiamondBlock"),
                         new ResourceLocation("textures/block/diamond_block.png"),
                         FrameType.CHALLENGE,
                         true,
@@ -48,16 +46,16 @@ Advancement.Builder.advancement().display(Items.DIAMOND_BLOCK,
                         false)
                 .parent(new ResourceLocation("story/mine_stone"))
                 .addCriterion("get_diamond_block", InventoryChangeTrigger.TriggerInstance.hasItems(Items.DIAMOND_BLOCK))
-                .save(consumer, new ResourceLocation("modid", "mon_progres"), fileHelper);
+                .save(saver, new ResourceLocation("modid", "mon_progres"), existingFileHelper);
 ```
 
 Pour expliquer :
 
 ```java
-display(Items.DIAMOND_BLOCK, new TranslatableComponent(Items.DIAMOND_BLOCK.getDescriptionId()), new TextComponent("You obtained a DiamondBlock"), new ResourceLocation("textures/block/diamond_block.png"), FrameType.CHALLENGE, true, true, false)
+display(Items.DIAMOND_BLOCK, Component.translatable(Items.DIAMOND_BLOCK.getDescriptionId()), Component.translatable("You obtained a DiamondBlock"), new ResourceLocation("textures/block/diamond_block.png"), FrameType.CHALLENGE, true, true, false)
 ```
 
-Ici on définit l'affichage du succès avec ces paramètres respectifs. En premier lieu nous avons l'item qui servira d'icône, en deuxième le nom du succès (ici définis par une clé de traduction pour que celui-ci dépende de la langue choisie), en troisième la description du succès (ici un texte simple non dépendant de la langue choisie), en quatrième la texture de fond si jamais votre succès n'a pas de _parent_ (peut être définie sur null si ce n'est pas le cas), en cinquième nous avons l'indication de si le succès une fois obtenu doit afficher une notification (aussi appelée _toast_) en haut à droite de l'écran du joueur, en sixième encore une indication mais cette fois-ci spécifiant si une annonce doit être faite dans le chat à l'obtention du succès et enfin en septième nous avons une indication de si le succès doit être caché avant que celui défini comme _parent_ soit obtenu.
+Ici, on définit l'affichage du succès avec ces paramètres respectifs. En premier lieu, nous avons l'item qui servira d'icône, en deuxième le nom du succès (ici définis par une clé de traduction pour que celui-ci dépende de la langue choisie), en troisième la description du succès (ici un texte simple non dépendant de la langue choisie), en quatrième la texture de fond si jamais votre succès n'a pas de _parent_ (peut être définie sur null si ce n'est pas le cas), en cinquième nous avons l'indication de si le succès une fois obtenu doit afficher une notification (aussi appelée _toast_) en haut à droite de l'écran du joueur, en sixième encore une indication, mais cette fois-ci spécifiant si une annonce doit être faite dans le chat à l'obtention du succès et enfin en septième, nous avons une indication de si le succès doit être caché avant que celui défini comme _parent_ soit obtenu.
 
 ```java
 parent(new ResourceLocation("story/mine_stone"))
@@ -83,8 +81,8 @@ premier paramètre on renseigne `consumer` qui est le paramètre de notre foncti
 
 ## GatherDataEvent
 
-Dans votre fonction avec en paramètre l'event `GatherDataEvent` il nous
-faudra ajouter notre 'provider'.
+Dans votre fonction avec en paramètre l'événement `GatherDataEvent` il nous
+faudra ajouter notre 'provider' dans une liste.
 
 ```java
 @SubscribeEvent
@@ -92,7 +90,7 @@ public static void dataGen(final GatherDataEvent e)
 {
     DataGenerator generator = e.getGenerator();
 
-    generator.addProvider(event.includeServer(), new AdvancementsGenerator(generator, event.getExistingFileHelper()));
+    generator.addProvider(event.includeServer(), new ForgeAdvancementProvider(generator.getPackOutput(), event.getLookupProvider(), event.getExistingFileHelper(), List.of(new AdvancementsGenerator())));
 }
 ```
 
