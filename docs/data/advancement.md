@@ -86,16 +86,16 @@ faudra ajouter notre 'provider' dans une liste.
 
 ```java
 @SubscribeEvent
-public static void dataGen(final GatherDataEvent e)
+public static void dataGen(final GatherDataEvent event)
 {
-    DataGenerator generator = e.getGenerator();
+    DataGenerator generator = event.getGenerator();
 
     generator.addProvider(event.includeServer(), new ForgeAdvancementProvider(generator.getPackOutput(), event.getLookupProvider(), event.getExistingFileHelper(), List.of(new AdvancementsGenerator())));
 }
 ```
 
 :::tip
-Remarquez le `e.includeServer()` qui permet de répartir les différentes
+Remarquez le `event.includeServer()` qui permet de répartir les différentes
 ressources selon le côté qui les utilise. En l'occurrence, les progrès
 ne sont utilisés que par le serveur, donc pas besoin de le générer coté client.
 :::
