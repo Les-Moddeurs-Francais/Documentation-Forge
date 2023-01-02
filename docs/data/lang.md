@@ -70,7 +70,7 @@ notre item puis on donne son nom final qui sera affiché en jeu.
 
 ## GatherDataEvent
 
-Dans votre fonction avec en paramètre l'event `GatherDataEvent` il nous
+Dans votre fonction avec en paramètre l'événement `GatherDataEvent` il nous
 reste à ajouter notre 'provider'.
 
 ```java
