@@ -15,8 +15,8 @@ On rajoutera le constructeur de la classe dans lequel nous allons modifier quelq
 ```java
 public class LangGenerator extends LanguageProvider {
 
-    public LangGenerator(DataGenerator gen) {
-        super(gen, Technicia.MODID, "en_us");
+    public LangGenerator(PackOutput packOutput, String modid, String locale) {
+        super(gen, modid, locale);
     }
 }
 ```
@@ -75,11 +75,11 @@ reste à ajouter notre 'provider'.
 
 ```java
 @SubscribeEvent
-public static void dataGen(final GatherDataEvent e)
+public static void dataGen(final GatherDataEvent event)
 {
-    DataGenerator gen = e.getGenerator();
+    DataGenerator generator = event.getGenerator();
 
-    gen.addProvider(event.includeClient(), new LangGenerator(gen));
+    gen.addProvider(event.includeClient(), new LangGenerator(generator.getPackOutput(), "modid", "en_us"));
 }
 ```
 
