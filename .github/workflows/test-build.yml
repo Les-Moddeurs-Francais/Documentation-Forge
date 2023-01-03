@@ -1,4 +1,4 @@
-name: Test deployment
+name: Documentation CLI
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   test-deploy:
-    name: Test deployment
+    name: Check Documentation Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
