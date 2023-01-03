@@ -95,6 +95,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `mineable/pickaxe`                         | Liste des blocs pouvant être miné efficacement avec une pioche                                                                                                                |
 | `mineable/shovel`                          | Liste des blocs pouvant être miné efficacement avec une pelle                                                                                                                 |
 | `acacia_logs`                              | Liste des blocs qui sont des buches d'acacia                                                                                                                                  |
+| `all_signs`                                | Liste des blocs qui sont des pancartes (de tous types)                                                                                                                        |
 | `ancient_city_replaceable`                 | Liste des blocs remplaçables par les cités antiques                                                                                                                           |
 | `animals_spawnable_on`                     | Liste des blocs sur lesquels les animaux peuvent apparaître                                                                                                                   |
 | `anvil`                                    | Liste des blocs qui sont des enclumes                                                                                                                                         |
@@ -161,6 +162,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `infiniburn_nether`                        | Liste des blocs qui peuvent rester en feu éternellement dans la dimension du Nether                                                                                           |
 | `infiniburn_overworld`                     | Liste des blocs qui peuvent rester en feu éternellement dans le monde normal                                                                                                  |
 | `inside_step_sound_blocks`                 | Liste des blocs jouant le son de pas quand une entité marche à l'intérieur                                                                                                    |
+| `invalid_spawn_inside`                     | Liste des blocs où le joueur ne peut apparaitre à l'intérieur                                                                                                                 |
 | `iron_ores`                                | Liste des blocs qui sont des minerais de fer                                                                                                                                  |
 | `jungle_logs`                              | Liste des blocs qui sont des buches de bois de la jungle                                                                                                                      |
 | `lapis_ores`                               | Liste des blocs qui sont des minerais de lapis lazuli                                                                                                                         |
@@ -179,7 +181,6 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `needs_iron_tool`                          | Liste des blocs nécessitant un outil en fer pour être récolté                                                                                                                 |
 | `needs_stone_tool`                         | Liste des blocs nécessitant un outil en pierre pour être récolté                                                                                                              |
 | `nether_carver_replaceables`               | Liste des blocs qui peuvent être détruit par le générateur de monde pour y creuser des grottes dans le Nether                                                                 |
-| `non_flammable_wood`                       | Liste des blocs de bois qui sont inflammables                                                                                                                                 |
 | `nylium`                                   | Liste des blocs qui sont des blocs de nylium                                                                                                                                  |
 | `oak_logs`                                 | Liste des blocs qui sont des buches de bois de chêne                                                                                                                          |
 | `occludes_vibration_signals`               | Liste des blocs qui empêchent les capteurs sculk d'entendre les vibrations si le bloc se trouve entre le capteur et la vibration                                              |
@@ -493,6 +494,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `completes_find_tree_tutorial` | Liste des types de blocs permettant de completer le tutoriel `find_tree`                         |
 | `copper_ores`                  | Liste des minerais de cuivre                                                                     |
 | `creeper_drop_music_discs`     | Liste de tous les disques pouvant être _dropés_ par un creeper quand il est tué par un squelette |
+| `creeper_igniters`             | Liste de tous les types d'items permettant d'allumer un creeper (pour le faire exploser)         |
 | `crimson_stems`                | Liste de tous les types de troncs carmins                                                        |
 | `dampens_vibrations`           | Liste de tous les types de blocs absorbant les vibrations qui le touchent                        |
 | `dark_oak_logs`                | Liste de tous les types de troncs en chêne noir                                                  |
@@ -501,6 +503,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `doors`                        | Liste de tous les types de porte                                                                 |
 | `emerald_ores`                 | Liste des minerais d'émeraude                                                                    |
 | `fences`                       | Liste de tous les types de barrière                                                              |
+| `fence_gates`                  | Liste de tous les types de portillons                                                            |
 | `fishes`                       | Liste de tous les types de poissons                                                              |
 | `flowers`                      | Liste de tous les types de fleurs                                                                |
 | `fox_food`                     | Liste des items que le renard peut manger                                                        |
@@ -518,7 +521,6 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `music_discs`                  | Liste de tous les disques de musique                                                             |
 | `non_flammable_wood`           | Liste des tous les types de bois non combustibles                                                |
 | `oak_logs`                     | Liste de tous les types de troncs en chêne                                                       |
-| `overworld_natural_logs`       | Liste de tous les types de troncs naturellement présent dans le monde normal                     |
 | `piglin_food`                  | Liste des items que mangent les piglins                                                          |
 | `piglin_loved`                 | Liste des items que les Piglins accepte pour faire un échange                                    |
 | `piglin_repellents`            | Liste des items qui repoussent les piglins                                                       |

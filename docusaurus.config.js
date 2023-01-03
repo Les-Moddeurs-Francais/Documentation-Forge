@@ -23,6 +23,12 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   baseUrlIssueBanner : false,
   favicon: 'img/favicon.ico',
+  markdown: {
+    mermaid: true,
+  },
+  themes: [
+      '@docusaurus/theme-mermaid'
+  ],
   themeConfig: {
     docs :{
       sidebar:{
@@ -94,7 +100,7 @@ module.exports = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/lesmoddeursfr',
+              href: 'https://twitter.com/les_moddeurs_fr',
             },
           ],
         },
