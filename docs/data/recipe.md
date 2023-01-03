@@ -31,14 +31,14 @@ public class RecipeGenerator extends RecipeProvider {
 Ecrivez le constructeur imposé par la classe mère, puis re-définissez la méthode
 `buildRecipes` en supprimant le `super`.
 
-Rendez-vous maintenant dans votre classe avec l'event `GatherDataEvent` et
+Rendez-vous maintenant dans votre classe avec l'événement `GatherDataEvent` et
 ajoutez le générateur comme ceci :
 
 ```java
 @SubscribeEvent
-public static void dataGen(final GatherDataEvent e)
+public static void dataGen(final GatherDataEvent event)
 {
-    DataGenerator generator = e.getGenerator();
+    DataGenerator generator = event.getGenerator();
 
     generator.addProvider(event.includeServer(), new RecipeGenerator(generator.getPackOutput()));
 }
@@ -46,7 +46,7 @@ public static void dataGen(final GatherDataEvent e)
 
 :::tip
 Les crafts sont gérés par le serveur, on exécute donc la génération des recettes
-seulement si l'event l'inclus.
+seulement si l'événement l'inclus.
 :::
 
 De cette façon, on ajoute notre générateur de crafts aux générateurs associés de notre
