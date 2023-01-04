@@ -13,15 +13,15 @@ code permettant de générer (presque) automatiquement tous ces jsons.
 
 Ce sont les **Data Generators**.
 
-Dans cet article nous verrons simplement les prérequis pour utiliser ces dits générateurs.
+Dans cet article, nous verrons simplement les prérequis pour utiliser ces dits générateurs.
 Nous ne verrons pas l'ensemble des générateurs dans cette même section. Cependant, une
 section sera dédiée pour l'ensemble des générateurs disponibles !
 
 ## GatherDataEvent
 
-Un event a été créé exprès par Forge pour que l'on puisse utiliser les générateurs.
+Un événement a été créé exprès par Forge pour que l'on puisse utiliser les générateurs.
 Nous allons créer une classe spécifique pour aérer notre code et éviter de surcharger
-notre classe principale (ce choix est pûrement personnel, à vous de choisir ce qui
+notre classe principale (ce choix est purement personnel, à vous de choisir ce qui
 vous convient le mieux).
 
 Dans un nouveau package `data`, on va créer une classe `DataGen` et y écrire :
@@ -49,7 +49,7 @@ Allons-y pas à pas pour les explications.
 Tout d'abord, nous avons l'annotation ``@Mod.EventBusSubscriber`` qui permets de signaler
 à Forge la présence de notre classe et que cette dernière écoute des évènements.
 Utiliser cette annotation nous permet d'enregistrer toutes les méthodes statiques de notre
-classe ayant un event de Forge en paramètre et l'annotation `@SubscribeEvent`.
+classe ayant un événement de Forge en paramètre et l'annotation `@SubscribeEvent`.
 
 ````java
 public static final ExistingFileHelper IGNORING_FILES_EFH = new ExistingFileHelper(Collections.emptyList(), Sets.newConcurrentHashSet(), false, null, null);
@@ -78,16 +78,16 @@ Veillez bien à ce que l'annotation @SubscribeEvent soit présente, et à ce que
 soit statique !
 :::
 
-Il nous faut également un paramètre de type `GatherDataEvent` qui est l'event clé comme
+Il nous faut également un paramètre de type `GatherDataEvent` qui est l'événement clé comme
 précisé plus haut.
 
 Dernière chose, on crée une variable de type `DataGenerator` faisant référence au générateur
-de l'event que l'on gardera bien au chaud pour les différents générateurs.
+de l'événement que l'on gardera bien au chaud pour les différents générateurs.
 
 ## "build.gradle"
 
 Il reste un petit détail pour éviter tout problème dans votre ``build.gradle``.
-Rendez vous vers la ligne 99. Vous devriez repérer cette ligne :
+Rendez-vous vers la ligne 99. Vous devriez repérer cette ligne :
 
 ````text
 args '--mod', 'testmod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')

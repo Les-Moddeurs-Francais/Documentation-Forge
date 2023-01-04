@@ -24,7 +24,7 @@ tags: [blocs, propriétés]
 | air                         | Définit le fait que le bloc soit considéré par le jeu comme de l'air                                               |
 | isValidSpawn                | Définit le bloc comme étant valide pour l'apparition du joueur                                                     |
 | isRedstoneConductor         | Définit si le bloc permet de conduire de la redstone                                                               |
-| isSuffocating               | Définit si le bloc fait suffoquer le joueur ou non si celui-ci se trouve la tête coincée à l'interieur             |
+| isSuffocating               | Définit si le bloc fait suffoquer le joueur ou non si celui-ci se trouve la tête coincée à l'intérieur             |
 | isViewBlocking              | Définit si le bloc bloque la vue du joueur ou non                                                                  |
 | hasPostProcess              | Définit si le bloc subit un post-traitement ou non                                                                 |
 | emissiveRendering           | Définit si le bloc possède un rendu émissif ou non (comme le bloc de magma)                                        |
