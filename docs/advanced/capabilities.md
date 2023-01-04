@@ -5,11 +5,11 @@ description: Comment utiliser les capabilities ?
 tags: [avancé]
 ---
 
-Les `capabilities` sont un système mis à disposition par Forge permettant de stocker des données sur des **BlockEntities**(TileEntities), des **Entities**, des **ItemStacks**, des **Levels**(Worlds) et des **LevelChunks**(Chunks).
+Les `capabilities` sont un système mis à disposition par Forge permettant de stocker des données sur des **BlockEntities** (TileEntities), des **Entities**, des **ItemStacks**, des **Levels**(Worlds) et des **LevelChunks**(Chunks).
 
 Forge fournit par défaut trois capabilities : `IItemHandler`, qui permet de stocker des items, `IFluidHandler`, qui permet de stocker des liquides et enfin `IEnergyStorage`, qui permet de stocker de l'énergie.
 
-Une capability possède au minimum normalement trois classes : l'interface(Exemple : `IItemHandler`), l'(les) implémentation(s) par défaut de la capability(Exemple : `ItemStackHandler`) et enfin la classe qui contient l'instance de la capability et qui sert à l'enregistrer(Exemple : `CapabilityItemHandler`).
+Une capability possède au minimum normalement trois classes : l'interface(Exemple : `IItemHandler`), l'(les) implémentation(s) par défaut de la capability (Exemple : `ItemStackHandler`) et enfin la classe qui contient l'instance de la capability et qui sert à l'enregistrer (Exemple : `CapabilityItemHandler`).
 
 Pour les utiliser, il faut d'abord les attacher à la `BlockEntity`/`Entity`/`ItemStack`/`Level`/`LevelChunk` de votre choix.
 ## Attacher une Capability
@@ -20,7 +20,7 @@ Pour attacher une capability, il faut déjà posséder son unique instance. Pour
 ```java
 static Capability<VotreInterface> VOTRE_CAPABILITY = CapabilityManager.get(new CapabilityToken<>(){});
 ```
-Où VotreInterface est l'interface de votre capability et VOTRE_CAPABILITY est le nom que vous voulez donner à votre variable(appelez-la comme vous voulez)
+Où VotreInterface est l'interface de votre capability et VOTRE_CAPABILITY est le nom que vous voulez donner à votre variable (appelez-la comme vous voulez)
 
 Exemple :
 ```java
@@ -38,7 +38,7 @@ Pour attacher une Capability, il faut passer par l'évènement `AttachCapabiliti
 :::caution
 Il n'existe d'évènement que pour ces cinq-là. Par exemple, si vous voulez attacher une Capability à un joueur spécifiquement, `AttachCapabilitiesEvent<Player>` ne marchera pas. À la place, il faut utiliser `AttachCapabilitiesEvent<Entity>` et vérifier si `AttachCapabilitiesEvent#getObject`(l'entité) est une instance de Player.
 :::caution
-Vous devrez avoir une implémentation de votre capability(utilisez celle par défaut ou créez la vôtre, voir [ici](#les-implémentations-de-linterface-de-votre-capability)).
+Vous devrez avoir une implémentation de votre capability (utilisez celle par défaut ou créez la vôtre, voir [ici](#les-implémentations-de-linterface-de-votre-capability)).
 
 Il vous faudra également une `ResourceLocation` qui sera la "clé" de votre capability et qui sera utilisée pour éviter que la même capability soit ajoutée deux fois ou que d'autres erreurs du style se produisent.
 
@@ -52,7 +52,7 @@ ResourceLocation VOTRE_CLE = new ResourceLocation(VOTRE_MODID, NOM_DE_LA_CAPABIL
 ```
 :::tip
 
-Pour finir, il vous faudra une implémentation de `ICapabilityProvider` qui retourne avec la fonction `getCapability` un `LazyOptional` de la capability(un Provider)
+Pour finir, il vous faudra une implémentation de `ICapabilityProvider` qui retourne avec la fonction `getCapability` un `LazyOptional` de la capability (un Provider)
 
 Exemple :
 
@@ -97,14 +97,14 @@ public static void attachToEntities(AttachCapabilitiesEvent<Entity> event)
 (pensez bien à remplacer VOTRE_CLE par la `ResourceLocation` servant de clé que vous avez créée plus haut et `new EnergyStorageProvider()` par votre provider)
 
 :::warning
-Attacher les Capabilities par défaut de Forge(voir [ici](#utiliser-une-capability)) à des classes vanilla peut causer certains problèmes. Par exemple, attacher un `IItemHandler` à un joueur ne marchera pas, car si vous essayez de le récupérer en passant par le joueur, vous obtiendrez un `IItemHandler` qui correspond à l'inventaire du même joueur. Si vous souhaitez tout de même utiliser les Capabilities de Forge, il faut alors créer une nouvelle Capability qui extend celle que vous souhaitez attacher(voir [ici](#créer-une-capability)).
+Attacher les Capabilities par défaut de Forge (voir [ici](#utiliser-une-capability)) à des classes vanilla peut causer certains problèmes. Par exemple, attacher un `IItemHandler` à un joueur ne marchera pas, car si vous essayez de le récupérer en passant par le joueur, vous obtiendrez un `IItemHandler` qui correspond à l'inventaire du même joueur. Si vous souhaitez tout de même utiliser les Capabilities de Forge, il faut alors créer une nouvelle Capability qui extend celle que vous souhaitez attacher(voir [ici](#créer-une-capability)).
 :::
 
 ## Récupérer la Capability
 
 Une fois que la Capability est bien attachée, pour l'utiliser, il faut la récupérer ! Pour cela, reprenons l'exemple de la Capability `IEnergyStorage` attachée à un joueur :
 
-Pour la récupérer, il faut d'abord obtenir la classe sur laquelle vous avez attaché la Capability (une instance de `Player` dans notre cas). Une fois cela fait (je n'explique pas comment faire, car cela dépend de sur quoi vous avez attaché la Capability), il faut utiliser dans notre cas(celui du joueur) :
+Pour la récupérer, il faut d'abord obtenir la classe sur laquelle vous avez attaché la Capability (une instance de `Player` dans notre cas). Une fois cela fait (je n'explique pas comment faire, car cela dépend de sur quoi vous avez attaché la Capability), il faut utiliser dans notre cas (celui du joueur) :
 
 ```java
 LazyOptional<IEnergyStorage> energyStorageLazyOptional = player.getCapability(CapabilityEnergy.ENERGY);
@@ -116,7 +116,7 @@ Nous avons maintenant un `LazyOptional` de notre Capability.
 :::tip
 Qu'est-ce qu'un `LazyOptional` ?
 
-C'est une classe créée par Forge et qui est similaire à la classe Optional (tapez java Optional sur google si vous ne savez pas ce que c'est). Si vous voulez en savoir plus, regardez dans la classe elle-même, c'est assez bien documenté.
+C'est une classe créée par Forge et qui est similaire à la classe Optional (tapez java Optional sur Google si vous ne savez pas ce que c'est). Si vous voulez en savoir plus, regardez dans la classe elle-même, c'est assez bien documenté.
 :::
 
 Maintenant que vous possédez votre `LazyOptional`, vous pouvez faire ce que vous voulez avec.
@@ -143,7 +143,7 @@ Pour sauvegarder sa Capability, il faut modifier votre Provider comme ceci :
 - Finalement, ajoutez la fonction `deserializeNBT` qui a pour argument le `Tag` que vous avez décidé d'utiliser et que vous pouvez récupérer pour l'utiliser
 
 :::tip
-La plupart des implémentations par défaut des Capabilities fournies par Forge(regardez les classes qui implémentent l'interface de la Capability de votre choix) possèdent des fonctions permettant de sérialiser et de désérialiser des `Tag`. Si elles existent, il est donc préférable de les utiliser dans les fonctions correspondantes de votre Provider.
+La plupart des implémentations par défaut des Capabilities fournies par Forge (regardez les classes qui implémentent l'interface de la Capability de votre choix) possèdent des fonctions permettant de sérialiser et de désérialiser des `Tag`. Si elles existent, il est donc préférable de les utiliser dans les fonctions correspondantes de votre Provider.
 :::
 
 Voici ce que cela donne si l'on reprend le Provider créé plus haut :
@@ -263,7 +263,7 @@ public class LightStorage implements ILightCapability{
 
 ### Créer la classe contenant l'instance de la Capability
 
-Il faut maintenant créer une classe qui contiendra l'instance par défaut de votre Capability(il s'agit en fait d'une instance de la classe `Capability`)
+Il faut maintenant créer une classe qui contiendra l'instance par défaut de votre Capability (il s'agit en fait d'une instance de la classe `Capability`)
 
 Le code pour la récupérer est exactement le même qu'[ici](#récupérer-linstance-dune-capability), il faut juste mettre ça dans une classe.
 
