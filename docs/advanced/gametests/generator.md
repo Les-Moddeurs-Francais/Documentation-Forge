@@ -28,27 +28,27 @@ Elle possède trois constructeurs :
 - Le premier prend :
   - un `String` qui est le nom du batch utilisé pour le test
   - un `String` qui est le nom du test
-  - un `String` qui est le chemin d'accès à la template du test (exemple : `minecraft:minecart_test`). Pour plus de facilité, vous pouvez créer une `ResourceLocation`, puis utiliser sa méthode `toString()`.
+  - un `String` qui est le chemin d'accès au modèle du test (exemple : `minecraft:minecart_test`). Pour plus de facilité, vous pouvez créer une `ResourceLocation`, puis utiliser sa méthode `toString()`.
   - un `int` qui représente le nombre de ticks avant que le test ne soit considéré comme échoué s'il n'a pas déjà réussi ou échoué avant
-  - un `long` qui représente le nombre de ticks entre le placement de la template et le début du test
+  - un `long` qui représente le nombre de ticks entre le placement du modèle et le début du test
   - un `boolean` qui représente si le test est requis ou non pour valider tous les tests, c'est-à-dire si le résultat du test influera le code de sortie de la configuration runGameTestServer par exemple
   - un `Consumer<GameTestHelper>` qui contient le code à exécuter pour le GameTest
 - Le deuxième prend :
   - un `String` qui est le nom du batch utilisé pour le test
   - un `String` qui est le nom du test
-  - un `String` qui est le chemin d'accès à la template du test (exemple : `minecraft:minecart_test`). Pour plus de facilité, vous pouvez créer une `ResourceLocation`, puis utiliser sa méthode `toString()`.
-  - une `Rotation` qui représente la rotation de la template
+  - un `String` qui est le chemin d'accès du modèle du test (exemple : `minecraft:minecart_test`). Pour plus de facilité, vous pouvez créer une `ResourceLocation`, puis utiliser sa méthode `toString()`.
+  - une `Rotation` qui représente la rotation du modèle
   - un `int` qui représente le nombre de ticks avant que le test ne soit considéré comme échoué s'il n'a pas déjà réussi ou échoué avant
-  - un `long` qui représente le nombre de ticks entre le placement de la template et le début du test
+  - un `long` qui représente le nombre de ticks entre le placement du modèle et le début du test
   - un `boolean` qui représente si le test est requis ou non pour valider tous les tests, c'est-à-dire si le résultat du test influera le code de sortie de la configuration runGameTestServer par exemple
   - un `Consumer<GameTestHelper>` qui contient le code à exécuter pour le GameTest
 - Le troisième prend :
   - un `String` qui est le nom du batch utilisé pour le test
   - un `String` qui est le nom du test
-  - un `String` qui est le chemin d'accès à la template du test (exemple : `minecraft:minecart_test`). Pour plus de facilité, vous pouvez créer une `ResourceLocation`, puis utiliser sa méthode `toString()`.
-  - une `Rotation` qui représente la rotation de la template
+  - un `String` qui est le chemin d'accès du modèle du test (exemple : `minecraft:minecart_test`). Pour plus de facilité, vous pouvez créer une `ResourceLocation`, puis utiliser sa méthode `toString()`.
+  - une `Rotation` qui représente la rotation dyu modèle
   - un `int` qui représente le nombre de ticks avant que le test ne soit considéré comme échoué s'il n'a pas déjà réussi ou échoué avant
-  - un `long` qui représente le nombre de ticks entre le placement de la template et le début du test
+  - un `long` qui représente le nombre de ticks entre le placement du modèle et le début du test
   - un `boolean` qui représente si le test est requis ou non pour valider tous les tests, c'est-à-dire si le résultat du test influera le code de sortie de la configuration runGameTestServer par exemple
   - un `int` qui représente le nombre maximum de fois que le test peut être exécuté
   - un `int` qui représente le nombre de réussites requises pour valider le test

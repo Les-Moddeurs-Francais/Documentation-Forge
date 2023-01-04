@@ -5,7 +5,7 @@ description: Comment utiliser les data generators pour les recettes ?
 tags: [data generators]
 ---
 
-Dans cette section, nous allons voir comment générer nos différentes [recettes](../bases/resources/recipe.md) à l'aide d'un générateur.
+Dans cette section, nous allons voir comment générer nos différentes [recettes](/bases/resources/recipe.md) à l'aide d'un générateur.
 
 ## Code
 
