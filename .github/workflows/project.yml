@@ -3,10 +3,11 @@ name: Add issues to project (roadmap)
 on:
   issues:
     types:
-      - opened
+      - labeled
 
 jobs:
   add-to-project:
+    if: github.event.label.name == 'statut : validée'
     name: Add issue to project
     runs-on: ubuntu-latest
     steps:
