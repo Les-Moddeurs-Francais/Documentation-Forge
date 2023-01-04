@@ -120,7 +120,7 @@ Ce dernier contient toutes les informations pour identifier votre mod. On va pas
 ### Modid
 
 ````text
-modId="testmod" #mandatory
+modId="testmod"
 ````
 
 Ligne 18 du fichier, vous devriez avoir la propriété *modId* où entre guillemets
@@ -130,7 +130,7 @@ votre classe principale. Pour ma part ce sera **"testmod"**.
 ### Nom du mod
 
 ````text
-displayName="TestMod" #mandatory
+displayName="TestMod"
 ````
 
 Ligne 26, on a accès à la forme que le prendra le nom du mod dans la liste
@@ -140,8 +140,8 @@ pouvez insérer des espaces, des majuscules et même des accents.
 ### Crédits
 
 ````text
-credits="Tutoriel réalisé pour LMF" #optional
-authors="Zom'" #optional
+credits="Tutoriel réalisé pour LMF"
+authors="Zom'"
 ````
 
 Ligne 29, vous pouvez indiquer des remerciements particuliers comme pour les
@@ -160,7 +160,7 @@ du mod.
 
 Ligne 33 est renseignée la description du mod que vous pourrez retrouver
 dans la liste des mods quand vous sélectionner le vôtre. Vous pouvez
-y décrire de manière conscise ce qu'ajoute votre mod au jeu.
+y décrire de manière concise ce qu'ajoute votre mod au jeu.
 
 > À vous de jouer ! Il ne vous reste plus qu'à lancer la configuration
 *runClient* dans votre IDE et voir dans la liste des mods

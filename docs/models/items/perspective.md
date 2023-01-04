@@ -24,7 +24,7 @@ La structure du fichier du modèle sera celle-ci :
 }
 ```
 
-Le modèle de base est celui qui est affiché quand le cas d'une perspective n'est pas prise en charge dans le champ `perspectives`. Pour faire référence à notre item, il nous faudra utiliser la clé `parent` avec une valeur qui sera   le chemin vers votre item (un peu comme pour un modèle basique) :
+Le modèle de base est celui qui est affiché quand le cas d'une perspective n'est pas prise en charge dans le champ `perspectives`. Pour faire référence à notre item, il nous faudra utiliser la clé `parent` avec une valeur qui sera le chemin vers votre item (un peu comme pour un modèle basique) :
 
 ```json
 "parent": "modid:item/example_item"
