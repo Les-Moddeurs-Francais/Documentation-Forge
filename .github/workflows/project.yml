@@ -7,7 +7,7 @@ on:
 
 jobs:
   add-to-project:
-    if: github.event.label.name == 'statut : validée'
+    if: github.event.label.name == 'idée validée'
     name: Add issue to project
     runs-on: ubuntu-latest
     steps:
