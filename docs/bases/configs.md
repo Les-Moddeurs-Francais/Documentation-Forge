@@ -179,7 +179,7 @@ static {
 Vous l'aurez peut-être remarqué, mais il y a trois portions de code qui se ressemble, et celle ci-dessus est l'une
 d'entre-elles.
 
-Premièrement, on déclare deux variables `clientSpec` et `client`. La variable `clientSpec` servira à enregister la
+Premièrement, on déclare deux variables `clientSpec` et `client`. La variable `clientSpec` servira à enregistrer la
 config dans le mod. C'est à partir de `client` que nous pourrons récupérer nos valeurs. Ensuite dans un bloc statique
 qui s'exécute à la lecture de la classe on affecte les valeurs des deux variables via la méthode `configure`. Elle nous
 renvoie un `Pair` qui équivaut à un tuple en Python.
@@ -226,6 +226,6 @@ Ici le `Tier` de mon épée aura pour boost de dégâts la valeur `ModConfig.ser
 un peu plus haut.
 
 Désormais si vous lancez le jeu, dans le dossier config du monde vous aurez un dossier avec vos configs à l'intérieur où
-vous pourrez, et les joueurs également, modifier les valeurs inscrites dans l'intervalle que vous aurez imposé.
+vous pourrez et les joueurs également, modifier les valeurs inscrites dans l'intervalle que vous aurez imposé.
 
-> ![](../../static/img/docs/config/resultat_config_light.png#gh-light-mode-only)![](../../static/img/docs/config/resultat_config_dark.png#gh-dark-mode-only)
+> ![Exemple de résultat](/img/docs/config/resultat_config_light.png#gh-light-mode-only)![Exemple de résultat](/img/docs/config/resultat_config_dark.png#gh-dark-mode-only)

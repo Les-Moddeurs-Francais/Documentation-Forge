@@ -71,7 +71,7 @@ Tout d'abord, nous devons ajouter l'annotation *@Mod* avec en paramètre le modi
 soit l'identifiant de notre mod pour signaler à Forge que notre mod est présent.
 
 :::caution
-Il est fortement conseillé de mettre votre modid dans une variable final de sorte à ce que vous n'ayez pas à retaper à la main votre modid et ainsi limiter les erreurs (et en plus c'est pas hard-codé et ça c'est bien !). Et veillez également à ne pas mettre de majuscules en écrivant votre modid !
+Il est fortement conseillé de mettre votre modid dans une variable final de sorte que vous n'ayez pas à retaper à la main votre modid et ainsi limiter les erreurs (et en plus ce n'est pas hard-codé et ça, c'est bien !). Et veillez également à ne pas mettre de majuscules en écrivant votre modid !
 :::
 
 ````java
@@ -101,7 +101,7 @@ La méthode *clientSetup* quant à elle, servira pour le côté client, d'où so
 ````
 
 Enfin, dans le constructeur, nous indiquons à Forge que nous "écoutons" les events *FMLCommonSetupEvent* et *FMLClientSetupEvent* quand ils sont appelés.
-Grossièrement, on exécute les méthodes *setup* et *clientSetup* lorsque Forge mets en place le jeu et le client spécifiquement pour l'event *FMLClientSetupEvent*.
+Grossièrement, on exécute les méthodes *setup* et *clientSetup* lorsque Forge mets en place le jeu et le client spécifiquement pour l'événement *FMLClientSetupEvent*.
 
 :::tip
 La variable **bus** nous servira dans les tutoriels suivants pour enregistrer nos items et blocs.
@@ -114,7 +114,7 @@ lancer le jeu avec notre mod pour être détecté par Forge. Il nous reste plus 
 ## mods.toml
 
 Cette fois-ci, on va se rendre dans le dossier *src/main/resources* et vous devriez
-trouver le fichier [mods.toml](../bases/mods_toml) dans le dossier *META-INF*.
+trouver le fichier [mods.toml](mods_toml.md) dans le dossier *META-INF*.
 Ce dernier contient toutes les informations pour identifier votre mod. On va passer en revue ici les informations les plus importantes du fichier.
 
 ### Modid
@@ -125,7 +125,7 @@ modId="testmod"
 
 Ligne 18 du fichier, vous devriez avoir la propriété *modId* où entre guillemets
 vous notez **exactement** la même chose que dans la variable créée précédemment dans
-votre classe principale. Pour ma part ce sera **"testmod"**.
+votre classe principale. Pour ma part, ce sera **"testmod"**.
 
 ### Nom du mod
 
@@ -134,7 +134,7 @@ displayName="TestMod"
 ````
 
 Ligne 26, on a accès à la forme que le prendra le nom du mod dans la liste
-des mods de Forge. Ici vous avez plus de libertés que pour le modid, vous
+des mods de Forge. Ici, vous avez plus de libertés que pour le modid, vous
 pouvez insérer des espaces, des majuscules et même des accents.
 
 ### Crédits
