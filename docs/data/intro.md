@@ -87,7 +87,7 @@ de l'événement que l'on gardera bien au chaud pour les différents générateu
 ## "build.gradle"
 
 Il reste un petit détail pour éviter tout problème dans votre ``build.gradle``.
-Rendez vous vers la ligne 99. Vous devriez repérer cette ligne :
+Rendez-vous vers la ligne 99. Vous devriez repérer cette ligne :
 
 ````text
 args '--mod', 'testmod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')

@@ -123,7 +123,7 @@ De cette manière, lorsqu'on dessinera le schéma de notre craft, le caractère 
 associé au bloc de terre dans ce cas-là.
 
 :::tip
-Ici le caractère 'D' n'est pas anodin. Etant donné que j'utilise le bloc de `Dirt`,
+Ici le caractère 'D' n'est pas anodin. Étant donné que j'utilise le bloc de `Dirt`,
 j'ai pris l'initial du mot comme caractère. Essayez de rendre vos craft le plus lisible
 possible. Comme votre code d'ailleurs !
 :::
@@ -173,7 +173,7 @@ group("diamond")
 
 La fonction `group` sert quant à elle à rassembler différents crafts pour le même
 objet. Ici, j'ai décidé de créer un groupe `diamond` étant donné que mon craft
-donne un diamant. C'est-à-dire que tous les crafts ayant le même group seront rassemblés
+donne un diamant. C'est-à-dire que tous les crafts ayant le même groupe seront rassemblés
 dans le livre de recettes du jeu sur la même case.
 
 ```java
@@ -287,7 +287,7 @@ la cuisson. Les recettes du jeu prennent en général 200 ticks soit
 
 ## Recettes dans le stonecutter
 
-Intéressons-nous maintenant au stonecutter. Pour l'exemple je vais créer
+Intéressons-nous maintenant au stonecutter. Pour l'exemple, je vais créer
 une recette à partir de planche pour obtenir une bûche.
 
 ```java
