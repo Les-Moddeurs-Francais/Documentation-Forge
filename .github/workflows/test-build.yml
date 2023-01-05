@@ -5,6 +5,7 @@ on:
     branches:
       - master
     paths:
+      - '**'
       - '!README.md'
       - '!CONTRIBUTING.md'
       - '!LICENSE'
