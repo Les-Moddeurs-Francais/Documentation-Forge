@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths-ignore:
-      - 'README.md'
-      - 'CONTRIBUTING.md'
-      - 'LICENSE'
-      - '.github/**'
-      - '!.github/workflows/**'
+      - '!README.md'
+      - '!CONTRIBUTING.md'
+      - '!LICENSE'
+      - '!.github/**'
+      - '.github/workflows/**'
 
 concurrency:
   group: ${{ github.ref }}
