@@ -4,13 +4,10 @@ on:
   pull_request:
     branches:
       - master
-    paths:
-      - '**'
-      - '!README.md'
-      - '!CONTRIBUTING.md'
-      - '!LICENSE'
-      - '!.github/**'
-      - '.github/workflows/**'
+    paths-ignore:
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'LICENSE'
 
 concurrency:
   group: ${{ github.ref }}
