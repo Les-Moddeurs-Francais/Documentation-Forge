@@ -55,4 +55,4 @@ Ici, le premier paramètre correspond au niveau du _tier_ (hiérarchie entre tou
 
 </details>
 
-Après ça il ne restera plus qu'à ajouter le bloc dans ledit tag lié au _tier_ (dans ce cas ça sera `modid:mon_tier` se trouvant dans le dossier `data/modid/tags/blocks`).
+Après ça il ne restera plus qu'à ajouter le bloc dans ledit tag lié au _tier_ (dans ce cas, ça sera `modid:mon_tier` se trouvant dans le dossier `data/modid/tags/blocks`).

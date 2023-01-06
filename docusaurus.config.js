@@ -11,8 +11,8 @@ function getNextVersionName() {
         'Erreur ! La dernière version ne respecte pas le pattern',
     );
   }
-  const version = parseInt(lastReleasedVersion.replace(expectedPrefix, ''), 10);
-  return `${expectedPrefix}${version + 1}`;
+  const version = parseInt(lastReleasedVersion.replace(expectedPrefix, '').replace(".x", ''), 10);
+  return `${expectedPrefix}${version + 1}.x`;
 }
 
 module.exports = {

@@ -45,7 +45,7 @@ public class MonBloc extends Block {
 }
 ```
 
-Ainsi nous pourrons enregistrer le bloc comme dans la technique sans classe custom sauf que nous ferons un `new MobBloc` et non `new Block`, ce qui donne une variable du type
+Ainsi, nous pourrons enregistrer le bloc comme dans la technique sans classe custom sauf que nous ferons un `new MobBloc` et non `new Block`, ce qui donne une variable du type
 ```java
 public static final RegistryObject<Block> MON_BLOC = BLOCKS.register("mon_bloc", () -> new MonBloc(Block.Properties.of(Material.STONE, MaterialColor.STONE)));
 ```
@@ -89,7 +89,7 @@ Pour un bloc, son modèle permet de définir sa forme ainsi que les textures qui
 
 #### Modèle du bloc
 
-Ici nous appliquerons un modèle au bloc assimilable au bloc de diamant.
+Ici, nous appliquerons un modèle au bloc assimilable au bloc de diamant.
 
 ```json
 {
@@ -123,9 +123,9 @@ Ici le modèle de l'item va aller chercher celui du bloc (celui-ci étant param�
 Comme spécifié dans le modèle, la texture se situera dans le dossier `textures/block` et aura comme nom `mon_bloc.png` (l'extension est importante).
 
 ### Traductions
-Un bloc à sa création se voie attribuer de manière systématique un nom délocalisé. La raison étant que celui-ci permet de traduire le nom du bloc dans toutes les langues supportées par le jeu.
+Un bloc à sa création se voit attribuer de manière systématique un nom délocalisé. La raison étant que celui-ci permet de traduire le nom du bloc dans toutes les langues supportées par le jeu.
 
-Ici le bloc ne comportera qu'un nom traduit en anglais (en_us) qui est la langue de base du jeu (en cas de traduction manquante dans une autre langue, le jeu appliquera cette traduction), mais voici toutes les [langues](https://minecraft.fandom.com/wiki/Language) disponible dans le jeu avec leurs codes respectifs.
+Ici le bloc ne comportera qu'un nom traduit en anglais (en_us) qui est la langue de base du jeu (en cas de traduction manquante dans une autre langue, le jeu appliquera cette traduction), mais voici toutes les [langues](https://minecraft.fandom.com/wiki/Language) disponibles dans le jeu avec leurs codes respectifs.
 
 Les fichiers de langue sont situés dans le dossier `lang` des ressources.
 
@@ -137,11 +137,11 @@ Les fichiers de langue sont situés dans le dossier `lang` des ressources.
 
 ## Datas
 
-Les datas dans Minecraft correspondes à des ressources coté serveur comme les recettes, les tags, les structures et mêmes les loot tables nécessaires aux blocs.
+Les datas dans Minecraft correspondent à des ressources coté serveur comme les recettes, les tags, les structures et même les loot tables nécessaires aux blocs.
 
 ### Loot Tables
 
-Ici nous appliquerons une _loot table_ similaire à celle du bloc de diamant.
+Ici, nous appliquerons une _loot table_ similaire à celle du bloc de diamant.
 
 ```json
 {
