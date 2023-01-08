@@ -1,5 +1,5 @@
 name: Erreur(s) dans la documentation
-description: Create a bug report
+description: Créez un rapport au sujet d'une/de plusieurs erreur(s) dans la documentation
 labels: ["statut : non vérifié", "type: erreur"]
 body:
   - type: dropdown
