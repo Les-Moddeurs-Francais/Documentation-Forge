@@ -1,5 +1,5 @@
 name: Erreur(s)
-description: Créez un rapport au sujet d'une/de plusieurs erreur(s) dans la documentation
+description: Créez un rapport au sujet d'une ou plusieurs erreurs dans la documentation
 labels: ["statut : non vérifié", "type: erreur"]
 body:
   - type: dropdown
@@ -15,6 +15,6 @@ body:
     id: mistake-description
     attributes:
       label: Description de l'erreur
-      description: Essayez au maximum si vous le pouvez, de nous fournir des captures d'écran ainsi que les URL's des pages concernées.
+      description: Essayez au maximum si vous le pouvez, de nous fournir des captures d'écran ainsi que les URLs des pages concernées.
     validations:
       required: true
