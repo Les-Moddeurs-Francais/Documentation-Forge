@@ -5,7 +5,7 @@ description: Comment utiliser les access transformers ?
 tags: [avancé]
 ---
 
-Les `access transformers` (ou AT) permettent de modifier l'accessibilité  et la visibilité des variables, méthodes et classes des librairies (retirer le `final`, changer l'attribut `private` en `public`, etc...).
+Les `access transformers` (ou AT) permettent de modifier l'accessibilité et la visibilité des variables, méthodes et classes des librairies (retirer le `final`, changer l'attribut `private` en `public`, etc...).
 
 ## Ajout du fichier pour les AT's
 Pour spécifier à ForgeGradle que le mod utilisera les access transformers, vous devez ajouter cette ligne dans le build.gradle (la catégorie `minecraft` est normalement déjà présente dans votre fichier) :

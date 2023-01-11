@@ -5,7 +5,7 @@ description: Comment utiliser les data generators pour les recettes ?
 tags: [data generators]
 ---
 
-Dans cette section, nous allons voir comment générer nos différentes [recettes](../bases/resources/recipe.md) à l'aide d'un générateur.
+Dans cette section, nous allons voir comment générer nos différentes [recettes](/bases/resources/recipe.md) à l'aide d'un générateur.
 
 ## Code
 
@@ -28,7 +28,7 @@ public class RecipeGenerator extends RecipeProvider {
 }
 ```
 
-Ecrivez le constructeur imposé par la classe mère, puis re-définissez la méthode
+Écrivez le constructeur imposé par la classe mère, puis re-définissez la méthode
 `buildRecipes` en supprimant le `super`.
 
 Rendez-vous maintenant dans votre classe avec l'événement `GatherDataEvent` et
@@ -123,7 +123,7 @@ De cette manière, lorsqu'on dessinera le schéma de notre craft, le caractère 
 associé au bloc de terre dans ce cas-là.
 
 :::tip
-Ici le caractère 'D' n'est pas anodin. Etant donné que j'utilise le bloc de `Dirt`,
+Ici le caractère 'D' n'est pas anodin. Étant donné que j'utilise le bloc de `Dirt`,
 j'ai pris l'initial du mot comme caractère. Essayez de rendre vos craft le plus lisible
 possible. Comme votre code d'ailleurs !
 :::
@@ -173,7 +173,7 @@ group("diamond")
 
 La fonction `group` sert quant à elle à rassembler différents crafts pour le même
 objet. Ici, j'ai décidé de créer un groupe `diamond` étant donné que mon craft
-donne un diamant. C'est-à-dire que tous les crafts ayant le même group seront rassemblés
+donne un diamant. C'est-à-dire que tous les crafts ayant le même groupe seront rassemblés
 dans le livre de recettes du jeu sur la même case.
 
 ```java
@@ -186,7 +186,7 @@ biais d'autres recettes. C'est ce qu'on appelle un `Criterion` et il y en a plus
 Ici pour l'exemple j'utiliserai le plus simple : `InventoryChangeTrigger`. C'est
 un criterion qui se déclenche lorsque le joueur possède dans son inventaire certains
 items. Ici la fonction `hasItems` prend en compte soit un item directement, soit
-un `ItemPredicate` et c'est ce qu'on utlise ici.
+un `ItemPredicate` et c'est ce qu'on utilise ici.
 
 Je ne vais pas détailler ici ce qu'est
 un *Predicate*, ici, ce sera juste un ensemble d'items qui permettront de débloquer le craft.
@@ -250,7 +250,7 @@ Chaque type de craft a sa propre fonction de dédiée.
 Chaque bloc à sa propre fonction dédiée, mais elles ont toutes la même
 définition. La seule chose qui change, c'est le bloc dans lequel
 la recette est valide. Pour l'exemple je montrerai donc qu'une seule fonction,
-en l'occurence la fonction `smelting` associée au four. Voici les autres
+en l'occurrence la fonction `smelting` associée au four. Voici les autres
 fonctions pour les autres blocs :
 
 :::tip
@@ -287,7 +287,7 @@ la cuisson. Les recettes du jeu prennent en général 200 ticks soit
 
 ## Recettes dans le stonecutter
 
-Intéressons-nous maintenant au stonecutter. Pour l'exemple je vais créer
+Intéressons-nous maintenant au stonecutter. Pour l'exemple, je vais créer
 une recette à partir de planche pour obtenir une bûche.
 
 ```java

@@ -38,7 +38,7 @@ Ici la version de mon mod est 1.0. N'oubliez pas les guillemets !
 
 ### Group
 
-On passe maintenant au group qui est le package contenant l'ensemble
+On passe maintenant au groupe qui est le package contenant l'ensemble
 de votre code dans le dossier *src/main/java*.  
 (C'est souvent le package où votre classe principale est située.)
 

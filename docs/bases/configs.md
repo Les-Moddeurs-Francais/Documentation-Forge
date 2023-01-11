@@ -12,13 +12,13 @@ Grâce aux fichiers de configuration, les joueurs pourront moduler certaines val
 version propre à eux de votre mod sans qu'ils aient à le recompiler.
 
 :::tip
-Par exemple, le nombre de minerais dans un filon de votre nouveau minerai, les dégats d'une certaine épée, le nombre de
+Par exemple, le nombre de minerais dans un filon de votre nouveau minerai, les dégâts d'une certaine épée, le nombre de
 points de vie d'un mob, etc...
 :::
 
 ## Classe de configuration
 
-Nous aurons besoin d'une seule classe pour cela. Une classe qui sera plutôt conséquente en nombre de lignes mais assez
+Nous aurons besoin d'une seule classe pour cela. Une classe qui sera plutôt conséquente en nombre de lignes, mais assez
 simple en fin de compte.
 
 Allons-y progressivement. Créez une classe ``ModConfig`` avec trois classes imbriquées : `Client`, `Server` et `Common`.
@@ -113,7 +113,7 @@ public static class Server {
 ```
 
 Si vous avez compris comment ça marche, alors vous avez vu qu'on a une variable pour un hypothétique compte à rebours
-avant le kick d'un joueur, ainsi qu'une variable modulant les dégats d'une potentielle épée.
+avant le kick d'un joueur, ainsi qu'une variable modulant les dégâts d'une potentielle épée.
 
 > **Vous remarquerez que les valeurs numériques sont définies sur un intervalle que vous imposez ! (ex: de 4 à 10 pour 
 > 'dmgCustomSword')**
@@ -126,7 +126,7 @@ votre mod. Voyez ça comme le choix par défaut si un de vos paramètres ne rent
 
 ## Enregistrement
 
-Avant de pouvoir utiliser notre config il va falloit l'enregistrer dans notre mod.
+Avant de pouvoir utiliser notre config, il va falloir l'enregistrer dans notre mod.
 
 ```java
 public static final ForgeConfigSpec clientSpec;
@@ -179,7 +179,7 @@ static {
 Vous l'aurez peut-être remarqué, mais il y a trois portions de code qui se ressemble, et celle ci-dessus est l'une
 d'entre-elles.
 
-Premièrement, on déclare deux variables `clientSpec` et `client`. La variable `clientSpec` servira à enregister la
+Premièrement, on déclare deux variables `clientSpec` et `client`. La variable `clientSpec` servira à enregistrer la
 config dans le mod. C'est à partir de `client` que nous pourrons récupérer nos valeurs. Ensuite dans un bloc statique
 qui s'exécute à la lecture de la classe on affecte les valeurs des deux variables via la méthode `configure`. Elle nous
 renvoie un `Pair` qui équivaut à un tuple en Python.
@@ -216,16 +216,16 @@ des méthodes si besoin (vous pouvez omettre le troisième paramètre également
 
 ## Utilisation dans le code
 
-Par exemple, je vais créer une épée dont le nombre de dégats sera défini dans la config (on modifiera directement le tier de l'item).
+Par exemple, je vais créer une épée dont le nombre de dégâts sera défini dans la config (on modifiera directement le tier de l'item).
     
 ```java
 public static final Tier TIER = new ForgeTier(1, 3, -2.8f, ModConfig.server.damageCustomSword, 13, MON_TAG, MON_INGREDIENT);
 ```
 
-Ici le `Tier` de mon épée aura pour boost de dégats la valeur `ModConfig.server.damageCustomSword` qu'on avait défini
+Ici le `Tier` de mon épée aura pour boost de dégâts la valeur `ModConfig.server.damageCustomSword` qu'on avait défini
 un peu plus haut.
 
 Désormais si vous lancez le jeu, dans le dossier config du monde vous aurez un dossier avec vos configs à l'intérieur où
-vous pourrez, et les joueurs également, modifier les valeurs inscrites dans l'intervalle que vous aurez imposé.
+vous pourrez et les joueurs également, modifier les valeurs inscrites dans l'intervalle que vous aurez imposé.
 
-> ![](../../static/img/docs/config/resultat_config_light.png#gh-light-mode-only)![](../../static/img/docs/config/resultat_config_dark.png#gh-dark-mode-only)
+> ![Exemple de résultat](/img/docs/config/resultat_config_light.png#gh-light-mode-only)![Exemple de résultat](/img/docs/config/resultat_config_dark.png#gh-dark-mode-only)

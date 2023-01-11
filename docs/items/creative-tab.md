@@ -24,8 +24,8 @@ public void onCreativeModeTabRegister(CreativeModeTabEvent.Register event)
 ```
 
 Ici, nous avons une fonction `registerCreativeModeTab` avec 4 arguments. Le premier est l'identifiant de l'onglet, le deuxième est quant à lui les onglets qui seront placés après le nôtre, le troisième lui est donc les onglets qui seront placés avant le nôtre et enfin le quatrième est un supplier qui va nous permettre de construire notre onglet avec :
-- Son icone (`icon(...)`) 
-- Son titre (`title(...)`) qui peut très bien être une simple chaine de caractère comme ici, ou une clé de traduction.
+- Son icône (`icon(...)`) 
+- Son titre (`title(...)`) qui peut très bien être une simple chaine de caractère comme ici ou une clé de traduction.
 - Son alignement à droite ou non (`alignedRight()`)
 - La visibilité de son titre (`hideTitle()`)
 - La présence de barre de défilement sur le côté (`noScrollBar()`)
