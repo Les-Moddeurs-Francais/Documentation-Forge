@@ -483,6 +483,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `allows_surface_slime_spawns`               | Liste des biomes dans lesquels les slimes peuvent apparaitre en surface                                              |
 | `allows_tropical_fish_spawns_at_any_height` | Liste des biomes dans lesquels les poissons tropicaux peuvent apparaitre dans les lacs à n'importe quel altitude     |
 | `has_closer_water_fog`                      | Liste des biomes dans lesquels la distance de vue sous l'eau est réduite                                             |
+| `increased_fire_burnout`                    | Liste des biomes où le feu s'éteint plus rapidement                                                                  |
 | `is_badlands`                               | Liste des biomes de type _badland_                                                                                   |
 | `is_beach`                                  | Liste des biomes _plage_                                                                                             |
 | `is_deep_ocean`                             | Liste des biomes de type _océan profond_                                                                             |
@@ -499,14 +500,17 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `is_taiga`                                  | Liste des biomes de type _taïga_                                                                                     |
 | `mineshaft_blocking`                        | Liste des biomes où les mines abandonnées sont bloquées                                                              |
 | `more_frequent_drowned_spawns`              | Liste des biomes dans lesquels la quantité d'apparition de noyé est plus importante que les autres                   |
-| `only_allows_snow_and_gold_rabbits`         | Liste des biomes dans lesquels les lapins qui apparaissent sont de couleur beige uniquement                          |
 | `plays_underwater_music`                    | Liste des biomes dans lesquels le jeu joue des musiques spécifiques à l'ambiance sous-marine                         |
 | `polar_bears_spawn_on_alternate_blocks`     | Liste des biomes dans lesquels les ours polaires peuvent apparaitre                                                  |
 | `produces_corals_from_bonemeal`             | Liste des biomes dans lesquels des coraux sont produit après l'utilisation d'engrais                                 |
 | `reduce_water_ambient_spawns`               | Liste des biomes dans lesquels la quantité d'apparition de créature marine est réduite par rapport aux autres biomes |
 | `required_ocean_monument_surrounding`       | Liste des biomes qui doivent être autour d'un monument sous-marin                                                    |
+| `snow_golem_melts`                          | Liste des biomes où les golems de neige fondront (biomes chauds)                                                     |
 | `spawns_cold_variant_frogs`                 | Liste des biomes dans lesquels une grenouille aura une variante de biome froid quand elle est générée/elle grandit   |
+| `spawns_gold_rabbits`                       | Liste des biomes où les lapins crème pourront apparaitre                                                             |
+| `spawns_snow_foxes`                         | Liste des biomes où les variantes du renard blanc pourront apparaitre                                                |
 | `spawns_warm_variant_frogs`                 | Liste des biomes dans lesquels une grenouille aura une variante de biome chaud quand elle est générée/elle grandit   |
+| `spawns_white_rabbits`                      | Liste des biomes où les lapins blancs pourront apparaitre                                                            |
 | `stronghold_biased_to`                      | Liste des biomes qui contrôle la génération des forts de l'End                                                       |
 | `water_on_map_outlines`                     | Liste des biomes qui sont considéré comme étant des océans sur les cartes aux trésors                                |
 | `without_patrol_spawns`                     | Liste des biomes où les patrouilles ne peuvent pas apparaitre                                                        |
