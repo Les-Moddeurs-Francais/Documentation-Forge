@@ -30,11 +30,8 @@ jobs:
         run: npm ci
       - name: Build website
         run: npm run build
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.4.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          cname: forge-doc.lesmoddeursfrancais.com
-          user_name: github-actions[bot]
-          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          branch: gh-pages
+          folder: build
