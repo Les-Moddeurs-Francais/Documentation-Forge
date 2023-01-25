@@ -400,6 +400,9 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `tall_flowers`                 | Liste de tous les types de fleurs haute                                                          |
 | `terracotta`                   | Liste de tous les types de terres cuites                                                         |
 | `trapdoors`                    | Liste de tous les types de trappes                                                               |
+| `trim_materials`               | Liste de tous les types de matériaux pour les ornements d'armures                                |
+| `trim_templates`               | Liste de tous les types de motifs pour les ornements d'armures                                   |
+| `trimmable_armor`              | Liste de tous les types d'armures qui peuvent être ornées                                        |
 | `walls`                        | Liste de tous les types de murets                                                                |
 | `warped_stems`                 | Liste de tous les types de troncs biscornus                                                      |
 | `wart_blocks`                  | Liste de tous les types de blocs de verrues                                                      |
