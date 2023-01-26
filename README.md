@@ -1,6 +1,6 @@
 # Les Moddeurs Francais - Documentation Forge
 
-Documentation non officielle du projet Minecraft Forge.
+Documentation non officielle du projet [Minecraft Forge](https://minecraftforge.net).
 
 ## Contribution
 

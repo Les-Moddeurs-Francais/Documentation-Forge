@@ -1,0 +1,20 @@
+name: Erreur(s)
+description: Créez un rapport au sujet d'une ou plusieurs erreurs dans la documentation
+labels: ["statut : non vérifié", "type: erreur"]
+body:
+  - type: dropdown
+    id: doc-version
+    attributes:
+      label: Version de la documentation
+      options:
+        - 1.19.x
+        - 1.18.x
+    validations:
+      required: true
+  - type: textarea
+    id: mistake-description
+    attributes:
+      label: Description de l'erreur
+      description: Essayez au maximum si vous le pouvez, de nous fournir des captures d'écran ainsi que les URLs des pages concernées.
+    validations:
+      required: true

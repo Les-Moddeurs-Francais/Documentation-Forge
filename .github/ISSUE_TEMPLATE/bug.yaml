@@ -1,0 +1,11 @@
+name: Bug
+description: Créez un rapport de bug (problème(s) technique(s))
+labels: ["statut : non vérifié", "type: bug"]
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Description du bug
+      description: Essayez au maximum si vous le pouvez, de nous fournir des captures d'écran et le plus de détails possible
+    validations:
+      required: true
