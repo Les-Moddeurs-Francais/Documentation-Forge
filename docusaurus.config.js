@@ -11,8 +11,8 @@ function getNextVersionName() {
         'Erreur ! La dernière version ne respecte pas le pattern',
     );
   }
-  const version = parseInt(lastReleasedVersion.replace(expectedPrefix, ''), 10);
-  return `${expectedPrefix}${version + 1}`;
+  const version = parseInt(lastReleasedVersion.replace(expectedPrefix, '').replace(".x", ''), 10);
+  return `${expectedPrefix}${version + 1}.x`;
 }
 
 module.exports = {
@@ -23,6 +23,12 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   baseUrlIssueBanner : false,
   favicon: 'img/favicon.ico',
+  markdown: {
+    mermaid: true,
+  },
+  themes: [
+      '@docusaurus/theme-mermaid'
+  ],
   themeConfig: {
     docs :{
       sidebar:{
@@ -63,11 +69,11 @@ module.exports = {
           title: 'Liens connexes',
           items: [
             {
-              label: 'Téléchargements de Forge',
+              label: 'Téléchargement de Minecraft Forge',
               href: 'https://files.minecraftforge.net',
             },
             {
-              label: 'Forum de Forge',
+              label: 'Forum de  Minecraft Forge',
               href: 'https://minecraftforge.net',
             },
           ],
@@ -94,7 +100,7 @@ module.exports = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/lesmoddeursfr',
+              href: 'https://twitter.com/les_moddeurs_fr',
             },
           ],
         },

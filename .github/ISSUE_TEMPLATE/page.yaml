@@ -1,0 +1,19 @@
+name: Page
+description: Créez une demande de rédaction d'une page
+labels: ["statut : non vérifié", "type: page"]
+body:
+  - type: dropdown
+    id: doc-version
+    attributes:
+      label: Version de la documentation
+      options:
+        - 1.19.x
+        - 1.18.x
+    validations:
+      required: true
+  - type: textarea
+    id: mistake-description
+    attributes:
+      label: Description du sujet
+    validations:
+      required: true

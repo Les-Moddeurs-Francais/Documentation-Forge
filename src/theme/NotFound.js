@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Translate, {translate} from '@docusaurus/Translate';
+import {translate} from '@docusaurus/Translate';
 import {PageMetadata} from '@docusaurus/theme-common';
 import Link from "@docusaurus/core/lib/client/exports/Link";
 export default function NotFound() {
@@ -23,7 +23,7 @@ export default function NotFound() {
                   Il semble que nous ayons peut-être oublié cette page 👀
               </p>
               <p>
-                  Si c'est le cas, n'hésitez pas à nous contacter sur <a href="https://discord.lesmoddeursfrancais.fr">Discord</a> 😊.
+                  Si c'est le cas, n'hésitez pas à nous contacter sur <a href="https://discord.lesmoddeursfrancais.com" target={"_blank"}>Discord</a> 😊.
               </p>
                 <Link
                     className="button button--secondary button--lg"
