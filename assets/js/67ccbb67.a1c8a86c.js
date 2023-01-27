@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_forge=self.webpackChunkdoc_forge||[]).push([[5240],{59361:e=>{e.exports=JSON.parse('{"label":"color","permalink":"/1.18.x/tags/color","allTagsPath":"/1.18.x/tags","count":1,"items":[{"id":"version-1.18.x/items/colored","title":"Item color\xe9","description":"Comment cr\xe9er un item color\xe9 ?","permalink":"/1.18.x/items/colored"}]}')}}]);
