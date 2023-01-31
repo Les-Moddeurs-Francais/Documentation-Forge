@@ -1,4 +1,4 @@
-name: Documentation CLI
+name: Documentation CI/CD
 
 on:
   pull_request:
