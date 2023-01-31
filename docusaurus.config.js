@@ -191,7 +191,7 @@ module.exports = {
         quality: 70,
         max: 1920,
         min: 640,
-        steps: 2,
+        steps: 3,
         disableInDev: false,
       },
     ],
