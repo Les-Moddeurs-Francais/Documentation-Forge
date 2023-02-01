@@ -113,7 +113,7 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
-      additionalLanguages: ['java', 'toml'],
+      additionalLanguages: ['java', 'toml', 'gradle'],
     },
     metadata : [
       {
