@@ -184,4 +184,16 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1920,
+        min: 640,
+        steps: 3,
+        disableInDev: false,
+      },
+    ],
+  ],
 };
