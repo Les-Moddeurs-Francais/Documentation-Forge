@@ -62,10 +62,10 @@ public class TestMod {
 
 Décomposons le code petit à petit.
 
-````java
+```java
 @Mod(TestMod.MODID)
 public class TestMod {
-````
+```
 
 Tout d'abord, nous devons ajouter l'annotation *@Mod* avec en paramètre le modid,
 soit l'identifiant de notre mod pour signaler à Forge que notre mod est présent.
@@ -74,7 +74,7 @@ soit l'identifiant de notre mod pour signaler à Forge que notre mod est présen
 Il est fortement conseillé de mettre votre modid dans une variable final de sorte que vous n'ayez pas à retaper à la main votre modid et ainsi limiter les erreurs (et en plus ce n'est pas hard-codé et ça, c'est bien !). Et veillez également à ne pas mettre de majuscules en écrivant votre modid !
 :::
 
-````java
+```java
     public void setup(FMLCommonSetupEvent e)
     {
     }
@@ -82,7 +82,7 @@ Il est fortement conseillé de mettre votre modid dans une variable final de sor
     public void clientSetup(FMLClientSetupEvent e)
     {
     }
-````
+```
 
 Ici j'ai sauté quelques lignes, on reviendra sur le constructeur plus haut un peu après.
 Les deux méthodes que nous avons créées juste ici serviront à certaines fonctions, notamment
@@ -90,7 +90,7 @@ pour la génération de minerais ou encore le changement de rendu de certains bl
 par exemple. La méthode *setup* servira pour les fonctionnalités côté serveur.
 La méthode *clientSetup* quant à elle, servira pour le côté client, d'où son nom.
 
-````java
+```java
     public TestMod()
     {
        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -98,7 +98,7 @@ La méthode *clientSetup* quant à elle, servira pour le côté client, d'où so
        bus.addListener(this::setup);
        bus.addListener(this::clientSetup); 
     }
-````
+```
 
 Enfin, dans le constructeur, nous indiquons à Forge que nous "écoutons" les events *FMLCommonSetupEvent* et *FMLClientSetupEvent* quand ils sont appelés.
 Grossièrement, on exécute les méthodes *setup* et *clientSetup* lorsque Forge mets en place le jeu et le client spécifiquement pour l'événement *FMLClientSetupEvent*.
