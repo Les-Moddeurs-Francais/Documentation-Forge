@@ -117,6 +117,10 @@ module.exports = {
     },
     metadata : [
       {
+        name: 'og:site_name',
+        content: 'Documentation Forge'
+      },
+      {
         name: 'keywords',
         content: 'Forge, Modding, Minecraft, Développement, Mods, Programmation'
       },
