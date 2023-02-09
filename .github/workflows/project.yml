@@ -1,4 +1,4 @@
-name: Add issues to project (roadmap)
+name: Project CI
 
 on:
   issues:

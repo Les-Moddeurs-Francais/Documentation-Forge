@@ -10,7 +10,7 @@ Pour que l'item soit reconnu par le jeu, il nous faut l'enregistrer, et pour cel
 
 ### DeferredRegister
 
-Veuillez-vous referrer à la [page sur ce sujet](/register/deferred.md).
+Veuillez-vous referrer à la [page sur ce sujet](/register/deferred.mdx).
 
 ## Enregistrer l'item
 
@@ -31,7 +31,7 @@ Tous les noms de classes, de variables et de méthodes sont personnalisables com
 
 :::
 
-Si vous souhaitez en savoir un peu plus sur les différentes propriétés disponibles pour les items, voici une [page dédiée à ceci](properties.md).
+Si vous souhaitez en savoir un peu plus sur les différentes propriétés disponibles pour les items, voici une [page dédiée à ceci](properties.mdx).
 
 ### Avec classe custom
 Ici cette manière nous permettra plus tard, d'ajouter des comportements à l'item (nous ne verrons cela que dans un prochain chapitre).
@@ -44,9 +44,9 @@ public class MonItem extends Item {
 }
 ```
 
-Ainsi, nous pourrons enregistrer l'item comme dans la technique sans classe custom sauf que nous ferons un `new MonItem` et non `new Item`, ce qui donne une variable du type
+Ainsi nous pourrons enregistrer l'item comme dans la technique sans classe custom sauf que nous ferons un `new MonItem` et non `new Item`, ce qui donne une variable du type
 ```java
-public static final RegistryObject<Item> MON_ITEM = ITEMS.register("mon_item", () -> new MonItem(new Item.Properties()));
+public static final RegistryObject<Item> MON_ITEM = ITEMS.register("mon_item", () -> new MonItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 ```
 
 ## Ressources
@@ -70,7 +70,7 @@ assets
 
 Pour un item, son modèle permet de définir sa forme ainsi que les textures qui lui seront appliquées.
 
-Ici, nous appliquerons un modèle basique assimilable au diamant.
+Ici nous appliquerons un modèle basique assimilable au diamant.
 
 ```json
 {
@@ -88,9 +88,9 @@ Ici, nous appliquerons un modèle basique assimilable au diamant.
 Comme spécifié dans le modèle, la texture se situera dans le dossier `textures/item` et aura comme nom `mon_item.png` (l'extension est importante).
 
 ### Traductions
-Un item à sa création se voit attribuer de manière systématique un nom délocalisé. La raison étant que celui-ci permet de traduire le nom de l'item dans toutes les langues supportées par le jeu.
+Un item à sa création se voie attribuer de manière systématique un nom délocalisé. La raison étant que celui-ci permet de traduire le nom de l'item dans toutes les langues supportées par le jeu.
 
-Ici l'item ne comportera qu'un nom traduit en anglais (en_us) qui est la langue de base du jeu (en cas de traduction manquante dans une autre langue, le jeu appliquera cette traduction), mais voici toutes les [langues](https://minecraft.fandom.com/wiki/Language) disponibles dans le jeu avec leurs codes respectifs. 
+Ici l'item ne comportera qu'un nom traduit en anglais (en_us) qui est la langue de base du jeu (en cas de traduction manquante dans une autre langue, le jeu appliquera cette traduction), mais voici toutes les [langues](https://minecraft.fandom.com/wiki/Language) disponible dans le jeu avec leurs codes respectifs. 
 
 Les fichiers de langue sont situés dans le dossier `lang` des ressources.
 
