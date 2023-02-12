@@ -25,7 +25,8 @@ Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du jeu (
 
 Il existe cependant 2 types de valeurs, les valeurs requises et optionnelles (la différence étant que pour les valeurs requises, si le jeu n'arrive pas à les trouver, cela provoquera une erreur au chargement, ce qui n'est pas le cas pour les valeurs optionnelles) :
 <details>
-  <summary>Valeurs requises</summary>
+    
+<summary>Valeurs requises</summary>
 
 Celle-ci peuvent prendre 2 valeurs, soit un identifiant faisant référence à un élément du jeu, soit un identifiant faisant référence à un tag (précédé d'un `#`).
 
@@ -36,11 +37,12 @@ Celle-ci peuvent prendre 2 valeurs, soit un identifiant faisant référence à u
 ```json
 "#minecraft:stone_bricks"
 ```
-  
+
 </details>
 
 <details>
-  <summary>Valeurs optionnelles</summary>
+    
+<summary>Valeurs optionnelles</summary>
 
 Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant faisant référence à un élément du jeu, soit un identifiant faisant référence à un tag (précédé d'un `#`). Le champ `required` permet quant à lui de définir si l'entrée est requise ou non (dans le cas d'une entrée optionnelle il faudrat le définir sur `false`).
 
@@ -83,6 +85,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 ### Blocs
 
 <details>
+    
 <summary>Liste des tags concernant les blocs</summary>
 
 | Identifiant                                | Description                                                                                                                                                                   |
@@ -253,6 +256,39 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 |--------------------|-----------------------------------------------------------------|
 | `default_spawns`   | Liste des variantes de chat pouvant apparaitre naturellement    |
 | `full_moon_spawns` | Liste des variantes de chat pouvant apparaitre à la pleine lune |
+
+</details>
+
+### Types de dégât
+
+<details>
+
+<summary>Liste des tags concernant les variantes de chat</summary>
+
+| Identifiant                    | Description              |
+|--------------------------------|--------------------------|
+| `always_most_significant_fall` | Liste des types de dégâts qui sont des chutes tuant à coup sûr |
+| `always_triggers_silverfish`   | Liste des types de dégâts qui réveillent à coup sûr un poisson d'argent (_silverfish_) quand un autre subit des dégâts dun même type |
+| `avoids_guardian_thorns`       | Liste des types de dégâts qui ne tiennent pas des dégâts provoqués en retour par les épines d'un gardien (l'entité à la source du dégât ne sera pas blessée en retour) |
+| `burns_armor_stands`           | Liste des types de dégâts qui brulent un porte-armure |
+| `bypasses_armor`               | Liste des types de dégâts qui ne tiennent pas compte de l'armure |
+| `bypasses_effects`             | Liste des types de dégâts qui ne tiennent pas compte des effets de potions |
+| `bypasses_enchantments`        | Liste des types de dégâts ui ne tiennent pas compte des enchantements |
+| `bypasses_invulnerability`     | Liste des types de dégâts qui ne tiennent pas compte de l'invulnérabilité |
+| `bypasses_resistance`          | Liste des types de dégâts qui ne tiennent pas compte de la resistance |
+| `damages_helmet`               | Liste des types de dégâts qui endommagent le casque |
+| `ignites_armor_stands`         | Liste des types de dégâts qui mettent en feu un porte-armure |
+| `is_drowning`                  | Liste des types de dégâts de noyade |
+| `is_explosion`                 | Liste des types de dégâts d'explosion |
+| `is_fall`                      | Liste des types de dégâts de chute |
+| `is_fire`                      | Liste des types de dégâts de feu |
+| `is_freezing`                  | Liste des types de dégâts de froid |
+| `is_lightning`                 | Liste des types de dégâts causés par la foudre |
+| `is_projectile`                | Liste des types de dégâts causés par des projectiles |
+| `no_anger`                     | Liste des types de dégâts qui ne sont pas sources de colère (_aggro_) |
+| `no_impact`                    | Liste des types de dégâts qui ne sont pas sources d'un impact |
+| `witch_resistant_to`           | Liste des types de dégâts auxquels les sorcières sont résistantes |
+| `wither_immune_to`             | Liste des types de dégâts auxquels les Wither sont immunisés |
 
 </details>
 
@@ -483,6 +519,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `allows_surface_slime_spawns`               | Liste des biomes dans lesquels les slimes peuvent apparaitre en surface                                              |
 | `allows_tropical_fish_spawns_at_any_height` | Liste des biomes dans lesquels les poissons tropicaux peuvent apparaitre dans les lacs à n'importe quel altitude     |
 | `has_closer_water_fog`                      | Liste des biomes dans lesquels la distance de vue sous l'eau est réduite                                             |
+| `increased_fire_burnout`                    | Liste des biomes où le feu s'éteint plus rapidement                                                                  |
 | `is_badlands`                               | Liste des biomes de type _badland_                                                                                   |
 | `is_beach`                                  | Liste des biomes _plage_                                                                                             |
 | `is_deep_ocean`                             | Liste des biomes de type _océan profond_                                                                             |
@@ -499,14 +536,17 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `is_taiga`                                  | Liste des biomes de type _taïga_                                                                                     |
 | `mineshaft_blocking`                        | Liste des biomes où les mines abandonnées sont bloquées                                                              |
 | `more_frequent_drowned_spawns`              | Liste des biomes dans lesquels la quantité d'apparition de noyé est plus importante que les autres                   |
-| `only_allows_snow_and_gold_rabbits`         | Liste des biomes dans lesquels les lapins qui apparaissent sont de couleur beige uniquement                          |
 | `plays_underwater_music`                    | Liste des biomes dans lesquels le jeu joue des musiques spécifiques à l'ambiance sous-marine                         |
 | `polar_bears_spawn_on_alternate_blocks`     | Liste des biomes dans lesquels les ours polaires peuvent apparaitre                                                  |
 | `produces_corals_from_bonemeal`             | Liste des biomes dans lesquels des coraux sont produit après l'utilisation d'engrais                                 |
 | `reduce_water_ambient_spawns`               | Liste des biomes dans lesquels la quantité d'apparition de créature marine est réduite par rapport aux autres biomes |
 | `required_ocean_monument_surrounding`       | Liste des biomes qui doivent être autour d'un monument sous-marin                                                    |
+| `snow_golem_melts`                          | Liste des biomes où les golems de neige fondront (biomes chauds)                                                     |
 | `spawns_cold_variant_frogs`                 | Liste des biomes dans lesquels une grenouille aura une variante de biome froid quand elle est générée/elle grandit   |
+| `spawns_gold_rabbits`                       | Liste des biomes où les lapins crème pourront apparaitre                                                             |
+| `spawns_snow_foxes`                         | Liste des biomes où les variantes du renard blanc pourront apparaitre                                                |
 | `spawns_warm_variant_frogs`                 | Liste des biomes dans lesquels une grenouille aura une variante de biome chaud quand elle est générée/elle grandit   |
+| `spawns_white_rabbits`                      | Liste des biomes où les lapins blancs pourront apparaitre                                                            |
 | `stronghold_biased_to`                      | Liste des biomes qui contrôle la génération des forts de l'End                                                       |
 | `water_on_map_outlines`                     | Liste des biomes qui sont considéré comme étant des océans sur les cartes aux trésors                                |
 | `without_patrol_spawns`                     | Liste des biomes où les patrouilles ne peuvent pas apparaitre                                                        |
