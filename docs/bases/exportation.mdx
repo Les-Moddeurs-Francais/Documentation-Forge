@@ -19,20 +19,20 @@ Vous pouvez trouver le *build.gradle* dans votre dossier principal
 Proche de la ligne 15, vous trouverez trois paramètres qui vont nous intéresser : 
 ``version``, ``group`` et ``archivesBaseName``.
 
-````text
+```gradle
 version = '1.0'
 group = 'fr.zom.testmod'
 archivesBaseName = 'TestMod'
-````
+```
 
 ### Version
 
 Tout d'abord, nous avons la version de notre mod. Le paramètre est assez clair.
 Il sert tout simplement à spécifier la version de votre mod.
 
-````text
+```gradle
 version = '1.0'
-````
+```
 
 Ici la version de mon mod est 1.0. N'oubliez pas les guillemets !
 
@@ -42,9 +42,9 @@ On passe maintenant au groupe qui est le package contenant l'ensemble
 de votre code dans le dossier *src/main/java*.  
 (C'est souvent le package où votre classe principale est située.)
 
-````text
+```gradle
 group = 'fr.zom.testmod'
-````
+```
 
 Pour ma part voici le chemin des sources de mon mod.
 
@@ -52,9 +52,9 @@ Pour ma part voici le chemin des sources de mon mod.
 
 Enfin, dernier paramètre qui sera le nom que vous donnez au *.jar* quand vous l'exporterez.
 
-````text
+```gradle
 archivesBaseName = 'TestMod'
-````
+```
 
 Le nom complet du *.jar* sera le nom que vous mettez juste ici accompagné de la version
 qu'on a changé plus haut.

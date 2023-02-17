@@ -113,9 +113,13 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
-      additionalLanguages: ['java'],
+      additionalLanguages: ['java', 'toml', 'gradle'],
     },
     metadata : [
+      {
+        name: 'og:site_name',
+        content: 'Documentation Forge'
+      },
       {
         name: 'keywords',
         content: 'Forge, Modding, Minecraft, Développement, Mods, Programmation'
@@ -181,6 +185,18 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1920,
+        min: 640,
+        steps: 3,
+        disableInDev: false,
       },
     ],
   ],
