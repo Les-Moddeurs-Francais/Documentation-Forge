@@ -5,8 +5,6 @@ description: Comment sont structurées les tags dans Minecraft ?
 tags: [bases, ressources]
 ---
 
-import Details from '@theme/Details';
-
 Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du jeu (comme des items, blocs, entitées, etc...) dans un même fichier pour après les utiliser dans des recettes (par exemple celle du coffre nécessitant n'importe quels types de bois) ou même dans votre code directement.
 
 ## Structure générale
@@ -26,7 +24,8 @@ Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du jeu (
 | values  | Entrées du tag (éléments contenus dans celui-ci)  |
 
 Il existe cependant 2 types de valeurs, les valeurs requises et optionnelles (la différence étant que pour les valeurs requises, si le jeu n'arrive pas à les trouver, cela provoquera une erreur au chargement, ce qui n'est pas le cas pour les valeurs optionnelles) :
-<Details summary={'Valeurs requises'}>
+<details>
+  <summary>Valeurs requises</summary>
 
 Celle-ci peuvent prendre 2 valeurs, soit un identifiant faisant référence à un élément du jeu, soit un identifiant faisant référence à un tag (précédé d'un `#`).
 
@@ -37,10 +36,11 @@ Celle-ci peuvent prendre 2 valeurs, soit un identifiant faisant référence à u
 ```json
 "#minecraft:stone_bricks"
 ```
+  
+</details>
 
-</Details>
-
-<Details summary={'Valeurs optionnelles'}>
+<details>
+  <summary>Valeurs optionnelles</summary>
 
 Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant faisant référence à un élément du jeu, soit un identifiant faisant référence à un tag (précédé d'un `#`). Le champ `required` permet quant à lui de définir si l'entrée est requise ou non (dans le cas d'une entrée optionnelle il faudrat le définir sur `false`).
 
@@ -58,13 +58,15 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 }
 ```
 
-</Details>
+</details>
 
 ## Listes
 
 ### Motifs de bannière
 
-<Details summary={'Liste des tags concernant les motifs de bannière'}>
+<details>
+
+<summary>Liste des tags concernant les motifs de bannière</summary>
 
 | Identifiant            | Description                                                                  |
 |------------------------|------------------------------------------------------------------------------|
@@ -76,11 +78,12 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `pattern_item/skull`   | Liste des motifs qui peuvent être fabriqués en utilisant le motif de crâne   |
 | `no_item_required`     | Liste des motifs qui peuvent être fabriqués sans aucun item                  |
 
-</Details>
+</details>
 
 ### Blocs
 
-<Details summary={'Liste des tags concernant les blocs'}>
+<details>
+<summary>Liste des tags concernant les blocs</summary>
 
 | Identifiant                                | Description                                                                                                                                                                   |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -238,22 +241,26 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wool`                                     | Liste des blocs qui sont des laines                                                                                                                                           |
 | `wool_carpets`                             | Liste des blocs qui sont des tapis de laine                                                                                                                                   |
 
-</Details>
+</details>
 
 ### Variantes de chat
 
-<Details summary={'Liste des tags concernant les variantes de chat'}>
+<details>
+
+<summary>Liste des tags concernant les variantes de chat</summary>
 
 | Identifiant        | Description                                                     |
 |--------------------|-----------------------------------------------------------------|
 | `default_spawns`   | Liste des variantes de chat pouvant apparaitre naturellement    |
 | `full_moon_spawns` | Liste des variantes de chat pouvant apparaitre à la pleine lune |
 
-</Details>
+</details>
 
 ### Entités
 
-<Details summary={'Liste des tags concernant les entités'}>
+<details>
+
+<summary>Liste des tags concernant les entités</summary>
 
 | Identifiant                  | Description                                                                                              |
 |------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -269,22 +276,26 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `raiders`                    | Liste des entités qui composent les raids contre les villages                                            |
 | `skeletons`                  | Liste de tous les types de squelette                                                                     |
 
-</Details>
+</details>
 
 ### Fluides
 
-<Details summary={'Liste des tags concernant les fluides'}>
+<details>
+
+<summary>Liste des tags concernant les fluides</summary>
 
 | Identifiant | Description                           |
 |-------------|---------------------------------------|
 | `lava`      | Liste des fluides qui sont de la lave |
 | `water`     | Liste des fluides qui sont de l'eau   |
 
-</Details>
+</details>
 
 ### Évènements de jeu
 
-<Details summary={'Liste des tags concernant les évènements de jeu'}>
+<details>
+
+<summary>Liste des tags concernant les évènements de jeu</summary>
 
 | Identifiant                  | Description                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------|
@@ -294,11 +305,13 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `vibrations`                 | Liste des évènements considérés comme des vibrations                                              |
 | `warden_can_listen`          | Liste des évènements pouvant être écoutés par les warden's                                        |
 
-</Details>
+</details>
 
 ### Instruments
 
-<Details summary={'Liste des tags concernant les instruments'}>
+<details>
+
+<summary>Liste des tags concernant les instruments</summary>
 
 | Identifiant            | Description                                                                   |
 |------------------------|-------------------------------------------------------------------------------|
@@ -306,11 +319,13 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `regular_goat_horns`   | Liste des instruments des cornes de chèvres lâchées par des chèvres normales  |
 | `screaming_goat_horns` | Liste des instruments des cornes de chèvres lâchées par des chèvres hurlantes |
 
-</Details>
+</details>
 
 ### Items
 
-<Details summary={'Liste des tags concernant les items'}>
+<details>
+
+<summary>Liste des tags concernant les items</summary>
 
 | Identifiant                    | Description                                                                                      |
 |--------------------------------|--------------------------------------------------------------------------------------------------|
@@ -393,21 +408,25 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wool`                         | Liste de tous les types de laines                                                                |
 | `wool_carpets`                 | Liste de tous les types de tapis en laine                                                        |
 
-</Details>
+</details>
 
 ### Variantes de peinture
 
-<Details summary={'Liste des tags concernant les variantes de peinture'}>
+<details>
+
+<summary>Liste des tags concernant les variantes de peinture</summary>
 
 | Identifiant | Description                                              |
 |-------------|----------------------------------------------------------|
 | `placeable` | Liste des variantes de peinture plaçables en mode survie |
 
-</Details>
+</details>
 
 ### Points d'intérêt
 
-<Details summary={`Liste des tags concernant les variantes de points d'intérêt`}>
+<details>
+
+<summary>Liste des tags concernant les variantes de points d'intérêt</summary>
 
 | Identifiant           | Description                                              |
 |-----------------------|----------------------------------------------------------|
@@ -415,7 +434,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `bee_home`            | Liste des points d'intérêt ciblés par les abeilles       |
 | `village`             | Liste des points d'intérêt qui font partie d'un village  |
 
-</Details>
+</details>
 
 ### Biomes
 
@@ -423,7 +442,9 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<Details summary={'Liste des tags concernant les biomes'}>
+<details>
+
+<summary>Liste des tags concernant les biomes</summary>
 
 | Identifiant                                 | Description                                                                                                          |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -492,7 +513,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `without_wandering_trader_spawns`           | Liste des biomes où les marchands ambulants ne peuvent pas apparaitre                                                |
 | `without_zombie_sieges`                     | Liste des biomes où les attaques de zombies ne peuvent pas être lancées                                              |
 
-</Details>
+</details>
 
 ### Générateurs de niveau plat préréglés
 
@@ -500,13 +521,15 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<Details summary={'Liste des tags concernant les générateurs de niveau plat préréglés'}>
+<details>
+
+<summary>Liste des tags concernant les générateurs de niveau plat préréglés</summary>
 
 | Identifiant | Description                                                                  |
 |-------------|------------------------------------------------------------------------------|
 | `visible`   | Liste des générateurs visibles sur l'écran de configuration des mondes plats |
 
-</Details>
+</details>
 
 ### Structures
 
@@ -514,7 +537,9 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<Details summary={'Liste des tags concernant les structures'}>
+<details>
+
+<summary>Liste des tags concernant les structures</summary>
 
 | Identifiant                 | Description                                                        |
 |-----------------------------|--------------------------------------------------------------------|
@@ -531,7 +556,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `shipwreck`                 | Listes des structures qui sont des épaves de navire                |
 | `village`                   | Listes des structures qui sont des villages                        |
 
-</Details>
+</details>
 
 ### Préréglages du monde
 
@@ -539,11 +564,13 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<Details summary={'Liste des tags concernant les préréglages du monde'}>
+<details>
+
+<summary>Liste des tags concernant les préréglages du monde</summary>
 
 | Identifiant | Description                                                                                              |
 |-------------|----------------------------------------------------------------------------------------------------------|
 | `extended`  | Liste des préréglages du monde qui apparaissent uniquement lorsque vous maintenez la touche Alt enfoncée |
 | `normal`    | Liste des préréglages du monde qui apparaissent dans le menu de configuration à la création d'un monde   |
 
-</Details>
+</details>
