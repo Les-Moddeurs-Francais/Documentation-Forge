@@ -5,6 +5,8 @@ description: Comment sont structurées les tags dans Minecraft ?
 tags: [bases, ressources]
 ---
 
+import Details from '@theme/Details';
+
 Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du jeu (comme des items, blocs, entitées, etc...) dans un même fichier pour après les utiliser dans des recettes (par exemple celle du coffre nécessitant n'importe quels types de bois) ou même dans votre code directement.
 
 ## Structure générale
@@ -24,8 +26,7 @@ Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du jeu (
 | values  | Entrées du tag (éléments contenus dans celui-ci)  |
 
 Il existe cependant 2 types de valeurs, les valeurs requises et optionnelles (la différence étant que pour les valeurs requises, si le jeu n'arrive pas à les trouver, cela provoquera une erreur au chargement, ce qui n'est pas le cas pour les valeurs optionnelles) :
-<details>
-  <summary>Valeurs requises</summary>
+<Details summary={'Valeurs requises'}>
 
 Celle-ci peuvent prendre 2 valeurs, soit un identifiant faisant référence à un élément du jeu, soit un identifiant faisant référence à un tag (précédé d'un `#`).
 
@@ -36,11 +37,10 @@ Celle-ci peuvent prendre 2 valeurs, soit un identifiant faisant référence à u
 ```json
 "#minecraft:stone_bricks"
 ```
-  
-</details>
 
-<details>
-  <summary>Valeurs optionnelles</summary>
+</Details>
+
+<Details summary={'Valeurs optionnelles'}>
 
 Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant faisant référence à un élément du jeu, soit un identifiant faisant référence à un tag (précédé d'un `#`). Le champ `required` permet quant à lui de définir si l'entrée est requise ou non (dans le cas d'une entrée optionnelle il faudrat le définir sur `false`).
 
@@ -58,15 +58,13 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 }
 ```
 
-</details>
+</Details>
 
 ## Listes
 
 ### Motifs de bannière
 
-<details>
-
-<summary>Liste des tags concernant les motifs de bannière</summary>
+<Details summary={'Liste des tags concernant les motifs de bannière'}>
 
 | Identifiant            | Description                                                                  |
 |------------------------|------------------------------------------------------------------------------|
@@ -78,12 +76,11 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `pattern_item/skull`   | Liste des motifs qui peuvent être fabriqués en utilisant le motif de crâne   |
 | `no_item_required`     | Liste des motifs qui peuvent être fabriqués sans aucun item                  |
 
-</details>
+</Details>
 
 ### Blocs
 
-<details>
-<summary>Liste des tags concernant les blocs</summary>
+<Details summary={'Liste des tags concernant les blocs'}>
 
 | Identifiant                                | Description                                                                                                                                                                   |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -118,6 +115,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `cauldrons`                                | Liste des blocs qui sont des chaudrons                                                                                                                                        |
 | `cave_vines`                               | Liste des blocs qui sont des lianes des cavernes                                                                                                                              |
 | `ceiling_hanging_signs`                    | Liste des blocs qui sont des pancartes suspendues en dessous d'un bloc                                                                                                        |
+| `cherry_logs`                              | Liste des blocs qui sont des bûches de cerisier                                                                                                                               |
 | `climbable`                                | Liste des blocs qui sont escaladables                                                                                                                                         |
 | `coal_ores`                                | Liste des blocs qui sont des minerais de charbon                                                                                                                              |
 | `completes_find_tree_tutorial`             | Liste des blocs qui, quand ils sont cassés, permettent de compléter le tutoriel `find_tree`                                                                                   |
@@ -207,6 +205,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `small_dripleaf_placeable`                 | Liste des blocs sur lesquels il est possible de placer les petites foliogoutes                                                                                                |
 | `small_flowers`                            | Liste des blocs qui sont des petites fleurs                                                                                                                                   |
 | `snaps_goat_horn`                          | Liste des blocs qui cassent une corne aux chèvres quand elles chargent dedans                                                                                                 |
+| `sniffer_diggable_block`                   | Liste des blocs où le Renifleur peut creuser                                                                                                                                  |
 | `snow`                                     | Liste des blocs qui sont de la neige                                                                                                                                          |
 | `snow_layer_cannot_survive_on`             | Liste des blocs sur lesquels les couches de neige ne peuvent pas survivre                                                                                                     |
 | `snow_layer_can_survive_on`                | Liste des blocs sur lesquels les couches de neige peuvent survivre                                                                                                            |
@@ -246,26 +245,22 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wool`                                     | Liste des blocs qui sont des laines                                                                                                                                           |
 | `wool_carpets`                             | Liste des blocs qui sont des tapis de laine                                                                                                                                   |
 
-</details>
+</Details>
 
 ### Variantes de chat
 
-<details>
-
-<summary>Liste des tags concernant les variantes de chat</summary>
+<Details summary={'Liste des tags concernant les variantes de chat'}>
 
 | Identifiant        | Description                                                     |
 |--------------------|-----------------------------------------------------------------|
 | `default_spawns`   | Liste des variantes de chat pouvant apparaitre naturellement    |
 | `full_moon_spawns` | Liste des variantes de chat pouvant apparaitre à la pleine lune |
 
-</details>
+</Details>
 
 ### Entités
 
-<details>
-
-<summary>Liste des tags concernant les entités</summary>
+<Details summary={'Liste des tags concernant les entités'}>
 
 | Identifiant                  | Description                                                                                              |
 |------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -281,26 +276,22 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `raiders`                    | Liste des entités qui composent les raids contre les villages                                            |
 | `skeletons`                  | Liste de tous les types de squelette                                                                     |
 
-</details>
+</Details>
 
 ### Fluides
 
-<details>
-
-<summary>Liste des tags concernant les fluides</summary>
+<Details summary={'Liste des tags concernant les fluides'}>
 
 | Identifiant | Description                           |
 |-------------|---------------------------------------|
 | `lava`      | Liste des fluides qui sont de la lave |
 | `water`     | Liste des fluides qui sont de l'eau   |
 
-</details>
+</Details>
 
 ### Évènements de jeu
 
-<details>
-
-<summary>Liste des tags concernant les évènements de jeu</summary>
+<Details summary={'Liste des tags concernant les évènements de jeu'}>
 
 | Identifiant                  | Description                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------|
@@ -310,13 +301,11 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `vibrations`                 | Liste des évènements considérés comme des vibrations                                              |
 | `warden_can_listen`          | Liste des évènements pouvant être écoutés par les warden's                                        |
 
-</details>
+</Details>
 
 ### Instruments
 
-<details>
-
-<summary>Liste des tags concernant les instruments</summary>
+<Details summary={'Liste des tags concernant les instruments'}>
 
 | Identifiant            | Description                                                                   |
 |------------------------|-------------------------------------------------------------------------------|
@@ -324,13 +313,11 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `regular_goat_horns`   | Liste des instruments des cornes de chèvres lâchées par des chèvres normales  |
 | `screaming_goat_horns` | Liste des instruments des cornes de chèvres lâchées par des chèvres hurlantes |
 
-</details>
+</Details>
 
 ### Items
 
-<details>
-
-<summary>Liste des tags concernant les items</summary>
+<Details summary={'Liste des tags concernant les items'}>
 
 | Identifiant                    | Description                                                                                      |
 |--------------------------------|--------------------------------------------------------------------------------------------------|
@@ -344,9 +331,10 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `beds`                         | Liste de tous les types de lits                                                                  |
 | `birch_logs`                   | Liste de tous les types de troncs en bouleau                                                     |
 | `boats`                        | Liste de tous les types de bateaux                                                               |
-| `bookshelf_books`              | Liste de tous les types de bibliothèques                                                               |
+| `bookshelf_books`              | Liste de tous les types de bibliothèques                                                         |
 | `buttons`                      | Liste de tous les types de boutons                                                               |
 | `candles`                      | Liste de tous les types de bougies                                                               |
+| `cherry_logs`                  | Liste de tous les types de bûche de cerisier                                                     |
 | `chest_boats`                  | Liste de tous les types de bateaux avec coffre                                                   |
 | `cluster_max_harvestables`     | Liste des outils permettant de récolter efficacement de l'améthyste                              |
 | `coals`                        | Liste de tous les types de charbon                                                               |
@@ -359,6 +347,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `crimson_stems`                | Liste de tous les types de troncs carmins                                                        |
 | `dampens_vibrations`           | Liste de tous les types de blocs absorbant les vibrations qui le touchent                        |
 | `dark_oak_logs`                | Liste de tous les types de troncs en chêne noir                                                  |
+| `decorated_port_shared`        | Liste de tous les types de tessons permettant de décorer des vases décorés                       |
 | `diamond_ores`                 | Liste des minerais de diamant                                                                    |
 | `dirt`                         | Liste de tous les types de terre                                                                 |
 | `doors`                        | Liste de tous les types de porte                                                                 |
@@ -395,6 +384,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `signs`                        | Liste de tous les types de panneaux                                                              |
 | `slabs`                        | Liste de tous les types de dalles                                                                |
 | `small_flowers`                | Liste de tous les types de _petites_ fleurs                                                      |
+| `sniffer_food`                | Liste de tous les types nourritures pour le Renifleur                                             |
 | `soul_fire_base_blocks`        | Liste des items produisant du feu bleu                                                           |
 | `spruce_logs`                  | Liste de tous les types de troncs en sapin                                                       |
 | `stairs`                       | Liste de tous les types d'escaliers                                                              |
@@ -420,25 +410,21 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wool`                         | Liste de tous les types de laines                                                                |
 | `wool_carpets`                 | Liste de tous les types de tapis en laine                                                        |
 
-</details>
+</Details>
 
 ### Variantes de peinture
 
-<details>
-
-<summary>Liste des tags concernant les variantes de peinture</summary>
+<Details summary={'Liste des tags concernant les variantes de peinture'}>
 
 | Identifiant | Description                                              |
 |-------------|----------------------------------------------------------|
 | `placeable` | Liste des variantes de peinture plaçables en mode survie |
 
-</details>
+</Details>
 
 ### Points d'intérêt
 
-<details>
-
-<summary>Liste des tags concernant les variantes de points d'intérêt</summary>
+<Details summary={`Liste des tags concernant les variantes de points d'intérêt`}>
 
 | Identifiant           | Description                                              |
 |-----------------------|----------------------------------------------------------|
@@ -446,7 +432,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `bee_home`            | Liste des points d'intérêt ciblés par les abeilles       |
 | `village`             | Liste des points d'intérêt qui font partie d'un village  |
 
-</details>
+</Details>
 
 ### Biomes
 
@@ -454,9 +440,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<details>
-
-<summary>Liste des tags concernant les biomes</summary>
+<Details summary={'Liste des tags concernant les biomes'}>
 
 | Identifiant                                 | Description                                                                                                          |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -525,7 +509,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `without_wandering_trader_spawns`           | Liste des biomes où les marchands ambulants ne peuvent pas apparaitre                                                |
 | `without_zombie_sieges`                     | Liste des biomes où les attaques de zombies ne peuvent pas être lancées                                              |
 
-</details>
+</Details>
 
 ### Générateurs de niveau plat préréglés
 
@@ -533,15 +517,13 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<details>
-
-<summary>Liste des tags concernant les générateurs de niveau plat préréglés</summary>
+<Details summary={'Liste des tags concernant les générateurs de niveau plat préréglés'}>
 
 | Identifiant | Description                                                                  |
 |-------------|------------------------------------------------------------------------------|
 | `visible`   | Liste des générateurs visibles sur l'écran de configuration des mondes plats |
 
-</details>
+</Details>
 
 ### Structures
 
@@ -549,9 +531,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<details>
-
-<summary>Liste des tags concernant les structures</summary>
+<Details summary={'Liste des tags concernant les structures'}>
 
 | Identifiant                 | Description                                                        |
 |-----------------------------|--------------------------------------------------------------------|
@@ -568,7 +548,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `shipwreck`                 | Listes des structures qui sont des épaves de navire                |
 | `village`                   | Listes des structures qui sont des villages                        |
 
-</details>
+</Details>
 
 ### Préréglages du monde
 
@@ -576,13 +556,11 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<details>
-
-<summary>Liste des tags concernant les préréglages du monde</summary>
+<Details summary={'Liste des tags concernant les préréglages du monde'}>
 
 | Identifiant | Description                                                                                              |
 |-------------|----------------------------------------------------------------------------------------------------------|
 | `extended`  | Liste des préréglages du monde qui apparaissent uniquement lorsque vous maintenez la touche Alt enfoncée |
 | `normal`    | Liste des préréglages du monde qui apparaissent dans le menu de configuration à la création d'un monde   |
 
-</details>
+</Details>
