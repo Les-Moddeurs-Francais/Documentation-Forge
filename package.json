@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "0.0.0-5492",
+    "@docusaurus/plugin-ideal-image": "0.0.0-5492",
     "@docusaurus/plugin-pwa": "0.0.0-5492",
     "@docusaurus/preset-classic": "0.0.0-5492",
     "@docusaurus/theme-mermaid": "0.0.0-5492",
