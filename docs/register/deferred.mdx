@@ -5,6 +5,8 @@ description: Comment utiliser les Deferred Registers ?
 tags: [enregistrement]
 ---
 
+import Details from '@theme/Details';
+
 `DeferredRegister` est une couche d'abstraction de l'événement de registre utilisé pour enregistrer des éléments. Il maintient une correspondance entre les "noms de registre" et leurs _fournisseurs_ associés et arrange ceux-ci lors de l'appel de l'événement `RegistryEvent$Register`.
 
 ## Créer un Deferred Register
@@ -20,47 +22,46 @@ public static final DeferredRegister<Item> MON_REGISTRE = DeferredRegister.creat
 Quelques explications :
 - La classe référencée entre les chevrons doit correspondre au type définit par le premier argument
 - Le premier argument permet de définir le type d'élément (liste ci-dessous) que nous allons pouvoir enregistrer (ici, cela sera pour les items)
-<details>
-<summary>Liste des types</summary>
-<ul>
-  <li>BLOCKS</li>
-  <li>FLUIDS</li>
-  <li>ITEMS</li>
-  <li>MOB_EFFECTS</li>
-  <li>SOUND_EVENTS</li>
-  <li>POTIONS</li>
-  <li>ENCHANTMENTS</li>
-  <li>ENTITY_TYPES</li>
-  <li>BLOCK_ENTITY_TYPES</li>
-  <li>PARTICLE_TYPES</li>
-  <li>MENU_TYPES</li>
-  <li>PAINTING_TYPES</li>
-  <li>RECIPE_TYPES</li>
-  <li>RECIPE_SERIALIZERS</li>
-  <li>ATTRIBUTES</li>
-  <li>STAT_TYPES</li>
-  <li>COMMAND_ARGUMENT_TYPES</li>
-  <li>VILLAGER_PROFESSIONS</li>
-  <li>POI_TYPES</li>
-  <li>MEMORY_MODULE_TYPES</li>
-  <li>SENSOR_TYPES</li>
-  <li>SCHEDULES</li>
-  <li>ACTIVITIES</li>
-  <li>WORLD_CARVERS</li>
-  <li>FEATURES</li>
-  <li>CHUNK_STATUS</li>
-  <li>BLOCK_STATE_PROVIDER_TYPES</li>
-  <li>FOLIAGE_PLACER_TYPES</li>
-  <li>TREE_DECORATOR_TYPES</li>
-  <li>BIOMES</li>
-  <li>ENTITY_DATA_SERIALIZERS</li>
-  <li>GLOBAL_LOOT_MODIFIER_SERIALIZERS</li>
-  <li>BIOME_MODIFIER_SERIALIZERS</li>
-  <li>STRUCTURE_MODIFIER_SERIALIZERS</li>
-  <li>FLUID_TYPES</li>
-  <li>HOLDER_SET_TYPES</li>
-</ul>
-</details>
+<Details summary={'Liste des types'}>
+    <ul>
+        <li>BLOCKS</li>
+        <li>FLUIDS</li>
+        <li>ITEMS</li>
+        <li>MOB_EFFECTS</li>
+        <li>SOUND_EVENTS</li>
+        <li>POTIONS</li>
+        <li>ENCHANTMENTS</li>
+        <li>ENTITY_TYPES</li>
+        <li>BLOCK_ENTITY_TYPES</li>
+        <li>PARTICLE_TYPES</li>
+        <li>MENU_TYPES</li>
+        <li>PAINTING_TYPES</li>
+        <li>RECIPE_TYPES</li>
+        <li>RECIPE_SERIALIZERS</li>
+        <li>ATTRIBUTES</li>
+        <li>STAT_TYPES</li>
+        <li>COMMAND_ARGUMENT_TYPES</li>
+        <li>VILLAGER_PROFESSIONS</li>
+        <li>POI_TYPES</li>
+        <li>MEMORY_MODULE_TYPES</li>
+        <li>SENSOR_TYPES</li>
+        <li>SCHEDULES</li>
+        <li>ACTIVITIES</li>
+        <li>WORLD_CARVERS</li>
+        <li>FEATURES</li>
+        <li>CHUNK_STATUS</li>
+        <li>BLOCK_STATE_PROVIDER_TYPES</li>
+        <li>FOLIAGE_PLACER_TYPES</li>
+        <li>TREE_DECORATOR_TYPES</li>
+        <li>BIOMES</li>
+        <li>ENTITY_DATA_SERIALIZERS</li>
+        <li>GLOBAL_LOOT_MODIFIER_SERIALIZERS</li>
+        <li>BIOME_MODIFIER_SERIALIZERS</li>
+        <li>STRUCTURE_MODIFIER_SERIALIZERS</li>
+        <li>FLUID_TYPES</li>
+        <li>HOLDER_SET_TYPES</li>
+    </ul>
+</Details>
 - Le deuxième quant à lui est le modid sous lequel votre élément sera enregistré (il est préférable de mettre le modid de votre mod)
 
 :::caution
