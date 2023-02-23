@@ -203,6 +203,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `slabs`                                    | Liste des blocs qui sont des dalles                                                                                                                                           |
 | `small_dripleaf_placeable`                 | Liste des blocs sur lesquels il est possible de placer les petites foliogoutes                                                                                                |
 | `small_flowers`                            | Liste des blocs qui sont des petites fleurs                                                                                                                                   |
+| `smelts_to_glass`                          | Liste des blocs qui peuvent être cuits pour obtenir du verre                                                                                                                                   |
 | `snaps_goat_horn`                          | Liste des blocs qui cassent une corne aux chèvres quand elles chargent dedans                                                                                                 |
 | `snow`                                     | Liste des blocs qui sont de la neige                                                                                                                                          |
 | `snow_layer_cannot_survive_on`             | Liste des blocs sur lesquels les couches de neige ne peuvent pas survivre                                                                                                     |
@@ -258,34 +259,38 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 ### Types de dégât
 
-<Details summary={'Liste des tags concernant les variantes de chat'}>
-
-| Identifiant                    | Description              |
-|--------------------------------|--------------------------|
-| `always_most_significant_fall` | Liste des types de dégâts qui sont des chutes tuant à coup sûr |
-| `always_triggers_silverfish`   | Liste des types de dégâts qui réveillent à coup sûr un poisson d'argent (_silverfish_) quand un autre subit des dégâts dun même type |
+<details>
+    
+<summary>Liste des tags concernant les types de dégât</summary>
+    
+| Identifiant                    | Description                                                                                                                                                            |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `always_hurts_ender_dragons`   | Liste des types de dégâts qui touchent l'Ender Dragon à coup sûr (même si ces derniers ne sont pas source d'un joueur)                                                 |
+| `always_most_significant_fall` | Liste des types de dégâts qui sont des chutes tuant à coup sûr                                                                                                         |
+| `always_triggers_silverfish`   | Liste des types de dégâts qui réveillent à coup sûr un poisson d'argent (_silverfish_) quand un autre subit des dégâts dun même type                                   |
 | `avoids_guardian_thorns`       | Liste des types de dégâts qui ne tiennent pas des dégâts provoqués en retour par les épines d'un gardien (l'entité à la source du dégât ne sera pas blessée en retour) |
-| `burns_armor_stands`           | Liste des types de dégâts qui brulent un porte-armure |
-| `bypasses_armor`               | Liste des types de dégâts qui ne tiennent pas compte de l'armure |
-| `bypasses_effects`             | Liste des types de dégâts qui ne tiennent pas compte des effets de potions |
-| `bypasses_enchantments`        | Liste des types de dégâts ui ne tiennent pas compte des enchantements |
-| `bypasses_invulnerability`     | Liste des types de dégâts qui ne tiennent pas compte de l'invulnérabilité |
-| `bypasses_resistance`          | Liste des types de dégâts qui ne tiennent pas compte de la resistance |
-| `damages_helmet`               | Liste des types de dégâts qui endommagent le casque |
-| `ignites_armor_stands`         | Liste des types de dégâts qui mettent en feu un porte-armure |
-| `is_drowning`                  | Liste des types de dégâts de noyade |
-| `is_explosion`                 | Liste des types de dégâts d'explosion |
-| `is_fall`                      | Liste des types de dégâts de chute |
-| `is_fire`                      | Liste des types de dégâts de feu |
-| `is_freezing`                  | Liste des types de dégâts de froid |
-| `is_lightning`                 | Liste des types de dégâts causés par la foudre |
-| `is_projectile`                | Liste des types de dégâts causés par des projectiles |
-| `no_anger`                     | Liste des types de dégâts qui ne sont pas sources de colère (_aggro_) |
-| `no_impact`                    | Liste des types de dégâts qui ne sont pas sources d'un impact |
-| `witch_resistant_to`           | Liste des types de dégâts auxquels les sorcières sont résistantes |
-| `wither_immune_to`             | Liste des types de dégâts auxquels les Wither sont immunisés |
+| `burns_armor_stands`           | Liste des types de dégâts qui brulent un porte-armure                                                                                                                  |
+| `bypasses_armor`               | Liste des types de dégâts qui ne tiennent pas compte de l'armure                                                                                                       |
+| `bypasses_cooldown`            | Liste des types de dégâts qui ne tiennent pas compte du _cooldown_ (qui rend la cible invincible un court instant après avoir subi un dégât)                           |
+| `bypasses_effects`             | Liste des types de dégâts qui ne tiennent pas compte des effets de potions                                                                                             |
+| `bypasses_enchantments`        | Liste des types de dégâts ui ne tiennent pas compte des enchantements                                                                                                  |
+| `bypasses_invulnerability`     | Liste des types de dégâts qui ne tiennent pas compte de l'invulnérabilité                                                                                              |
+| `bypasses_resistance`          | Liste des types de dégâts qui ne tiennent pas compte de la resistance                                                                                                  |
+| `damages_helmet`               | Liste des types de dégâts qui endommagent le casque                                                                                                                    |
+| `ignites_armor_stands`         | Liste des types de dégâts qui mettent en feu un porte-armure                                                                                                           |
+| `is_drowning`                  | Liste des types de dégâts de noyade                                                                                                                                    |
+| `is_explosion`                 | Liste des types de dégâts d'explosion                                                                                                                                  |
+| `is_fall`                      | Liste des types de dégâts de chute                                                                                                                                     |
+| `is_fire`                      | Liste des types de dégâts de feu                                                                                                                                       |
+| `is_freezing`                  | Liste des types de dégâts de froid                                                                                                                                     |
+| `is_lightning`                 | Liste des types de dégâts causés par la foudre                                                                                                                         |
+| `is_projectile`                | Liste des types de dégâts causés par des projectiles                                                                                                                   |
+| `no_anger`                     | Liste des types de dégâts qui ne sont pas sources de colère (_aggro_)                                                                                                  |
+| `no_impact`                    | Liste des types de dégâts qui ne sont pas sources d'un impact                                                                                                          |
+| `witch_resistant_to`           | Liste des types de dégâts auxquels les sorcières sont résistantes                                                                                                      |
+| `wither_immune_to`             | Liste des types de dégâts auxquels les Wither sont immunisés                                                                                                           |
 
-</Details>
+</details>
 
 ### Entités
 
@@ -299,6 +304,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `axolotl_always_hostiles`    | Liste des entités contre lesquels les axolotls sont toujours hostiles                                    |
 | `axolotl_hunt_targets`       | Liste des entités que les axolotls attaquent                                                             |
 | `beehive_inhabitors`         | Liste des entités qui habitent dans une ruche                                                            |
+| `fall_damage_immune`         | Liste des entités qui sont immunisées contre les dégâts de chute                                         |
 | `freeze_hurts_extra_types`   | Liste des entités qui sont plus sensible au froid et subissent donc des points de dégâts supplémentaires |
 | `freeze_immune_entity_types` | Liste des entités qui ne gèlent pas dans la poudreuse                                                    |
 | `frog_food`                  | Liste des entités qui peuvent être mangées par les grenouilles                                           |
@@ -422,6 +428,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `signs`                        | Liste de tous les types de panneaux                                                              |
 | `slabs`                        | Liste de tous les types de dalles                                                                |
 | `small_flowers`                | Liste de tous les types de _petites_ fleurs                                                      |
+| `smelts_to_glass`              | Liste des blocs qui peuvent être cuits pour obtenir du verre                                     |
 | `soul_fire_base_blocks`        | Liste des items produisant du feu bleu                                                           |
 | `spruce_logs`                  | Liste de tous les types de troncs en sapin                                                       |
 | `stairs`                       | Liste de tous les types d'escaliers                                                              |
