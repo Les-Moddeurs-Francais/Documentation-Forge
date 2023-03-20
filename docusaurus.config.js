@@ -1,5 +1,19 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const versions = require('./versions.json');
+
+function getNextVersionName() {
+  const expectedPrefix = '1.';
+
+  const lastReleasedVersion = versions[0];
+  if (!lastReleasedVersion.includes(expectedPrefix)) {
+    throw new Error(
+        'Erreur ! La dernière version ne respecte pas le pattern',
+    );
+  }
+  const version = parseInt(lastReleasedVersion.replace(expectedPrefix, '').replace(".x", ''), 10);
+  return `${expectedPrefix}${version + 1}.x`;
+}
 
 module.exports = {
   title: 'Documentation Forge',
@@ -151,7 +165,7 @@ module.exports = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: `1.19.4`,
+              label: `${getNextVersionName()}`,
             },
           },
         },
