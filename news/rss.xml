@@ -4,10 +4,22 @@
         <title>Documentation Forge Blog</title>
         <link>https://forge-doc.lesmoddeursfrancais.com/news</link>
         <description>Documentation Forge Blog</description>
-        <lastBuildDate>Sun, 01 Jan 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
+        <item>
+            <title><![CDATA[Forge 1.19.4 45.0]]></title>
+            <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-1194-450</link>
+            <guid>https://forge-doc.lesmoddeursfrancais.com/news/forge-1194-450</guid>
+            <pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[La version 1.19.4-45.0 de Forge est sortie. Celle-ci apporte quelques changements et corrections de bugs.]]></description>
+            <content:encoded><![CDATA[<p>La version 1.19.4-45.0 de Forge est sortie. Celle-ci apporte quelques changements et corrections de bugs.</p><p><em>Ce changelog est sujet à changement et ne repertoire que les changements de Forge connus.</em></p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nouveautés">Nouveautés<a href="#nouveautés" class="hash-link" aria-label="Lien direct vers Nouveautés" title="Lien direct vers Nouveautés">​</a></h3><ul><li>La fonction <code>displayItems</code> pour créer des onglets pour le menu créatif admet désormais 2 paramètres au lieu de 3, <code>CreativeModeTab$ItemDisplayParameters</code> qui regroupe le paramètre de type booléen qui spécifiait si le joueur avait des permissions et <code>CreativeModeTab$Output</code>.</li><li>Ajout d'un registre par Forge (<code>forge:display_contexts</code>), qui permet d'enregistrer de nouvelles perspectives pour le rendu des items.</li></ul>]]></content:encoded>
+            <author>mysterious_dev@lesmoddeursfrancais.fr (Mysterious_Dev)</author>
+            <category>forge</category>
+            <category>mise à jour</category>
+            <category>1.19.4</category>
+        </item>
         <item>
             <title><![CDATA[Forge 1.19.3 44.1]]></title>
             <link>https://forge-doc.lesmoddeursfrancais.com/news/forge-1193-441</link>
