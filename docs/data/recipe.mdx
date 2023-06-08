@@ -309,8 +309,12 @@ Dans ce cas-là, je crée une recette permettant d'améliorer une pioche en pier
 en pioche en fer à l'aide d'un lingot de fer. Ici aussi, c'est
 assez simple : 
 
+:::warning
+La classe `LegacyUpgradeRecipeBuilder` est marqué comme déprécié et sera donc supprimée dans les versions supérieures (sûrement pour la 1.20).
+:::
+
 ```java
-UpgradeRecipeBuilder.smithing(Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), RecipeCategory.TOOLS, Items.IRON_PICKAXE)
+LegacyUpgradeRecipeBuilder.smithing(Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), RecipeCategory.TOOLS, Items.IRON_PICKAXE)
                 .unlocks("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STONE_PICKAXE))
                 .save(consumer, new ResourceLocation(Testmod.MODID, "stone_pickaxe_upgrade"));
 ```

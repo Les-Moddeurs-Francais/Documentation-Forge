@@ -2,8 +2,7 @@ name: Documentation CI/CD
 
 on:
   pull_request:
-    branches:
-      - master
+    branches: ['*']
     paths-ignore:
       - 'README.md'
       - 'CONTRIBUTING.md'
