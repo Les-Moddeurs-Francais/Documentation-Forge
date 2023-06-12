@@ -23,6 +23,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   baseUrlIssueBanner : false,
   favicon: 'img/favicon.ico',
+  staticDirectories: ['static'],
   markdown: {
     mermaid: true,
   },

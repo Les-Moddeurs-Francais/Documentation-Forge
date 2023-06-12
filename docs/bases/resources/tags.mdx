@@ -5,8 +5,6 @@ description: Comment sont structurées les tags dans Minecraft ?
 tags: [bases, ressources]
 ---
 
-import Details from '@theme/Details';
-
 Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du jeu (comme des items, blocs, entitées, etc...) dans un même fichier pour après les utiliser dans des recettes (par exemple celle du coffre nécessitant n'importe quels types de bois) ou même dans votre code directement.
 
 ## Structure générale
@@ -26,7 +24,8 @@ Ajoutés en 1.13, les tags permettent de regrouper plusieurs éléments du jeu (
 | values  | Entrées du tag (éléments contenus dans celui-ci)  |
 
 Il existe cependant 2 types de valeurs, les valeurs requises et optionnelles (la différence étant que pour les valeurs requises, si le jeu n'arrive pas à les trouver, cela provoquera une erreur au chargement, ce qui n'est pas le cas pour les valeurs optionnelles) :
-<Details summary={'Valeurs requises'}>
+<details>
+  <summary>Valeurs requises</summary>
 
 Celle-ci peuvent prendre 2 valeurs, soit un identifiant faisant référence à un élément du jeu, soit un identifiant faisant référence à un tag (précédé d'un `#`).
 
@@ -37,10 +36,11 @@ Celle-ci peuvent prendre 2 valeurs, soit un identifiant faisant référence à u
 ```json
 "#minecraft:stone_bricks"
 ```
+  
+</details>
 
-</Details>
-
-<Details summary={'Valeurs optionnelles'}>
+<details>
+  <summary>Valeurs optionnelles</summary>
 
 Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant faisant référence à un élément du jeu, soit un identifiant faisant référence à un tag (précédé d'un `#`). Le champ `required` permet quant à lui de définir si l'entrée est requise ou non (dans le cas d'une entrée optionnelle il faudrat le définir sur `false`).
 
@@ -58,13 +58,15 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 }
 ```
 
-</Details>
+</details>
 
 ## Listes
 
 ### Motifs de bannière
 
-<Details summary={'Liste des tags concernant les motifs de bannière'}>
+<details>
+
+<summary>Liste des tags concernant les motifs de bannière</summary>
 
 | Identifiant            | Description                                                                  |
 |------------------------|------------------------------------------------------------------------------|
@@ -76,11 +78,12 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `pattern_item/skull`   | Liste des motifs qui peuvent être fabriqués en utilisant le motif de crâne   |
 | `no_item_required`     | Liste des motifs qui peuvent être fabriqués sans aucun item                  |
 
-</Details>
+</details>
 
 ### Blocs
 
-<Details summary={'Liste des tags concernant les blocs'}>
+<details>
+<summary>Liste des tags concernant les blocs</summary>
 
 | Identifiant                                | Description                                                                                                                                                                   |
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -204,6 +207,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `slabs`                                    | Liste des blocs qui sont des dalles                                                                                                                                           |
 | `small_dripleaf_placeable`                 | Liste des blocs sur lesquels il est possible de placer les petites foliogoutes                                                                                                |
 | `small_flowers`                            | Liste des blocs qui sont des petites fleurs                                                                                                                                   |
+| `smelts_to_glass`                          | Liste des blocs qui peuvent être cuits pour obtenir du verre                                                                                                                                   |
 | `snaps_goat_horn`                          | Liste des blocs qui cassent une corne aux chèvres quand elles chargent dedans                                                                                                 |
 | `sniffer_diggable_block`                   | Liste des blocs où le Renifleur peut creuser                                                                                                                                  |
 | `snow`                                     | Liste des blocs qui sont de la neige                                                                                                                                          |
@@ -245,53 +249,99 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wool`                                     | Liste des blocs qui sont des laines                                                                                                                                           |
 | `wool_carpets`                             | Liste des blocs qui sont des tapis de laine                                                                                                                                   |
 
-</Details>
+</details>
 
 ### Variantes de chat
 
-<Details summary={'Liste des tags concernant les variantes de chat'}>
+<details>
+
+<summary>Liste des tags concernant les variantes de chat</summary>
 
 | Identifiant        | Description                                                     |
 |--------------------|-----------------------------------------------------------------|
 | `default_spawns`   | Liste des variantes de chat pouvant apparaitre naturellement    |
 | `full_moon_spawns` | Liste des variantes de chat pouvant apparaitre à la pleine lune |
 
-</Details>
+</details>
+
+### Types de dégât
+
+<details>
+    
+<summary>Liste des tags concernant les types de dégât</summary>
+    
+| Identifiant                    | Description                                                                                                                                                            |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `always_hurts_ender_dragons`   | Liste des types de dégâts qui touchent l'Ender Dragon à coup sûr (même si ces derniers ne sont pas source d'un joueur)                                                 |
+| `always_most_significant_fall` | Liste des types de dégâts qui sont des chutes tuant à coup sûr                                                                                                         |
+| `always_triggers_silverfish`   | Liste des types de dégâts qui réveillent à coup sûr un poisson d'argent (_silverfish_) quand un autre subit des dégâts dun même type                                   |
+| `avoids_guardian_thorns`       | Liste des types de dégâts qui ne tiennent pas des dégâts provoqués en retour par les épines d'un gardien (l'entité à la source du dégât ne sera pas blessée en retour) |
+| `burns_armor_stands`           | Liste des types de dégâts qui brulent un porte-armure                                                                                                                  |
+| `bypasses_armor`               | Liste des types de dégâts qui ne tiennent pas compte de l'armure                                                                                                       |
+| `bypasses_cooldown`            | Liste des types de dégâts qui ne tiennent pas compte du _cooldown_ (qui rend la cible invincible un court instant après avoir subi un dégât)                           |
+| `bypasses_effects`             | Liste des types de dégâts qui ne tiennent pas compte des effets de potions                                                                                             |
+| `bypasses_enchantments`        | Liste des types de dégâts ui ne tiennent pas compte des enchantements                                                                                                  |
+| `bypasses_invulnerability`     | Liste des types de dégâts qui ne tiennent pas compte de l'invulnérabilité                                                                                              |
+| `bypasses_resistance`          | Liste des types de dégâts qui ne tiennent pas compte de la resistance                                                                                                  |
+| `bypasses_shield`              | Liste des types de dégâts qui ne tiennent pas compte du bouclier                                                                                                       |
+| `damages_helmet`               | Liste des types de dégâts qui endommagent le casque                                                                                                                    |
+| `ignites_armor_stands`         | Liste des types de dégâts qui mettent en feu un porte-armure                                                                                                           |
+| `is_drowning`                  | Liste des types de dégâts de noyade                                                                                                                                    |
+| `is_explosion`                 | Liste des types de dégâts d'explosion                                                                                                                                  |
+| `is_fall`                      | Liste des types de dégâts de chute                                                                                                                                     |
+| `is_fire`                      | Liste des types de dégâts de feu                                                                                                                                       |
+| `is_freezing`                  | Liste des types de dégâts de froid                                                                                                                                     |
+| `is_lightning`                 | Liste des types de dégâts causés par la foudre                                                                                                                         |
+| `is_projectile`                | Liste des types de dégâts causés par des projectiles                                                                                                                   |
+| `no_anger`                     | Liste des types de dégâts qui ne sont pas sources de colère (_aggro_)                                                                                                  |
+| `no_impact`                    | Liste des types de dégâts qui ne sont pas sources d'un impact                                                                                                          |
+| `witch_resistant_to`           | Liste des types de dégâts auxquels les sorcières sont résistantes                                                                                                      |
+| `wither_immune_to`             | Liste des types de dégâts auxquels les Wither sont immunisés                                                                                                           |
+
+</details>
 
 ### Entités
 
-<Details summary={'Liste des tags concernant les entités'}>
+<details>
 
-| Identifiant                  | Description                                                                                              |
-|------------------------------|----------------------------------------------------------------------------------------------------------|
-| `arrows`                     | Liste de toutes les flèches (entités)                                                                    |
-| `axolotl_always_hostiles`    | Liste des entités contre lesquels les axolotls sont toujours hostiles                                    |
-| `axolotl_hunt_targets`       | Liste des entités que les axolotls attaquent                                                             |
-| `beehive_inhabitors`         | Liste des entités qui habitent dans une ruche                                                            |
-| `freeze_hurts_extra_types`   | Liste des entités qui sont plus sensible au froid et subissent donc des points de dégâts supplémentaires |
-| `freeze_immune_entity_types` | Liste des entités qui ne gèlent pas dans la poudreuse                                                    |
-| `frog_food`                  | Liste des entités qui peuvent être mangées par les grenouilles                                           |
-| `impact_projectiles`         | Liste des entités qui sont des projectiles                                                               |
-| `powder_snow_walkable_mobs`  | Liste des entités qui peuvent marcher sur la poudreuse sans s'enfoncer dedans                            |
-| `raiders`                    | Liste des entités qui composent les raids contre les villages                                            |
-| `skeletons`                  | Liste de tous les types de squelette                                                                     |
+<summary>Liste des tags concernant les entités</summary>
 
-</Details>
+| Identifiant                  | Description                                                                                                             |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| `arrows`                     | Liste de toutes les flèches (entités)                                                                                   |
+| `axolotl_always_hostiles`    | Liste des entités contre lesquels les axolotls sont toujours hostiles                                                   |
+| `axolotl_hunt_targets`       | Liste des entités que les axolotls attaquent                                                                            |
+| `beehive_inhabitors`         | Liste des entités qui habitent dans une ruche                                                                           |
+| `dismounts_underwater`       | Liste des entités qui forcent le pilote (entité chevauchant l'autre) à descendre quand cette dernière rentre dans l'eau |
+| `fall_damage_immune`         | Liste des entités qui sont immunisées contre les dégâts de chute                                                        |
+| `freeze_hurts_extra_types`   | Liste des entités qui sont plus sensible au froid et subissent donc des points de dégâts supplémentaires                |
+| `freeze_immune_entity_types` | Liste des entités qui ne gèlent pas dans la poudreuse                                                                   |
+| `frog_food`                  | Liste des entités qui peuvent être mangées par les grenouilles                                                          |
+| `impact_projectiles`         | Liste des entités qui sont des projectiles                                                                              |
+| `powder_snow_walkable_mobs`  | Liste des entités qui peuvent marcher sur la poudreuse sans s'enfoncer dedans                                           |
+| `raiders`                    | Liste des entités qui composent les raids contre les villages                                                           |
+| `skeletons`                  | Liste de tous les types de squelette                                                                                    |
+
+</details>
 
 ### Fluides
 
-<Details summary={'Liste des tags concernant les fluides'}>
+<details>
+
+<summary>Liste des tags concernant les fluides</summary>
 
 | Identifiant | Description                           |
 |-------------|---------------------------------------|
 | `lava`      | Liste des fluides qui sont de la lave |
 | `water`     | Liste des fluides qui sont de l'eau   |
 
-</Details>
+</details>
 
 ### Évènements de jeu
 
-<Details summary={'Liste des tags concernant les évènements de jeu'}>
+<details>
+
+<summary>Liste des tags concernant les évènements de jeu</summary>
 
 | Identifiant                  | Description                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------|
@@ -301,11 +351,13 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `vibrations`                 | Liste des évènements considérés comme des vibrations                                              |
 | `warden_can_listen`          | Liste des évènements pouvant être écoutés par les warden's                                        |
 
-</Details>
+</details>
 
 ### Instruments
 
-<Details summary={'Liste des tags concernant les instruments'}>
+<details>
+
+<summary>Liste des tags concernant les instruments</summary>
 
 | Identifiant            | Description                                                                   |
 |------------------------|-------------------------------------------------------------------------------|
@@ -313,17 +365,20 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `regular_goat_horns`   | Liste des instruments des cornes de chèvres lâchées par des chèvres normales  |
 | `screaming_goat_horns` | Liste des instruments des cornes de chèvres lâchées par des chèvres hurlantes |
 
-</Details>
+</details>
 
 ### Items
 
-<Details summary={'Liste des tags concernant les items'}>
+<details>
+
+<summary>Liste des tags concernant les items</summary>
 
 | Identifiant                    | Description                                                                                      |
 |--------------------------------|--------------------------------------------------------------------------------------------------|
 | `acacia_logs`                  | Liste de toutes les types de buche en acajou                                                     |
 | `anvil`                        | Liste de tous les types d'enclumes                                                               |
 | `arrows`                       | Liste de tous les types de flèche                                                                |
+| `axes`                         | Liste de tous les types d'haches                                                                 |
 | `axolotl_tempt_items`          | Liste des items permettant d'attirer des axolotl                                                 |
 | `banners`                      | Liste de toutes les bannières avec leurs couleurs respective                                     |
 | `bamboo_blocks`                | Liste de tous les types de blocs de bambou                                                       |
@@ -359,6 +414,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `fox_food`                     | Liste des items que le renard peut manger                                                        |
 | `freeze_immune_wearables`      | Liste de tous les item pouvant être portés qui immunisent contre le froid                        |
 | `gold_ores`                    | Liste des minerais d'or                                                                          |
+| `hoes`                         | Liste des minerais de faux                                                                       |
 | `ignored_by_piglin_babies`     | Liste des items ignorés par les bébés piglins                                                    |
 | `hanging_signs`                | Liste de tous les types de pancartes suspendues                                                  |
 | `iron_ores`                    | Liste des minerais de fer                                                                        |
@@ -373,6 +429,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `non_flammable_wood`           | Liste des tous les types de bois non combustibles                                                |
 | `noteblock_top_instruments`    | Liste des tous les types de blocs qui peuvent être posés au-dessus d'un bloc musical             |
 | `oak_logs`                     | Liste de tous les types de troncs en chêne                                                       |
+| `pickaxes`                     | Liste de tous les types de pioches                                                               |
 | `piglin_food`                  | Liste des items que mangent les piglins                                                          |
 | `piglin_loved`                 | Liste des items que les Piglins accepte pour faire un échange                                    |
 | `piglin_repellents`            | Liste des items qui repoussent les piglins                                                       |
@@ -381,18 +438,22 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `redstone_ores`                | Liste des minerais de redstone                                                                   |
 | `sand`                         | Liste de tous les types de sables                                                                |
 | `saplings`                     | Liste de tous les types de pousses d'arbre                                                       |
+| `shovels`                      | Liste de tous les types de pelles                                                                |
 | `signs`                        | Liste de tous les types de panneaux                                                              |
 | `slabs`                        | Liste de tous les types de dalles                                                                |
 | `small_flowers`                | Liste de tous les types de _petites_ fleurs                                                      |
-| `sniffer_food`                | Liste de tous les types nourritures pour le Renifleur                                             |
+| `smelts_to_glass`              | Liste des blocs qui peuvent être cuits pour obtenir du verre                                     |
+| `sniffer_food`                 | Liste de tous les types nourritures pour le Renifleur                                            |
 | `soul_fire_base_blocks`        | Liste des items produisant du feu bleu                                                           |
 | `spruce_logs`                  | Liste de tous les types de troncs en sapin                                                       |
 | `stairs`                       | Liste de tous les types d'escaliers                                                              |
 | `stone_bricks`                 | Liste de tous les types de pierres taillées                                                      |
 | `stone_crafting_materials`     | Liste des items permettant de crafter les objets à base de pierre                                |
 | `stone_tool_materials`         | Liste des items permettant de crafter les outils et armes en roche                               |
+| `sword`                        | Liste de tous les types d'épées                                                                  |
 | `tall_flowers`                 | Liste de tous les types de fleurs haute                                                          |
 | `terracotta`                   | Liste de tous les types de terres cuites                                                         |
+| `tools`                        | Liste de tous les types d'outils                                                                 |
 | `trapdoors`                    | Liste de tous les types de trappes                                                               |
 | `trim_materials`               | Liste de tous les types de matériaux pour les ornements d'armures                                |
 | `trim_templates`               | Liste de tous les types de motifs pour les ornements d'armures                                   |
@@ -410,21 +471,25 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `wool`                         | Liste de tous les types de laines                                                                |
 | `wool_carpets`                 | Liste de tous les types de tapis en laine                                                        |
 
-</Details>
+</details>
 
 ### Variantes de peinture
 
-<Details summary={'Liste des tags concernant les variantes de peinture'}>
+<details>
+
+<summary>Liste des tags concernant les variantes de peinture</summary>
 
 | Identifiant | Description                                              |
 |-------------|----------------------------------------------------------|
 | `placeable` | Liste des variantes de peinture plaçables en mode survie |
 
-</Details>
+</details>
 
 ### Points d'intérêt
 
-<Details summary={`Liste des tags concernant les variantes de points d'intérêt`}>
+<details>
+
+<summary>Liste des tags concernant les variantes de points d'intérêt</summary>
 
 | Identifiant           | Description                                              |
 |-----------------------|----------------------------------------------------------|
@@ -432,7 +497,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `bee_home`            | Liste des points d'intérêt ciblés par les abeilles       |
 | `village`             | Liste des points d'intérêt qui font partie d'un village  |
 
-</Details>
+</details>
 
 ### Biomes
 
@@ -440,7 +505,9 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<Details summary={'Liste des tags concernant les biomes'}>
+<details>
+
+<summary>Liste des tags concernant les biomes</summary>
 
 | Identifiant                                 | Description                                                                                                          |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -479,6 +546,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `allows_surface_slime_spawns`               | Liste des biomes dans lesquels les slimes peuvent apparaitre en surface                                              |
 | `allows_tropical_fish_spawns_at_any_height` | Liste des biomes dans lesquels les poissons tropicaux peuvent apparaitre dans les lacs à n'importe quel altitude     |
 | `has_closer_water_fog`                      | Liste des biomes dans lesquels la distance de vue sous l'eau est réduite                                             |
+| `increased_fire_burnout`                    | Liste des biomes où le feu s'éteint plus rapidement                                                                  |
 | `is_badlands`                               | Liste des biomes de type _badland_                                                                                   |
 | `is_beach`                                  | Liste des biomes _plage_                                                                                             |
 | `is_deep_ocean`                             | Liste des biomes de type _océan profond_                                                                             |
@@ -495,21 +563,24 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `is_taiga`                                  | Liste des biomes de type _taïga_                                                                                     |
 | `mineshaft_blocking`                        | Liste des biomes où les mines abandonnées sont bloquées                                                              |
 | `more_frequent_drowned_spawns`              | Liste des biomes dans lesquels la quantité d'apparition de noyé est plus importante que les autres                   |
-| `only_allows_snow_and_gold_rabbits`         | Liste des biomes dans lesquels les lapins qui apparaissent sont de couleur beige uniquement                          |
 | `plays_underwater_music`                    | Liste des biomes dans lesquels le jeu joue des musiques spécifiques à l'ambiance sous-marine                         |
 | `polar_bears_spawn_on_alternate_blocks`     | Liste des biomes dans lesquels les ours polaires peuvent apparaitre                                                  |
 | `produces_corals_from_bonemeal`             | Liste des biomes dans lesquels des coraux sont produit après l'utilisation d'engrais                                 |
 | `reduce_water_ambient_spawns`               | Liste des biomes dans lesquels la quantité d'apparition de créature marine est réduite par rapport aux autres biomes |
 | `required_ocean_monument_surrounding`       | Liste des biomes qui doivent être autour d'un monument sous-marin                                                    |
+| `snow_golem_melts`                          | Liste des biomes où les golems de neige fondront (biomes chauds)                                                     |
 | `spawns_cold_variant_frogs`                 | Liste des biomes dans lesquels une grenouille aura une variante de biome froid quand elle est générée/elle grandit   |
+| `spawns_gold_rabbits`                       | Liste des biomes où les lapins crème pourront apparaitre                                                             |
+| `spawns_snow_foxes`                         | Liste des biomes où les variantes du renard blanc pourront apparaitre                                                |
 | `spawns_warm_variant_frogs`                 | Liste des biomes dans lesquels une grenouille aura une variante de biome chaud quand elle est générée/elle grandit   |
+| `spawns_white_rabbits`                      | Liste des biomes où les lapins blancs pourront apparaitre                                                            |
 | `stronghold_biased_to`                      | Liste des biomes qui contrôle la génération des forts de l'End                                                       |
 | `water_on_map_outlines`                     | Liste des biomes qui sont considéré comme étant des océans sur les cartes aux trésors                                |
 | `without_patrol_spawns`                     | Liste des biomes où les patrouilles ne peuvent pas apparaitre                                                        |
 | `without_wandering_trader_spawns`           | Liste des biomes où les marchands ambulants ne peuvent pas apparaitre                                                |
 | `without_zombie_sieges`                     | Liste des biomes où les attaques de zombies ne peuvent pas être lancées                                              |
 
-</Details>
+</details>
 
 ### Générateurs de niveau plat préréglés
 
@@ -517,13 +588,15 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<Details summary={'Liste des tags concernant les générateurs de niveau plat préréglés'}>
+<details>
+
+<summary>Liste des tags concernant les générateurs de niveau plat préréglés</summary>
 
 | Identifiant | Description                                                                  |
 |-------------|------------------------------------------------------------------------------|
 | `visible`   | Liste des générateurs visibles sur l'écran de configuration des mondes plats |
 
-</Details>
+</details>
 
 ### Structures
 
@@ -531,7 +604,9 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<Details summary={'Liste des tags concernant les structures'}>
+<details>
+
+<summary>Liste des tags concernant les structures</summary>
 
 | Identifiant                 | Description                                                        |
 |-----------------------------|--------------------------------------------------------------------|
@@ -548,7 +623,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `shipwreck`                 | Listes des structures qui sont des épaves de navire                |
 | `village`                   | Listes des structures qui sont des villages                        |
 
-</Details>
+</details>
 
 ### Préréglages du monde
 
@@ -556,11 +631,13 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-même contenu dans le dossier `tags`
 :::
 
-<Details summary={'Liste des tags concernant les préréglages du monde'}>
+<details>
+
+<summary>Liste des tags concernant les préréglages du monde</summary>
 
 | Identifiant | Description                                                                                              |
 |-------------|----------------------------------------------------------------------------------------------------------|
 | `extended`  | Liste des préréglages du monde qui apparaissent uniquement lorsque vous maintenez la touche Alt enfoncée |
 | `normal`    | Liste des préréglages du monde qui apparaissent dans le menu de configuration à la création d'un monde   |
 
-</Details>
+</details>

@@ -17,7 +17,7 @@ public void onCreativeModeTabRegister(CreativeModeTabEvent.Register event)
             .icon(() -> new ItemStack(Items.DIAMOND))
             .title(Component.literal("My Mod Tab"))
             .withLabelColor(0x0000FF)
-            .displayItems((features, output, hasPermissions) -> {
+            .displayItems((params, output) -> {
                 //Items contenus dans cet onglet
             }));
 }
@@ -54,16 +54,15 @@ Dans ce cas, il sera nécessaire d'utiliser l'événement `CreativeModeTabEvent.
 ```java
 public void onCreativeModeTabBuildContents(CreativeModeTabEvent.BuildContents event)
 {
+    var entries = event.getEntries();
     if (event.getTab() == CreativeModeTabs.NATURAL_BLOCKS)
     {
-        event.register((flags, builder, hasPermissions) -> {
-            builder.accept(new ItemStack(Blocks.STRIPPED_ACACIA_LOG), ItemStack.EMPTY, new ItemStack(Blocks.STONE));
-        });
+        entries.putAfter(new ItemStack(Blocks.ACACIA_LOG), new ItemStack(Blocks.STRIPPED_ACACIA_LOG), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }
 }
 ```
 
-Ici, nous vérifions que l'onglet qui est construit est celui des blocs naturels, et nous ajoutons le bloc de buche d'acacia écorché avant rien (deuxième argument) et après le bloc dde pierre lisse (troisième argument).
+Ici, nous vérifions que l'onglet qui est construit est celui des blocs naturels, et nous ajoutons le bloc de buche d'acacia après le bloc de buche d'acacia écorcée.
 
 À nouveau, vous pouvez ensuite indiquer l'existence de ce mod dans le constructeur de votre classe principale avec la ligne :
 

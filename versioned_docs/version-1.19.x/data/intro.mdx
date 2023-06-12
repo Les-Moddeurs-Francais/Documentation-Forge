@@ -26,7 +26,7 @@ vous convient le mieux).
 
 Dans un nouveau package `data`, on va créer une classe `DataGen` et y écrire :
 
-````java
+```java
 @Mod.EventBusSubscriber(modid = Testmod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGen {
 
@@ -38,22 +38,22 @@ public class DataGen {
         DataGenerator generator = e.getGenerator();
     }
 }
-````
+```
 
 Allons-y pas à pas pour les explications.
 
-````java
+```java
 @Mod.EventBusSubscriber(modid = Testmod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
-````
+```
 
 Tout d'abord, nous avons l'annotation ``@Mod.EventBusSubscriber`` qui permets de signaler
 à Forge la présence de notre classe et que cette dernière écoute des évènements.
 Utiliser cette annotation nous permet d'enregistrer toutes les méthodes statiques de notre
 classe ayant un événement de Forge en paramètre et l'annotation `@SubscribeEvent`.
 
-````java
+```java
 public static final ExistingFileHelper IGNORING_FILES_EFH = new ExistingFileHelper(Collections.emptyList(), Sets.newConcurrentHashSet(), false, null, null);
-````
+```
 
 Ici, je crée une variable de type `ExistingFileHelper` qui me servira pour mes différents
 générateurs à l'avenir. Initialement, les générateurs vérifient que certains fichiers existent
@@ -62,13 +62,13 @@ présente dans les fichiers du mod, le générateur renvoie une erreur. Cette fo
 peut être utile dans certains cas, mais dans le nôtre, ignorer ses vérifications
 nous facilitera le travail.
 
-````java
+```java
 @SubscribeEvent
 public static void dataGen(final GatherDataEvent e)
 {
     DataGenerator generator = e.getGenerator();
 }
-````
+```
 
 Enfin, on termine par la méthode qui nous intéresse le plus, celle qui contiendra tous
 nos générateurs.
@@ -89,9 +89,9 @@ de l'événement que l'on gardera bien au chaud pour les différents générateu
 Il reste un petit détail pour éviter tout problème dans votre ``build.gradle``.
 Rendez-vous vers la ligne 99. Vous devriez repérer cette ligne :
 
-````text
+```gradle
 args '--mod', 'testmod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
-````
+```
 
 La seule chose à changer est la deuxième paire de guillemets où vous devez insérer
 votre modid. Dans mon cas c'est ``testmod``.
