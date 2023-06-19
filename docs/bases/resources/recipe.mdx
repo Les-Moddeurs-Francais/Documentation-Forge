@@ -176,25 +176,31 @@ tags: [bases, ressources]
 
 ## Recette de la table de forgeron
 
+### Recette de transformation
+
 ```json
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:diamond_axe"
-  },
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "minecraft:netherite_ingot"
   },
+  "base": {
+    "item": "minecraft:diamond_axe"
+  },
   "result": {
     "item": "minecraft:netherite_axe"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
   }
 }
 ```
 
 | Nom      | Description                                                                                                                    |
 |----------|--------------------------------------------------------------------------------------------------------------------------------|
-| type     | Type de la recette (ici `minecraft:smithing`)                                                                                  |
+| type     | Type de la recette (ici `minecraft:smithing_transform`)                                                                        |
 | group    | Groupe de la recette (pour grouper certaines recettes ensemble comme par exemple les portes, les dalles, les planches, etc...) |
 | base     | Item devant être amélioré                                                                                                      |
 | addition | Second item nécessaire à l'amélioration                                                                                        |
 | result   | Résultat de la recette                                                                                                         |
+| template | Modèle de forge requis                                                                                                         |
