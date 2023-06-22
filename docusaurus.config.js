@@ -17,7 +17,7 @@ function getNextVersionName() {
 
 module.exports = {
   title: 'Documentation Forge',
-  url: 'https://forge-doc.lesmoddeursfrancais.com',
+  url: 'https://forge-doc.lesmoddeursfrancais.fr',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -83,7 +83,7 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.lesmoddeursfrancais.com/',
+              href: 'https://discord.lesmoddeursfrancais.fr/',
             },
           ],
         },
@@ -105,7 +105,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} - <a href="https://www.lesmoddeursfrancais.com">Les Moddeurs Francais</a>`,
+      copyright: `Copyright © ${new Date().getFullYear()} - <a href="https://lesmoddeursfrancais.fr">Les Moddeurs Francais</a>`,
     },
     colorMode: {
       respectPrefersColorScheme: true,
