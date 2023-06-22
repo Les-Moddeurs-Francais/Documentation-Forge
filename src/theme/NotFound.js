@@ -23,7 +23,7 @@ export default function NotFound() {
                   Il semble que nous ayons peut-être oublié cette page 👀
               </p>
               <p>
-                  Si c'est le cas, n'hésitez pas à nous contacter sur <a href="https://discord.lesmoddeursfrancais.com" target={"_blank"}>Discord</a> 😊.
+                  Si c'est le cas, n'hésitez pas à nous contacter sur <a href="https://discord.lesmoddeursfrancais.fr" target={"_blank"}>Discord</a> 😊.
               </p>
                 <Link
                     className="button button--secondary button--lg"
