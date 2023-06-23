@@ -10,19 +10,18 @@ ou même jouer avec dans un modpack ou sur un serveur avec vos amis. Vous avez b
 du *.jar*, et c'est ce qu'on va chercher à obtenir dans cette section.  
 Pour cela on va configurer certaines choses dans le *build.gradle*.
 
-## Configuration du build.gradle
+## Configuration du ficher gradle.properties
 
 :::tip
-Vous pouvez trouver le *build.gradle* dans votre dossier principal
+Vous pouvez trouver le fichier *gradle.properties* dans votre dossier principal
 :::
 
 Proche de la ligne 15, vous trouverez trois paramètres qui vont nous intéresser : 
-``version``, ``group`` et ``archivesBaseName``.
+`mod_version`, `mod_group_id`.
 
 ```gradle
-version = '1.0'
-group = 'fr.zom.testmod'
-archivesBaseName = 'TestMod'
+mod_version=1.0.0
+mod_group_id=fr.lmf.testmod
 ```
 
 ### Version
@@ -31,7 +30,7 @@ Tout d'abord, nous avons la version de notre mod. Le paramètre est assez clair.
 Il sert tout simplement à spécifier la version de votre mod.
 
 ```gradle
-version = '1.0'
+mod_version=1.0.0
 ```
 
 Ici la version de mon mod est 1.0. N'oubliez pas les guillemets !
@@ -43,21 +42,14 @@ de votre code dans le dossier *src/main/java*.
 (C'est souvent le package où votre classe principale est située.)
 
 ```gradle
-group = 'fr.zom.testmod'
+mod_group_id=fr.lmf.testmod
 ```
 
 Pour ma part voici le chemin des sources de mon mod.
 
 ### Nom de l'archive
 
-Enfin, dernier paramètre qui sera le nom que vous donnez au *.jar* quand vous l'exporterez.
-
-```gradle
-archivesBaseName = 'TestMod'
-```
-
-Le nom complet du *.jar* sera le nom que vous mettez juste ici accompagné de la version
-qu'on a changé plus haut.
+Le nom complet du *.jar* sera de base le modid de votre mod, accompagné de la version de ce dernier (définie plus haut).
 
 ## Exportation
 
@@ -71,5 +63,5 @@ autrement le build ne fonctionnera pas !
 
 :::tip
 Pour retrouver le *.jar* généré, rendez-vous dans votre dossier principal, puis dans
-`build/libs` et vous trouverez par exemple : `TestMod-1.0.jar`.
+`build/libs` et vous trouverez par exemple : `testmod-1.0.jar`.
 :::
