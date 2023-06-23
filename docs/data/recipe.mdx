@@ -306,23 +306,17 @@ du résultat obtenu.
 
 Attaquons maintenant le dernier bloc, la smithing table.
 Dans ce cas-là, je crée une recette permettant d'améliorer une pioche en pierre
-en pioche en fer à l'aide d'un lingot de fer. Ici aussi, c'est
-assez simple : 
-
-:::warning
-La classe `LegacyUpgradeRecipeBuilder` est marqué comme déprécié et sera donc supprimée dans les versions supérieures (sûrement pour la 1.20).
-:::
+en pioche en fer à l'aide d'un lingot de fer et d'un bloc de diamant (parce que pourquoi pas). Ici aussi, c'est
+assez simple :
 
 ```java
-LegacyUpgradeRecipeBuilder.smithing(Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), RecipeCategory.TOOLS, Items.IRON_PICKAXE)
-                .unlocks("unlock", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STONE_PICKAXE))
-                .save(consumer, new ResourceLocation(Testmod.MODID, "stone_pickaxe_upgrade"));
+SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.DIAMOND_BLOCK), Ingredient.of(Items.STONE_PICKAXE), Ingredient.of(Items.IRON_INGOT), RecipeCategory.BUILDING_BLOCKS, Items.IRON_PICKAXE)
+                .unlocks("obtain_diamond_block_and_pickage", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STONE_PICKAXE, Items.IRON_INGOT))
+                .save(p_251297_, new ResourceLocation("stone_pickage_upgrade"));
 ```
 
-Le premier argument représente l'item que vous améliorez, le deuxième
-représente l'item d'amélioration et le dernier représente le résultat.
-Les deux premiers sont des `Ingredient` et le dernier un `ItemLike` soit
-un item ou un bloc.
+Le premier argument représente l'item _modèle_, le deuxième
+représente l'item que vous souhaitez améliorer, le troisième l'item nécessaire à l'amélioration (ce que pourrait appeler le matériau), le quatrième la catégorie de la recette et enfin le dernier, le résultat.
 
 ## Générer les fichiers
 
