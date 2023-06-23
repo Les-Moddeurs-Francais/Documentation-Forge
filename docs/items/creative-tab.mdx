@@ -8,24 +8,22 @@ Les onglets créatifs (ou _creatives tabs_) sont des interfaces permettant d'org
 
 ## Déclaration
 
-Pour créer votre onglet, vous devrez le créer dans un événement dédié comme ceci :
+Pour créer votre onglet, vous devez l'enregistrer avec un [_deferred registry_](/register/deferred.mdx)
 
 ```java
-public void onCreativeModeTabRegister(CreativeModeTabEvent.Register event)
-{
-    CreativeModeTab MY_MOD_TAB = event.registerCreativeModeTab(new ResourceLocation(MODID, "my_mod_tab"), List.of(), List.of(CreativeModeTabs.SPAWN_EGGS), builder -> builder
+public static final RegistryObject<CreativeModeTab> MY_MOD_TAB = CREATIVE_MODE_TABS.register("my_mod_tab", () -> CreativeModeTab.builder()
+            .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> new ItemStack(Items.DIAMOND))
             .title(Component.literal("My Mod Tab"))
             .withLabelColor(0x0000FF)
-            .displayItems((params, output) -> {
+            .displayItems((parameters, output) -> {
                 //Items contenus dans cet onglet
-            }));
-}
+            }).build());
 ```
 
 Ici, nous avons une fonction `registerCreativeModeTab` avec 4 arguments. Le premier est l'identifiant de l'onglet, le deuxième est quant à lui les onglets qui seront placés après le nôtre, le troisième lui est donc les onglets qui seront placés avant le nôtre et enfin le quatrième est un supplier qui va nous permettre de construire notre onglet avec :
-- Son icône (`icon(...)`) 
 - Son titre (`title(...)`) qui peut très bien être une simple chaine de caractère comme ici ou une clé de traduction.
+- Son icône (`icon(...)`)
 - Son alignement à droite ou non (`alignedRight()`)
 - La visibilité de son titre (`hideTitle()`)
 - La présence de barre de défilement sur le côté (`noScrollBar()`)
@@ -35,12 +33,8 @@ Ici, nous avons une fonction `registerCreativeModeTab` avec 4 arguments. Le prem
 - L'image de l'onglet (`withTabsImage(...)`)
 - La couleur de son titre (`withLabelColor(...)`)
 - La couleur de ses emplacements (`withSlotColor(...)`)
-
-Vous pouvez ensuite indiquer l'existence de ce mod dans le constructeur de votre classe principale avec la ligne :
-
-`FMLJavaModLoadingContext.get().getModEventBus().addListener(MaClasse::onCreativeModeTabRegister);`
-
-Et voilà, l'onglet est créé, mais celui-ci est vide. Il faut donc ajouter des items à cet onglet.
+- L'onglet (ou les onglets) se trouvant avant le nôtre (`withTabsBefore(...)`)
+- L'onglet (ou les onglets) se trouvant avant le nôtre (`withTabsAfter(...)`)
 
 ## Ajout des items
 
@@ -52,21 +46,21 @@ Pour ajouter les items dans un onglet du menu créatif, 2 choix s'offrent à vou
 Dans ce cas, il sera nécessaire d'utiliser l'événement `CreativeModeTabEvent.BuildContents` :
 
 ```java
-public void onCreativeModeTabBuildContents(CreativeModeTabEvent.BuildContents event)
+public void onCreativeModeTabBuildContents(BuildCreativeModeTabContentsEvent event)
 {
     var entries = event.getEntries();
-    if (event.getTab() == CreativeModeTabs.NATURAL_BLOCKS)
+    if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS)
     {
-        entries.putAfter(new ItemStack(Blocks.ACACIA_LOG), new ItemStack(Blocks.STRIPPED_ACACIA_LOG), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        entries.putAfter(new ItemStack(Blocks.ACACIA_LOG), new ItemStack(Blocks.DIAMOND_BLOCK), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }
 }
 ```
 
-Ici, nous vérifions que l'onglet qui est construit est celui des blocs naturels, et nous ajoutons le bloc de buche d'acacia après le bloc de buche d'acacia écorcée.
+Ici, nous vérifions que l'onglet qui est construit est celui des blocs naturels, et nous ajoutons le bloc de diamant après le bloc de buche d'acacia.
 
-À nouveau, vous pouvez ensuite indiquer l'existence de ce mod dans le constructeur de votre classe principale avec la ligne :
+À nouveau, vous pouvez ensuite indiquer l'existence de cet évènement dans le constructeur de votre classe principale avec la ligne :
 
-`FMLJavaModLoadingContext.get().getModEventBus().addListener(MaClasse::onCreativeModeTabRegister);`
+`FMLJavaModLoadingContext.get().getModEventBus().addListener(MaClasse::onCreativeModeTabBuildContents);`
 
 ### Ajout des items dans un nouvel onglet
 

@@ -23,7 +23,7 @@ Cette manière nous permet d'enregistrer un bloc, mais celui-ci sera très basiq
 Ainsi pour faire l'enregistrement, ajoutez une variable comme celle-ci dans la classe contenant le DeferredRegister :
 
 ```java
-public static final RegistryObject<Block> MON_BLOC = BLOCKS.register("mon_bloc", () -> new Block(Block.Properties.of(Material.STONE, MaterialColor.STONE)));
+public static final RegistryObject<Block> MON_BLOC = BLOCKS.register("mon_bloc", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
 ```
 
 :::tip
@@ -47,7 +47,7 @@ public class MonBloc extends Block {
 
 Ainsi, nous pourrons enregistrer le bloc comme dans la technique sans classe custom sauf que nous ferons un `new MobBloc` et non `new Block`, ce qui donne une variable du type
 ```java
-public static final RegistryObject<Block> MON_BLOC = BLOCKS.register("mon_bloc", () -> new MonBloc(Block.Properties.of(Material.STONE, MaterialColor.STONE)));
+public static final RegistryObject<Block> MON_BLOC = BLOCKS.register("mon_bloc", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
 ```
 
 ## Ressources
@@ -148,21 +148,22 @@ Ici, nous appliquerons une _loot table_ similaire à celle du bloc de diamant.
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "modid:mon_bloc"
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ]
+      "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "modid:blocks/mon_bloc"
 }
 ```
 
@@ -170,3 +171,4 @@ Quelques explications s'imposent :
 - `type` définit le type de loot table (block, chest, etc...)
 - `pools` définit les listes d'item disponibles avec le nombre d'items à sélectionner ainsi que les items.
 - `conditions` définit les conditions qui doivent être respectées pour que le bloc _drop_ quelque chose.
+- `random_sequence` définit un "identifiant" de séquence permettant d'avoir les mêmes "recompenses" lâchées dans un monde avec la même _seed_.

@@ -92,6 +92,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `mineable/pickaxe`                         | Liste des blocs pouvant être miné efficacement avec une pioche                                                                                                                |
 | `mineable/shovel`                          | Liste des blocs pouvant être miné efficacement avec une pelle                                                                                                                 |
 | `acacia_logs`                              | Liste des blocs qui sont des buches d'acacia                                                                                                                                  |
+| `all_hanging_signs`                        | Liste des blocs qui sont des pancartes suspendues (que ce soit au mur ou sous un bloc)                                                                                        |
 | `all_signs`                                | Liste des blocs qui sont des pancartes (de tous types)                                                                                                                        |
 | `ancient_city_replaceable`                 | Liste des blocs remplaçables par les cités antiques                                                                                                                           |
 | `animals_spawnable_on`                     | Liste des blocs sur lesquels les animaux peuvent apparaître                                                                                                                   |
@@ -99,6 +100,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `axolotls_spawnable_on`                    | Liste des blocs sur lesquels les axolotls peuvent apparaître                                                                                                                  |
 | `azalea_grows_on`                          | Liste des blocs sur lesquels les arbres d'azalées peuvent pousser                                                                                                             |
 | `azalea_root_replaceable`                  | Liste des blocs qui peuvent être remplacé par les racines des azalées                                                                                                         |
+| `bamboo_blocks`                            | Liste des blocs qui sont des blocs de bambou                                                                                                                                  |
 | `bamboo_plantable_on`                      | Liste des blocs où le bambou peut être planté                                                                                                                                 |
 | `banners`                                  | Liste des blocs qui sont des bannières                                                                                                                                        |
 | `base_stone_nether`                        | Liste des blocs qui peuvent être remplacés par des ressources (par exemple des minerais) de la dimension du Nether                                                            |
@@ -115,6 +117,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `candle_cakes`                             | Liste des blocs qui sont des gâteaux avec une bougie                                                                                                                          |
 | `cauldrons`                                | Liste des blocs qui sont des chaudrons                                                                                                                                        |
 | `cave_vines`                               | Liste des blocs qui sont des lianes des cavernes                                                                                                                              |
+| `ceiling_hanging_signs`                    | Liste des blocs qui sont des pancartes suspendues en dessous d'un bloc                                                                                                        |
+| `cherry_logs`                              | Liste des blocs qui sont des bûches de cerisier                                                                                                                               |
 | `climbable`                                | Liste des blocs qui sont escaladables                                                                                                                                         |
 | `coal_ores`                                | Liste des blocs qui sont des minerais de charbon                                                                                                                              |
 | `completes_find_tree_tutorial`             | Liste des blocs qui, quand ils sont cassés, permettent de compléter le tutoriel `find_tree`                                                                                   |
@@ -137,6 +141,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `dragon_transparent`                       | Liste des blocs qui peuvent être traversés par le dragon sans les détruire                                                                                                    |
 | `dripstone_replaceable_blocks`             | Liste des blocs pouvant être remplacés par des blocs de spéléothème                                                                                                           |
 | `emerald_ores`                             | Liste des blocs qui sont des minerais d'émeraude                                                                                                                              |
+| `enchantment_power_provider`               | Liste des blocs qui alimentent la table d'enchantement                                                                                                                        |
+| `enchantment_power_transmitter`            | Liste des blocs qui autorisés entre la table d'enchantement et ceux lui fournissant de l'énergie                                                                              |
 | `enderman_holdable`                        | Liste des blocs pouvant être récupérés par des enderman                                                                                                                       |
 | `fall_damage_resetting`                    | Liste des blocs qui réinitialisent les dégâts de chute d'un joueur                                                                                                            |
 | `features_cannot_replace`                  | Liste des blocs ne peuvent pas être remplacés par des éléments générés                                                                                                        |
@@ -168,6 +174,7 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `logs`                                     | Liste des blocs qui sont des buches                                                                                                                                           |
 | `logs_that_burn`                           | Liste des blocs de buche qui sont inflammables                                                                                                                                |
 | `lush_ground_replaceable`                  | Liste des blocs qui seront remplacés par de la terre racineuse                                                                                                                |
+| `maintains_farmland`                       | Liste des blocs qui peuvent être placés sur de la terre labourée, empêchant cette dernière de se transformer en terre lorsqu'elle n'est pas hydratée                          |
 | `mangrove_logs`                            | Liste des blocs qui sont des buches en palétuvier                                                                                                                             |
 | `mangrove_logs_can_grow_through`           | Liste des blocs qui peuvent être traversés par le tronc d'un palétuvier quand il pousse                                                                                       |
 | `mangrove_roots_can_grow_through`          | Liste des blocs qui peuvent être traversés par les racines d'un palétuvier quand il pousse                                                                                    |
@@ -193,7 +200,8 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `rabbits_spawnable_on`                     | Liste des blocs sur lesquels les lapins peuvent apparaître                                                                                                                    |
 | `rails`                                    | Liste des blocs qui sont des rails                                                                                                                                            |
 | `redstone_ores`                            | Liste des blocs qui sont des minerais de redstone                                                                                                                             |
-| `replaceable_plants`                       | Liste des plantes qui peuvent être remplacées pendant la génération d'un élément                                                                                              |
+| `replaceable`                              | Liste des blocs qui sont remplaçables (référence uniquement)                                                                                                                  |
+| `replaceable_by_trees`                     | Liste des blocs que les arbres peuvent remplacer lorsqu'ils grandissent                                                                                                       |
 | `sand`                                     | Liste des blocs qui sont du sable                                                                                                                                             |
 | `saplings`                                 | Liste des blocs qui sont des pousses d'arbre                                                                                                                                  |
 | `sculk_replaceable`                        | Liste des blocs qui peuvent être remplacé par des blocs de la familles des sculks lors de la génération du sculls                                                             |
@@ -203,8 +211,10 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `slabs`                                    | Liste des blocs qui sont des dalles                                                                                                                                           |
 | `small_dripleaf_placeable`                 | Liste des blocs sur lesquels il est possible de placer les petites foliogoutes                                                                                                |
 | `small_flowers`                            | Liste des blocs qui sont des petites fleurs                                                                                                                                   |
-| `smelts_to_glass`                          | Liste des blocs qui peuvent être cuits pour obtenir du verre                                                                                                                                   |
+| `smelts_to_glass`                          | Liste des blocs qui peuvent être cuits pour obtenir du verre                                                                                                                  |
 | `snaps_goat_horn`                          | Liste des blocs qui cassent une corne aux chèvres quand elles chargent dedans                                                                                                 |
+| `sniffer_diggable_block`                   | Liste des blocs dans lesquels les renifleurs sont autorisés à creuser                                                                                                         |
+| `sniffer_egg_hatch_boost`                  | Liste des blocs sur lesquels les œufs de renifleurs éclosent plus rapidement.                                                                                                 |
 | `snow`                                     | Liste des blocs qui sont de la neige                                                                                                                                          |
 | `snow_layer_cannot_survive_on`             | Liste des blocs sur lesquels les couches de neige ne peuvent pas survivre                                                                                                     |
 | `snow_layer_can_survive_on`                | Liste des blocs sur lesquels les couches de neige peuvent survivre                                                                                                            |
@@ -214,17 +224,23 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 | `stairs`                                   | Liste des blocs qui sont des escaliers                                                                                                                                        |
 | `standing_signs`                           | Liste des blocs qui sont des panneaux qui sont sur pied                                                                                                                       |
 | `stone_bricks`                             | Liste des blocs qui sont des pierres taillées                                                                                                                                 |
+| `stone_buttons`                            | Liste des blocs qui sont des boutons en pierre                                                                                                                                |
 | `stone_ore_replaceables`                   | Liste des blocs pouvant être remplacés par des minerais                                                                                                                       |
 | `stone_pressure_plates`                    | Liste des blocs qui sont des plaques de pression en pierre                                                                                                                    |
 | `strider_warm_blocks`                      | Liste des blocs qui ne font pas trembler un strider si jamais il se retrouve dessus                                                                                           |
+| `stripped_logs`                            | Liste des blocs qui sont des bûches écorcées                                                                                                                                  |
+| `sword_efficient`                          | Liste des blocs qui sont plus rapides à briser avec une épée                                                                                                                  |
 | `tall_flowers`                             | Liste des blocs qui sont des fleurs hautes                                                                                                                                    |
 | `terracotta`                               | Liste des blocs qui sont de la terre cuite                                                                                                                                    |
+| `trail_ruins_replaceable`                  | Liste des blocs que les ruines de sentiers peuvent remplacer lorsque ces dernières sont générées                                                                              |
 | `trapdoors`                                | Liste des blocs qui sont des trappes                                                                                                                                          |
 | `underwater_bonemeals`                     | Liste des plantes aquatiques qui poussent dans le fond des océans                                                                                                             |
 | `unstable_bottom_center`                   | Liste des blocs qui ne peuvent pas supporter les lanternes et les cloches sur leur face inférieure                                                                            |
 | `valid_spawn`                              | Liste des blocs qui sont valides pour l'apparition d'un joueur                                                                                                                |
+| `vibration_resonators`                     | Liste des blocs qui peuvent être utilisés pour faire résonner les vibrations lorsqu'ils sont placés à côté d'un capteur sculk                                                 |
 | `walls`                                    | Liste des blocs qui sont des murets                                                                                                                                           |
 | `wall_corals`                              | Liste des blocs qui sont des coraux muraux                                                                                                                                    |
+| `wall_hanging_signs`                       | Liste des blocs qui sont des pancartes suspendues au mur                                                                                                                      |
 | `wall_post_override`                       | Liste des blocs qui transforment les murs en piliers, même s'ils ne sont pas solides                                                                                          |
 | `wall_signs`                               | Liste des blocs qui sont des panneaux accrochés au mur                                                                                                                        |
 | `warped_stems`                             | Liste des blocs qui sont des tiges biscornues                                                                                                                                 |
@@ -366,93 +382,107 @@ Celle-ci peuvent prendre 2 valeurs au niveau du champ `ìd`, soit un identifiant
 
 <summary>Liste des tags concernant les items</summary>
 
-| Identifiant                    | Description                                                                                      |
-|--------------------------------|--------------------------------------------------------------------------------------------------|
-| `acacia_logs`                  | Liste de toutes les types de buche en acajou                                                     |
-| `anvil`                        | Liste de tous les types d'enclumes                                                               |
-| `arrows`                       | Liste de tous les types de flèche                                                                |
-| `axes`                         | Liste de tous les types d'haches                                                                 |
-| `axolotl_tempt_items`          | Liste des items permettant d'attirer des axolotl                                                 |
-| `banners`                      | Liste de toutes les bannières avec leurs couleurs respective                                     |
-| `beacon_payment_items`         | Liste des items pouvant être utilisés pour l'activation d'une balise                             |
-| `beds`                         | Liste de tous les types de lits                                                                  |
-| `birch_logs`                   | Liste de tous les types de troncs en bouleau                                                     |
-| `boats`                        | Liste de tous les types de bateaux                                                               |
-| `buttons`                      | Liste de tous les types de boutons                                                               |
-| `candles`                      | Liste de tous les types de bougies                                                               |
-| `chest_boats`                  | Liste de tous les types de bateaux avec coffre                                                   |
-| `cluster_max_harvestables`     | Liste des outils permettant de récolter efficacement de l'améthyste                              |
-| `coals`                        | Liste de tous les types de charbon                                                               |
-| `coal_ores`                    | Liste des minerais de charbon                                                                    |
-| `compasses`                    | Liste de tous les types de boussoles                                                             |
-| `completes_find_tree_tutorial` | Liste des types de blocs permettant de completer le tutoriel `find_tree`                         |
-| `copper_ores`                  | Liste des minerais de cuivre                                                                     |
-| `creeper_drop_music_discs`     | Liste de tous les disques pouvant être _dropés_ par un creeper quand il est tué par un squelette |
-| `creeper_igniters`             | Liste de tous les types d'items permettant d'allumer un creeper (pour le faire exploser)         |
-| `crimson_stems`                | Liste de tous les types de troncs carmins                                                        |
-| `dampens_vibrations`           | Liste de tous les types de blocs absorbant les vibrations qui le touchent                        |
-| `dark_oak_logs`                | Liste de tous les types de troncs en chêne noir                                                  |
-| `diamond_ores`                 | Liste des minerais de diamant                                                                    |
-| `dirt`                         | Liste de tous les types de terre                                                                 |
-| `doors`                        | Liste de tous les types de porte                                                                 |
-| `emerald_ores`                 | Liste des minerais d'émeraude                                                                    |
-| `fences`                       | Liste de tous les types de barrière                                                              |
-| `fence_gates`                  | Liste de tous les types de portillons                                                            |
-| `fishes`                       | Liste de tous les types de poissons                                                              |
-| `flowers`                      | Liste de tous les types de fleurs                                                                |
-| `fox_food`                     | Liste des items que le renard peut manger                                                        |
-| `freeze_immune_wearables`      | Liste de tous les item pouvant être portés qui immunisent contre le froid                        |
-| `gold_ores`                    | Liste des minerais d'or                                                                          |
-| `hoes`                         | Liste des minerais de faux                                                                       |
-| `ignored_by_piglin_babies`     | Liste des items ignorés par les bébés piglins                                                    |
-| `iron_ores`                    | Liste des minerais de fer                                                                        |
-| `jungle_logs`                  | Liste de tous les types de troncs en acajou                                                      |
-| `lapis_ores`                   | Liste des minerais de lapis lazuli                                                               |
-| `leaves`                       | Liste de tous les types de feuilles                                                              |
-| `lectern_books`                | Liste de tous les types de livres pouvant être posés sur un pupitre de lecture                   |
-| `logs`                         | Liste de tous les types de troncs (avec ou sans écorse, etc...)                                  |
-| `logs_that_burn`               | Liste des tous les types de troncs combustibles                                                  |
-| `mangrove_logs`                | Liste des tous les types de troncs en palétuvier                                                 |
-| `music_discs`                  | Liste de tous les disques de musique                                                             |
-| `non_flammable_wood`           | Liste des tous les types de bois non combustibles                                                |
-| `oak_logs`                     | Liste de tous les types de troncs en chêne                                                       |
-| `pickaxes`                     | Liste de tous les types de pioches                                                               |
-| `piglin_food`                  | Liste des items que mangent les piglins                                                          |
-| `piglin_loved`                 | Liste des items que les Piglins accepte pour faire un échange                                    |
-| `piglin_repellents`            | Liste des items qui repoussent les piglins                                                       |
-| `planks`                       | Liste de tous les types de planches                                                              |
-| `rails`                        | Liste de tous les types de rails                                                                 |
-| `redstone_ores`                | Liste des minerais de redstone                                                                   |
-| `sand`                         | Liste de tous les types de sables                                                                |
-| `saplings`                     | Liste de tous les types de pousses d'arbre                                                       |
-| `shovels`                      | Liste de tous les types de pelles                                                                |
-| `signs`                        | Liste de tous les types de panneaux                                                              |
-| `slabs`                        | Liste de tous les types de dalles                                                                |
-| `small_flowers`                | Liste de tous les types de _petites_ fleurs                                                      |
-| `smelts_to_glass`              | Liste des blocs qui peuvent être cuits pour obtenir du verre                                     |
-| `soul_fire_base_blocks`        | Liste des items produisant du feu bleu                                                           |
-| `spruce_logs`                  | Liste de tous les types de troncs en sapin                                                       |
-| `stairs`                       | Liste de tous les types d'escaliers                                                              |
-| `stone_bricks`                 | Liste de tous les types de pierres taillées                                                      |
-| `stone_crafting_materials`     | Liste des items permettant de crafter les objets à base de pierre                                |
-| `stone_tool_materials`         | Liste des items permettant de crafter les outils et armes en roche                               |
-| `sword`                        | Liste de tous les types d'épées                                                                  |
-| `tall_flowers`                 | Liste de tous les types de fleurs haute                                                          |
-| `terracotta`                   | Liste de tous les types de terres cuites                                                         |
-| `tools`                        | Liste de tous les types d'outils                                                                 |
-| `trapdoors`                    | Liste de tous les types de trappes                                                               |
-| `walls`                        | Liste de tous les types de murets                                                                |
-| `warped_stems`                 | Liste de tous les types de troncs biscornus                                                      |
-| `wart_blocks`                  | Liste de tous les types de blocs de verrues                                                      |
-| `wooden_buttons`               | Liste de tous les types de boutons en bois                                                       |
-| `wooden_doors`                 | Liste de tous les types de portes en bois                                                        |
-| `wooden_fences`                | Liste de tous les types de barrières en bois                                                     |
-| `wooden_pressure_plates`       | Liste de tous les types de plaques de pression en bois                                           |
-| `wooden_slabs`                 | Liste de tous les types de dalles en bois                                                        |
-| `wooden_stairs`                | Liste de tous les types d'escaliers en bois                                                      |
-| `wooden_trapdoors`             | Liste de tous les types de trappes en bois                                                       |
-| `wool`                         | Liste de tous les types de laines                                                                |
-| `wool_carpets`                 | Liste de tous les types de tapis en laine                                                        |
+| Identifiant                    | Description                                                                                                                 |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| `acacia_logs`                  | Liste de toutes les types de buche en acajou                                                                                |
+| `anvil`                        | Liste de tous les types d'enclumes                                                                                          |
+| `arrows`                       | Liste de tous les types de flèche                                                                                           |
+| `axes`                         | Liste de tous les types d'haches                                                                                            |
+| `axolotl_tempt_items`          | Liste des items permettant d'attirer des axolotl                                                                            |
+| `bamboo_blocks`                | Liste de tous les types de blocs de bambou                                                                                  |
+| `banners`                      | Liste de toutes les bannières avec leurs couleurs respective                                                                |
+| `beacon_payment_items`         | Liste des items pouvant être utilisés pour l'activation d'une balise                                                        |
+| `beds`                         | Liste de tous les types de lits                                                                                             |
+| `birch_logs`                   | Liste de tous les types de troncs en bouleau                                                                                |
+| `boats`                        | Liste de tous les types de bateaux                                                                                          |
+| `bookshelf_books`              | Liste de tous les types de bibliothèques                                                                                    |
+| `breaks_decorated_pots`        | Liste de tous les types d'objets qui permettent de casser des vases décorés instantanément                                  |
+| `buttons`                      | Liste de tous les types de boutons                                                                                          |
+| `candles`                      | Liste de tous les types de bougies                                                                                          |
+| `cherry_logs`                  | Liste de tous les types de bûche de cerisier                                                                                |
+| `chest_boats`                  | Liste de tous les types de bateaux avec coffre                                                                              |
+| `cluster_max_harvestables`     | Liste des outils permettant de récolter efficacement de l'améthyste                                                         |
+| `coals`                        | Liste de tous les types de charbon                                                                                          |
+| `coal_ores`                    | Liste des minerais de charbon                                                                                               |
+| `compasses`                    | Liste de tous les types de boussoles                                                                                        |
+| `completes_find_tree_tutorial` | Liste des types de blocs permettant de completer le tutoriel `find_tree`                                                    |
+| `copper_ores`                  | Liste des minerais de cuivre                                                                                                |
+| `creeper_drop_music_discs`     | Liste de tous les disques pouvant être _dropés_ par un creeper quand il est tué par un squelette                            |
+| `creeper_igniters`             | Liste de tous les types d'items permettant d'allumer un creeper (pour le faire exploser)                                    |
+| `crimson_stems`                | Liste de tous les types de troncs carmins                                                                                   |
+| `dampens_vibrations`           | Liste de tous les types de blocs absorbant les vibrations qui le touchent                                                   |
+| `dark_oak_logs`                | Liste de tous les types de troncs en chêne noir                                                                             |
+| `decorated_pot_ingredients`    | Liste de tous les types d'ingrédients pouvant être utilisés pour fabriquer des vases décorés                                |
+| `decorated_pot_sherds`         | Liste de tous les types de tessons permettant de décorer des vases décorés                                                  |
+| `diamond_ores`                 | Liste des minerais de diamant                                                                                               |
+| `dirt`                         | Liste de tous les types de terre                                                                                            |
+| `doors`                        | Liste de tous les types de porte                                                                                            |
+| `emerald_ores`                 | Liste des minerais d'émeraude                                                                                               |
+| `fences`                       | Liste de tous les types de barrière                                                                                         |
+| `fence_gates`                  | Liste de tous les types de portillons                                                                                       |
+| `fishes`                       | Liste de tous les types de poissons                                                                                         |
+| `flowers`                      | Liste de tous les types de fleurs                                                                                           |
+| `fox_food`                     | Liste des items que le renard peut manger                                                                                   |
+| `freeze_immune_wearables`      | Liste de tous les item pouvant être portés qui immunisent contre le froid                                                   |
+| `gold_ores`                    | Liste des minerais d'or                                                                                                     |
+| `hanging_signs`                | Liste de tous les types de pancartes suspendues                                                                             |
+| `hoes`                         | Liste des minerais de faux                                                                                                  |
+| `ignored_by_piglin_babies`     | Liste des items ignorés par les bébés piglins                                                                               |
+| `iron_ores`                    | Liste des minerais de fer                                                                                                   |
+| `jungle_logs`                  | Liste de tous les types de troncs en acajou                                                                                 |
+| `lapis_ores`                   | Liste des minerais de lapis lazuli                                                                                          |
+| `leaves`                       | Liste de tous les types de feuilles                                                                                         |
+| `lectern_books`                | Liste de tous les types de livres pouvant être posés sur un pupitre de lecture                                              |
+| `logs`                         | Liste de tous les types de troncs (avec ou sans écorse, etc...)                                                             |
+| `logs_that_burn`               | Liste des tous les types de troncs combustibles                                                                             |
+| `mangrove_logs`                | Liste des tous les types de troncs en palétuvier                                                                            |
+| `music_discs`                  | Liste de tous les disques de musique                                                                                        |
+| `non_flammable_wood`           | Liste des tous les types de bois non combustibles                                                                           |
+| `noteblock_top_instruments`    | Liste des tous les types de blocs qui peuvent être posés au-dessus d'un bloc musical                                        |
+| `oak_logs`                     | Liste de tous les types de troncs en chêne                                                                                  |
+| `pickaxes`                     | Liste de tous les types de pioches                                                                                          |
+| `piglin_food`                  | Liste des items que mangent les piglins                                                                                     |
+| `piglin_loved`                 | Liste des items que les Piglins accepte pour faire un échange                                                               |
+| `piglin_repellents`            | Liste des items qui repoussent les piglins                                                                                  |
+| `planks`                       | Liste de tous les types de planches                                                                                         |
+| `rails`                        | Liste de tous les types de rails                                                                                            |
+| `redstone_ores`                | Liste des minerais de redstone                                                                                              |
+| `sand`                         | Liste de tous les types de sables                                                                                           |
+| `saplings`                     | Liste de tous les types de pousses d'arbre                                                                                  |
+| `shovels`                      | Liste de tous les types de pelles                                                                                           |
+| `signs`                        | Liste de tous les types de panneaux                                                                                         |
+| `slabs`                        | Liste de tous les types de dalles                                                                                           |
+| `small_flowers`                | Liste de tous les types de _petites_ fleurs                                                                                 |
+| `smelts_to_glass`              | Liste des blocs qui peuvent être cuits pour obtenir du verre                                                                |
+| `sniffer_food`                 | Liste de tous les types de nourritures pour les renifleurs                                                                  |
+| `soul_fire_base_blocks`        | Liste des items produisant du feu bleu                                                                                      |
+| `spruce_logs`                  | Liste de tous les types de troncs en sapin                                                                                  |
+| `stairs`                       | Liste de tous les types d'escaliers                                                                                         |
+| `stone_bricks`                 | Liste de tous les types de pierres taillées                                                                                 |
+| `stone_buttons`                | Liste de tous les types de boutons en pierre                                                                                |
+| `stone_crafting_materials`     | Liste des items permettant de crafter les objets à base de pierre                                                           |
+| `stone_tool_materials`         | Liste des items permettant de crafter les outils et armes en roche                                                          |
+| `swords`                       | Liste de tous les types d'épées                                                                                             |
+| `tall_flowers`                 | Liste de tous les types de fleurs haute                                                                                     |
+| `terracotta`                   | Liste de tous les types de terres cuites                                                                                    |
+| `tools`                        | Liste de tous les types d'outils                                                                                            |
+| `trapdoors`                    | Liste de tous les types de trappes                                                                                          |
+| `trimmable_armor`              | Liste de tous les types d'armures qui peuvent être ornées                                                                   |
+| `trim_materials`               | Liste de tous les types de matériaux pour les ornements d'armures                                                           |
+| `trim_templates`               | Liste de tous les types de motifs pour les ornements d'armures                                                              |
+| `villager_plantable_seeds`     | Liste de tous les types de graines que les villageois fermiers planteront lorsqu'elles seront placées dans leur inventaire  |
+| `walls`                        | Liste de tous les types de murets                                                                                           |
+| `warped_stems`                 | Liste de tous les types de troncs biscornus                                                                                 |
+| `wart_blocks`                  | Liste de tous les types de blocs de verrues                                                                                 |
+| `wooden_buttons`               | Liste de tous les types de boutons en bois                                                                                  |
+| `wooden_doors`                 | Liste de tous les types de portes en bois                                                                                   |
+| `wooden_fences`                | Liste de tous les types de barrières en bois                                                                                |
+| `wooden_pressure_plates`       | Liste de tous les types de plaques de pression en bois                                                                      |
+| `wooden_slabs`                 | Liste de tous les types de dalles en bois                                                                                   |
+| `wooden_stairs`                | Liste de tous les types d'escaliers en bois                                                                                 |
+| `wooden_trapdoors`             | Liste de tous les types de trappes en bois                                                                                  |
+| `wool`                         | Liste de tous les types de laines                                                                                           |
+| `wool_carpets`                 | Liste de tous les types de tapis en laine                                                                                   |
 
 </details>
 
@@ -520,6 +550,7 @@ Le dossier pour ces tags est contenu dans le dossier `worldgen` qui est lui-mêm
 | `has_structure\shipwreck_beached`           | Liste des biomes pouvant contenir des bateaux échoués sur une plage                                                  |
 | `has_structure\stronghold`                  | Liste des biomes pouvant contenir des forts de l'End                                                                 |
 | `has_structure\swamp_hut`                   | Liste des biomes pouvant contenir des huttes de sorcière                                                             |
+| `has_structure\trail_ruins`                 | Liste des biomes pouvant contenir des ruines de sentiers                                                             |
 | `has_structure\village_desert`              | Liste des biomes pouvant contenir des villages du désert                                                             |
 | `has_structure\village_plains`              | Liste des biomes pouvant contenir des villages de la plaine                                                          |
 | `has_structure\village_savanna`             | Liste des biomes pouvant contenir des villages de la savane                                                          |
